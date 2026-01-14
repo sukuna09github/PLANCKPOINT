@@ -121,12 +121,11 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section 
-        id="leadership" 
-        className="py-20 lg:py-24 relative text-white overflow-hidden bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url(${leadershipBgUrl})` }}
-      >
-        <div className="absolute inset-0 bg-primary/70"></div>
+      <section id="leadership" className="py-20 lg:py-24 relative text-white bg-transparent">
+        <div 
+          className="fixed-background"
+          style={{ backgroundImage: `url(${leadershipBgUrl})` }}
+        ></div>
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
           <AnimatedSection>
             <div className="text-center mb-16 max-w-none">
