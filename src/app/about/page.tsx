@@ -126,7 +126,7 @@ export default function AboutPage() {
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
           <AnimatedSection>
             <div className="text-center mb-16 max-w-none">
-              <h2 className="text-3xl md:text-4xl font-bold">Leadership</h2>
+              <h2 className="text-3xl md:text-4xl font-normal">Leadership</h2>
               <p className="mt-4 text-lg text-primary-foreground/80">PlanckPoint is led by experienced researchers, strategists, and practitioners who have worked at the intersection of technology, transformation, and risk. Our team combines deep industry experience with analytical discipline. We understand how decisions are made in boardrooms, how programs fail in delivery, and where execution risk hides long before it becomes visible in outcomes. We work across strategy, technology, procurement, and transformation leadership, bringing perspectives shaped by real accountability and not theoretical models. This allows us to challenge assumptions, test claims, and apply judgment where data alone is insufficient.</p>
             </div>
           </AnimatedSection>
