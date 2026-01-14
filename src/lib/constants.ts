@@ -331,7 +331,7 @@ export const RESEARCH_ARTICLES = [
 export const GLOBAL_OFFICES = ["Australia", "Brazil", "Germany", "India", "Japan", "UK", "US"];
 
 export const LEADERSHIP_TEAM = [
-    { name: "Amit Dengle", role: "Founder & CEO", bio: "A visionary in human-tech dynamics, Evelyn founded Planckpoint to bridge the gap between innovation and its human impact.", imageId: "leader1" },
+    { name: "Amit Dengle", role: "Founder & CEO", bio: "Amit Dengle is a strategy, research, and transformation leader with over two decades of experience advising enterprises on high-stakes technology and operating model decisions. Before founding PlanckPoint, Amit held senior leadership roles in global research and advisory firms, where he worked closely with CIOs, boards, and executive teams across banking, insurance, telecom, and large enterprises. His work has consistently focused on areas where decisions carry long-term risk, vendor selection, large-scale transformation, sourcing strategy, and execution governance.", imageId: "leader1" },
     { name: "Florian Scheibmayer", role: "Chief Technology Officer", bio: "With two decades in software architecture, Marcus leads the development of our groundbreaking product suite.", imageId: "leader2" },
     { name: "Kiran Kommineni", role: "Head of Research", bio: "Lena's work in organizational psychology and data science fuels our industry-leading insights and methodologies.", imageId: "leader3" },
     { name: "Ulrich Meister", role: "Chief Operating Officer", bio: "Kenji excels at scaling operations globally, ensuring Planckpoint's seamless delivery and client satisfaction.", imageId: "leader4" },
@@ -553,7 +553,7 @@ export const SERVICE_CATEGORIES = [
     {
         id: 'consulting',
         name: 'Consulting',
-        description: 'We help leadership teams translate insight into decisions that are structured, defensible, and executable. Our consulting work focuses on decision quality, risk exposure, and governance — not delivery management. Our consulting capabilities include: Decision structuring and option analysis to clarify trade-offs, dependencies, and failure modes before commitments are made. Transformation risk diagnostics identifying execution bottlenecks across people, process, platform, and partners. Decision governance and assurance supporting executive, board, and risk committee review with clear evidence and accountability. The focus is not activity. It is an informed judgment under uncertainty.',
+        description: 'We help leadership teams translate insight into decisions that are structured, defensible, and executable. Our consulting work focuses on decision quality, risk exposure, and governance — not delivery management. Our consulting capabilities include: 	Decision structuring and option analysis to clarify trade-offs, dependencies, and failure modes before commitments are made 	Transformation risk diagnostics identifying execution bottlenecks across people, process, platform, and partners 	Decision governance and assurance supporting executive, board, and risk committee review with clear evidence and accountability The focus is not activity. It is an informed judgment under uncertainty.',
         icon: Users,
         products: ['disquo', 'elwis', 'skillorbit'],
         imageId: "industry-healthcare"
@@ -561,12 +561,13 @@ export const SERVICE_CATEGORIES = [
     {
         id: 'vendor-evaluations',
         name: 'Vendor Evaluations',
-        description: 'We conduct rigorous, evidence-based evaluations of technology vendors beyond narrative claims and simplified visual models. Each evaluation is grounded in execution reality, not positioning. Our vendor evaluation capabilities include: Experience delivered across various clients, projects, and scenarios. Execution capability assessment across delivery maturity, operating model resilience, and scalability. Talent and operating model analysis examining depth, stability, and alignment to the work required. Risk exposure mapping across delivery, dependency, concentration, and continuity dimensions. The outcome is a clear view of what is likely to perform, what is likely to fail, and the conditions that influence both.',
+        description: 'We conduct rigorous, evidence-based evaluations of technology vendors beyond narrative claims and simplified visual models. Each evaluation is grounded in execution reality, not positioning. Our vendor evaluation capabilities include: 	Experience delivered across various clients, projects, and scenarios. 	Execution capability assessment across delivery maturity, operating model resilience, and scalability 	Talent and operating model analysis examining depth, stability, and alignment to the work required 	Risk exposure mapping across delivery, dependency, concentration, and continuity dimensions The outcome is a clear view of what is likely to perform, what is likely to fail, and the conditions that influence both.',
         icon: BarChart,
         products: ['propricing'],
         imageId: "industry-tech"
     }
 ]
+
 
 
 
