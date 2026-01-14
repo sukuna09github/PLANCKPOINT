@@ -20,7 +20,7 @@ export default function AboutPage() {
   };
 
   const values = [
-    { title: "Inspiration", description: "We are dedicated to creating positive, measurable impact for our clients and society." },
+    { title: "Inspiration", description: "The Planck point represents the smallest meaningful unit of measurement; the point beyond which systems can no longer be described by approximation or surface observation. At that scale, assumptions break down and fundamentals matter. We see decisions the same way.\n\nMost enterprise choices are made using high-level abstractions: quadrants, scores, narratives, and averages. Those views are convenient, but they hide the forces that determine outcomes.\n\nPlanckPoint was created to operate at the equivalent of the Planck scale in strategic decisions, where execution capability, delivery constraints, talent realities, and risk signals become visible. This is the level at which success or failure is determined, long before it appears in dashboards or post-mortems. \n\nOur name reflects a simple belief: If a decision is material, it must be examined at its most fundamental level. That is where clarity begins. That is where PlanckPoint operates." },
     { title: "Integrity", description: "Our work is guided by strong ethical principles and a commitment to intellectual honesty." },
     { title: "Clarity", description: "We seek truth and provide clarity through rigorous, data-driven analysis." },
   ];
@@ -113,12 +113,12 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section id="leadership" className="py-20 lg:py-24 bg-white border-t">
+      <section id="leadership" className="py-20 lg:py-24 bg-gradient-to-br from-primary to-accent text-white">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold">Leadership</h2>
-              <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">The minds behind our mission, guiding our strategy and innovation.</p>
+              <p className="mt-4 text-lg text-primary-foreground/80 max-w-2xl mx-auto">The minds behind our mission, guiding our strategy and innovation.</p>
             </div>
           </AnimatedSection>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -126,14 +126,14 @@ export default function AboutPage() {
               const image = findImage(member.imageId);
               return (
                 <AnimatedSection key={member.name} delay={index * 0.1}>
-                  <Card className="text-center h-full">
+                  <Card className="text-center h-full bg-white/10 border-white/20 text-background backdrop-blur-sm">
                     <CardContent className="pt-6">
                       <div className="relative h-32 w-32 mx-auto overflow-hidden">
                         {image && <Image src={image.imageUrl} alt={member.name} fill className="object-cover" data-ai-hint={image.imageHint} />}
                       </div>
-                      <h3 className="mt-4 text-xl font-bold">{member.name}</h3>
-                      <p className="text-primary font-medium">{member.role}</p>
-                      <p className="mt-2 text-sm text-muted-foreground">{member.bio}</p>
+                      <h3 className="mt-4 text-xl font-bold text-white">{member.name}</h3>
+                      <p className="text-accent-foreground font-medium">{member.role}</p>
+                      <p className="mt-2 text-sm text-primary-foreground/80">{member.bio}</p>
                     </CardContent>
                   </Card>
                 </AnimatedSection>
@@ -171,3 +171,5 @@ export default function AboutPage() {
     </main>
   );
 }
+
+    
