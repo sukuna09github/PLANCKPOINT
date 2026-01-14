@@ -332,7 +332,7 @@ export const GLOBAL_OFFICES = ["Australia", "Brazil", "Germany", "India", "Japan
 
 export const LEADERSHIP_TEAM = [
     { name: "Amit Dengle", role: "Founder & CEO", bio: "Amit Dengle is a strategy, research, and transformation leader with over two decades of experience advising enterprises on high-stakes technology and operating model decisions. Before founding PlanckPoint, Amit held senior leadership roles in global research and advisory firms, where he worked closely with CIOs, boards, and executive teams across banking, insurance, telecom, and large enterprises. His work has consistently focused on areas where decisions carry long-term risk, vendor selection, large-scale transformation, sourcing strategy, and execution governance.", imageId: "leader1" },
-    { name: "Florian Scheibmayer", role: "Chief Technology Officer", bio: "With two decades in software architecture, Marcus leads the development of our groundbreaking product suite.", imageId: "leader2" },
+    { name: "Florian Scheibmayer", role: "Chief Technology Officer", bio: "Florian Scheibmayer is a senior technology and transformation leader with deep experience across enterprise IT, service delivery, and large-scale operating models. He has worked closely with global enterprises and service providers on complex technology programs, with a focus on execution quality, delivery governance, and the structural factors that determine whether transformation efforts succeed or fail. His experience spans strategy through implementation, giving him a practical view of how decisions translate into operational outcomes.", imageId: "leader2" },
     { name: "Kiran Kommineni", role: "Head of Research", bio: "Lena's work in organizational psychology and data science fuels our industry-leading insights and methodologies.", imageId: "leader3" },
     { name: "Ulrich Meister", role: "Chief Operating Officer", bio: "Kenji excels at scaling operations globally, ensuring Planckpoint's seamless delivery and client satisfaction.", imageId: "leader4" },
 ];
@@ -567,6 +567,7 @@ export const SERVICE_CATEGORIES = [
         imageId: "industry-tech"
     }
 ]
+
 
 
 
