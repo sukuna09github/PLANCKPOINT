@@ -561,12 +561,13 @@ export const SERVICE_CATEGORIES = [
     {
         id: 'vendor-evaluations',
         name: 'Vendor Evaluations',
-        description: 'Receive unbiased, in-depth evaluations of technology vendors to ensure you select the right partners for your needs.',
+        description: "We conduct rigorous, evidence-based evaluations of technology vendors beyond narrative claims and simplified visual models. Each evaluation is grounded in execution reality, not positioning. Our vendor evaluation capabilities include: Experience delivered across various clients, projects, and scenarios. Execution capability assessment across delivery maturity, operating model resilience, and scalability. Talent and operating model analysis examining depth, stability, and alignment to the work required. Risk exposure mapping across delivery, dependency, concentration, and continuity dimensions. The outcome is a clear view of what is likely to perform, what is likely to fail, and the conditions that influence both.",
         icon: BarChart,
         products: ['propricing'],
         imageId: "industry-tech"
     }
 ]
+
 
 
 
