@@ -98,7 +98,7 @@ export default function AboutPage() {
       </section>
       
       <section className="py-20 lg:py-24 bg-background text-primary">
-        <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <div className="text-center">
               <h2 className="text-3xl md:text-4xl font-bold">Our Inspiration</h2>
@@ -116,7 +116,7 @@ export default function AboutPage() {
       <section id="leadership" className="py-20 lg:py-24 bg-gradient-to-br from-primary to-accent text-white">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
-            <div className="text-center mb-16">
+            <div className="text-center mb-16 max-w-none">
               <h2 className="text-3xl md:text-4xl font-bold">Leadership</h2>
               <p className="mt-4 text-lg text-primary-foreground/80">PlanckPoint is led by experienced researchers, strategists, and practitioners who have worked at the intersection of technology, transformation, and risk. Our team combines deep industry experience with analytical discipline. We understand how decisions are made in boardrooms, how programs fail in delivery, and where execution risk hides long before it becomes visible in outcomes. We work across strategy, technology, procurement, and transformation leadership, bringing perspectives shaped by real accountability and not theoretical models. This allows us to challenge assumptions, test claims, and apply judgment where data alone is insufficient.</p>
             </div>
@@ -126,7 +126,7 @@ export default function AboutPage() {
               const image = findImage(member.imageId);
               return (
                 <AnimatedSection key={member.name} delay={index * 0.1}>
-                  <Card className="text-center h-full bg-white/10 border-white/20 text-background backdrop-blur-sm">
+                  <Card className="text-center h-full bg-white/10 border-white/20 text-white backdrop-blur-sm shadow-2xl liquid-glass-hover">
                     <CardContent className="pt-6">
                       <div className="relative h-32 w-32 mx-auto overflow-hidden">
                         {image && <Image src={image.imageUrl} alt={member.name} fill className="object-cover" data-ai-hint={image.imageHint} />}
@@ -171,9 +171,3 @@ export default function AboutPage() {
     </main>
   );
 }
-
-    
-
-    
-
-
