@@ -333,7 +333,7 @@ export const GLOBAL_OFFICES = ["Australia", "Brazil", "Germany", "India", "Japan
 export const LEADERSHIP_TEAM = [
     { name: "Amit Dengle", role: "Founder & CEO", bio: "A visionary in human-tech dynamics, Evelyn founded Planckpoint to bridge the gap between innovation and its human impact.", imageId: "leader1" },
     { name: "Florian Scheibmayer", role: "Chief Technology Officer", bio: "With two decades in software architecture, Marcus leads the development of our groundbreaking product suite.", imageId: "leader2" },
-    { name: "Lena Petrova", role: "Head of Research", bio: "Lena's work in organizational psychology and data science fuels our industry-leading insights and methodologies.", imageId: "leader3" },
+    { name: "Kiran Kommineni", role: "Head of Research", bio: "Lena's work in organizational psychology and data science fuels our industry-leading insights and methodologies.", imageId: "leader3" },
     { name: "Kenji Tanaka", role: "Chief Operating Officer", bio: "Kenji excels at scaling operations globally, ensuring Planckpoint's seamless delivery and client satisfaction.", imageId: "leader4" },
 ];
 
@@ -567,6 +567,7 @@ export const SERVICE_CATEGORIES = [
         imageId: "industry-tech"
     }
 ]
+
 
 
 
