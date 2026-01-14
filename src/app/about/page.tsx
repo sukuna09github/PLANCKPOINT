@@ -20,7 +20,7 @@ export default function AboutPage() {
   };
 
   const values = [
-    { title: "Inspiration", description: "The Planck point represents the smallest meaningful unit of measurement; the point beyond which systems can no longer be described by approximation or surface observation. At that scale, assumptions break down and fundamentals matter. We see decisions the same way.\n\nMost enterprise choices are made using high-level abstractions: quadrants, scores, narratives, and averages. Those views are convenient, but they hide the forces that determine outcomes.\n\nPlanckPoint was created to operate at the equivalent of the Planck scale in strategic decisions, where execution capability, delivery constraints, talent realities, and risk signals become visible. This is the level at which success or failure is determined, long before it appears in dashboards or post-mortems. \n\nOur name reflects a simple belief: If a decision is material, it must be examined at its most fundamental level. That is where clarity begins. That is where PlanckPoint operates." },
+    { title: "Inspiration", description: "Inspiration at PlanckPoint comes from intellectual honesty and first-principles thinking. By operating at the deepest level of strategic decision-making, we empower leaders to question inherited assumptions, rethink conventional approaches, and design strategies that are both ambitious and executable. Our work encourages confidence rooted in understanding, not optimism." },
     { title: "Integrity", description: "Our work is guided by strong ethical principles and a commitment to intellectual honesty." },
     { title: "Clarity", description: "We seek truth and provide clarity through rigorous, data-driven analysis." },
   ];
