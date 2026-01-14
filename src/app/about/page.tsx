@@ -143,21 +143,21 @@ export default function AboutPage() {
         </div>
       </section>
       
-      <section id="advisors" className="py-20 lg:py-24 bg-gradient-to-r from-primary to-accent text-background">
+      <section id="advisors" className="py-20 lg:py-24 bg-background text-primary">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-white">Board of Advisors</h2>
-              <p className="mt-4 text-lg text-primary-foreground/80 max-w-2xl mx-auto">Industry luminaries who provide strategic counsel and invaluable perspective.</p>
+              <h2 className="text-3xl md:text-4xl font-bold">Board of Advisors</h2>
+              <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">Industry luminaries who provide strategic counsel and invaluable perspective.</p>
             </div>
           </AnimatedSection>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {BOARD_OF_ADVISORS.map((advisor, index) => (
               <AnimatedSection key={advisor.name} delay={index * 0.1}>
-                <Card className="text-center bg-white/10 border-white/20 text-background backdrop-blur-sm">
+                <Card className="text-center bg-white shadow-lg">
                   <CardContent className="p-6">
-                    <h3 className="text-xl font-bold text-white">{advisor.name}</h3>
-                    <p className="text-accent-foreground/80">{advisor.role}</p>
+                    <h3 className="text-xl font-bold text-primary">{advisor.name}</h3>
+                    <p className="text-muted-foreground">{advisor.role}</p>
                   </CardContent>
                 </Card>
               </AnimatedSection>
@@ -171,5 +171,3 @@ export default function AboutPage() {
     </main>
   );
 }
-
-    
