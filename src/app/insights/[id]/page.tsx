@@ -216,7 +216,7 @@ Looking ahead, the landscape of work and technology continues to evolve at a rap
       </section>
 
       {/* Content Section */}
-      <section className="py-12 md:py-16 bg-gradient-to-r from-primary to-accent">
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -224,11 +224,11 @@ Looking ahead, the landscape of work and technology continues to evolve at a rap
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <Card className="bg-white/10 backdrop-blur-md border border-white/20 shadow-lg">
-              <CardContent className="p-8 md:p-12">
+            <Card className="bg-transparent border-0 shadow-none">
+              <CardContent className="p-0">
                 
                   <div className="prose prose-lg max-w-none">
-                    <div className="text-lg font-body text-white/90 leading-relaxed space-y-6 font-normal">
+                    <div className="text-lg font-body text-foreground leading-relaxed space-y-6 font-normal">
                       {fullContent.split('\n\n').map((paragraph, index) => (
                         <p key={index} className="mb-6">
                           {paragraph.trim()}
