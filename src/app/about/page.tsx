@@ -141,8 +141,8 @@ export default function AboutPage() {
                         {image && <Image src={image.imageUrl} alt={member.name} fill className="object-cover" data-ai-hint={image.imageHint} />}
                       </div>
                       <h3 className="mt-4 text-xl font-bold text-white">{member.name}</h3>
-                      <p className="text-accent-foreground font-medium">{member.role}</p>
-                      <p className="mt-2 text-sm text-primary-foreground/80">{member.bio}</p>
+                      <p className="text-accent-foreground font-medium">founder ,planckpoint</p>
+                      <p className="mt-2 text-sm text-primary-foreground/80">Amit Dengle is a strategy, research, and transformation leader with over two decades of experience advising enterprises on high-stakes technology and operating model decisions. Before founding PlanckPoint, Amit held senior leadership roles in global research and advisory firms, where he worked closely with CIOs, boards, and executive teams across banking, insurance, telecom, and large enterprises. His work has consistently focused on areas where decisions carry long-term risk, vendor selection, large-scale transformation, sourcing strategy, and execution governance.</p>
                     </CardContent>
                   </Card>
                 </AnimatedSection>
