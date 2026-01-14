@@ -332,7 +332,7 @@ export const GLOBAL_OFFICES = ["Australia", "Brazil", "Germany", "India", "Japan
 
 export const LEADERSHIP_TEAM = [
     { name: "Amit Dengle", role: "Founder & CEO", bio: "A visionary in human-tech dynamics, Evelyn founded Planckpoint to bridge the gap between innovation and its human impact.", imageId: "leader1" },
-    { name: "Marcus Thorne", role: "Chief Technology Officer", bio: "With two decades in software architecture, Marcus leads the development of our groundbreaking product suite.", imageId: "leader2" },
+    { name: "Florian Scheibmayer", role: "Chief Technology Officer", bio: "With two decades in software architecture, Marcus leads the development of our groundbreaking product suite.", imageId: "leader2" },
     { name: "Lena Petrova", role: "Head of Research", bio: "Lena's work in organizational psychology and data science fuels our industry-leading insights and methodologies.", imageId: "leader3" },
     { name: "Kenji Tanaka", role: "Chief Operating Officer", bio: "Kenji excels at scaling operations globally, ensuring Planckpoint's seamless delivery and client satisfaction.", imageId: "leader4" },
 ];
@@ -561,12 +561,13 @@ export const SERVICE_CATEGORIES = [
     {
         id: 'vendor-evaluations',
         name: 'Vendor Evaluations',
-        description: "We conduct rigorous, evidence-based evaluations of technology vendors beyond narrative claims and simplified visual models. Each evaluation is grounded in execution reality, not positioning. Our vendor evaluation capabilities include: Experience delivered across various clients, projects, and scenarios. Execution capability assessment across delivery maturity, operating model resilience, and scalability. Talent and operating model analysis examining depth, stability, and alignment to the work required. Risk exposure mapping across delivery, dependency, concentration, and continuity dimensions. The outcome is a clear view of what is likely to perform, what is likely to fail, and the conditions that influence both.",
+        description: 'We conduct rigorous, evidence-based evaluations of technology vendors beyond narrative claims and simplified visual models. Each evaluation is grounded in execution reality, not positioning. Our vendor evaluation capabilities include: Experience delivered across various clients, projects, and scenarios. Execution capability assessment across delivery maturity, operating model resilience, and scalability. Talent and operating model analysis examining depth, stability, and alignment to the work required. Risk exposure mapping across delivery, dependency, concentration, and continuity dimensions. The outcome is a clear view of what is likely to perform, what is likely to fail, and the conditions that influence both.',
         icon: BarChart,
         products: ['propricing'],
         imageId: "industry-tech"
     }
 ]
+
 
 
 
