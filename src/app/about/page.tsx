@@ -121,7 +121,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section id="leadership" className="py-20 lg:py-24 relative text-white">
+      <section id="leadership" className="py-20 lg:py-24 relative text-white min-h-[900px] lg:min-h-0">
         <Image
           src={leadershipBgUrl}
           alt="Abstract teal background"
