@@ -97,7 +97,7 @@ export default function AboutPage() {
         </div>
       </section>
       
-      <section className="py-20 lg:py-24 bg-white text-primary">
+      <section className="py-20 lg:py-24 bg-background text-primary">
         <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <div className="text-center">
@@ -113,7 +113,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section id="leadership" className="py-20 lg:py-24 bg-background border-t">
+      <section id="leadership" className="py-20 lg:py-24 bg-white border-t">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <div className="text-center mb-16">
