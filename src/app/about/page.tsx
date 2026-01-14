@@ -83,8 +83,9 @@ export default function AboutPage() {
             <AnimatedSection>
               <div className="text-white [text-shadow:0_1px_3px_rgba(0,0,0,0.4)]">
                 <h2 className="text-3xl font-bold">Who We Are</h2>
-                <p className="mt-4 text-white/90 text-lg">Planckpoint was founded on the principle that technology's true potential is only unlocked when its human dimension is fully understood and integrated. We provide the methodologies and tools to measure what has long been considered immeasurable: the nuanced, complex, and powerful impact of people in the technological ecosystem.</p>
-                <p className="mt-4 text-white/90 text-lg">Our mission is to empower organizations to build better products, foster healthier work cultures, and make more informed strategic decisions by placing human insight at the core of their operations.</p>
+                <p className="mt-4 text-white/90 text-lg">PlanckPoint is where technology decisions are examined at their most fundamental, critical level. We provide decision intelligence for technology and strategy choices, helping enterprises make high-stakes technology decisions using data most models ignore.</p>
+                <p className="mt-4 text-white/90 text-lg">We go beyond analyst narratives and visual shortcuts, integrating execution signals, delivery risk, and organisational realities into evidence-based decision frameworks. Using AI-assisted analysis combined with structured expert judgment, we show leaders what is likely to work, what is likely to fail, and why, even before commitments become irreversible.</p>
+                <p className="mt-4 text-white/90 text-lg">PlanckPoint is decision intelligence for strategy and technology choices that carry real consequences.</p>
               </div>
             </AnimatedSection>
             <div className="min-h-[450px] lg:min-h-[500px]">
