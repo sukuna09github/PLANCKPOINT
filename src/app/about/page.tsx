@@ -3,7 +3,7 @@
 
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
-import { LEADERSHIP_TEAM, BOARD_OF_ADVISORS } from "@/lib/constants";
+import { LEADERSHIP_TEAM } from "@/lib/constants";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { AnimatedSection } from "@/components/animated-section";
 import { GlobalPresence } from "@/components/pages/home/global-presence";
@@ -152,29 +152,6 @@ export default function AboutPage() {
         </div>
       </section>
       
-      <section id="advisors" className="py-20 lg:py-24 bg-background text-primary">
-        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <AnimatedSection>
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold">Board of Advisors</h2>
-              <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">Industry luminaries who provide strategic counsel and invaluable perspective.</p>
-            </div>
-          </AnimatedSection>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {BOARD_OF_ADVISORS.map((advisor, index) => (
-              <AnimatedSection key={advisor.name} delay={index * 0.1}>
-                <Card className="text-center bg-white shadow-lg">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold text-primary">{advisor.name}</h3>
-                    <p className="text-muted-foreground">{advisor.role}</p>
-                  </CardContent>
-                </Card>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <GlobalPresence />
 
     </main>
