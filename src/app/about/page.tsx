@@ -121,7 +121,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section id="leadership" className="py-20 lg:py-24 relative text-white min-h-[900px] lg:min-h-0">
+      <section id="leadership" className="py-20 lg:py-24 relative text-white min-h-[900px] lg:min-h-[520px]">
         <Image
           src={leadershipBgUrl}
           alt="Abstract teal background"
@@ -145,7 +145,7 @@ export default function AboutPage() {
                   <div className="group liquid-glass-card">
                     <div className="liquid-glass-card-content">
                       <div className="liquid-glass-card-header">
-                          {image && <Image src={image.imageUrl} alt={member.name} width={80} height={120} className="object-cover" data-ai-hint={image.imageHint} />}
+                          {image && <Image src={image.imageUrl} alt={member.name} width={120} height={120} className="object-cover" data-ai-hint={image.imageHint} />}
                           <h3 className="mt-4 text-xl font-bold text-white text-center">{member.name}</h3>
                           <p className="text-accent-foreground font-medium text-center">{member.role}</p>
                       </div>

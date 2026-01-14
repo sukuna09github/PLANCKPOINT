@@ -219,12 +219,12 @@
 }
 
 .liquid-glass-card:hover {
-  @apply h-[450px] shadow-2xl;
+  @apply h-[480px] shadow-2xl;
   box-shadow: 0 16px 60px 0 rgba(0, 0, 0, 0.3);
 }
 
 .liquid-glass-card-content {
-  @apply p-6 h-full flex flex-col items-center justify-center relative z-10;
+  @apply p-6 h-full flex flex-col items-center justify-start pt-8 relative z-10;
 }
 
 .liquid-glass-card-header {
