@@ -210,7 +210,8 @@
 }
 
 .liquid-glass-card {
-  @apply relative rounded-lg overflow-hidden h-[220px] transition-all duration-500;
+  @apply relative rounded-lg overflow-hidden transition-all duration-500;
+  height: 280px;
   transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
@@ -219,7 +220,7 @@
 }
 
 .liquid-glass-card:hover {
-  @apply h-[480px] shadow-2xl;
+  height: 520px;
   box-shadow: 0 16px 60px 0 rgba(0, 0, 0, 0.3);
 }
 
