@@ -77,8 +77,15 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section id="who-we-are" className="py-20 lg:py-24 bg-background relative">
-        <div className="absolute inset-0 moving-gradient -z-0"></div>
+      <section id="who-we-are" className="py-20 lg:py-24 relative">
+        <Image
+          src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31"
+          alt="Teal abstract technology background"
+          fill
+          className="object-cover -z-10"
+          data-ai-hint="teal abstract technology"
+        />
+        <div className="absolute inset-0 bg-primary/70 -z-10"></div>
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
             <AnimatedSection>
