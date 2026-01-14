@@ -22,7 +22,7 @@ export default function AboutPage() {
   const values = [
     { title: "Inspiration", description: "Inspiration at PlanckPoint comes from intellectual honesty and first-principles thinking. By operating at the deepest level of strategic decision-making, we empower leaders to question inherited assumptions, rethink conventional approaches, and design strategies that are both ambitious and executable. Our work encourages confidence rooted in understanding, not optimism." },
     { title: "Integrity", description: "Integrity is enforced through evidence-based analysis and methodological rigor. Our insights are derived from AI-assisted signal evaluation combined with structured expert judgment, ensuring conclusions are grounded in observable realities rather than assumptions or consensus narratives. We prioritise accuracy and transparency, exposing risk and uncertainty so leaders can make fully informed decisions." },
-    { title: "Clarity", description: "We seek truth and provide clarity through rigorous, data-driven analysis." },
+    { title: "Clarity", description: "Clarity at PlanckPoint is achieved by reducing complex strategic technology decisions to their fundamental execution variables. We move beyond abstract frameworks and surface-level metrics to analyse delivery risk, organisational capability, and real-world constraints. This approach enables leaders to evaluate feasibility, failure modes, and long-term impact before decisions become irreversible." },
   ];
   
   const heroImageUrl = "https://images.pexels.com/photos/2098428/pexels-photo-2098428.jpeg";
@@ -171,5 +171,7 @@ export default function AboutPage() {
     </main>
   );
 }
+
+    
 
     
