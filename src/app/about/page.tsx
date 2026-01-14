@@ -26,7 +26,7 @@ export default function AboutPage() {
   ];
   
   const heroImageUrl = "https://images.pexels.com/photos/2098428/pexels-photo-2098428.jpeg";
-  const leadershipBgUrl = "https://images.pexels.com/photos/3293148/pexels-photo-3293148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+  const leadershipBgUrl = "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkYXRhJTIwbmV0d29ya3xlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080";
 
   return (
     <main>
@@ -142,16 +142,18 @@ export default function AboutPage() {
               const image = findImage(member.imageId);
               return (
                 <AnimatedSection key={member.name} delay={index * 0.1}>
-                  <Card className="text-center h-full bg-white/10 border-white/20 text-white backdrop-blur-sm shadow-2xl liquid-glass-hover">
-                    <CardContent className="pt-6">
-                      <div className="relative h-32 w-32 mx-auto overflow-hidden">
-                        {image && <Image src={image.imageUrl} alt={member.name} fill className="object-cover" data-ai-hint={image.imageHint} />}
+                  <div className="group liquid-glass-card">
+                    <div className="liquid-glass-card-content">
+                      <div className="liquid-glass-card-header">
+                          {image && <Image src={image.imageUrl} alt={member.name} width={80} height={80} className="rounded-full object-cover" data-ai-hint={image.imageHint} />}
+                          <h3 className="mt-4 text-xl font-bold text-white text-center">{member.name}</h3>
+                          <p className="text-accent-foreground font-medium text-center">{member.role}</p>
                       </div>
-                      <h3 className="mt-4 text-xl font-bold text-white">{member.name}</h3>
-                      <p className="text-accent-foreground font-medium">{member.role}</p>
-                      <p className="mt-2 text-sm text-primary-foreground/80">{member.bio}</p>
-                    </CardContent>
-                  </Card>
+                      <div className="liquid-glass-card-bio">
+                          <p className="text-sm text-primary-foreground/80">{member.bio}</p>
+                      </div>
+                    </div>
+                  </div>
                 </AnimatedSection>
               );
             })}

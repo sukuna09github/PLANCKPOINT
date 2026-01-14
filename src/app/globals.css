@@ -209,32 +209,48 @@
   }
 }
 
-.liquid-glass-hover {
-    position: relative;
-    overflow: hidden;
+.liquid-glass-card {
+  @apply relative rounded-lg overflow-hidden h-[220px] transition-all duration-500;
+  transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
 }
 
-.liquid-glass-hover::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 200%;
-    padding-bottom: 200%;
-    border-radius: 45%;
-    background: hsla(0, 0%, 100%, 0.1);
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.5);
-    transition: transform 0.7s ease, opacity 0.7s ease;
-    z-index: 0;
+.liquid-glass-card:hover {
+  @apply h-[450px] shadow-2xl;
+  box-shadow: 0 16px 60px 0 rgba(0, 0, 0, 0.3);
 }
 
-.liquid-glass-hover:hover::before {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1) rotate(360deg);
+.liquid-glass-card-content {
+  @apply p-6 h-full flex flex-col items-center justify-center relative z-10;
 }
 
-.liquid-glass-hover > * {
-    position: relative;
-    z-index: 1;
+.liquid-glass-card-header {
+    @apply flex flex-col items-center justify-center transition-all duration-500;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
 }
+.group:hover .liquid-glass-card-header {
+    @apply -translate-y-4;
+}
+
+.liquid-glass-card-bio {
+  @apply opacity-0 max-h-0 overflow-hidden transition-all duration-500;
+  transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.group:hover .liquid-glass-card-bio {
+  @apply opacity-100 max-h-full mt-4;
+}
+
+.liquid-glass-card::before {
+  content: '';
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-0 h-0 rounded-full transition-all duration-700 ease-in-out;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%);
+}
+
+.liquid-glass-card:hover::before {
+  @apply w-[400px] h-[400px];
+}
+
