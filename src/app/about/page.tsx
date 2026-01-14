@@ -68,7 +68,7 @@ export default function AboutPage() {
         <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <div className="text-center">
-              <h2 className="text-3xl md:text-4xl font-bold">Our Guiding Philosophy</h2>
+              <h2 className="text-3xl md:text-4xl font-normal">Our Guiding Philosophy</h2>
               <p className="mt-6 text-lg md:text-xl max-w-3xl mx-auto">
                 At Planckpoint, we believe in a pragmatic approach to innovation. Our strategy is simple yet powerful: dedicate 20% of our efforts to pioneering research that pushes boundaries, and channel a focused 80% into robust production that delivers real-world value to our clients today. This balance ensures we remain at the cutting edge while delivering reliable, impactful solutions.
               </p>
