@@ -207,8 +207,8 @@ Looking ahead, the landscape of work and technology continues to evolve at a rap
                 src={insight.mainImage}
                 alt={insight.title || 'Insight'}
                 className="w-full h-auto md:h-96 object-cover"
-                width={800}
-                height={400}
+                width={1200}
+                height={675}
               />
             </motion.div>
           )}
@@ -281,7 +281,7 @@ Looking ahead, the landscape of work and technology continues to evolve at a rap
                               alt={relatedInsight.title || 'Related insight'}
                               className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                               width={400}
-                              height={192}
+                              height={225}
                             />
                           </div>
                         )}

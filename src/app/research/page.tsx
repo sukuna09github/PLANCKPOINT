@@ -118,7 +118,7 @@ const ResearchPage: React.FC = () => {
                       {otherInsights.map((insight, index) => insight && (
                           <AnimatedSection key={insight._id} delay={0.2 + index * 0.1}>
                             <Link href={`/insights/${insight._id}`} className="block h-full">
-                              <div className="relative aspect-[4/3] overflow-hidden group h-full">
+                              <div className="relative aspect-video overflow-hidden group h-full">
                                   <Image
                                       src={insight.mainImage}
                                       alt={insight.title}
@@ -320,9 +320,9 @@ const ResearchPage: React.FC = () => {
                             <Image
                               src={insight.mainImage}
                               alt={insight.title || 'Research article'}
-                              className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-500"
+                              className="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-500"
                               width={400}
-                              height={160}
+                              height={225}
                             />
                           </div>
                         )}
@@ -421,3 +421,4 @@ export default ResearchPage;
     
 
     
+

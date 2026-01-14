@@ -31,7 +31,7 @@ export function WhatWeDo() {
             return (
               <AnimatedSection key={item.title} delay={index * 0.1}>
                 <Link href="#" className="block group h-full">
-                  <Card className="h-full flex flex-col text-center transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2 bg-card rounded-none border-0 overflow-hidden relative aspect-[4/5]">
+                  <Card className="h-full flex flex-col text-center transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2 bg-card border-0 overflow-hidden relative aspect-[3/4]">
                     {image && (
                       <Image
                         src={image.imageUrl}
