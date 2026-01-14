@@ -545,7 +545,7 @@ export const SERVICE_CATEGORIES = [
     {
         id: 'research',
         name: 'Research',
-        description: 'Leverage our quantitative and qualitative research methodologies to gain deep insights into market dynamics and user behavior.',
+        description: 'AI research covering AI markets, readiness, adoption maturity, use-case viability, and operational risk beyond experimentation. Go-to-market assessments evaluating market readiness, positioning credibility, pricing logic, and sales execution risk. Competitive analysis that examines true capability differentiation, delivery strength, and structural advantages - not just feature parity.',
         icon: Lightbulb,
         products: ['atomicai', 'beyondquadrants'],
         imageId: "industry-finance"
@@ -567,6 +567,7 @@ export const SERVICE_CATEGORIES = [
         imageId: "industry-tech"
     }
 ]
+
 
 
 
