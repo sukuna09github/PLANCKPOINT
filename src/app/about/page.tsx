@@ -22,7 +22,7 @@ export default function AboutPage() {
   const values = [
     { title: "Clarity", description: "We seek truth and provide clarity through rigorous, data-driven analysis." },
     { title: "Integrity", description: "Our work is guided by strong ethical principles and a commitment to intellectual honesty." },
-    { title: "Impact", description: "We are dedicated to creating positive, measurable impact for our clients and society." },
+    { title: "Inspiration", description: "We are dedicated to creating positive, measurable impact for our clients and society." },
   ];
   
   const heroImageUrl = "https://images.pexels.com/photos/2098428/pexels-photo-2098428.jpeg";
