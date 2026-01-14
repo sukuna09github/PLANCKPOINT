@@ -1,4 +1,5 @@
 
+
 import type { LucideIcon } from "lucide-react";
 import { Lightbulb, Target, Users, Bot, Star, BarChart, Gem, Briefcase, DraftingCompass, Cpu, Code, BrainCircuit, Building, Network, Shield, Handshake, Landmark, BriefcaseBusiness, TrendingUp, UsersRound, Palette, Scale, HeartHandshake, Rocket, Banknote } from "lucide-react";
 
@@ -540,39 +541,32 @@ export const mockResearchData = [
   },
 ];
     
-export const INDUSTRY_SOLUTIONS = [
+export const SERVICE_CATEGORIES = [
     {
-        id: 'finance',
-        name: 'Finance',
-        description: 'Optimize risk management, fraud detection, and algorithmic trading with our advanced AI and data analytics platforms.',
-        icon: Banknote,
-        products: ['atomicai', 'disquo', 'propricing'],
+        id: 'research',
+        name: 'Research',
+        description: 'Leverage our quantitative and qualitative research methodologies to gain deep insights into market dynamics and user behavior.',
+        icon: Lightbulb,
+        products: ['atomicai', 'beyondquadrants'],
         imageId: "industry-finance"
     },
     {
-        id: 'healthcare',
-        name: 'Healthcare',
-        description: 'Enhance patient outcomes, streamline hospital operations, and accelerate medical research with our specialized healthcare solutions.',
-        icon: HeartHandshake,
-        products: ['elwis', 'skillorbit'],
+        id: 'consulting',
+        name: 'Consulting',
+        description: 'Partner with our experts to develop and implement data-driven strategies that align with your business objectives.',
+        icon: Users,
+        products: ['disquo', 'elwis', 'skillorbit'],
         imageId: "industry-healthcare"
     },
     {
-        id: 'technology',
-        name: 'Technology',
-        description: 'Accelerate innovation, optimize development cycles, and gain a competitive edge with our suite of tools for the tech industry.',
-        icon: Rocket,
-        products: ['beyondquadrants', 'atomicai', 'skillorbit'],
+        id: 'vendor-evaluations',
+        name: 'Vendor Evaluations',
+        description: 'Receive unbiased, in-depth evaluations of technology vendors to ensure you select the right partners for your needs.',
+        icon: BarChart,
+        products: ['propricing'],
         imageId: "industry-tech"
-    },
-    {
-        id: 'legal',
-        name: 'Legal',
-        description: 'Transform your legal practice with AI-powered document analysis, case management, and predictive legal analytics.',
-        icon: Scale,
-        products: ['elwis', 'disquo'],
-        imageId: "industry-legal"
     }
 ]
+
 
 

@@ -8,7 +8,7 @@ import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { PRODUCTS, INDUSTRY_SOLUTIONS } from "@/lib/constants";
+import { PRODUCTS, SERVICE_CATEGORIES } from "@/lib/constants";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { DecipherText } from '@/components/decipher-text';
 import { Button } from '@/components/ui/button';
@@ -271,16 +271,16 @@ const ServicesPage: React.FC = () => {
       <section className="py-16 md:py-24 bg-gradient-to-b from-primary to-secondary">
         <div className="max-w-[100rem] mx-auto px-6 md:px-12">
             <AnimatedSection className="text-center mb-16">
-                <h2 className="text-4xl font-headline font-bold text-primary-foreground mb-6">Solutions by Industry</h2>
+                <h2 className="text-4xl font-headline font-bold text-primary-foreground mb-6">Our Services</h2>
                 <p className="text-lg font-body text-primary-foreground/80 max-w-3xl mx-auto">
-                    Our product suite is engineered to address the distinct challenges of various business domains, from high-level strategy to on-the-ground operations.
+                    We offer a range of services designed to provide strategic clarity and drive impactful results for your organization.
                 </p>
             </AnimatedSection>
 
-            <Tabs defaultValue={INDUSTRY_SOLUTIONS[0].id} className="w-full">
+            <Tabs defaultValue={SERVICE_CATEGORIES[0].id} className="w-full">
                 <AnimatedSection>
-                    <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 h-auto bg-white/10 text-white">
-                        {INDUSTRY_SOLUTIONS.map(category => (
+                    <TabsList className="grid w-full grid-cols-3 h-auto bg-white/10 text-white">
+                        {SERVICE_CATEGORIES.map(category => (
                             <TabsTrigger key={category.id} value={category.id} className="group flex flex-col sm:flex-row gap-2 items-center py-3 data-[state=active]:bg-white/20 data-[state=active]:shadow-lg data-[state=active]:text-white relative overflow-hidden">
                                 <span className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 backdrop-blur-sm"></span>
                                 <span className="relative z-10 text-sm font-medium">{category.name}</span>
@@ -289,7 +289,7 @@ const ServicesPage: React.FC = () => {
                     </TabsList>
                 </AnimatedSection>
 
-                {INDUSTRY_SOLUTIONS.map(category => {
+                {SERVICE_CATEGORIES.map(category => {
                     const categoryImage = findProductImage(category.imageId);
                     return (
                         <TabsContent key={category.id} value={category.id} className="mt-8">
@@ -304,6 +304,7 @@ const ServicesPage: React.FC = () => {
                                             
                                             <h3 className="text-2xl font-bold text-white mb-3">{category.name}</h3>
                                             <p className="text-white/70 mb-6">{category.description}</p>
+                                            <p className="font-semibold text-white mb-2">Relevant Products:</p>
                                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                                 {category.products.map(productId => {
                                                     const product = PRODUCTS.find(p => p.id === productId);
@@ -466,6 +467,7 @@ export default ServicesPage;
     
 
     
+
 
 
 
