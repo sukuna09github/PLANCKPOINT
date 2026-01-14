@@ -22,10 +22,11 @@ export default function AboutPage() {
   const values = [
     { title: "Inspiration", description: "Inspiration at PlanckPoint comes from intellectual honesty and first-principles thinking. By operating at the deepest level of strategic decision-making, we empower leaders to question inherited assumptions, rethink conventional approaches, and design strategies that are both ambitious and executable. Our work encourages confidence rooted in understanding, not optimism." },
     { title: "Integrity", description: "Integrity is enforced through evidence-based analysis and methodological rigor. Our insights are derived from AI-assisted signal evaluation combined with structured expert judgment, ensuring conclusions are grounded in observable realities rather than assumptions or consensus narratives. We prioritise accuracy and transparency, exposing risk and uncertainty so leaders can make fully informed decisions." },
-    { title: "Clarity", description: "Clarity at PlanckPoint is achieved by reducing complex strategic technology decisions to their fundamental execution variables. We move beyond abstract frameworks and surface-level metrics to analyse delivery risk, organisational capability, and real-world constraints. This approach enables leaders to evaluate feasibility, failure modes, and long-term impact before decisions become irreversible." },
+    { title: "Clarity", description: "Clarity at PlanckPoint is achieved by reducing complex strategic technology decisions to their fundamental execution variables. We move beyond abstract frameworks and surface-level metrics to analyse delivery risk, organisational capability, and real-world constraints. This approach enables leaders to evaluate feasibility, failure modes, and long-term impact before decisions become irreversible" },
   ];
   
   const heroImageUrl = "https://images.pexels.com/photos/2098428/pexels-photo-2098428.jpeg";
+  const leadershipBgUrl = "https://images.pexels.com/photos/3293148/pexels-photo-3293148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
 
   return (
     <main>
@@ -103,9 +104,9 @@ export default function AboutPage() {
             <div className="text-center">
               <h2 className="text-3xl md:text-4xl font-bold">Our Inspiration</h2>
               <div className="mt-6 text-lg md:text-xl space-y-4 text-center">
-                <p>The Planck point represents the smallest meaningful unit of measurement; the point beyond which systems can no longer be described by approximation or surface observation. At that scale, assumptions break down and fundamentals matter. We see decisions the same way.</p>
-                <p>Most enterprise choices are made using high-level abstractions: quadrants, scores, narratives, and averages. Those views are convenient, but they hide the forces that determine outcomes.</p>
-                <p>PlanckPoint was created to operate at the equivalent of the Planck scale in strategic decisions, where execution capability, delivery constraints, talent realities, and risk signals become visible. This is the level at which success or failure is determined, long before it appears in dashboards or post-mortems.</p>
+                <p>Inspiration at PlanckPoint comes from intellectual honesty and first-principles thinking. By operating at the deepest level of strategic decision-making, we empower leaders to question inherited assumptions, rethink conventional approaches, and design strategies that are both ambitious and executable. Our work encourages confidence rooted in understanding, not optimism.</p>
+                <p>Integrity is enforced through evidence-based analysis and methodological rigor. Our insights are derived from AI-assisted signal evaluation combined with structured expert judgment, ensuring conclusions are grounded in observable realities rather than assumptions or consensus narratives. We prioritise accuracy and transparency, exposing risk and uncertainty so leaders can make fully informed decisions.</p>
+                <p>Clarity at PlanckPoint is achieved by reducing complex strategic technology decisions to their fundamental execution variables. We move beyond abstract frameworks and surface-level metrics to analyse delivery risk, organisational capability, and real-world constraints. This approach enables leaders to evaluate feasibility, failure modes, and long-term impact before decisions become irreversible</p>
                 <p>Our name reflects a simple belief: If a decision is material, it must be examined at its most fundamental level. That is where clarity begins. That is where PlanckPoint operates.</p>
               </div>
             </div>
@@ -113,8 +114,16 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section id="leadership" className="py-20 lg:py-24 bg-gradient-to-br from-primary to-accent text-white">
-        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section id="leadership" className="py-20 lg:py-24 relative text-white">
+        <Image
+          src={leadershipBgUrl}
+          alt="Abstract teal background"
+          fill
+          className="object-cover"
+          data-ai-hint="abstract teal"
+        />
+        <div className="absolute inset-0 bg-primary/70"></div>
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
           <AnimatedSection>
             <div className="text-center mb-16 max-w-none">
               <h2 className="text-3xl md:text-4xl font-bold">Leadership</h2>
