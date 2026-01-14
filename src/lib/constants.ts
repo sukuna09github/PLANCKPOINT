@@ -575,3 +575,4 @@ export const INDUSTRY_SOLUTIONS = [
     }
 ]
 
+
