@@ -553,7 +553,7 @@ export const SERVICE_CATEGORIES = [
     {
         id: 'consulting',
         name: 'Consulting',
-        description: 'Partner with our experts to develop and implement data-driven strategies that align with your business objectives.',
+        description: 'We help leadership teams translate insight into decisions that are structured, defensible, and executable. Our consulting work focuses on decision quality, risk exposure, and governance — not delivery management. Our consulting capabilities include: Decision structuring and option analysis to clarify trade-offs, dependencies, and failure modes before commitments are made. Transformation risk diagnostics identifying execution bottlenecks across people, process, platform, and partners. Decision governance and assurance supporting executive, board, and risk committee review with clear evidence and accountability. The focus is not activity. It is an informed judgment under uncertainty.',
         icon: Users,
         products: ['disquo', 'elwis', 'skillorbit'],
         imageId: "industry-healthcare"
@@ -567,6 +567,7 @@ export const SERVICE_CATEGORIES = [
         imageId: "industry-tech"
     }
 ]
+
 
 
 
