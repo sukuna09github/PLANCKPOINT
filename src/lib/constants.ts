@@ -5,7 +5,7 @@ import { Lightbulb, Target, Users, Bot, Star, BarChart, Gem, Briefcase, Drafting
 export const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/products", label: "Products" },
-  { href: "/solutions", label: "Solutions" },
+  { href: "/services", label: "Services" },
   { href: "/insights", label: "Insights" },
   { href: "/research", label: "Research" },
   { href: "/about", label: "About Us" },
@@ -574,3 +574,4 @@ export const INDUSTRY_SOLUTIONS = [
         imageId: "industry-legal"
     }
 ]
+

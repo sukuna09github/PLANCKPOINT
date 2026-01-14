@@ -18,7 +18,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 
 
-const SolutionsPage: React.FC = () => {
+const ServicesPage: React.FC = () => {
   const products = PRODUCTS.slice(0, 6);
   const [loading, setLoading] = useState(true);
   const [animatingHeaders, setAnimatingHeaders] = useState<Set<string>>(new Set());
@@ -177,7 +177,7 @@ const SolutionsPage: React.FC = () => {
                     >
                       {/* Glassmorphism Card */}
                        <Link
-                        href={isActive ? `/solutions#${product.id}` : '#'}
+                        href={isActive ? `/services#${product.id}` : '#'}
                         onClick={(e) => !isActive && e.preventDefault()}
                         className={cn(`group w-full h-full overflow-hidden shadow-2xl relative`, isActive ? 'cursor-pointer' : 'cursor-grab active:cursor-grabbing')}
                       >
@@ -407,7 +407,7 @@ const SolutionsPage: React.FC = () => {
                         viewport={{ once: true }}
                         className="flex flex-col sm:flex-row gap-3 mt-6"
                       >
-                        <Link href={`/solutions#${product.id}`} className="text-white font-semibold hover:underline flex items-center">
+                        <Link href={`/services#${product.id}`} className="text-white font-semibold hover:underline flex items-center">
                           <span className="text-white font-semibold hover:underline flex items-center">Learn More <ArrowRight className="ml-2 h-4 w-4" /></span>
                         </Link>
                       </motion.div>
@@ -461,11 +461,12 @@ const SolutionsPage: React.FC = () => {
   );
 };
 
-export default SolutionsPage;
+export default ServicesPage;
 
     
 
     
+
 
 
 
