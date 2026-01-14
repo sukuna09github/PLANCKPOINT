@@ -116,20 +116,21 @@ export default function AboutPage() {
                 <p>Clarity at PlanckPoint is achieved by reducing complex strategic technology decisions to their fundamental execution variables. We move beyond abstract frameworks and surface-level metrics to analyse delivery risk, organisational capability, and real-world constraints. This approach enables leaders to evaluate feasibility, failure modes, and long-term impact before decisions become irreversible</p>
                 <p>Our name reflects a simple belief: If a decision is material, it must be examined at its most fundamental level. That is where clarity begins. That is where PlanckPoint operates.</p>
               </div>
-            </div>
-          </AnimatedSection>
+            </AnimatedSection>
         </div>
       </section>
 
-      <section id="leadership" className="py-20 lg:py-24 relative text-white min-h-[900px] lg:min-h-[750px]">
-        <Image
-          src={leadershipBgUrl}
-          alt="Abstract teal background"
-          fill
-          className="object-cover"
-          data-ai-hint="abstract teal"
-        />
-        <div className="absolute inset-0 bg-primary/70"></div>
+      <section id="leadership" className="py-20 lg:py-24 relative text-white overflow-hidden">
+        <div className="fixed inset-0 -z-10">
+            <Image
+              src={leadershipBgUrl}
+              alt="Abstract teal background"
+              fill
+              className="object-cover"
+              data-ai-hint="abstract teal"
+            />
+            <div className="absolute inset-0 bg-primary/70"></div>
+        </div>
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
           <AnimatedSection>
             <div className="text-center mb-16 max-w-none">
