@@ -145,7 +145,7 @@ export default function AboutPage() {
                   <div className="group liquid-glass-card">
                     <div className="liquid-glass-card-content">
                       <div className="liquid-glass-card-header">
-                          {image && <Image src={image.imageUrl} alt={member.name} width={80} height={80} className="rounded-full object-cover" data-ai-hint={image.imageHint} />}
+                          {image && <Image src={image.imageUrl} alt={member.name} width={80} height={80} className="object-cover" data-ai-hint={image.imageHint} />}
                           <h3 className="mt-4 text-xl font-bold text-white text-center">{member.name}</h3>
                           <p className="text-accent-foreground font-medium text-center">{member.role}</p>
                       </div>
