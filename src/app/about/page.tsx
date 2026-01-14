@@ -102,7 +102,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <div className="text-center">
-              <h2 className="text-3xl md:text-4xl font-bold">Our Inspiration</h2>
+              <h2 className="text-3xl md:text-4xl font-normal">Our Inspiration</h2>
               <div className="mt-6 text-lg md:text-xl space-y-4 text-center">
                 <p>Inspiration at PlanckPoint comes from intellectual honesty and first-principles thinking. By operating at the deepest level of strategic decision-making, we empower leaders to question inherited assumptions, rethink conventional approaches, and design strategies that are both ambitious and executable. Our work encourages confidence rooted in understanding, not optimism.</p>
                 <p>Integrity is enforced through evidence-based analysis and methodological rigor. Our insights are derived from AI-assisted signal evaluation combined with structured expert judgment, ensuring conclusions are grounded in observable realities rather than assumptions or consensus narratives. We prioritise accuracy and transparency, exposing risk and uncertainty so leaders can make fully informed decisions.</p>
