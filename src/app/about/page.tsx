@@ -97,6 +97,22 @@ export default function AboutPage() {
         </div>
       </section>
       
+      <section className="py-20 lg:py-24 bg-white text-primary">
+        <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <AnimatedSection>
+            <div className="text-center">
+              <h2 className="text-3xl md:text-4xl font-bold">Our Inspiration</h2>
+              <div className="mt-6 text-lg md:text-xl max-w-3xl mx-auto space-y-4 text-left">
+                <p>The Planck point represents the smallest meaningful unit of measurement; the point beyond which systems can no longer be described by approximation or surface observation. At that scale, assumptions break down and fundamentals matter. We see decisions the same way.</p>
+                <p>Most enterprise choices are made using high-level abstractions: quadrants, scores, narratives, and averages. Those views are convenient, but they hide the forces that determine outcomes.</p>
+                <p>PlanckPoint was created to operate at the equivalent of the Planck scale in strategic decisions, where execution capability, delivery constraints, talent realities, and risk signals become visible. This is the level at which success or failure is determined, long before it appears in dashboards or post-mortems.</p>
+                <p>Our name reflects a simple belief: If a decision is material, it must be examined at its most fundamental level. That is where clarity begins. That is where PlanckPoint operates.</p>
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
       <section id="leadership" className="py-20 lg:py-24 bg-background border-t">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
