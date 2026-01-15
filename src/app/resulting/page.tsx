@@ -295,7 +295,7 @@ const ServicesPage: React.FC = () => {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5 }}
                             >
-                                <Card className="overflow-hidden border-0 shadow-xl bg-white/5 backdrop-blur-md">
+                                
                                     <div className="grid grid-cols-1 lg:grid-cols-2">
                                         <div className="p-8 md:p-12 order-2 lg:order-1 flex flex-col justify-center min-h-[350px]">
                                             
@@ -329,7 +329,7 @@ const ServicesPage: React.FC = () => {
                                             )}
                                         </div>
                                     </div>
-                                </Card>
+                                
                             </motion.div>
                         </TabsContent>
                     )
@@ -464,6 +464,7 @@ export default ServicesPage;
     
 
     
+
 
 
 
