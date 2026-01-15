@@ -4,7 +4,6 @@ import { cn } from "@/lib/utils";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { Toaster } from "@/components/ui/toaster";
-import { GlassCursor } from "@/components/glass-cursor";
 
 export const metadata: Metadata = {
   title: "Planckpoint | Measuring the impact of humans in technology",
@@ -24,7 +23,6 @@ export default function RootLayout({
         <link rel="preload" href="https://fonts.cdnfonts.com/css/lovelo" as="style" />
       </head>
       <body className={cn("font-body antialiased min-h-screen flex flex-col")}>
-        <GlassCursor />
         <Header />
         <div className="flex-grow flex-1">{children}</div>
         <Footer />

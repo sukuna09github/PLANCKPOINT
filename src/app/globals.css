@@ -80,13 +80,6 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-headline;
   }
-
-  /* Custom cursor styles */
-  @media (pointer: fine) {
-    *:not(iframe) {
-      cursor: none;
-    }
-  }
 }
 
 @layer components {
@@ -105,106 +98,6 @@
     }
     100% {
       background-position: 0% 50%;
-    }
-  }
-
-  /* Segmented Ring Cursor */
-  .cursor-dot {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 4px;
-    background: white;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 99999;
-    transform: translate(-50%, -50%);
-    mix-blend-mode: difference;
-  }
-
-  .cursor-ring {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 99998;
-    transform: translate(-50%, -50%);
-    mix-blend-mode: difference;
-    
-    background: transparent;
-
-    /* Segmented circular stroke */
-    mask:
-      radial-gradient(farthest-side, transparent 62%, #fff 64%) ,
-      conic-gradient(
-        from 0deg,
-        #fff 0deg 50deg,
-        transparent 50deg 90deg,
-        #fff 90deg 140deg,
-        transparent 140deg 180deg,
-        #fff 180deg 230deg,
-        transparent 230deg 270deg,
-        #fff 270deg 320deg,
-        transparent 320deg 360deg
-      );
-    -webkit-mask:
-      radial-gradient(farthest-side, transparent 62%, #fff 64%),
-      conic-gradient(
-        from 0deg,
-        #fff 0deg 50deg,
-        transparent 50deg 90deg,
-        #fff 90deg 140deg,
-        transparent 140deg 180deg,
-        #fff 180deg 230deg,
-        transparent 230deg 270deg,
-        #fff 270deg 320deg,
-        transparent 320deg 360deg
-      );
-
-    border: 1.5px solid white;
-    box-shadow: none;
-
-    transition:
-      width 0.25s cubic-bezier(0.25, 1, 0.5, 1),
-      height 0.25s cubic-bezier(0.25, 1, 0.5, 1),
-      box-shadow 0.25s ease,
-      background 0.25s ease,
-      border-color 0.25s ease,
-      border-radius 0.25s ease,
-      transform 0.1s ease-out;
-  }
-  
-  .cursor-ring.hover {
-    width: 40px;
-    height: 40px;
-    border-radius: 0;
-    background: hsla(0, 0%, 100%, 0.1);
-    border-color: white;
-    animation: rotateSegments 4s linear infinite;
-    mask: none;
-    -webkit-mask: none;
-    mix-blend-mode: difference;
-  }
-
-  .cursor-ring.grabbing {
-    width: 28px;
-    height: 28px;
-    background: hsla(0, 0%, 100%, 0.15);
-    border-color: white;
-    transform: translate(-50%, -50%) scale(0.9);
-    animation: rotateSegments 2s linear infinite reverse;
-  }
-
-  @keyframes rotateSegments {
-    from {
-      transform: translate(-50%, -50%) rotate(0deg);
-    }
-    to {
-      transform: translate(-50%, -50%) rotate(360deg);
     }
   }
 }
@@ -284,5 +177,6 @@
 }
 
     
+
 
 
