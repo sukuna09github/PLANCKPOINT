@@ -16,13 +16,15 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
+  const navLinks = NAV_LINKS.filter(link => link.label !== 'Products');
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="flex h-16 w-full items-center justify-between px-6 sm:px-8 lg:px-16">
         <Logo />
         
         <nav className="hidden md:flex items-center space-x-8">
-          {NAV_LINKS.map((link) => (
+          {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
@@ -63,7 +65,7 @@ export function Header() {
                   </SheetTrigger>
                 </div>
                 <nav className="flex flex-col space-y-4 p-4 mt-4">
-                  {NAV_LINKS.map((link) => (
+                  {navLinks.map((link) => (
                     <Link
                       key={link.href}
                       href={link.href}

@@ -5,138 +5,11 @@ import { Lightbulb, Target, Users, Bot, Star, BarChart, Gem, Briefcase, Drafting
 
 export const NAV_LINKS = [
   { href: "/", label: "Home" },
-  { href: "/products", label: "Products" },
   { href: "/services", label: "Services" },
   { href: "/insights", label: "Insights" },
   { href: "/research", label: "Research" },
   { href: "/about", label: "About Us" },
 ];
-
-export const PRODUCTS = [
-  { 
-    id: "atomicai", 
-    name: "AtomicAI™", 
-    description: "Granular insights into user behavior.", 
-    icon: Bot, 
-    imageId: "product1",
-    tagline: "The microscope for user behavior.",
-    detailedDescription: "AtomicAI™ provides hyper-granular insights into user interactions, revealing the subtle patterns and behaviors that drive engagement and conversion. Go beyond traditional analytics to understand the 'why' behind every click, scroll, and hesitation.",
-    keyBenefits: `
-      Identify hidden friction points in your user journeys.
-      Uncover novel user segments based on nuanced behaviors.
-      Quantify the impact of UI/UX changes with unprecedented precision.
-      Power personalization engines with deep behavioral data.
-    `,
-    learnMoreUrl: "#"
-  },
-  { 
-    id: "beyondquadrants", 
-    name: "BeyondQuadrants™", 
-    description: "Uncover hidden growth vectors.", 
-    icon: Star, 
-    imageId: "product2",
-    tagline: "Navigate your market's multidimensional space.",
-    detailedDescription: "Traditional market analysis places you in a 2x2 grid. BeyondQuadrants™ uses multi-factor analysis to map complex market landscapes, revealing uncontested spaces and hidden opportunities for strategic growth and differentiation.",
-    keyBenefits: `
-      Visualize your competitive landscape in multiple dimensions.
-      Identify underserved market niches and emerging trends.
-      Stress-test strategic moves before committing resources.
-      Discover non-obvious partnership and M&A opportunities.
-    `,
-    learnMoreUrl: "#"
-  },
-  { 
-    id: "disquo", 
-    name: "DisQuo™", 
-    description: "Transform business models with analytics.", 
-    icon: BarChart, 
-    imageId: "product3",
-    tagline: "Challenge the status quo with data-driven audacity.",
-    detailedDescription: "DisQuo™ is a strategic simulation engine that allows you to model and test disruptive business models. Evaluate the potential impact of changes to pricing, service delivery, and operational structure in a risk-free virtual environment.",
-    keyBenefits: `
-      De-risk innovation by simulating business model transformations.
-      Understand the second and third-order effects of strategic shifts.
-      Optimize for market disruption, not just incremental improvement.
-      Build a robust, data-backed case for organizational change.
-    `,
-    learnMoreUrl: "#"
-  },
-  { 
-    id: "elwis", 
-    name: "ELWIS™", 
-    description: "Streamline complex enterprise workflows.", 
-    icon: Briefcase, 
-    imageId: "product4",
-    tagline: "The Enterprise-Level Workflow Intelligence System.",
-    detailedDescription: "ELWIS™ maps, analyzes, and optimizes the intricate web of workflows that power your organization. It identifies bottlenecks, automates redundancies, and suggests process improvements to enhance efficiency and employee satisfaction across the enterprise.",
-    keyBenefits: `
-      Gain end-to-end visibility into cross-departmental processes.
-      Identify and eliminate costly workflow inefficiencies.
-      Automate manual tasks and free up your team for high-value work.
-      Create a more agile and responsive organizational structure.
-    `,
-    learnMoreUrl: "#"
-  },
-  { 
-    id: "propricing", 
-    name: "ProPRICING™", 
-    description: "Optimize revenue with data.", 
-    icon: Gem, 
-    imageId: "product5",
-    tagline: "Price with precision. Monetize with confidence.",
-    detailedDescription: "Move beyond cost-plus and competitor-based pricing. ProPRICING™ leverages behavioral data and value metrics to identify the optimal pricing structure for your products and services, maximizing both revenue and customer satisfaction.",
-    keyBenefits: `
-      Understand your customers' true willingness to pay.
-      Develop dynamic, value-based pricing tiers.
-      Model the revenue impact of different pricing strategies.
-      Reduce churn by aligning price with perceived value.
-    `,
-    learnMoreUrl: "#"
-  },
-  { 
-    id: "skillorbit", 
-    name: "SkillOrbit™", 
-    description: "Map, manage, and grow talent.", 
-    icon: DraftingCompass, 
-    imageId: "product6",
-    tagline: "Your gravitational center for organizational talent.",
-    detailedDescription: "SkillOrbit™ provides a dynamic, visual map of your organization's skills and competencies. It helps you identify skill gaps, deploy talent effectively, and create data-driven career pathing and development programs for your employees.",
-    keyBenefits: `
-      Visualize the collective capabilities of your entire workforce.
-      Identify and address critical skill gaps before they impact performance.
-      Facilitate internal mobility and data-driven succession planning.
-      Personalize employee development plans at scale.
-    `,
-    learnMoreUrl: "#"
-  },
-];
-
-export const PRODUCT_CATEGORIES = [
-    {
-        id: 'strategy',
-        name: 'Strategy & Growth',
-        description: 'Solutions for market analysis, business model innovation, and revenue optimization.',
-        icon: TrendingUp,
-        products: ['beyondquadrants', 'disquo', 'propricing'],
-        imageId: "prod-cat-strategy"
-    },
-    {
-        id: 'operations',
-        name: 'Operations & Efficiency',
-        description: 'Tools to streamline workflows, enhance productivity, and manage enterprise processes.',
-        icon: Cpu,
-        products: ['elwis'],
-        imageId: "prod-cat-operations"
-    },
-    {
-        id: 'people',
-        name: 'People & Talent',
-        description: 'Platforms for understanding user behavior, managing skills, and fostering development.',
-        icon: UsersRound,
-        products: ['atomicai', 'skillorbit'],
-        imageId: "prod-cat-people"
-    }
-]
 
 export const WHAT_WE_DO_CARDS: { title: string; description: string; Icon: LucideIcon, imageId: string }[] = [
     { title: "RESULTING™", description: "Our proprietary framework for measuring and driving tangible outcomes in technology and human capital.", Icon: Target, imageId: "what-we-do-1" },
@@ -354,12 +227,6 @@ export const FOOTER_LINKS = [
         ],
     },
     {
-        title: "Products",
-        links: [
-            ...PRODUCTS.map(p => ({ label: p.name, href: `/products#${p.id}`}))
-        ],
-    },
-    {
         title: "Connect",
         links: [
             { label: "Contact Us", href: "/contact" },
@@ -568,21 +435,46 @@ export const SERVICE_CATEGORIES = [
     }
 ]
 
+export const INDUSTRY_SOLUTIONS = [
+    {
+        id: 'finance',
+        name: 'Finance',
+        description: 'Solutions for financial services, banking, and insurance industries.',
+        icon: Banknote,
+        products: ['propricing', 'disquo', 'atomicai'],
+        imageId: "industry-finance"
+    },
+    {
+        id: 'healthcare',
+        name: 'Healthcare',
+        description: 'Solutions for healthcare providers, pharmaceuticals, and life sciences.',
+        icon: HeartHandshake,
+        products: ['elwis', 'skillorbit'],
+        imageId: "industry-healthcare"
+    },
+    {
+        id: 'technology',
+        name: 'Technology',
+        description: 'Solutions for software, hardware, and telecommunications companies.',
+        icon: Cpu,
+        products: ['atomicai', 'beyondquadrants', 'skillorbit'],
+        imageId: "industry-tech"
+    },
+    {
+        id: 'legal',
+        name: 'Legal',
+        description: 'Solutions for law firms, corporate legal departments, and compliance.',
+        icon: Scale,
+        products: ['elwis', 'disquo'],
+        imageId: "industry-legal"
+    }
+];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export const PRODUCTS = [
+    { id: "atomicai", name: "AtomicAI™", description: "Our flagship product for granular, real-time analysis of human-computer interaction.", icon: Cpu, imageId: 'product-atomicai', tagline: 'Measure everything. Move faster.', detailedDescription: 'AtomicAI™ provides unparalleled insights into how your teams interact with technology. By capturing and analyzing every micro-interaction, we help you identify bottlenecks, optimize workflows, and drive productivity. Our platform is built on a foundation of privacy and security, ensuring that your data is always protected.', keyBenefits: "Identify and eliminate workflow inefficiencies.\nGain a deep understanding of user behavior.\nImprove team productivity and satisfaction.\nMake data-driven decisions about technology adoption.", learnMoreUrl: '#' },
+    { id: "beyondquadrants", name: "BeyondQuadrants™", description: "Move beyond simplistic vendor comparisons with our multi-dimensional evaluation framework.", icon: Target, imageId: 'product-beyondquadrants', tagline: 'Clarity beyond the noise.', detailedDescription: 'Tired of generic vendor reports? BeyondQuadrants™ offers a bespoke evaluation framework that aligns with your specific business context. We provide a holistic view of vendor capabilities, risks, and potential, enabling you to make strategic decisions with confidence.', keyBenefits: 'Go beyond surface-level vendor analysis.\nAlign technology choices with business goals.\nMitigate risks in your technology partnerships.\nGet a clear, actionable view of the vendor landscape.', learnMoreUrl: '#' },
+    { id: "disquo", name: "DisQuo™", description: "A platform for structured expert judgment, helping you quantify the unquantifiable.", icon: BarChart, imageId: 'product-disquo', tagline: 'Structure judgment. Reduce bias.', detailedDescription: 'Some of the most critical business decisions rely on expert judgment. DisQuo™ provides a structured methodology for capturing, calibrating, and aggregating expert opinions. Our platform helps you reduce bias, increase accuracy, and make more defensible strategic choices.', keyBenefits: 'Improve the accuracy of strategic forecasts.\nReduce cognitive biases in decision-making.\nCreate a transparent and auditable decision process.\nLeverage the collective intelligence of your experts.', learnMoreUrl: '#' },
+    { id: "elwis", name: "ELWIS™", description: "Our Early Warning & Intervention System for large-scale technology programs.", icon: Shield, imageId: 'product-elwis', tagline: 'See risk before it sees you.', detailedDescription: 'Large-scale technology programs are notoriously difficult to manage. ELWIS™ is your intelligent co-pilot, continuously monitoring program health and identifying early warning signs of trouble. By combining data from multiple sources, ELWIS™ helps you intervene before risks escalate into crises.', keyBenefits: 'Gain real-time visibility into program health.\nIdentify and mitigate risks proactively.\nImprove the success rate of large-scale initiatives.\nEnhance stakeholder confidence and communication.', learnMoreUrl: '#' },
+    { id: "propricing", name: "ProPRICING™", description: "An advanced pricing and proposal generation engine for complex technology services.", icon: Banknote, imageId: 'product-propricing', tagline: 'Price with precision. Win with confidence.', detailedDescription: 'Pricing complex technology services is both an art and a science. ProPRICING™ brings data-driven rigor to the process. Our engine analyzes historical data, market benchmarks, and your unique value proposition to generate optimal pricing strategies and compelling proposals.', keyBenefits: 'Optimize pricing for profitability and win rates.\nStandardize and accelerate your proposal process.\nImprove negotiation outcomes with data-backed insights.\nGain a deeper understanding of your pricing power.', learnMoreUrl: '#' },
+    { id: "skillorbit", name: "SkillOrbit™", description: "Map, measure, and manage the critical skills that drive your organization's success.", icon: UsersRound, imageId: 'product-skillorbit', tagline: 'Align talent with strategy.', detailedDescription: "In a rapidly changing world, having the right skills is paramount. SkillOrbit™ is a dynamic platform for talent and capability management. We help you map your organization's existing skills, identify future needs, and create targeted development pathways to bridge the gap.", keyBenefits: 'Gain a clear view of your organization\'s skill landscape.\nAlign talent development with strategic priorities.\nImprove employee engagement and retention.\nBuild a more agile and resilient workforce.', learnMoreUrl: '#' },
+];

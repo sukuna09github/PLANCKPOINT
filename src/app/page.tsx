@@ -7,7 +7,7 @@ import { ArrowRight, Globe, Users, Building2 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { INSIGHTS_TEASER_CARDS, WHAT_WE_DO_CARDS, PRODUCTS, RESEARCH_ARTICLES } from "@/lib/constants";
+import { INSIGHTS_TEASER_CARDS, WHAT_WE_DO_CARDS, RESEARCH_ARTICLES } from "@/lib/constants";
 import { PlaceHolderImages, type ImagePlaceholder } from "@/lib/placeholder-images";
 import { AnimatedSection } from "@/components/animated-section";
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
@@ -176,101 +176,6 @@ const HomePage: React.FC = () => {
                   </motion.div>
                 );
               })}
-            </div>
-          </div>
-        </section>
-
-        <section className="py-24 bg-white">
-          <div className="max-w-[120rem] mx-auto px-4 sm:px-8 lg:px-16">
-            <AnimatedSection className="text-center mb-16">
-              <h2 className="text-4xl font-headline font-normal text-primary mb-6">Our Products</h2>
-              <p className="text-lg font-body text-foreground/80 max-w-3xl mx-auto">
-                Innovative solutions designed to bridge the gap between human potential and technological advancement.
-              </p>
-            </AnimatedSection>
-            
-            <AnimatedSection>
-              <Carousel
-                opts={{ align: "start", loop: true }}
-                plugins={[Autoplay({ delay: 5000, stopOnInteraction: true })]}
-                className="w-full"
-              >
-                <CarouselContent className="-ml-4 sm:-ml-8">
-                  {PRODUCTS.map((product) => {
-                    const image = findImage(product.imageId);
-                    return (
-                      <CarouselItem key={product.id} className="pl-4 sm:pl-8 md:basis-1/2 lg:basis-1/3">
-                        <motion.div
-                          initial={{ opacity: 0, y: 20 }}
-                          whileInView={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.5 }}
-                          viewport={{ once: true, amount: 0.5 }}
-                          className="group h-full"
-                        >
-                          <div className="bg-white overflow-hidden shadow-sm hover:shadow-xl hover:shadow-accent/20 transition-all duration-300 hover:-translate-y-2 flex flex-row h-64 sm:h-72 lg:h-80 group/card">
-                            <div className="flex-1 relative overflow-hidden flex flex-col justify-between p-6 sm:p-7 lg:p-8">
-                              {image && (
-                                <div 
-                                  className="absolute inset-0 blur-xl opacity-40"
-                                  style={{
-                                    backgroundImage: `url(${image.imageUrl})`,
-                                    backgroundSize: 'cover',
-                                    backgroundPosition: 'center',
-                                  }}
-                                />
-                              )}
-                              
-                              <div className="absolute inset-0 bg-black/50" />
-
-                              <div className="relative z-10 flex flex-col justify-between h-full">
-                                <h3 className="text-lg sm:text-xl font-headline font-semibold text-white mb-2 group-hover/card:text-accent transition-colors duration-300 line-clamp-1">
-                                  {product.name}
-                                </h3>
-
-                                <p className="text-sm sm:text-base font-body text-white/90 mb-6 line-clamp-2 flex-1">
-                                  {product.description}
-                                </p>
-
-                                <Link href={`/products#${product.id}`} className="text-white font-semibold hover:underline flex items-center">
-                                    Learn More
-                                    <ArrowRight className="w-3 h-3 ml-2" />
-                                </Link>
-                              </div>
-                            </div>
-
-                            <div className="flex-1 relative overflow-hidden bg-gradient-to-br from-primary/5 to-secondary/5 flex items-center justify-center">
-                              {image ? (
-                                <Image
-                                  src={image.imageUrl}
-                                  alt={product.name || 'Product'}
-                                  width={400}
-                                  height={300}
-                                  data-ai-hint={image.imageHint}
-                                  className="w-full h-full object-cover group-hover/card:scale-105 transition-transform duration-300"
-                                />
-                              ) : (
-                                <span className="text-sm font-body text-foreground/40">Product Image</span>
-                              )}
-                            </div>
-                          </div>
-                        </motion.div>
-                      </CarouselItem>
-                    )
-                  })}
-                </CarouselContent>
-              </Carousel>
-            </AnimatedSection>
-            
-            <div className="text-center mt-14">
-              <Button
-                asChild
-                className="bg-primary hover:bg-secondary text-primary-foreground px-8 py-3 transition-all duration-300 font-medium"
-              >
-                <Link href="/products">
-                  View All Products
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Link>
-              </Button>
             </div>
           </div>
         </section>
