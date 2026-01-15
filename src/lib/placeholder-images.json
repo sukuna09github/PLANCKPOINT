@@ -63,7 +63,7 @@
     {
       "id": "insight1",
       "description": "Image for a survey report.",
-      "imageUrl": "https://images.unsplash.com/photo-1665979738279-bd2441290e02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdXJ2ZXklMjByZXBvcnR8ZW58MHx8fHwxNzY0ODYxNTA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1665979738279-bd2441290e02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdXJ2ZXklMjByZXBvcnR8ZW58MHx8fHwxNzY0ODYxNTA4fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "survey report"
     },
     {
@@ -105,13 +105,13 @@
     {
       "id": "research-hero2",
       "description": "An abstract visualization of a neural network.",
-      "imageUrl": "https://images.unsplash.com/photo-1655890006065-edefcd764af6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxuZXVyYWwlMjBuZXR3b3JrfGVufDB8fHx8MTc2NDg0NTkxNnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1655890006065-edefcd764af6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxuZXVyYWwlMjBuZXR3b3JrfGVufDB8fHx8MTc2NDg0NTkxNnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "neural network"
     },
     {
       "id": "research-hero3",
       "description": "A library with a futuristic glowing book.",
-      "imageUrl": "https://images.unsplash.com/photo-1664395365741-07cb6d014963?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmdXR1cmlzdGljJTIwbGlicmFyeXxlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1664395365741-07cb6d014963?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmdXR1cmlzdGljJTIwbGlicmFyeXxlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "futuristic library"
     },
     {
@@ -333,7 +333,7 @@
     {
       "id": "research10",
       "description": "An image representing human-AI collaboration.",
-      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBSSUyMGNvbGxhYm9yYXRpb258ZW58MHx8fHwxNzE3NTk4NTMxfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBSSUyMGNvbGxhYm9yYXRpb258ZW58MHx8fHwxNzE3NTk4NTMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "AI collaboration"
     },
     {
@@ -471,7 +471,7 @@
     {
       "id": "page-intro-art",
       "description": "Abstract teal lines and shapes on a dark background",
-      "imageUrl": "https://images.unsplash.com/photo-1707386301713-1002bc5d6cf1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMGltYWdlc3xlbnwwfHx8fDE3NjYwNzI0OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1707386301713-1002bc5d6cf1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMGltYWdlc3xlbnwwfHx8fDE3NjYwNzI0OTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "abstract teal"
     },
     {
@@ -483,7 +483,7 @@
     {
       "id": "prod-cat-operations",
       "description": "Abstract image representing operational efficiency and gears",
-      "imageUrl": "https://images.unsplash.com/photo-1708778002531-5bb1c27c4ea3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhYnN0cmFjdCUyMHRlYWx8ZW58MHx8fHwxNzY1OTk4NTc2fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1708778002531-5bb1c27c4ea3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhYnN0cmFjdCUyMHRlYWx8ZW58MHx8fHwxNzY1OTk4NTc2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "operations efficiency"
     },
     {
@@ -507,7 +507,7 @@
     {
       "id": "industry-healthcare",
       "description": "Abstract image representing healthcare and medicine",
-      "imageUrl": "https://images.unsplash.com/photo-1530497610245-98236c4b9329?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMG1lZGljYWx8ZW58MHx8fHwxNzY2MDk1NzUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1459664018906-085c36f472af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0ZWFsfGVufDB8fHx8MTc2ODQyNDQ4OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "healthcare medicine"
     },
     {
@@ -519,7 +519,7 @@
     {
       "id": "industry-legal",
       "description": "Abstract image representing the legal field and justice",
-      "imageUrl": "https://images.unsplash.com/photo-1758275966059-462a4d0fba23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnYXZlbCUyMGNpcmN1aXR8ZW58MHx8fHwxNzY0ODYxNTA4fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758275966059-462a4d0fba23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnYXZlbCUyMGNpcmN1aXR8ZW58MHx8fHwxNzY0ODYxNTA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "legal justice"
     }
   ]
