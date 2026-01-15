@@ -277,11 +277,10 @@ const ServicesPage: React.FC = () => {
 
             <Tabs defaultValue={SERVICE_CATEGORIES[0].id} className="w-full">
                 <AnimatedSection>
-                    <TabsList className="grid w-full grid-cols-3 h-auto bg-white/10 text-white">
+                    <TabsList className="flex items-center justify-center gap-8 bg-transparent p-0 h-auto">
                         {SERVICE_CATEGORIES.map(category => (
-                            <TabsTrigger key={category.id} value={category.id} className="group flex flex-col sm:flex-row gap-2 items-center py-3 data-[state=active]:bg-white/20 data-[state=active]:shadow-lg data-[state=active]:text-white relative overflow-hidden">
-                                <span className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 backdrop-blur-sm"></span>
-                                <span className="relative z-10 text-sm font-medium">{category.name}</span>
+                            <TabsTrigger key={category.id} value={category.id} className="text-lg font-medium text-white/70 data-[state=active]:text-white p-2 bg-transparent shadow-none border-0 focus:ring-0 focus:outline-none">
+                                {category.name}
                             </TabsTrigger>
                         ))}
                     </TabsList>
@@ -465,6 +464,7 @@ export default ServicesPage;
     
 
     
+
 
 
 
