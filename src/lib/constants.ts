@@ -5,7 +5,7 @@ import { Lightbulb, Target, Users, Bot, Star, BarChart, Gem, Briefcase, Drafting
 
 export const NAV_LINKS = [
   { href: "/", label: "Home" },
-  { href: "/services", label: "Services" },
+  { href: "/resulting", label: "Resulting" },
   { href: "/insights", label: "Insights" },
   { href: "/research", label: "Research" },
   { href: "/about", label: "About Us" },
