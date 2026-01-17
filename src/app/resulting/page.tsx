@@ -121,11 +121,9 @@ const ResultingPage: React.FC = () => {
     <div className="min-h-screen bg-background">
       {/* Hero Section with 2-Column Layout */}
       <section 
-        className="relative min-h-screen flex items-center justify-center overflow-hidden"
+        className="relative min-h-screen flex items-center justify-center overflow-hidden fixed-bg-section"
         style={{
-          backgroundImage: heroBgImage ? `url(${heroBgImage.imageUrl})` : 'none',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundImage: servicesBgImage ? `url(${servicesBgImage.imageUrl})` : 'none',
         }}
       >
         {/* Gradient Overlay - Darker left, lighter right */}
