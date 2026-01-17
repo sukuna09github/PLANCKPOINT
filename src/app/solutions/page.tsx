@@ -253,11 +253,9 @@ const ServicesPage: React.FC = () => {
       
       <section className="relative py-16 md:py-24">
         {servicesBgImage && (
-            <Image
-                src={servicesBgImage.imageUrl}
-                alt={servicesBgImage.description}
-                fill
-                className="object-cover -z-20"
+            <div
+                className="absolute inset-0 bg-cover bg-center bg-fixed"
+                style={{ backgroundImage: `url(${servicesBgImage.imageUrl})` }}
                 data-ai-hint={servicesBgImage.imageHint}
             />
         )}
@@ -273,7 +271,7 @@ const ServicesPage: React.FC = () => {
                 <AnimatedSection>
                     <TabsList className="flex flex-wrap items-center justify-center gap-4 md:gap-8 bg-transparent p-0 h-auto">
                         {INDUSTRY_SOLUTIONS.map(category => (
-                            <TabsTrigger key={category.id} value={category.id} className="text-lg font-medium text-white/70 data-[state=active]:text-white p-2 bg-transparent shadow-none border-0 focus:ring-0 focus:outline-none">
+                            <TabsTrigger key={category.id} value={category.id} className="text-lg font-medium text-white/70 data-[state=active]:text-white p-2 bg-transparent shadow-none border-0 focus:ring-0 focus:outline-none data-[state=active]:shadow-[inset_0_-2px_0_0_white] rounded-none">
                                 {category.name}
                             </TabsTrigger>
                         ))}
