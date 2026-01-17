@@ -184,7 +184,7 @@ export default function CaseStudiesPage() {
       <section className="py-20 lg:py-24 bg-background">
         <div className="container mx-auto max-w-4xl text-center px-4 sm:px-6 lg:px-8">
             <AnimatedSection>
-                <h2 className="text-3xl font-bold">The Pulse of Progress</h2>
+                <h2 className="text-3xl font-normal">The Pulse of Progress</h2>
                 <p className="mt-4 text-muted-foreground text-lg">Stay ahead of the curve with our expert analysis on technology, strategy, and human-centric innovation.</p>
                 <Link href="/research" className="text-primary font-semibold hover:underline flex items-center mt-6 justify-center">
                     Learn More <ArrowRight className="ml-2 h-4 w-4" />
@@ -222,13 +222,13 @@ export default function CaseStudiesPage() {
                     className="group"
                     >
                       <Link href="/research" className="block h-full">
-                        <Card className="h-full overflow-hidden relative aspect-[4/5] border-0 shadow-sm transition-all duration-400 ease-apple hover:shadow-xl hover:shadow-accent/10">
+                        <Card className="h-full overflow-hidden relative aspect-[4/5] border-0 shadow-sm transition-all duration-300 ease-apple hover:shadow-xl hover:shadow-accent/10">
                           {image && (
                             <Image
                               src={image.imageUrl}
                               alt={category.name || 'Research category'}
                               fill
-                              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-400 ease-apple blur-sm"
+                              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300 ease-apple blur-sm"
                               data-ai-hint={image.imageHint}
                             />
                           )}
@@ -307,7 +307,7 @@ export default function CaseStudiesPage() {
                   transition={{ duration: 0.8, delay: index * 0.1, ease: [0.4, 0, 0.2, 1] }}
                   viewport={{ once: true }}
                 >
-                  <Card className="h-full hover:shadow-xl hover:shadow-accent/10 transition-all duration-400 ease-apple hover:-translate-y-2 hover:scale-105 bg-white border-0 shadow-sm group cursor-pointer">
+                  <Card className="h-full hover:shadow-xl hover:shadow-accent/10 transition-all duration-300 ease-apple hover:-translate-y-2 hover:scale-105 bg-white border-0 shadow-sm group cursor-pointer">
                     <Link href={`/case-studies/${insight._id}`} className="block h-full">
                       <CardContent className="p-0 h-full flex flex-col">
                         {image && (
@@ -315,7 +315,7 @@ export default function CaseStudiesPage() {
                             <Image
                               src={image.imageUrl}
                               alt={insight.title || 'Research article'}
-                              className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-400 ease-apple"
+                              className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300 ease-apple"
                               width={400}
                               height={192}
                               data-ai-hint={image.imageHint}
