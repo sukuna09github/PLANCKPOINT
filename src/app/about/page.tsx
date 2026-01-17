@@ -77,14 +77,11 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section id="who-we-are" className="py-20 lg:py-24 relative">
-        <Image
-          src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31"
-          alt="Teal abstract technology background"
-          fill
-          className="object-cover"
-          data-ai-hint="teal abstract technology"
-        />
+      <section 
+        id="who-we-are" 
+        className="py-20 lg:py-24 fixed-bg-section"
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31')" }}
+      >
         <div className="absolute inset-0 bg-primary/70"></div>
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
@@ -121,13 +118,11 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section id="leadership" className="py-20 lg:py-24 relative text-white bg-transparent min-h-[calc(100vh+60px)] overflow-hidden">
-        <Image
-            src={leadershipBgUrl}
-            alt="Leadership background"
-            fill
-            className="object-cover"
-        />
+      <section 
+        id="leadership" 
+        className="py-20 lg:py-24 text-white bg-transparent min-h-[calc(100vh+60px)] overflow-hidden fixed-bg-section"
+        style={{ backgroundImage: `url(${leadershipBgUrl})` }}
+      >
         <div className="absolute inset-0 bg-primary/70"></div>
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
           <AnimatedSection>

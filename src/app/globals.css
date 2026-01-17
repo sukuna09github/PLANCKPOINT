@@ -100,6 +100,14 @@
       background-position: 0% 50%;
     }
   }
+
+  .fixed-bg-section {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .liquid-glass-card {
@@ -159,6 +167,7 @@
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
 }
     
+
 
 
 
