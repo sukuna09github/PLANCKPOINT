@@ -2,7 +2,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, LayoutGroup } from 'framer-motion';
 import { ArrowRight, X } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -266,6 +266,7 @@ const SolutionsPage: React.FC = () => {
       >
         <div className="absolute inset-0 bg-primary/70"></div>
         <div className="max-w-[120rem] mx-auto px-6 md:px-12 relative">
+          <LayoutGroup>
              <div className={cn("grid grid-cols-1 gap-8 transition-all duration-500", selectedProduct && "md:grid-cols-2")}>
                 <motion.div layout="position">
                     <AnimatedSection className="text-center mb-16">
@@ -303,12 +304,14 @@ const SolutionsPage: React.FC = () => {
                                                     const product = PRODUCTS.find(p => p.id === productId);
                                                     if (!product) return null;
                                                     return (
-                                                        <button key={product.id} onClick={() => setSelectedProduct(product)} className="block group text-left">
-                                                            <div className="bg-white/5 p-4 hover:bg-white/10 transition-colors h-full rounded-md">
-                                                                <h4 className="font-semibold text-white group-hover:text-accent">{product.name}</h4>
-                                                                <p className="text-sm text-white/70">{product.description}</p>
-                                                            </div>
-                                                        </button>
+                                                        <motion.div key={product.id} layoutId={product.id}>
+                                                          <button onClick={() => setSelectedProduct(product)} className="block group text-left w-full h-full">
+                                                              <div className="bg-white/5 p-4 hover:bg-white/10 transition-colors h-full rounded-md">
+                                                                  <h4 className="font-semibold text-white group-hover:text-accent">{product.name}</h4>
+                                                                  <p className="text-sm text-white/70">{product.description}</p>
+                                                              </div>
+                                                          </button>
+                                                        </motion.div>
                                                     );
                                                 })}
                                             </div>
@@ -324,39 +327,47 @@ const SolutionsPage: React.FC = () => {
                         {selectedProduct && (
                             <motion.div
                                 className="sticky top-24"
-                                initial={{ opacity: 0, x: 100 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                exit={{ opacity: 0, x: 100 }}
-                                transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
                             >
-                                <div className="premium-glass-card">
-                                    <button onClick={() => setSelectedProduct(null)} className="absolute top-4 right-4 text-white/70 hover:text-white transition-colors z-10">
-                                        <X className="w-6 h-6" />
-                                    </button>
-                                    <h3 className="text-2xl font-bold mb-2">{selectedProduct.name}</h3>
-                                    <p className="text-base font-semibold text-accent mb-4">{selectedProduct.tagline}</p>
-                                    <div className="text-sm text-white/80 space-y-4">
-                                        <p>{selectedProduct.detailedDescription}</p>
-                                        <div>
-                                            <h4 className="font-semibold mb-2">Key Benefits:</h4>
-                                            <ul className="list-disc list-inside space-y-1">
-                                                {selectedProduct.keyBenefits.split('\n').map((benefit, i) => (
-                                                    <li key={i}>{benefit}</li>
-                                                ))}
-                                            </ul>
+                                <motion.div
+                                    layoutId={selectedProduct.id}
+                                    className="premium-glass-card"
+                                    transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
+                                >
+                                    <motion.div 
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1, transition: { delay: 0.2, duration: 0.4 } }}
+                                        exit={{ opacity: 0, transition: { duration: 0.15 } }}
+                                        className="relative z-10"
+                                    >
+                                        <button onClick={() => setSelectedProduct(null)} className="absolute top-4 right-4 text-white/70 hover:text-white transition-colors z-20">
+                                            <X className="w-6 h-6" />
+                                        </button>
+                                        <h3 className="text-2xl font-bold mb-2">{selectedProduct.name}</h3>
+                                        <p className="text-base font-semibold text-accent mb-4">{selectedProduct.tagline}</p>
+                                        <div className="text-sm text-white/80 space-y-4">
+                                            <p>{selectedProduct.detailedDescription}</p>
+                                            <div>
+                                                <h4 className="font-semibold mb-2">Key Benefits:</h4>
+                                                <ul className="list-disc list-inside space-y-1">
+                                                    {selectedProduct.keyBenefits.split('\n').map((benefit, i) => (
+                                                        <li key={i}>{benefit}</li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                            <div className="pt-4">
+                                                <Link href="/contact" className="font-semibold text-accent hover:underline">
+                                                    Contact us to learn more &rarr;
+                                                </Link>
+                                            </div>
                                         </div>
-                                        <div className="pt-4">
-                                            <Link href="/contact" className="font-semibold text-accent hover:underline">
-                                                Contact us to learn more &rarr;
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </div>
+                                    </motion.div>
+                                </motion.div>
                             </motion.div>
                         )}
                     </AnimatePresence>
                 </div>
             </div>
+          </LayoutGroup>
         </div>
       </section>
     </div>
