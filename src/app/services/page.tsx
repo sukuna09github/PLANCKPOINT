@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect, useRef } from 'react';
@@ -258,7 +259,6 @@ const ServicesPage: React.FC = () => {
                 data-ai-hint={servicesBgImage.imageHint}
             />
         )}
-        <div className="absolute inset-0 bg-primary/70 -z-10" />
         <div className="max-w-[100rem] mx-auto px-6 md:px-12 relative">
             <AnimatedSection className="text-center mb-16">
                 <h2 className="text-4xl font-headline font-bold text-primary-foreground mb-6">Our Services</h2>
@@ -287,28 +287,30 @@ const ServicesPage: React.FC = () => {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5 }}
                             >
-                                <div className="grid grid-cols-1">
-                                    <div className="p-8 md:p-12 flex flex-col justify-center min-h-[350px] text-center">
-                                        
-                                        <h3 className="text-2xl font-bold text-white mb-3">{category.name}</h3>
-                                        <p className="text-white/70 mb-6 max-w-2xl mx-auto">{category.description}</p>
-                                        <p className="font-semibold text-white mb-2">Relevant Products:</p>
-                                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto w-full">
-                                            {category.products.map(productId => {
-                                                const product = PRODUCTS.find(p => p.id === productId);
-                                                if (!product) return null;
-                                                return (
-                                                    <Link key={product.id} href={`/products/${product.id}`} className="block group">
-                                                        <div className="bg-white/5 p-4 hover:bg-white/10 transition-colors h-full">
-                                                            <h4 className="font-semibold text-white group-hover:text-accent">{product.name}</h4>
-                                                            <p className="text-sm text-white/70">{product.description}</p>
-                                                        </div>
-                                                    </Link>
-                                                );
-                                            })}
+                                
+                                    <div className="grid grid-cols-1">
+                                        <div className="p-8 md:p-12 flex flex-col justify-center min-h-[350px] text-center">
+                                            
+                                            <h3 className="text-2xl font-bold text-white mb-3">{category.name}</h3>
+                                            <p className="text-white/70 mb-6 max-w-2xl mx-auto">{category.description}</p>
+                                            <p className="font-semibold text-white mb-2">Relevant Products:</p>
+                                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto w-full">
+                                                {category.products.map(productId => {
+                                                    const product = PRODUCTS.find(p => p.id === productId);
+                                                    if (!product) return null;
+                                                    return (
+                                                        <Link key={product.id} href={`/products/${product.id}`} className="block group">
+                                                            <div className="bg-white/5 p-4 hover:bg-white/10 transition-colors h-full">
+                                                                <h4 className="font-semibold text-white group-hover:text-accent">{product.name}</h4>
+                                                                <p className="text-sm text-white/70">{product.description}</p>
+                                                            </div>
+                                                        </Link>
+                                                    );
+                                                })}
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                
                             </motion.div>
                         </TabsContent>
                     )
@@ -321,3 +323,5 @@ const ServicesPage: React.FC = () => {
 };
 
 export default ServicesPage;
+
+    

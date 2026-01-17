@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect, useRef } from 'react';
@@ -260,7 +261,6 @@ const ServicesPage: React.FC = () => {
                 data-ai-hint={servicesBgImage.imageHint}
             />
         )}
-        <div className="absolute inset-0 bg-primary/70 -z-10" />
         <div className="max-w-[100rem] mx-auto px-6 md:px-12 relative">
             <AnimatedSection className="text-center mb-16">
                 <h2 className="text-4xl font-headline font-bold text-primary-foreground mb-6">Solutions by Industry</h2>
@@ -322,3 +322,5 @@ const ServicesPage: React.FC = () => {
 };
 
 export default ServicesPage;
+
+    
