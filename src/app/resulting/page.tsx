@@ -277,13 +277,13 @@ const ServicesPage: React.FC = () => {
                                 transition={{ duration: 0.5 }}
                             >
                                 
-                                    <div className="grid grid-cols-1 lg:grid-cols-2">
-                                        <div className="p-8 md:p-12 order-2 lg:order-1 flex flex-col justify-center min-h-[350px]">
+                                    <div className="grid grid-cols-1">
+                                        <div className="p-8 md:p-12 flex flex-col justify-center min-h-[350px] text-center">
                                             
                                             <h3 className="text-2xl font-bold text-white mb-3">{category.name}</h3>
-                                            <p className="text-white/70 mb-6">{category.description}</p>
+                                            <p className="text-white/70 mb-6 max-w-2xl mx-auto">{category.description}</p>
                                             <p className="font-semibold text-white mb-2">Relevant Products:</p>
-                                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto w-full">
                                                 {category.products.map(productId => {
                                                     const product = PRODUCTS.find(p => p.id === productId);
                                                     if (!product) return null;
@@ -297,17 +297,6 @@ const ServicesPage: React.FC = () => {
                                                     );
                                                 })}
                                             </div>
-                                        </div>
-                                        <div className="relative min-h-[300px] lg:min-h-0 order-1 lg:order-2">
-                                            {categoryImage && (
-                                                <Image
-                                                    src={categoryImage.imageUrl}
-                                                    alt={category.name}
-                                                    fill
-                                                    className="object-cover"
-                                                    data-ai-hint={categoryImage.imageHint}
-                                                />
-                                            )}
                                         </div>
                                     </div>
                                 
