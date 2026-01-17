@@ -7,17 +7,18 @@ import { ArrowRight, Globe, Users, Building2 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { INSIGHTS_TEASER_CARDS, WHAT_WE_DO_CARDS, RESEARCH_ARTICLES } from "@/lib/constants";
+import { INSIGHTS_TEASER_CARDS, WHAT_WE_DO_CARDS, RESEARCH_ARTICLES, PRODUCTS } from "@/lib/constants";
 import { PlaceHolderImages, type ImagePlaceholder } from "@/lib/placeholder-images";
 import { AnimatedSection } from "@/components/animated-section";
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
 import Autoplay from "embla-carousel-autoplay";
 import { Badge } from '@/components/ui/badge';
-import { Card, CardContent, CardFooter } from '@/components/ui/card';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 
 type Insight = typeof INSIGHTS_TEASER_CARDS[0];
 type WhatWeDo = typeof WHAT_WE_DO_CARDS[0];
 type Research = typeof RESEARCH_ARTICLES[0];
+type Product = typeof PRODUCTS[0];
 
 const HomePage: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -26,6 +27,7 @@ const HomePage: React.FC = () => {
   const [insights, setInsights] = useState<Insight[]>([]);
   const [whatWeDoImages, setWhatWeDoImages] = useState<ImagePlaceholder[]>([]);
   const [latestResearch, setLatestResearch] = useState<Research[]>([]);
+  const [products, setProducts] = useState<Product[]>([]);
 
   const heroSlides = [
     {
@@ -49,6 +51,7 @@ const HomePage: React.FC = () => {
         .sort((a, b) => new Date(b.publicationDate).getTime() - new Date(a.publicationDate).getTime())
         .slice(0, 6)
     );
+    setProducts(PRODUCTS);
   }, []);
   
   const findImage = (imageId: string) => PlaceHolderImages.find(img => img.id === imageId);
@@ -177,6 +180,80 @@ const HomePage: React.FC = () => {
                 );
               })}
             </div>
+          </div>
+        </section>
+
+        <section className="py-24 bg-background">
+          <div className="max-w-[120rem] mx-auto px-4 sm:px-8 lg:px-16">
+            <AnimatedSection>
+              <div className="text-center mb-16">
+                <h2 className="text-3xl md:text-4xl font-normal text-foreground">
+                  Our Suite of Solutions
+                </h2>
+                <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+                  Innovative tools designed to provide clarity and drive growth.
+                </p>
+              </div>
+            </AnimatedSection>
+            
+            <AnimatedSection className="mt-16" delay={0.2}>
+              <Carousel
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+                plugins={[Autoplay({ delay: 5000, stopOnInteraction: true })]}
+                className="w-full"
+              >
+                <CarouselContent className="-ml-4 sm:-ml-8">
+                  {products.map((product) => {
+                    const image = findImage(product.imageId);
+                    return (
+                        <CarouselItem key={product.id} className="pl-4 sm:pl-8 md:basis-1/2 lg:basis-1/3">
+                        <div className="p-1 h-full">
+                          <Card className="h-full flex flex-col bg-card text-card-foreground border-0 group overflow-hidden relative">
+                              {image && (
+                              <Image
+                                  src={image.imageUrl}
+                                  alt={product.name}
+                                  fill
+                                  data-ai-hint={image.imageHint}
+                                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                              />
+                              )}
+                              <div className="relative z-10 flex flex-col flex-grow p-6 bg-foreground/60 text-background backdrop-blur-sm">
+                              <CardHeader className="p-0">
+                                  <div className="flex items-center gap-4">
+                                      <div className="bg-white/20 text-white p-3">
+                                          <product.icon className="h-6 w-6" />
+                                      </div>
+                                      <CardTitle className="!text-xl text-white">{product.name}</CardTitle>
+                                  </div>
+                              </CardHeader>
+                              <CardContent className="p-0 pt-4 flex-grow">
+                                  <p className="text-sm text-white/80">
+                                  {product.description}
+                                  </p>
+                              </CardContent>
+                              <CardFooter className="p-0 pt-4">
+                                  <Button variant="ghost" asChild className="text-white hover:bg-white/10">
+                                  <Link href={`/solutions#${product.id}`}>Learn More</Link>
+                                  </Button>
+                              </CardFooter>
+                              </div>
+                          </Card>
+                        </div>
+                      </CarouselItem>
+                    );
+                  })}
+                </CarouselContent>
+              </Carousel>
+            </AnimatedSection>
+            <AnimatedSection className="mt-12 text-center" delay={0.4}>
+              <Button size="lg" asChild>
+                <Link href="/solutions">View All Solutions</Link>
+              </Button>
+            </AnimatedSection>
           </div>
         </section>
 
