@@ -121,7 +121,7 @@ const ServicesPage: React.FC = () => {
     <div className="min-h-screen bg-background">
       {/* Hero Section with 2-Column Layout */}
       <section
-        className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background"
+        className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-r from-secondary to-accent"
       >
         <div className="relative w-full px-6 sm:px-8 lg:px-16 2xl:px-32">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
@@ -132,10 +132,10 @@ const ServicesPage: React.FC = () => {
               transition={{ duration: 0.8, ease: 'easeOut' }}
               className="z-10 text-center md:text-left"
             >
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-headline text-primary mb-6 leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-headline text-white mb-6 leading-tight">
                 Strategic Capabilities for Modern Enterprises
               </h1>
-              <p className="text-lg md:text-xl font-body text-foreground/90 leading-relaxed max-w-xl mx-auto md:mx-0">
+              <p className="text-lg md:text-xl font-body text-white/80 leading-relaxed max-w-xl mx-auto md:mx-0">
                 Innovative solutions designed to bridge the gap between human potential and technological advancement. Explore our suite of solutions crafted for modern enterprises.
               </p>
             </motion.div>
@@ -220,8 +220,8 @@ const ServicesPage: React.FC = () => {
                     }}
                     className={`w-2 h-2 rounded-full transition-all duration-300 ${
                       index === currentSlide
-                        ? 'bg-primary w-8'
-                        : 'bg-primary/40 hover:bg-primary/60'
+                        ? 'bg-white w-8'
+                        : 'bg-white/40 hover:bg-white/60'
                     }`}
                     aria-label={`Go to slide ${index + 1}`}
                   />
@@ -362,6 +362,8 @@ const ServicesPage: React.FC = () => {
 };
 
 export default ServicesPage;
+
+    
 
     
 
