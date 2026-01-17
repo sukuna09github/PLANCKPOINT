@@ -181,32 +181,15 @@ export default function InsightsPage() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-24">
-        <div className="grid md:grid-cols-5 items-center gap-12">
-            <div className="md:col-span-2 px-4 sm:px-6 lg:px-8">
-                <AnimatedSection>
-                    <h2 className="text-3xl font-bold">The Pulse of Progress</h2>
-                    <p className="mt-4 text-muted-foreground text-lg">Stay ahead of the curve with our expert analysis on technology, strategy, and human-centric innovation.</p>
-                    <Link href="/research" className="text-primary font-semibold hover:underline flex items-center mt-6 w-fit">
-                        Learn More <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                </AnimatedSection>
-            </div>
-            <div className="md:col-span-3">
-                <AnimatedSection delay={0.2}>
-                  {introArtImage && (
-                    <div className="aspect-video relative w-full overflow-hidden">
-                      <Image
-                          src={introArtImage.imageUrl}
-                          alt={introArtImage.description}
-                          fill
-                          className="object-cover"
-                          data-ai-hint={introArtImage.imageHint}
-                      />
-                    </div>
-                  )}
-                </AnimatedSection>
-            </div>
+      <section className="py-20 lg:py-24 bg-background">
+        <div className="container mx-auto max-w-4xl text-center px-4 sm:px-6 lg:px-8">
+            <AnimatedSection>
+                <h2 className="text-3xl font-bold">The Pulse of Progress</h2>
+                <p className="mt-4 text-muted-foreground text-lg">Stay ahead of the curve with our expert analysis on technology, strategy, and human-centric innovation.</p>
+                <Link href="/research" className="text-primary font-semibold hover:underline flex items-center mt-6 justify-center">
+                    Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+            </AnimatedSection>
         </div>
       </section>
       
