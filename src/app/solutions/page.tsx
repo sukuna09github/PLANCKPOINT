@@ -270,7 +270,7 @@ const SolutionsPage: React.FC = () => {
              <div className={cn("grid grid-cols-1 gap-8 transition-all duration-500", selectedProduct && "md:grid-cols-2")}>
                 <motion.div layout="position">
                     <AnimatedSection className="text-center mb-16">
-                        <h2 className="text-4xl font-headline font-bold text-primary-foreground mb-6">Solutions by Industry</h2>
+                        <h2 className="text-4xl font-headline font-normal text-primary-foreground mb-6">Solutions by Industry</h2>
                         <p className="text-lg font-body text-primary-foreground/80 max-w-3xl mx-auto">
                             Our product suite is engineered to address the distinct challenges of various business domains, from high-level strategy to on-the-ground operations.
                         </p>
@@ -375,5 +375,7 @@ const SolutionsPage: React.FC = () => {
 };
 
 export default SolutionsPage;
+
+    
 
     

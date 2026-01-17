@@ -264,7 +264,7 @@ const ResultingPage: React.FC = () => {
                 
                 <motion.div layout="position">
                     <AnimatedSection className="text-center mb-16">
-                        <h2 className="text-4xl font-headline font-bold text-primary-foreground mb-6">Our Services</h2>
+                        <h2 className="text-4xl font-headline font-normal text-primary-foreground mb-6">Our Services</h2>
                         <p className="text-lg font-body text-primary-foreground/80 max-w-3xl mx-auto">
                             We offer a range of services designed to provide strategic clarity and drive impactful results for your organization.
                         </p>
@@ -370,5 +370,7 @@ const ResultingPage: React.FC = () => {
 };
 
 export default ResultingPage;
+
+    
 
     
