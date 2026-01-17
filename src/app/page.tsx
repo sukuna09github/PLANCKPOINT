@@ -91,7 +91,7 @@ const HomePage: React.FC = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
-                    transition={{ duration: 0.7 }}
+                    transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
                 >
                     <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-headline text-white mb-6 leading-tight max-w-3xl">
                         {heroSlides[currentSlide].headline}
@@ -129,13 +129,13 @@ const HomePage: React.FC = () => {
                     key={service.title}
                     initial={{ opacity: 0, y: 30, scale: 0.95 }}
                     whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                    transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.1 }}
+                    transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1], delay: index * 0.1 }}
                     viewport={{ once: true, margin: "-100px" }}
-                    whileHover={{ y: -8 }}
+                    whileHover={{ y: -8, transition: { duration: 0.3, ease: [0.4, 0, 0.2, 1] } }}
                     className="group"
                   >
                     <motion.div
-                      className="relative overflow-hidden h-80 flex flex-col justify-between p-8 shadow-xl hover:shadow-2xl transition-all duration-300"
+                      className="relative overflow-hidden h-80 flex flex-col justify-between p-8 shadow-xl hover:shadow-2xl transition-all duration-300 ease-apple"
                       style={{
                         backgroundImage: image ? `url(${image.imageUrl})` : 'none',
                         backgroundSize: 'cover',
@@ -148,7 +148,7 @@ const HomePage: React.FC = () => {
                         <motion.div
                           initial={{ opacity: 0, x: -30 }}
                           whileInView={{ opacity: 1, x: 0 }}
-                          transition={{ duration: 0.6, delay: index * 0.1 }}
+                          transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1], delay: index * 0.1 }}
                           viewport={{ once: true }}
                         >
                           <h3 className="text-2xl font-semibold text-white mb-2" style={{ fontFamily: 'Inter, sans-serif', fontWeight: 600 }}>
@@ -162,12 +162,12 @@ const HomePage: React.FC = () => {
                         <motion.div
                           initial={{ opacity: 0, x: -30 }}
                           whileInView={{ opacity: 1, x: 0 }}
-                          transition={{ duration: 0.6, delay: index * 0.1 + 0.1 }}
+                          transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1], delay: index * 0.1 + 0.1 }}
                           viewport={{ once: true }}
                         >
                           <Button
                             asChild
-                            className="w-full px-6 py-2.5 text-white font-medium text-sm transition-all duration-300 hover:bg-white/20"
+                            className="w-full px-6 py-2.5 text-white font-medium text-sm transition-all duration-300 ease-apple hover:bg-white/20"
                             variant="ghost"
                             style={{ fontFamily: 'Inter, sans-serif', fontWeight: 500 }}
                           >
@@ -221,7 +221,7 @@ const HomePage: React.FC = () => {
                                   alt={product.name}
                                   fill
                                   data-ai-hint={image.imageHint}
-                                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                                  className="object-cover transition-transform duration-300 ease-apple group-hover:scale-105"
                               />
                               )}
                               <div className="relative z-10 flex flex-col flex-grow p-6 bg-foreground/60 text-background backdrop-blur-sm">
@@ -290,12 +290,12 @@ const HomePage: React.FC = () => {
                       <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5 }}
+                        transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
                         viewport={{ once: true, amount: 0.5 }}
                         className="group h-full"
                       >
                       <Link href={`/insights/${insight._id}`} className="block group h-full">
-                        <div className="bg-white overflow-hidden shadow-sm hover:shadow-xl hover:shadow-accent/20 transition-all duration-300 hover:-translate-y-2 flex flex-col h-full group/card">
+                        <div className="bg-white overflow-hidden shadow-sm hover:shadow-xl hover:shadow-accent/20 transition-all duration-300 ease-apple hover:-translate-y-2 flex flex-col h-full group/card">
                           <div className="flex-1 relative overflow-hidden flex flex-col justify-between">
                             {image && (
                                <div className="aspect-video relative w-full overflow-hidden">
@@ -303,7 +303,7 @@ const HomePage: React.FC = () => {
                                   src={image.imageUrl}
                                   alt={insight.title}
                                   fill
-                                  className="object-cover group-hover/card:scale-105 transition-transform duration-300"
+                                  className="object-cover group-hover/card:scale-105 transition-transform duration-300 ease-apple"
                                   data-ai-hint={image.imageHint}
                                 />
                                </div>
@@ -314,7 +314,7 @@ const HomePage: React.FC = () => {
                                 {insight.category}
                               </Badge>
 
-                              <h3 className="text-lg font-headline font-semibold text-primary mb-2 group-hover/card:text-accent transition-colors duration-300 flex-grow">
+                              <h3 className="text-lg font-headline font-semibold text-primary mb-2 group-hover/card:text-accent transition-colors duration-300 ease-apple flex-grow">
                                 {insight.title}
                               </h3>
 
@@ -324,7 +324,7 @@ const HomePage: React.FC = () => {
 
                               <span className="text-primary font-semibold hover:underline flex items-center mt-auto">
                                   Read more
-                                  <ArrowRight className="w-3 h-3 ml-2" />
+                                  <ArrowRight className="w-3 h-3 ml-2 transition-transform duration-300 ease-apple group-hover/card:translate-x-1" />
                               </span>
                             </div>
                           </div>
@@ -361,7 +361,7 @@ const HomePage: React.FC = () => {
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
+                transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
                 viewport={{ once: true, margin: "-100px" }}
                 className="text-center"
               >
@@ -375,7 +375,7 @@ const HomePage: React.FC = () => {
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
+                transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1], delay: 0.1 }}
                 viewport={{ once: true, margin: "-100px" }}
                 className="text-center"
               >
@@ -389,7 +389,7 @@ const HomePage: React.FC = () => {
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+                transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1], delay: 0.2 }}
                 viewport={{ once: true, margin: "-100px" }}
                 className="text-center"
               >

@@ -30,7 +30,7 @@ export default function ContactPage() {
                     <Mail className="h-5 w-5 mt-1 text-primary" />
                     <div>
                       <h3 className="font-semibold text-foreground">Email</h3>
-                      <a href="mailto:hello@planckpoint.com" className="hover:text-primary transition-colors">hello@planckpoint.com</a>
+                      <a href="mailto:hello@planckpoint.com" className="hover:text-primary transition-colors duration-300 ease-apple">hello@planckpoint.com</a>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">

@@ -17,11 +17,11 @@ export function Footer() {
               Measuring the impact of humans in technology.
             </p>
             <div className="mt-6 flex space-x-4">
-              <Link href="#" className="text-white/70 hover:text-white">
+              <Link href="#" className="text-white/70 hover:text-white transition-colors duration-300 ease-apple">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="#" className="text-white/70 hover:text-white">
+              <Link href="#" className="text-white/70 hover:text-white transition-colors duration-300 ease-apple">
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
               </Link>
@@ -37,7 +37,7 @@ export function Footer() {
                 <ul className="mt-4 space-y-2">
                   {section.links.map((link) => (
                     <li key={link.label}>
-                      <Link href={link.href} className="text-sm text-white/70 hover:text-white transition-colors">
+                      <Link href={link.href} className="text-sm text-white/70 hover:text-white transition-colors duration-300 ease-apple">
                         {link.label}
                       </Link>
                     </li>

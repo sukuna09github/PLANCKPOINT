@@ -53,12 +53,12 @@ export function StackedCardDeck({ items }: StackedCardDeckProps) {
               >
                 <div
                   className={cn(
-                    "h-full w-full flex items-start transition-colors shadow-2xl",
+                    "h-full w-full flex items-start transition-colors duration-300 ease-apple shadow-2xl",
                     "bg-white/10 backdrop-blur-md border border-white/20"
                   )}
                 >
                   <div className="p-8 h-full flex flex-col w-full">
-                    <h3 className="text-2xl font-bold transition-colors pt-4 whitespace-nowrap text-white text-center w-full">
+                    <h3 className="text-2xl font-bold transition-colors duration-300 ease-apple pt-4 whitespace-nowrap text-white text-center w-full">
                       {item.title}
                     </h3>
                     <motion.div
@@ -66,7 +66,7 @@ export function StackedCardDeck({ items }: StackedCardDeckProps) {
                       initial={{ opacity: 0 }}
                       animate={{
                         opacity: isActive ? 1 : 0,
-                        transition: { duration: 0.3, delay: 0.2 },
+                        transition: { duration: 0.3, delay: 0.2, ease: [0.4, 0, 0.2, 1] },
                       }}
                     >
                       <p className="text-lg">{item.description}</p>
@@ -87,7 +87,7 @@ export function StackedCardDeck({ items }: StackedCardDeckProps) {
               key={item.title}
               onClick={() => handleClick(index)}
               className={cn(
-                "w-full text-center transition-all duration-300 ease-in-out p-2",
+                "w-full text-center transition-all duration-300 ease-apple p-2",
                 isActive ? 'text-white font-bold' : 'text-white/50'
               )}
               style={{

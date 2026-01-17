@@ -111,9 +111,8 @@
 }
 
 .liquid-glass-card {
-  @apply relative overflow-hidden transition-all duration-500;
+  @apply relative overflow-hidden transition-all duration-400 ease-apple;
   height: 282px;
-  transition-timing-function: ease-out;
   background: rgba(30, 41, 59, 0.4);
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -132,16 +131,14 @@
 }
 
 .liquid-glass-card-header {
-    @apply flex flex-col items-center justify-center transition-all duration-500;
-    transition-timing-function: ease-out;
+    @apply flex flex-col items-center justify-center transition-all duration-400 ease-apple;
 }
 .group:hover .liquid-glass-card-header {
     @apply -translate-y-4;
 }
 
 .liquid-glass-card-bio {
-  @apply opacity-0 max-h-0 overflow-hidden transition-all duration-500;
-  transition-timing-function: ease-out;
+  @apply opacity-0 max-h-0 overflow-hidden transition-all duration-400 ease-apple;
 }
 
 .group:hover .liquid-glass-card-bio {
@@ -150,7 +147,7 @@
 
 .liquid-glass-card::before {
   content: '';
-  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-0 h-0 rounded-full transition-all duration-700 ease-in-out;
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-0 h-0 rounded-full transition-all duration-700 ease-apple;
   background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 70%);
 }
 
@@ -173,6 +170,7 @@
   transform: scale(1.5);
 }
     
+
 
 
 

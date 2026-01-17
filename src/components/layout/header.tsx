@@ -29,7 +29,7 @@ export function Header() {
               key={link.href}
               href={link.href}
               className={cn(
-                "text-lg font-medium transition-colors hover:text-primary",
+                "text-lg font-medium transition-colors duration-300 ease-apple hover:text-primary",
                 pathname === link.href ? "text-primary" : "text-muted-foreground"
               )}
             >
@@ -71,7 +71,7 @@ export function Header() {
                       href={link.href}
                       onClick={() => setIsOpen(false)}
                       className={cn(
-                        "text-lg font-medium transition-colors hover:text-primary",
+                        "text-lg font-medium transition-colors duration-300 ease-apple hover:text-primary",
                         pathname === link.href ? "text-primary" : "text-foreground"
                       )}
                     >

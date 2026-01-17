@@ -1,11 +1,12 @@
 "use client";
 
-import { useRef } from 'react';
+import { motion } from 'framer-motion';
 import { useInView } from '@/hooks/use-in-view';
 import { cn } from '@/lib/utils';
+import { ReactNode } from 'react';
 
 interface AnimatedSectionProps {
-  children: React.ReactNode;
+  children: ReactNode;
   className?: string;
   delay?: number;
   id?: string;
@@ -14,22 +15,27 @@ interface AnimatedSectionProps {
 export function AnimatedSection({ children, className, delay = 0, id }: AnimatedSectionProps) {
   const [ref, isInView] = useInView({
     threshold: 0.1,
+    triggerOnce: true,
   });
 
   return (
-    <div
+    <motion.div
       id={id}
       ref={ref}
-      className={cn(
-        "transition-all duration-700 ease-out",
-        isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8",
-        className
-      )}
-      style={{
-        transitionDelay: `${delay}s`,
+      className={cn(className)}
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+      variants={{
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0 },
+      }}
+      transition={{
+        duration: 0.8,
+        ease: [0.4, 0, 0.2, 1],
+        delay,
       }}
     >
       {children}
-    </div>
+    </motion.div>
   );
 }

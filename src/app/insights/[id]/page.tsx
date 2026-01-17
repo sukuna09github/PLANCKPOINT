@@ -1,5 +1,4 @@
 
-
 "use client";
 
 import React from 'react';
@@ -167,7 +166,7 @@ Looking ahead, the landscape of work and technology continues to evolve at a rap
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
             className="text-center mb-12"
           >
             <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mb-8 text-sm text-muted-foreground font-medium">
@@ -200,7 +199,7 @@ Looking ahead, the landscape of work and technology continues to evolve at a rap
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 0.8, delay: 0.2, ease: [0.4, 0, 0.2, 1] }}
               className="overflow-hidden shadow-xl mb-12"
             >
               <Image
@@ -221,7 +220,7 @@ Looking ahead, the landscape of work and technology continues to evolve at a rap
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
             viewport={{ once: true }}
           >
             <Card className="bg-transparent border-0 shadow-none">
@@ -250,7 +249,7 @@ Looking ahead, the landscape of work and technology continues to evolve at a rap
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
               viewport={{ once: true }}
               className="text-center mb-16"
             >
@@ -268,10 +267,10 @@ Looking ahead, the landscape of work and technology continues to evolve at a rap
                   key={relatedInsight._id}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: index * 0.1 }}
+                  transition={{ duration: 0.8, delay: index * 0.1, ease: [0.4, 0, 0.2, 1] }}
                   viewport={{ once: true }}
                 >
-                  <Card className="h-full hover:shadow-xl hover:shadow-accent/10 transition-all duration-300 hover:-translate-y-2 bg-background border-0 shadow-sm group">
+                  <Card className="h-full hover:shadow-xl hover:shadow-accent/10 transition-all duration-300 ease-apple hover:-translate-y-2 bg-background border-0 shadow-sm group">
                     <Link href={`/insights/${relatedInsight._id}`} className="block h-full">
                       <CardContent className="p-0 h-full flex flex-col">
                         {relatedInsight.mainImage && (
@@ -279,7 +278,7 @@ Looking ahead, the landscape of work and technology continues to evolve at a rap
                             <Image
                               src={relatedInsight.mainImage}
                               alt={relatedInsight.title || 'Related insight'}
-                              className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                              className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300 ease-apple"
                               width={400}
                               height={225}
                             />
@@ -294,7 +293,7 @@ Looking ahead, the landscape of work and technology continues to evolve at a rap
                             </div>
                           </div>
 
-                          <h3 className="text-xl font-headline font-semibold text-primary mb-4 group-hover:text-secondary transition-colors duration-300 flex-shrink-0">
+                          <h3 className="text-xl font-headline font-semibold text-primary mb-4 group-hover:text-secondary transition-colors duration-300 ease-apple flex-shrink-0">
                             {relatedInsight.title}
                           </h3>
                           
@@ -338,7 +337,7 @@ Looking ahead, the landscape of work and technology continues to evolve at a rap
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
             viewport={{ once: true }}
             className="text-center"
           >

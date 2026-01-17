@@ -127,14 +127,14 @@ export default function InsightsPage() {
                                       src={image.imageUrl}
                                       alt={insight.title}
                                       fill
-                                      className="object-cover transition-all duration-300 group-hover:scale-105 group-hover:blur-sm"
+                                      className="object-cover transition-all duration-300 ease-apple group-hover:scale-105 group-hover:blur-sm"
                                   />}
-                                  <div className="absolute inset-0 bg-black/40 group-hover:bg-accent/20 transition-all duration-300 flex items-end p-4 text-left">
-                                    <div className="transition-opacity duration-300 group-hover:opacity-0 w-full">
+                                  <div className="absolute inset-0 bg-black/40 group-hover:bg-accent/20 transition-all duration-300 ease-apple flex items-end p-4 text-left">
+                                    <div className="transition-opacity duration-300 ease-apple group-hover:opacity-0 w-full">
                                       <p className="font-semibold text-white text-sm">{insight.title}</p>
                                     </div>
-                                    <div className="absolute inset-0 flex items-center justify-center p-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                        <p className="text-white text-xs transform transition-transform duration-300 group-hover:scale-100 scale-90 line-clamp-3">{insight.description}</p>
+                                    <div className="absolute inset-0 flex items-center justify-center p-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-apple">
+                                        <p className="text-white text-xs transform transition-transform duration-300 ease-apple group-hover:scale-100 scale-90 line-clamp-3">{insight.description}</p>
                                     </div>
                                   </div>
                               </div>
@@ -156,9 +156,9 @@ export default function InsightsPage() {
                                     src={image.imageUrl}
                                     alt={featuredInsight.title}
                                     fill
-                                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                                    className="object-cover transition-transform duration-300 ease-apple group-hover:scale-105"
                                 />}
-                                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors"></div>
+                                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors ease-apple"></div>
                               </div>
                               );
                             })()}
@@ -198,7 +198,7 @@ export default function InsightsPage() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
             viewport={{ once: true }}
             className="text-center mb-16"
           >
@@ -217,24 +217,24 @@ export default function InsightsPage() {
                     key={category.name}
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: index * 0.1 }}
+                    transition={{ duration: 0.8, delay: index * 0.1, ease: [0.4, 0, 0.2, 1] }}
                     viewport={{ once: true }}
                     className="group"
                     >
                       <Link href="/research" className="block h-full">
-                        <Card className="h-full overflow-hidden relative aspect-[4/5] border-0 shadow-sm transition-all duration-500 hover:shadow-xl hover:shadow-accent/10">
+                        <Card className="h-full overflow-hidden relative aspect-[4/5] border-0 shadow-sm transition-all duration-400 ease-apple hover:shadow-xl hover:shadow-accent/10">
                           {image && (
                             <Image
                               src={image.imageUrl}
                               alt={category.name || 'Research category'}
                               fill
-                              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 blur-sm"
+                              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-400 ease-apple blur-sm"
                               data-ai-hint={image.imageHint}
                             />
                           )}
-                           <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-colors duration-300"></div>
+                           <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-colors duration-300 ease-apple"></div>
                           <CardContent className="relative flex flex-col h-full items-center justify-center p-6 text-center text-white">
-                            <h3 className="text-2xl font-headline font-semibold text-white mb-2 group-hover:text-accent-foreground transition-colors duration-300">
+                            <h3 className="text-2xl font-headline font-semibold text-white mb-2 group-hover:text-accent-foreground transition-colors duration-300 ease-apple">
                                 {category.name}
                             </h3>
                             <p className="text-base font-body text-white/80">
@@ -255,7 +255,7 @@ export default function InsightsPage() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
             viewport={{ once: true }}
             className="mb-16"
           >
@@ -304,10 +304,10 @@ export default function InsightsPage() {
                   key={insight.title}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: index * 0.1 }}
+                  transition={{ duration: 0.8, delay: index * 0.1, ease: [0.4, 0, 0.2, 1] }}
                   viewport={{ once: true }}
                 >
-                  <Card className="h-full hover:shadow-xl hover:shadow-accent/10 transition-all duration-500 hover:-translate-y-2 hover:scale-105 bg-white border-0 shadow-sm group cursor-pointer">
+                  <Card className="h-full hover:shadow-xl hover:shadow-accent/10 transition-all duration-400 ease-apple hover:-translate-y-2 hover:scale-105 bg-white border-0 shadow-sm group cursor-pointer">
                     <Link href={`/research`} className="block h-full">
                       <CardContent className="p-0 h-full flex flex-col">
                         {image && (
@@ -315,7 +315,7 @@ export default function InsightsPage() {
                             <Image
                               src={image.imageUrl}
                               alt={insight.title || 'Research article'}
-                              className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                              className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-400 ease-apple"
                               width={400}
                               height={192}
                               data-ai-hint={image.imageHint}
@@ -330,7 +330,7 @@ export default function InsightsPage() {
                             </span>
                           </div>
 
-                          <h3 className="text-lg font-headline font-semibold text-primary mb-3 group-hover:text-secondary transition-colors duration-300 flex-shrink-0">
+                          <h3 className="text-lg font-headline font-semibold text-primary mb-3 group-hover:text-secondary transition-colors duration-300 ease-apple flex-shrink-0">
                             {insight.title}
                           </h3>
                           
@@ -343,7 +343,7 @@ export default function InsightsPage() {
                               className="text-accent hover:text-accent hover:bg-accent/10 p-0 h-auto font-body font-semibold flex items-center"
                             >
                               Read Article
-                              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300 ease-apple" />
                             </div>
                           </div>
                         </div>
