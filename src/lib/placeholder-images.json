@@ -57,19 +57,19 @@
     {
       "id": "insight1",
       "description": "Image for a survey report.",
-      "imageUrl": "https://images.unsplash.com/photo-1665979738279-bd2441290e02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdXJ2ZXklMjByZXBvcnR8ZW58MHx8fHwxNzY0ODYxNTA4fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1665979738279-bd2441290e02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdXJ2ZXklMjByZXBvcnR8ZW58MHx8fHwxNzY0ODYxNTA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "survey report"
     },
     {
       "id": "insight2",
       "description": "Image for a blog about hybrid work.",
-      "imageUrl": "https://images.unsplash.com/photo-1631891425069-a0e16ba9c24e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aHlicmlkJTIwd29ya3xlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1631891425069-a0e16ba9c24e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aHlicmlkJTIwd29ya3xlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "hybrid work"
     },
     {
       "id": "insight3",
       "description": "Image for a case study on retail tech.",
-      "imageUrl": "https://images.unsplash.com/photo-1703165552745-37e85f0273cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyZXRhaWwlMjB0ZWNobm9sb2d5fGVufDB8fHx8MTc2NDg2MTUwOHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1703165552745-37e85f0273cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyZXRhaWwlMjB0ZWNobm9sb2d5fGVufDB8fHx8MTc2NDg2MTUwOHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "retail technology"
     },
     {
@@ -111,7 +111,7 @@
     {
       "id": "research1",
       "description": "Image for UX research.",
-      "imageUrl": "https://images.unsplash.com/photo-1587440871875-191322ee64b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx1c2VyJTIwaW50ZXJmYWNlfGVufDB8fHx8MTc2NDc2NTkyM3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1587440871875-191322ee64b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx1c2VyJTIwaW50ZXJmYWNlfGVufDB8fHx8MTc2NDc2NTkyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "user interface"
     },
     {
@@ -129,7 +129,7 @@
     {
       "id": "research4",
       "description": "Image for remote collaboration.",
-      "imageUrl": "https://images.unsplash.com/photo-1616587226157-48e49175ee20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dmlkZW8lMjBjb25mZXJlbmNlfGVufDB8fHx8MTc2NDg2MTUwOHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1616587226157-48e49175ee20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dmlkZW8lMjBjb25mZXJlbmNlfGVufDB8fHx8MTc2NDg2MTUwOHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "video conference"
     },
     {
@@ -164,14 +164,14 @@
     },
     {
       "id": "leader4",
-      "description": "Portrait of Kenji Tanaka.",
-      "imageUrl": "https://images.unsplash.com/photo-1711054669706-04ff7a663834?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtYW4lMjBwcm9mZXNzaW9uYWx8ZW58MHx8fHwxNzY0ODI4NzkwfDA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "man professional"
+      "description": "Portrait of Ulrich Meister.",
+      "imageUrl": "/images/ulrich sketch.png",
+      "imageHint": "man portrait sketch"
     },
     {
       "id": "about-hero",
       "description": "A modern, well-lit architectural space.",
-      "imageUrl": "https://images.unsplash.com/photo-1631974474717-d69d3646d5df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0ZWFsJTIwfGVufDB8fHx8MTc2NTUzMDUzOXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1631974474717-d69d3646d5df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0ZWFsJTIwfGVufDB8fHx8MTc2NTUzMDUzOXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "teal abstract"
     },
     {
@@ -315,19 +315,19 @@
     {
       "id": "research9",
       "description": "An image representing the gig economy.",
-      "imageUrl": "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnaWclMjBlY29ub215fGVufDB8fHx8MTcxNzU5ODQ5OHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnaWclMjBlY29ub215fGVufDB8fHx8MTcxNzU5ODQ5OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "gig economy"
     },
     {
       "id": "research10",
       "description": "An image representing human-AI collaboration.",
-      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBSSUyMGNvbGxhYm9yYXRpb258ZW58MHx8fHwxNzE3NTk4NTMxfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBSSUyMGNvbGxhYm9yYXRpb258ZW58MHx8fHwxNzE3NTk4NTMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "AI collaboration"
     },
     {
       "id": "research11",
       "description": "An image representing empathy in design.",
-      "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkZXNpZ24lMjBlbXBhdGh5fGVufDB8fHx8MTcxNzU5ODU1OXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkZXNpZ24lMjBlbXBhdGh5fGVufDB8fHx8MTcxNzU5ODU1OXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "design empathy"
     },
     {
@@ -351,7 +351,7 @@
     {
       "id": "research15",
       "description": "An image representing neuro-symbolic AI.",
-      "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuZXVybyUyMHN5bWJvbGljfGVufDB8fHx8MTcxNzU5ODc5Mnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuZXVybyUyMHN5bWJvbGljfGVufDB8fHx8MTcxNzU5ODc5Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "neuro symbolic"
     },
     {
@@ -453,13 +453,13 @@
     {
       "id": "page-intro-art",
       "description": "Abstract teal lines and shapes on a dark background",
-      "imageUrl": "https://images.unsplash.com/photo-1707386301713-1002bc5d6cf1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMGltYWdlc3xlbnwwfHx8fDE3NjYwNzI0OTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1707386301713-1002bc5d6cf1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMGltYWdlc3xlbnwwfHx8fDE3NjYwNzI0OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "abstract teal"
     },
     {
       "id": "prod-cat-strategy",
       "description": "Abstract image representing business strategy and growth",
-      "imageUrl": "https://images.unsplash.com/photo-1708778002586-37c4f23b7f3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXJrJTIwdGVhbCUyMGFic3RyYWN0fGVufDB8fHx8MTc2NjAwNDk1MHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1708778002586-37c4f23b7f3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXJrJTIwdGVhbCUyMGFic3RyYWN0fGVufDB8fHx8MTc2NjAwNDk1MHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "business strategy"
     },
     {
@@ -495,7 +495,7 @@
     {
       "id": "industry-tech",
       "description": "Abstract image representing technology and innovation",
-      "imageUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkYXRhJTIwbmV0d29ya3xlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkYXRhJTIwbmV0d29ya3xlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "technology innovation"
     },
     {
