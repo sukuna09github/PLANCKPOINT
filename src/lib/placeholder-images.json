@@ -9,7 +9,7 @@
     {
       "id": "hero2",
       "description": "An abstract representation of data flowing through networks.",
-      "imageUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkYXRhJTIwbmV0d29ya3xlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkYXRhJTIwbmV0d29ya3xlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "data network"
     },
     {
@@ -152,9 +152,9 @@
     },
     {
       "id": "leader2",
-      "description": "Portrait of Marcus Thorne.",
-      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjQ4NTgzNzR8MA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "man portrait"
+      "description": "Portrait of Florian Scheibmayer.",
+      "imageUrl": "/images/sketch florian.jpg",
+      "imageHint": "man portrait sketch"
     },
     {
       "id": "leader3",
