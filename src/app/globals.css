@@ -172,11 +172,15 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: hsla(var(--primary) / 0.7);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  -webkit-mask-image: linear-gradient(to bottom, black 20%, transparent 50%);
+  mask-image: linear-gradient(to bottom, black 20%, transparent 50%);
   z-index: -1;
 }
 
     
+
 
 
 
