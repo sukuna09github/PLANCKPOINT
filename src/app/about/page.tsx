@@ -82,10 +82,10 @@ export default function AboutPage() {
           src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31"
           alt="Teal abstract technology background"
           fill
-          className="object-cover -z-20"
+          className="object-cover"
           data-ai-hint="teal abstract technology"
         />
-        <div className="absolute inset-0 bg-primary/70 -z-10"></div>
+        <div className="absolute inset-0 bg-primary/70"></div>
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
             <AnimatedSection>
@@ -121,11 +121,14 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section id="leadership" className="py-20 lg:py-24 relative text-white bg-transparent min-h-[calc(100vh+60px)]">
-        <div 
-          className="fixed-background"
-          style={{ backgroundImage: `url(${leadershipBgUrl})` }}
-        ></div>
+      <section id="leadership" className="py-20 lg:py-24 relative text-white bg-transparent min-h-[calc(100vh+60px)] overflow-hidden">
+        <Image
+            src={leadershipBgUrl}
+            alt="Leadership background"
+            fill
+            className="object-cover"
+        />
+        <div className="absolute inset-0 bg-primary/70"></div>
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
           <AnimatedSection>
             <div className="text-center mb-16 max-w-none">

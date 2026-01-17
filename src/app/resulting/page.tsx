@@ -252,14 +252,17 @@ const ServicesPage: React.FC = () => {
         </div>
       </section>
       
-      <section id="services" className="relative py-16 md:py-24">
+      <section id="services" className="relative py-16 md:py-24 overflow-hidden">
         {servicesBgImage && (
-            <div
-                className="fixed-background"
-                style={{ backgroundImage: `url(${servicesBgImage.imageUrl})` }}
+            <Image
+                src={servicesBgImage.imageUrl}
+                alt="Services background"
+                fill
+                className="object-cover"
                 data-ai-hint={servicesBgImage.imageHint}
             />
         )}
+        <div className="absolute inset-0 bg-primary/70"></div>
         <div className="max-w-[120rem] mx-auto px-6 md:px-12 relative">
             <div className={cn("grid grid-cols-1 gap-8 transition-all duration-500", selectedProduct && "md:grid-cols-2")}>
                 
