@@ -15,7 +15,7 @@
     {
       "id": "hero3",
       "description": "A person interacting with a futuristic transparent user interface.",
-      "imageUrl": "https://images.unsplash.com/photo-1639322648003-00f7f37ae133?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmdXR1cmlzdGljJTIwaW50ZXJmYWNlfGVufDB8fHx8MTc2NDc4NjI5Nnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1639322648003-00f7f37ae133?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmdXR1cmlzdGljJTIwaW50ZXJmYWNlfGVufDB8fHx8MTc2NDc4NjI5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "futuristic interface"
     },
     {
@@ -158,9 +158,9 @@
     },
     {
       "id": "leader3",
-      "description": "Portrait of Lena Petrova.",
-      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3b21hbiUyMHNtaWxlfGVufDB8fHx8MTc2NDg1MjE5MXww&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "woman smile"
+      "description": "Portrait of Kiran Kommineni.",
+      "imageUrl": "/images/kiran sketch.png",
+      "imageHint": "man portrait sketch"
     },
     {
       "id": "leader4",
@@ -309,7 +309,7 @@
     {
       "id": "research8",
       "description": "An image representing data sonification.",
-      "imageUrl": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb3VuZCUyMHdhdmVzfGVufDB8fHx8MTcxNzU5ODQzNHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb3VuZCUyMHdhdmVzfGVufDB8fHx8MTcxNzU5ODQzNHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "sound waves"
     },
     {
