@@ -188,7 +188,7 @@ const HomePage: React.FC = () => {
             <AnimatedSection>
               <div className="text-center mb-16">
                 <h2 className="text-3xl md:text-4xl font-normal text-foreground">
-                  Our Suite of Solutions
+                  Strategic Intelligence Systems
                 </h2>
                 <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
                   Innovative tools designed to provide clarity and drive growth.
@@ -417,5 +417,3 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
-
-    
