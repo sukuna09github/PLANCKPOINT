@@ -202,7 +202,7 @@ export default function CaseStudiesPage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl font-headline font-normal text-primary mb-6">Insights Categories</h2>
+            <h2 className="text-4xl font-headline font-normal text-primary mb-6">Domains of Application</h2>
             <p className="text-lg font-body text-foreground/80 max-w-3xl mx-auto">
               Our insights span multiple domains, providing comprehensive analysis into 
               the evolving relationship between humans and technology.
