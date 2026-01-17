@@ -277,7 +277,7 @@ const ServicesPage: React.FC = () => {
                 <AnimatedSection>
                     <TabsList className="flex items-center justify-center gap-8 bg-transparent p-0 h-auto">
                         {SERVICE_CATEGORIES.map(category => (
-                            <TabsTrigger key={category.id} value={category.id} className="text-lg font-medium text-white/70 p-2 bg-transparent shadow-none border-0 focus:ring-0 focus:outline-none">
+                            <TabsTrigger key={category.id} value={category.id} className="text-lg font-medium text-white/70 data-[state=active]:text-white p-2 bg-transparent shadow-none border-0 focus:ring-0 focus:outline-none">
                                 {category.name}
                             </TabsTrigger>
                         ))}
