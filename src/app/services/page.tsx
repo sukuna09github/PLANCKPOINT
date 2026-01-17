@@ -254,11 +254,11 @@ const ServicesPage: React.FC = () => {
                 src={servicesBgImage.imageUrl}
                 alt={servicesBgImage.description}
                 fill
-                className="object-cover -z-10"
+                className="object-cover -z-20"
                 data-ai-hint={servicesBgImage.imageHint}
             />
         )}
-        <div className="absolute inset-0 bg-primary/80 -z-10" />
+        <div className="absolute inset-0 bg-primary/70 -z-10" />
         <div className="max-w-[100rem] mx-auto px-6 md:px-12 relative">
             <AnimatedSection className="text-center mb-16">
                 <h2 className="text-4xl font-headline font-bold text-primary-foreground mb-6">Our Services</h2>

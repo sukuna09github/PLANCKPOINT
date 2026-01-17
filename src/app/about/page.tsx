@@ -82,7 +82,7 @@ export default function AboutPage() {
           src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31"
           alt="Teal abstract technology background"
           fill
-          className="object-cover -z-10"
+          className="object-cover -z-20"
           data-ai-hint="teal abstract technology"
         />
         <div className="absolute inset-0 bg-primary/70 -z-10"></div>
