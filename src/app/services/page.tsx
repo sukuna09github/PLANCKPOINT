@@ -275,11 +275,10 @@ const ServicesPage: React.FC = () => {
 
             <Tabs defaultValue={SERVICE_CATEGORIES[0].id} className="w-full">
                 <AnimatedSection>
-                    <TabsList className="grid w-full grid-cols-3 h-auto bg-white/10 text-white">
+                    <TabsList className="flex items-center justify-center gap-8 bg-transparent p-0 h-auto">
                         {SERVICE_CATEGORIES.map(category => (
-                            <TabsTrigger key={category.id} value={category.id} className="group flex flex-col sm:flex-row gap-2 items-center py-3 data-[state=active]:bg-white/20 data-[state=active]:shadow-lg data-[state=active]:text-white relative overflow-hidden">
-                                <span className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 backdrop-blur-sm"></span>
-                                <span className="relative z-10 text-sm font-medium">{category.name}</span>
+                            <TabsTrigger key={category.id} value={category.id} className="text-lg font-medium text-white/70 p-2 bg-transparent shadow-none border-0 focus:ring-0 focus:outline-none">
+                                {category.name}
                             </TabsTrigger>
                         ))}
                     </TabsList>
@@ -294,41 +293,39 @@ const ServicesPage: React.FC = () => {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5 }}
                             >
-                                <Card className="overflow-hidden border-0 shadow-xl bg-white/5 backdrop-blur-md">
-                                    <div className="grid grid-cols-1 lg:grid-cols-2">
-                                        <div className="p-8 md:p-12 order-2 lg:order-1 flex flex-col justify-center min-h-[350px]">
-                                            
-                                            <h3 className="text-2xl font-bold text-white mb-3">{category.name}</h3>
-                                            <p className="text-white/70 mb-6">{category.description}</p>
-                                            <p className="font-semibold text-white mb-2">Relevant Products:</p>
-                                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                                {category.products.map(productId => {
-                                                    const product = PRODUCTS.find(p => p.id === productId);
-                                                    if (!product) return null;
-                                                    return (
-                                                        <Link key={product.id} href={`/products/${product.id}`} className="block group">
-                                                            <div className="bg-white/5 p-4 hover:bg-white/10 transition-colors h-full">
-                                                                <h4 className="font-semibold text-white group-hover:text-accent">{product.name}</h4>
-                                                                <p className="text-sm text-white/70">{product.description}</p>
-                                                            </div>
-                                                        </Link>
-                                                    );
-                                                })}
-                                            </div>
-                                        </div>
-                                        <div className="relative min-h-[300px] lg:min-h-0 order-1 lg:order-2">
-                                            {categoryImage && (
-                                                <Image
-                                                    src={categoryImage.imageUrl}
-                                                    alt={category.name}
-                                                    fill
-                                                    className="object-cover"
-                                                    data-ai-hint={categoryImage.imageHint}
-                                                />
-                                            )}
+                                <div className="grid grid-cols-1 lg:grid-cols-2">
+                                    <div className="p-8 md:p-12 order-2 lg:order-1 flex flex-col justify-center min-h-[350px]">
+                                        
+                                        <h3 className="text-2xl font-bold text-white mb-3">{category.name}</h3>
+                                        <p className="text-white/70 mb-6">{category.description}</p>
+                                        <p className="font-semibold text-white mb-2">Relevant Products:</p>
+                                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                            {category.products.map(productId => {
+                                                const product = PRODUCTS.find(p => p.id === productId);
+                                                if (!product) return null;
+                                                return (
+                                                    <Link key={product.id} href={`/products/${product.id}`} className="block group">
+                                                        <div className="bg-white/5 p-4 hover:bg-white/10 transition-colors h-full">
+                                                            <h4 className="font-semibold text-white group-hover:text-accent">{product.name}</h4>
+                                                            <p className="text-sm text-white/70">{product.description}</p>
+                                                        </div>
+                                                    </Link>
+                                                );
+                                            })}
                                         </div>
                                     </div>
-                                </Card>
+                                    <div className="relative min-h-[300px] lg:min-h-0 order-1 lg:order-2">
+                                        {categoryImage && (
+                                            <Image
+                                                src={categoryImage.imageUrl}
+                                                alt={category.name}
+                                                fill
+                                                className="object-cover"
+                                                data-ai-hint={categoryImage.imageHint}
+                                            />
+                                        )}
+                                    </div>
+                                </div>
                             </motion.div>
                         </TabsContent>
                     )
