@@ -96,7 +96,7 @@ const HomePage: React.FC = () => {
                     <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-headline text-white mb-6 leading-tight max-w-3xl">
                         {heroSlides[currentSlide].headline}
                     </h1>
-                    <Link href={`/insights/${heroSlides[currentSlide].id}`} className="text-white font-semibold hover:underline flex items-center w-fit">
+                    <Link href="/resulting" className="text-white font-semibold hover:underline flex items-center w-fit">
                         Learn More
                         <ArrowRight className="w-4 h-4 ml-2" />
                     </Link>
@@ -166,12 +166,15 @@ const HomePage: React.FC = () => {
                           viewport={{ once: true }}
                         >
                           <Button
+                            asChild
                             className="w-full px-6 py-2.5 text-white font-medium text-sm transition-all duration-300 hover:bg-white/20"
                             variant="ghost"
                             style={{ fontFamily: 'Inter, sans-serif', fontWeight: 500 }}
                           >
-                            Learn More
-                            <ArrowRight className="w-4 h-4 ml-2" />
+                            <Link href="/resulting">
+                              Learn More
+                              <ArrowRight className="w-4 h-4 ml-2" />
+                            </Link>
                           </Button>
                         </motion.div>
                       </div>
@@ -237,7 +240,7 @@ const HomePage: React.FC = () => {
                               </CardContent>
                               <CardFooter className="p-0 pt-4">
                                   <Button variant="ghost" asChild className="text-white hover:bg-white/10">
-                                  <Link href={`/solutions#${product.id}`}>Learn More</Link>
+                                  <Link href="/resulting">Learn More</Link>
                                   </Button>
                               </CardFooter>
                               </div>
