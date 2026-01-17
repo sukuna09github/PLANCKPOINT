@@ -16,7 +16,6 @@ export function ProductsTeaser() {
   const findImage = (imageId: string) => PlaceHolderImages.find(img => img.id === imageId);
   const atomicAiImage = PlaceHolderImages.find(p => p.id === 'atomicai-background');
   const beyondQuadrantsImage = PlaceHolderImages.find(p => p.id === 'beyondquadrants-background');
-  const disquoImage = PlaceHolderImages.find(p => p.id === 'product-disquo-background');
   const elwisImage = PlaceHolderImages.find(p => p.id === 'elwis-background');
   const propricingImage = PlaceHolderImages.find(p => p.id === 'propricing-background');
   const skillorbitImage = PlaceHolderImages.find(p => p.id === 'skillorbit-background');
@@ -51,8 +50,6 @@ export function ProductsTeaser() {
                   image = atomicAiImage;
                 } else if (product.id === 'beyondquadrants') {
                   image = beyondQuadrantsImage;
-                } else if (product.id === 'disquo') {
-                  image = disquoImage;
                 } else if (product.id === 'elwis') {
                   image = elwisImage;
                 } else if (product.id === 'propricing') {

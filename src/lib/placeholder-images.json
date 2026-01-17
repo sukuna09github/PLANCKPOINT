@@ -31,12 +31,6 @@
       "imageHint": "abstract quadrants"
     },
     {
-      "id": "product3",
-      "description": "Abstract image for DisQuo.",
-      "imageUrl": "https://images.pexels.com/photos/4669603/pexels-photo-4669603.jpeg",
-      "imageHint": "disruptive analytics"
-    },
-    {
       "id": "product4",
       "description": "Abstract image for ELWIS.",
       "imageUrl": "https://images.unsplash.com/photo-1634476229749-a2e480a919d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxN3x8V09SS0ZMT1d8ZW58MHx8fHwxNzY1MjA1MzE5fDA&ixlib-rb-4.1.0&q=80&w=1080",
@@ -105,7 +99,7 @@
     {
       "id": "research-hero2",
       "description": "An abstract visualization of a neural network.",
-      "imageUrl": "https://images.unsplash.com/photo-1655890006065-edefcd764af6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxuZXVyYWwlMjBuZXR3b3JrfGVufDB8fHx8MTc2NDg0NTkxNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1655890006065-edefcd764af6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxuZXVyYWwlMjBuZXR3b3JrfGVufDB8fHx8MTc2NDg0NTkxNnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "neural network"
     },
     {
@@ -283,12 +277,6 @@
       "imageHint": "teal geometry"
     },
     {
-      "id": "product-disquo",
-      "description": "Teal and gold abstract",
-      "imageUrl": "https://images.pexels.com/photos/4669603/pexels-photo-4669603.jpeg",
-      "imageHint": "teal abstract"
-    },
-    {
       "id": "product-elwis",
       "description": "Teal light trails",
       "imageUrl": "https://images.unsplash.com/photo-1634476229749-a2e480a919d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxN3x8d29ya2Zsb3d8ZW58MHx8fHwxNzY1MjAxNjA3fDA&ixlib-rb-4.1.0&q=80&w=1080",
@@ -339,7 +327,7 @@
     {
       "id": "research11",
       "description": "An image representing empathy in design.",
-      "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkZXNpZ24lMjBlbXBhdGh5fGVufDB8fHx8MTcxNzU5ODU1OXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkZXNpZ24lMjBlbXBhdGh5fGVufDB8fHx8MTcxNzU5ODU1OXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "design empathy"
     },
     {
@@ -395,12 +383,6 @@
       "description": "An image representing the ethics of autonomous weapons.",
       "imageUrl": "https://images.pexels.com/photos/8434771/pexels-photo-8434771.jpeg",
       "imageHint": "autonomous ethics"
-    },
-    {
-      "id": "product-disquo-background",
-      "description": "Abstract image for DisQuo.",
-      "imageUrl": "https://images.pexels.com/photos/4669603/pexels-photo-4669603.jpeg",
-      "imageHint": "disruptive analytics"
     },
     {
       "id": "insights-intro-art",
@@ -477,13 +459,13 @@
     {
       "id": "prod-cat-strategy",
       "description": "Abstract image representing business strategy and growth",
-      "imageUrl": "https://images.unsplash.com/photo-1708778002586-37c4f23b7f3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXJrJTIwdGVhbCUyMGFic3RyYWN0fGVufDB8fHx8MTc2NjAwNDk1MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1708778002586-37c4f23b7f3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXJrJTIwdGVhbCUyMGFic3RyYWN0fGVufDB8fHx8MTc2NjAwNDk1MHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "business strategy"
     },
     {
       "id": "prod-cat-operations",
       "description": "Abstract image representing operational efficiency and gears",
-      "imageUrl": "https://images.unsplash.com/photo-1708778002531-5bb1c27c4ea3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhYnN0cmFjdCUyMHRlYWx8ZW58MHx8fHwxNzY1OTk4NTc2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1708778002531-5bb1c27c4ea3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhYnN0cmFjdCUyMHRlYWx8ZW58MHx8fHwxNzY1OTk4NTc2fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "operations efficiency"
     },
     {
@@ -507,19 +489,19 @@
     {
       "id": "industry-healthcare",
       "description": "Abstract image representing healthcare and medicine",
-      "imageUrl": "https://images.unsplash.com/photo-1459664018906-085c36f472af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0ZWFsfGVufDB8fHx8MTc2ODQyNDQ4OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1459664018906-085c36f472af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0ZWFsfGVufDB8fHx8MTc2ODQyNDQ4OHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "healthcare medicine"
     },
     {
       "id": "industry-tech",
       "description": "Abstract image representing technology and innovation",
-      "imageUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkYXRhJTIwbmV0d29ya3xlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkYXRhJTIwbmV0d29ya3xlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "technology innovation"
     },
     {
       "id": "industry-legal",
       "description": "Abstract image representing the legal field and justice",
-      "imageUrl": "https://images.unsplash.com/photo-1758275966059-462a4d0fba23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnYXZlbCUyMGNpcmN1aXR8ZW58MHx8fHwxNzY0ODYxNTA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758275966059-462a4d0fba23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnYXZlbCUyMGNpcmN1aXR8ZW58MHx8fHwxNzY0ODYxNTA4fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "legal justice"
     }
   ]
