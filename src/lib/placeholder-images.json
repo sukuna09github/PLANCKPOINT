@@ -3,7 +3,7 @@
     {
       "id": "hero1",
       "description": "A diverse team collaborating in a modern office.",
-      "imageUrl": "https://images.unsplash.com/photo-1622675363311-3e1904dc1885?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0ZWFtJTIwY29sbGFib3JhdGlvbnxlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1622675363311-3e1904dc1885?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0ZWFtJTIwY29sbGFib3JhdGlvbnxlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "team collaboration"
     },
     {
@@ -146,9 +146,9 @@
     },
     {
       "id": "leader1",
-      "description": "Portrait of Dr. Evelyn Reed.",
-      "imageUrl": "https://images.unsplash.com/photo-1609505848912-b7c3b8b4beda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2NDgwMjY3Nnww&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "woman portrait"
+      "description": "Portrait of Amit Dengle.",
+      "imageUrl": "/images/amit sketch.png",
+      "imageHint": "man portrait sketch"
     },
     {
       "id": "leader2",
