@@ -340,6 +340,11 @@ const ServicesPage: React.FC = () => {
                                                 ))}
                                             </ul>
                                         </div>
+                                        <div className="pt-4">
+                                            <Link href="/contact" className="font-semibold text-accent hover:underline">
+                                                Contact us to learn more &rarr;
+                                            </Link>
+                                        </div>
                                     </div>
                                 </div>
                             </motion.div>

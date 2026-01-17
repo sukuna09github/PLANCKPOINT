@@ -18,7 +18,7 @@ import { cn } from '@/lib/utils';
 
 type Product = typeof PRODUCTS[0];
 
-const ServicesPage: React.FC = () => {
+const SolutionsPage: React.FC = () => {
   const products = PRODUCTS.slice(0, 6);
   const [loading, setLoading] = useState(true);
   const [animatingHeaders, setAnimatingHeaders] = useState<Set<string>>(new Set());
@@ -345,6 +345,11 @@ const ServicesPage: React.FC = () => {
                                                 ))}
                                             </ul>
                                         </div>
+                                        <div className="pt-4">
+                                            <Link href="/contact" className="font-semibold text-accent hover:underline">
+                                                Contact us to learn more &rarr;
+                                            </Link>
+                                        </div>
                                     </div>
                                 </div>
                             </motion.div>
@@ -358,6 +363,6 @@ const ServicesPage: React.FC = () => {
   );
 };
 
-export default ServicesPage;
+export default SolutionsPage;
 
     
