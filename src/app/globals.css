@@ -179,7 +179,16 @@
   z-index: -1;
 }
 
+.premium-glass-card {
+  @apply relative h-full w-full p-8 text-left rounded-lg text-white;
+  background: rgba(30, 41, 59, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
     
+
 
 
 

@@ -3,7 +3,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, X } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
@@ -16,6 +16,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Card, CardContent } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 
+type Product = typeof PRODUCTS[0];
 
 const ServicesPage: React.FC = () => {
   const products = PRODUCTS.slice(0, 6);
@@ -27,6 +28,8 @@ const ServicesPage: React.FC = () => {
   const dragStartX = useRef(0);
   const autoplayTimer = useRef<NodeJS.Timeout | null>(null);
   const pathname = usePathname();
+
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
   const findProductImage = (imageId: string) => {
     return PlaceHolderImages.find(p => p.id === imageId);
@@ -85,9 +88,13 @@ const ServicesPage: React.FC = () => {
     if (hash) {
       // Small delay to ensure DOM is fully rendered
       const timer = setTimeout(() => {
-        const element = document.getElementById(hash);
+        const product = PRODUCTS.find(p => p.id === hash);
+        if (product) {
+            setSelectedProduct(product);
+        }
+        const element = document.getElementById('services');
         if (element) {
-          element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
       }, 100);
       return () => clearTimeout(timer);
@@ -175,11 +182,9 @@ const ServicesPage: React.FC = () => {
                       transition={{ duration: 0.7, ease: 'easeOut' }}
                       className="absolute inset-0 w-full h-full"
                     >
-                      {/* Glassmorphism Card */}
                        <div
                         className={cn(`group w-full h-full overflow-hidden shadow-2xl relative`, isActive ? 'cursor-pointer' : 'cursor-grab active:cursor-grabbing')}
                       >
-                        {/* Product Image */}
                         {productImage && (
                            <div className="w-full h-full relative overflow-hidden flex-shrink-0">
                             <Image
@@ -192,14 +197,12 @@ const ServicesPage: React.FC = () => {
                           </div>
                         )}
                         
-                        {/* Static Content */}
                         <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 bg-gradient-to-t from-black/60 to-transparent transition-opacity duration-300 group-hover:opacity-0">
                            <h3 className="text-2xl md:text-3xl font-bold text-primary-foreground">
                               {product.name}
                             </h3>
                         </div>
 
-                        {/* Hover Overlay */}
                         <div className="absolute inset-0 bg-black/20 backdrop-blur-md p-6 md:p-8 flex flex-col justify-center items-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                            <h3 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-2">
                               {product.name}
@@ -249,46 +252,45 @@ const ServicesPage: React.FC = () => {
         </div>
       </section>
       
-      <section className="relative py-16 md:py-24">
+      <section id="services" className="relative py-16 md:py-24">
         {servicesBgImage && (
             <div
-                className="absolute inset-0 bg-cover bg-center bg-fixed"
+                className="fixed-background"
                 style={{ backgroundImage: `url(${servicesBgImage.imageUrl})` }}
                 data-ai-hint={servicesBgImage.imageHint}
             />
         )}
-        <div className="max-w-[100rem] mx-auto px-6 md:px-12 relative">
-            <AnimatedSection className="text-center mb-16">
-                <h2 className="text-4xl font-headline font-bold text-primary-foreground mb-6">Our Services</h2>
-                <p className="text-lg font-body text-primary-foreground/80 max-w-3xl mx-auto">
-                    We offer a range of services designed to provide strategic clarity and drive impactful results for your organization.
-                </p>
-            </AnimatedSection>
-
-            <Tabs defaultValue={SERVICE_CATEGORIES[0].id} className="w-full">
-                <AnimatedSection>
-                    <TabsList className="flex items-center justify-center gap-8 bg-transparent p-0 h-auto">
-                        {SERVICE_CATEGORIES.map(category => (
-                            <TabsTrigger key={category.id} value={category.id} className="text-lg font-medium text-white/70 data-[state=active]:text-white p-2 bg-transparent shadow-none border-0 focus:ring-0 focus:outline-none data-[state=active]:shadow-[inset_0_-2px_0_0_white] rounded-none">
-                                {category.name}
-                            </TabsTrigger>
-                        ))}
-                    </TabsList>
-                </AnimatedSection>
-
-                {SERVICE_CATEGORIES.map(category => {
-                    const categoryImage = findProductImage(category.imageId);
-                    return (
-                        <TabsContent key={category.id} value={category.id} className="mt-8">
-                            <motion.div 
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5 }}
-                            >
-                                
-                                    <div className="grid grid-cols-1">
-                                        <div className="p-8 md:p-12 flex flex-col justify-center min-h-[350px] text-center">
-                                            
+        <div className="max-w-[120rem] mx-auto px-6 md:px-12 relative">
+            <div className={cn("grid grid-cols-1 gap-8 transition-all duration-500", selectedProduct && "md:grid-cols-2")}>
+                
+                <motion.div layout="position">
+                    <AnimatedSection className="text-center mb-16">
+                        <h2 className="text-4xl font-headline font-bold text-primary-foreground mb-6">Our Services</h2>
+                        <p className="text-lg font-body text-primary-foreground/80 max-w-3xl mx-auto">
+                            We offer a range of services designed to provide strategic clarity and drive impactful results for your organization.
+                        </p>
+                    </AnimatedSection>
+    
+                    <Tabs defaultValue={SERVICE_CATEGORIES[0].id} className="w-full">
+                        <AnimatedSection>
+                            <TabsList className="flex items-center justify-center gap-8 bg-transparent p-0 h-auto">
+                                {SERVICE_CATEGORIES.map(category => (
+                                    <TabsTrigger key={category.id} value={category.id} className="text-lg font-medium text-white/70 data-[state=active]:text-white p-2 bg-transparent shadow-none border-0 focus:ring-0 focus:outline-none data-[state=active]:shadow-[inset_0_-2px_0_0_white] rounded-none">
+                                        {category.name}
+                                    </TabsTrigger>
+                                ))}
+                            </TabsList>
+                        </AnimatedSection>
+    
+                        {SERVICE_CATEGORIES.map(category => {
+                            return (
+                                <TabsContent key={category.id} value={category.id} className="mt-8">
+                                    <motion.div 
+                                        initial={{ opacity: 0, y: 20 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.5 }}
+                                    >
+                                        <div className="p-8 md:p-12 flex flex-col justify-center min-h-[350px] text-center bg-black/20 rounded-lg">
                                             <h3 className="text-2xl font-bold text-white mb-3">{category.name}</h3>
                                             <p className="text-white/70 mb-6 max-w-2xl mx-auto">{category.description}</p>
                                             <p className="font-semibold text-white mb-2">Relevant Products:</p>
@@ -297,23 +299,56 @@ const ServicesPage: React.FC = () => {
                                                     const product = PRODUCTS.find(p => p.id === productId);
                                                     if (!product) return null;
                                                     return (
-                                                        <Link key={product.id} href={`/products/${product.id}`} className="block group">
-                                                            <div className="bg-white/5 p-4 hover:bg-white/10 transition-colors h-full">
+                                                        <button key={product.id} onClick={() => setSelectedProduct(product)} className="block group text-left">
+                                                            <div className="bg-white/5 p-4 hover:bg-white/10 transition-colors h-full rounded-md">
                                                                 <h4 className="font-semibold text-white group-hover:text-accent">{product.name}</h4>
                                                                 <p className="text-sm text-white/70">{product.description}</p>
                                                             </div>
-                                                        </Link>
+                                                        </button>
                                                     );
                                                 })}
                                             </div>
                                         </div>
+                                    </motion.div>
+                                </TabsContent>
+                            )
+                        })}
+                    </Tabs>
+                </motion.div>
+
+                <div className="relative">
+                    <AnimatePresence>
+                        {selectedProduct && (
+                            <motion.div
+                                className="sticky top-24"
+                                initial={{ opacity: 0, x: 100 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                exit={{ opacity: 0, x: 100 }}
+                                transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
+                            >
+                                <div className="premium-glass-card">
+                                    <button onClick={() => setSelectedProduct(null)} className="absolute top-4 right-4 text-white/70 hover:text-white transition-colors z-10">
+                                        <X className="w-6 h-6" />
+                                    </button>
+                                    <h3 className="text-2xl font-bold mb-2">{selectedProduct.name}</h3>
+                                    <p className="text-base font-semibold text-accent mb-4">{selectedProduct.tagline}</p>
+                                    <div className="text-sm text-white/80 space-y-4">
+                                        <p>{selectedProduct.detailedDescription}</p>
+                                        <div>
+                                            <h4 className="font-semibold mb-2">Key Benefits:</h4>
+                                            <ul className="list-disc list-inside space-y-1">
+                                                {selectedProduct.keyBenefits.split('\n').map((benefit, i) => (
+                                                    <li key={i}>{benefit}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
                                     </div>
-                                
+                                </div>
                             </motion.div>
-                        </TabsContent>
-                    )
-                })}
-            </Tabs>
+                        )}
+                    </AnimatePresence>
+                </div>
+            </div>
         </div>
       </section>
     </div>
