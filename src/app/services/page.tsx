@@ -121,7 +121,7 @@ const ServicesPage: React.FC = () => {
     <div className="min-h-screen bg-background">
       {/* Hero Section with 2-Column Layout */}
       <section
-        className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-r from-secondary to-accent"
+        className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-r from-primary to-accent"
       >
         <div className="relative w-full px-6 sm:px-8 lg:px-16 2xl:px-32">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
