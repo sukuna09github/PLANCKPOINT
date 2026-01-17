@@ -26,7 +26,7 @@ export default function AboutPage() {
   ];
   
   const heroImageUrl = "https://images.pexels.com/photos/2098428/pexels-photo-2098428.jpeg";
-  const leadershipBgUrl = "https://images.unsplash.com/photo-1543749247-18150e7fa4b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhYnN0cmFjdCUyMHRlYWx8ZW58MHx8fHwxNzY0ODY4NjUwfDA&ixlib=rb-4.1.0&q=80&w=1080";
+  const leadershipBgUrl = "https://images.unsplash.com/photo-1558494949-ef010cbdcc31";
 
   return (
     <main>
