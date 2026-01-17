@@ -33,6 +33,7 @@ const ServicesPage: React.FC = () => {
   
   const heroBgImage = PlaceHolderImages.find(p => p.id === 'solutions-hero-background');
   const introArtImage = PlaceHolderImages.find(p => p.id === 'page-intro-art');
+  const servicesBgImage = PlaceHolderImages.find(p => p.id === 'hero-abstract-1');
 
   useEffect(() => {
     setLoading(false);
@@ -247,8 +248,18 @@ const ServicesPage: React.FC = () => {
         </div>
       </section>
       
-      <section className="py-16 md:py-24 bg-gradient-to-b from-primary to-secondary">
-        <div className="max-w-[100rem] mx-auto px-6 md:px-12">
+      <section className="relative py-16 md:py-24">
+        {servicesBgImage && (
+            <Image
+                src={servicesBgImage.imageUrl}
+                alt={servicesBgImage.description}
+                fill
+                className="object-cover -z-10"
+                data-ai-hint={servicesBgImage.imageHint}
+            />
+        )}
+        <div className="absolute inset-0 bg-primary/80 -z-10" />
+        <div className="max-w-[100rem] mx-auto px-6 md:px-12 relative">
             <AnimatedSection className="text-center mb-16">
                 <h2 className="text-4xl font-headline font-bold text-primary-foreground mb-6">Our Services</h2>
                 <p className="text-lg font-body text-primary-foreground/80 max-w-3xl mx-auto">
