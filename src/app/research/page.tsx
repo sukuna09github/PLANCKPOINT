@@ -117,7 +117,7 @@ const ResearchPage: React.FC = () => {
                    <div className="mt-10 grid grid-cols-2 gap-8">
                       {otherInsights.map((insight, index) => insight && (
                           <AnimatedSection key={insight._id} delay={0.2 + index * 0.1}>
-                            <Link href={`/insights/${insight._id}`} className="block h-full">
+                            <Link href={`/case-studies/${insight._id}`} className="block h-full">
                               <div className="relative aspect-video overflow-hidden group h-full">
                                   <Image
                                       src={insight.mainImage}
@@ -145,7 +145,7 @@ const ResearchPage: React.FC = () => {
                   {featuredInsight && (
                       <AnimatedSection delay={0.1} className="flex-grow">
                            <Card className="bg-white/10 backdrop-blur-md border-white/20 h-full group flex flex-col">
-                              <Link href={`/insights/${featuredInsight._id}`} className="block h-full flex flex-col">
+                              <Link href={`/case-studies/${featuredInsight._id}`} className="block h-full flex flex-col">
                                 <div className="relative aspect-video overflow-hidden w-full">
                                   <Image
                                       src={featuredInsight.mainImage}
@@ -313,7 +313,7 @@ const ResearchPage: React.FC = () => {
                   viewport={{ once: true }}
                 >
                   <Card className="h-full hover:shadow-xl hover:shadow-accent/10 transition-all duration-500 hover:-translate-y-2 hover:scale-105 bg-white border-0 shadow-sm group cursor-pointer">
-                    <Link href={`/insights/${insight._id}`} className="block h-full">
+                    <Link href={`/case-studies/${insight._id}`} className="block h-full">
                       <CardContent className="p-0 h-full flex flex-col">
                         {insight.mainImage && (
                           <div className="overflow-hidden">
@@ -421,4 +421,5 @@ export default ResearchPage;
     
 
     
+
 

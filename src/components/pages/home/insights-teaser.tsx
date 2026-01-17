@@ -45,7 +45,7 @@ export function InsightsTeaser() {
                 return (
                   <CarouselItem key={insight.title} className="pl-8 md:basis-1/2 lg:basis-1/3">
                     <div className="p-1 h-full">
-                      <Link href="/insights" className="block group h-full">
+                      <Link href="/case-studies" className="block group h-full">
                         <Card className="h-full flex flex-col overflow-hidden transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2 border-0">
                           
                           <div className="aspect-video relative w-full overflow-hidden">

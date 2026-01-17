@@ -6,7 +6,7 @@ import { Lightbulb, Target, Users, Bot, Star, BarChart, Gem, Briefcase, Drafting
 export const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/resulting", label: "Resulting" },
-  { href: "/insights", label: "Insights" },
+  { href: "/case-studies", label: "Case Studies" },
   { href: "/research", label: "Research" },
   { href: "/about", label: "About Us" },
 ];
@@ -222,7 +222,7 @@ export const FOOTER_LINKS = [
         title: "Company",
         links: [
             { label: "About Us", href: "/about" },
-            { label: "Insights", href: "/insights" },
+            { label: "Case Studies", href: "/case-studies" },
             { label: "Research", href: "/research" },
         ],
     },
@@ -477,3 +477,4 @@ export const PRODUCTS = [
     { id: "propricing", name: "ProPRICING™", description: "An advanced pricing and proposal generation engine for complex technology services.", icon: Banknote, imageId: 'product-propricing', tagline: 'Price with precision. Win with confidence.', detailedDescription: 'Pricing complex technology services is both an art and a science. ProPRICING™ brings data-driven rigor to the process. Our engine analyzes historical data, market benchmarks, and your unique value proposition to generate optimal pricing strategies and compelling proposals.', keyBenefits: 'Optimize pricing for profitability and win rates.\nStandardize and accelerate your proposal process.\nImprove negotiation outcomes with data-backed insights.\nGain a deeper understanding of your pricing power.', learnMoreUrl: '#' },
     { id: "skillorbit", name: "SkillOrbit™", description: "Map, measure, and manage the critical skills that drive your organization's success.", icon: UsersRound, imageId: 'product-skillorbit', tagline: 'Align talent with strategy.', detailedDescription: "In a rapidly changing world, having the right skills is paramount. SkillOrbit™ is a dynamic platform for talent and capability management. We help you map your organization's existing skills, identify future needs, and create targeted development pathways to bridge the gap.", keyBenefits: 'Gain a clear view of your organization\'s skill landscape.\nAlign talent development with strategic priorities.\nImprove employee engagement and retention.\nBuild a more agile and resilient workforce.', learnMoreUrl: '#' },
 ];
+

@@ -294,7 +294,7 @@ const HomePage: React.FC = () => {
                         viewport={{ once: true, amount: 0.5 }}
                         className="group h-full"
                       >
-                      <Link href={`/insights/${insight._id}`} className="block group h-full">
+                      <Link href={`/case-studies/${insight._id}`} className="block group h-full">
                         <div className="bg-white overflow-hidden shadow-sm hover:shadow-xl hover:shadow-accent/20 transition-all duration-300 ease-apple hover:-translate-y-2 flex flex-col h-full group/card">
                           <div className="flex-1 relative overflow-hidden flex flex-col justify-between">
                             {image && (
