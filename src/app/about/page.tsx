@@ -88,9 +88,9 @@ export default function AboutPage() {
             <AnimatedSection>
               <div className="text-white [text-shadow:0_1px_3px_rgba(0,0,0,0.4)]">
                 <h2 className="text-3xl font-bold">Who We Are</h2>
-                <p className="mt-4 text-white/90 text-lg">PlanckPoint is where technology decisions are examined at their most fundamental, critical level. We provide decision intelligence for technology and strategy choices, helping enterprises make high-stakes technology decisions using data most models ignore.</p>
-                <p className="mt-4 text-white/90 text-lg">We go beyond analyst narratives and visual shortcuts, integrating execution signals, delivery risk, and organisational realities into evidence-based decision frameworks. Using AI-assisted analysis combined with structured expert judgment, we show leaders what is likely to work, what is likely to fail, and why, even before commitments become irreversible.</p>
-                <p className="mt-4 text-white/90 text-lg">PlanckPoint is decision intelligence for strategy and technology choices that carry real consequences.</p>
+                <p className="mt-4 text-white/90 text-lg">PlanckPoint is a foresight and intelligence firm built for decision-makers navigating complex markets, technologies, and vendor ecosystems. Using AI-assisted analysis combined with structured expert judgment, we show leaders what is likely to work, what is expected to fail, and why.</p>
+                <p className="mt-4 text-white/90 text-lg">We go beyond analyst narratives and visual shortcuts, integrating execution signals, delivery risk, and organisational realities into evidence-based decision frameworks.</p>
+                <p className="mt-4 text-white/90 text-lg">We blend AI-powered analysis with deep strategic thinking to uncover the smallest credible signals that spark the biggest shifts. At our core, we are researchers, analysts, and advisors committed to delivering clarity, credibility, and confidence in every insight we produce.</p>
               </div>
             </AnimatedSection>
             <div className="min-h-[450px] lg:min-h-[500px]">
