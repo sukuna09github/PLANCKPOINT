@@ -275,7 +275,7 @@ const CoreServicesPage: React.FC = () => {
         <section id="beyondquadrants" className="py-20 lg:py-24 bg-primary/5">
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-center">
-                    <AnimatedSection delay={0.2} className="md:order-2">
+                    <AnimatedSection>
                         <div>
                             <Badge variant="secondary" className="mb-2">Evaluation Framework</Badge>
                             <h2 className="text-3xl font-bold text-primary">{beyondQuadrantsProduct.name}</h2>
@@ -288,7 +288,7 @@ const CoreServicesPage: React.FC = () => {
                             </div>
                         </div>
                     </AnimatedSection>
-                    <AnimatedSection className="md:order-1">
+                    <AnimatedSection delay={0.2}>
                         <div className="relative h-full min-h-[450px] overflow-hidden shadow-xl rounded-lg">
                             {beyondQuadrantsImage && <Image src={beyondQuadrantsImage.imageUrl} alt={beyondQuadrantsImage.description} fill className="object-cover" data-ai-hint={beyondQuadrantsImage.imageHint} />}
                         </div>
@@ -329,7 +329,7 @@ const CoreServicesPage: React.FC = () => {
         <section id="singleone" className="py-20 lg:py-24 bg-primary/5">
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-center">
-                    <AnimatedSection delay={0.2} className="md:order-2">
+                    <AnimatedSection>
                         <div>
                             <Badge variant="secondary" className="mb-2">Unified Intelligence</Badge>
                             <h2 className="text-3xl font-bold text-primary">{singleOneProduct.name}</h2>
@@ -342,7 +342,7 @@ const CoreServicesPage: React.FC = () => {
                             </div>
                         </div>
                     </AnimatedSection>
-                    <AnimatedSection className="md:order-1">
+                    <AnimatedSection delay={0.2}>
                         <div className="relative h-full min-h-[450px] overflow-hidden shadow-xl rounded-lg">
                             {singleOneImage && <Image src={singleOneImage.imageUrl} alt={singleOneImage.description} fill className="object-cover" data-ai-hint={singleOneImage.imageHint} />}
                         </div>
