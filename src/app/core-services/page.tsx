@@ -15,6 +15,7 @@ import { AnimatedSection } from '@/components/animated-section';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Card, CardContent } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
+import { Badge } from '@/components/ui/badge';
 
 type Product = typeof PRODUCTS[0];
 
@@ -38,6 +39,16 @@ const CoreServicesPage: React.FC = () => {
   const heroBgImage = PlaceHolderImages.find(p => p.id === 'solutions-hero-background');
   const introArtImage = PlaceHolderImages.find(p => p.id === 'page-intro-art');
   const servicesBgImage = PlaceHolderImages.find(p => p.id === 'hero-abstract-1');
+
+  const atomicAiProduct = PRODUCTS.find(p => p.id === 'atomicai');
+  const beyondQuadrantsProduct = PRODUCTS.find(p => p.id === 'beyondquadrants');
+  const thinkQuarkProduct = PRODUCTS.find(p => p.id === 'thinkquark');
+  const singleOneProduct = PRODUCTS.find(p => p.id === 'singleone');
+
+  const atomicAiImage = findProductImage('product-atomicai');
+  const beyondQuadrantsImage = findProductImage('product-beyondquadrants');
+  const thinkQuarkImage = findProductImage('product-thinkquark');
+  const singleOneImage = findProductImage('product-singleone');
 
   useEffect(() => {
     setLoading(false);
@@ -232,6 +243,114 @@ const CoreServicesPage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {atomicAiProduct && (
+        <section id="atomicai" className="py-20 lg:py-24 bg-background">
+            <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-center">
+                    <AnimatedSection>
+                        <div>
+                            <Badge variant="secondary" className="mb-2">Flagship Product</Badge>
+                            <h2 className="text-3xl font-bold text-primary">{atomicAiProduct.name}</h2>
+                            <p className="mt-2 text-xl font-semibold text-accent">{atomicAiProduct.tagline}</p>
+                            <p className="mt-6 text-lg text-muted-foreground">{atomicAiProduct.detailedDescription}</p>
+                            <div className="mt-8">
+                                <Button asChild size="lg">
+                                    <Link href="/contact">Learn More <ArrowRight className="ml-2" /></Link>
+                                </Button>
+                            </div>
+                        </div>
+                    </AnimatedSection>
+                    <AnimatedSection delay={0.2}>
+                        <div className="aspect-[4/3] relative overflow-hidden shadow-xl rounded-lg">
+                            {atomicAiImage && <Image src={atomicAiImage.imageUrl} alt={atomicAiImage.description} fill className="object-cover" data-ai-hint={atomicAiImage.imageHint} />}
+                        </div>
+                    </AnimatedSection>
+                </div>
+            </div>
+        </section>
+      )}
+
+      {beyondQuadrantsProduct && (
+        <section id="beyondquadrants" className="py-20 lg:py-24 bg-primary/5">
+            <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-center">
+                    <AnimatedSection delay={0.2} className="md:order-2">
+                        <div>
+                            <Badge variant="secondary" className="mb-2">Evaluation Framework</Badge>
+                            <h2 className="text-3xl font-bold text-primary">{beyondQuadrantsProduct.name}</h2>
+                            <p className="mt-2 text-xl font-semibold text-accent">{beyondQuadrantsProduct.tagline}</p>
+                            <p className="mt-6 text-lg text-muted-foreground">{beyondQuadrantsProduct.detailedDescription}</p>
+                            <div className="mt-8">
+                                <Button asChild size="lg">
+                                    <Link href="/contact">Learn More <ArrowRight className="ml-2" /></Link>
+                                </Button>
+                            </div>
+                        </div>
+                    </AnimatedSection>
+                    <AnimatedSection className="md:order-1">
+                        <div className="aspect-[4/3] relative overflow-hidden shadow-xl rounded-lg">
+                            {beyondQuadrantsImage && <Image src={beyondQuadrantsImage.imageUrl} alt={beyondQuadrantsImage.description} fill className="object-cover" data-ai-hint={beyondQuadrantsImage.imageHint} />}
+                        </div>
+                    </AnimatedSection>
+                </div>
+            </div>
+        </section>
+      )}
+      
+      {thinkQuarkProduct && (
+        <section id="thinkquark" className="py-20 lg:py-24 bg-background">
+            <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-center">
+                    <AnimatedSection>
+                        <div>
+                            <Badge variant="secondary" className="mb-2">Quantum-Inspired Computing</Badge>
+                            <h2 className="text-3xl font-bold text-primary">{thinkQuarkProduct.name}</h2>
+                            <p className="mt-2 text-xl font-semibold text-accent">{thinkQuarkProduct.tagline}</p>
+                            <p className="mt-6 text-lg text-muted-foreground">{thinkQuarkProduct.detailedDescription}</p>
+                            <div className="mt-8">
+                                <Button asChild size="lg">
+                                    <Link href="/contact">Learn More <ArrowRight className="ml-2" /></Link>
+                                </Button>
+                            </div>
+                        </div>
+                    </AnimatedSection>
+                    <AnimatedSection delay={0.2}>
+                        <div className="aspect-[4/3] relative overflow-hidden shadow-xl rounded-lg">
+                            {thinkQuarkImage && <Image src={thinkQuarkImage.imageUrl} alt={thinkQuarkImage.description} fill className="object-cover" data-ai-hint={thinkQuarkImage.imageHint} />}
+                        </div>
+                    </AnimatedSection>
+                </div>
+            </div>
+        </section>
+      )}
+
+      {singleOneProduct && (
+        <section id="singleone" className="py-20 lg:py-24 bg-primary/5">
+            <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-center">
+                    <AnimatedSection delay={0.2} className="md:order-2">
+                        <div>
+                            <Badge variant="secondary" className="mb-2">Unified Intelligence</Badge>
+                            <h2 className="text-3xl font-bold text-primary">{singleOneProduct.name}</h2>
+                            <p className="mt-2 text-xl font-semibold text-accent">{singleOneProduct.tagline}</p>
+                            <p className="mt-6 text-lg text-muted-foreground">{singleOneProduct.detailedDescription}</p>
+                            <div className="mt-8">
+                                <Button asChild size="lg">
+                                    <Link href="/contact">Learn More <ArrowRight className="ml-2" /></Link>
+                                </Button>
+                            </div>
+                        </div>
+                    </AnimatedSection>
+                    <AnimatedSection className="md:order-1">
+                        <div className="aspect-[4/3] relative overflow-hidden shadow-xl rounded-lg">
+                            {singleOneImage && <Image src={singleOneImage.imageUrl} alt={singleOneImage.description} fill className="object-cover" data-ai-hint={singleOneImage.imageHint} />}
+                        </div>
+                    </AnimatedSection>
+                </div>
+            </div>
+        </section>
+      )}
 
       <section className="py-20 lg:py-24 bg-background">
         <div className="container mx-auto max-w-4xl text-center px-4 sm:px-6 lg:px-8">
