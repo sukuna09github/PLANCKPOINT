@@ -254,14 +254,14 @@ const CoreServicesPage: React.FC = () => {
                         <p className="mt-2 text-xl font-semibold text-accent">{atomicAiProduct.tagline}</p>
                         <p className="mt-6 text-lg text-muted-foreground">{atomicAiProduct.detailedDescription}</p>
                         <div className="mt-8">
-                            <Button asChild size="lg">
-                                <Link href="/contact">Learn More <ArrowRight className="ml-2" /></Link>
-                            </Button>
+                            <Link href="/contact" className="inline-flex items-center gap-2 text-lg font-semibold text-primary transition-colors hover:text-accent">
+                                Learn More <ArrowRight className="h-5 w-5" />
+                            </Link>
                         </div>
                     </div>
                 </AnimatedSection>
             </div>
-            <div className="relative min-h-[450px] md:min-h-full w-full">
+            <div className="relative min-h-full w-full">
                 {atomicAiImage && <Image src={atomicAiImage.imageUrl} alt={atomicAiImage.description} fill className="object-cover" data-ai-hint={atomicAiImage.imageHint} />}
             </div>
         </section>
@@ -277,14 +277,14 @@ const CoreServicesPage: React.FC = () => {
                         <p className="mt-2 text-xl font-semibold text-accent">{beyondQuadrantsProduct.tagline}</p>
                         <p className="mt-6 text-lg text-muted-foreground">{beyondQuadrantsProduct.detailedDescription}</p>
                         <div className="mt-8">
-                            <Button asChild size="lg">
-                                <Link href="/contact">Learn More <ArrowRight className="ml-2" /></Link>
-                            </Button>
+                            <Link href="/contact" className="inline-flex items-center gap-2 text-lg font-semibold text-primary transition-colors hover:text-accent">
+                                Learn More <ArrowRight className="h-5 w-5" />
+                            </Link>
                         </div>
                     </div>
                 </AnimatedSection>
             </div>
-            <div className="relative min-h-[450px] md:min-h-full w-full">
+            <div className="relative min-h-full w-full">
                 {beyondQuadrantsImage && <Image src={beyondQuadrantsImage.imageUrl} alt={beyondQuadrantsImage.description} fill className="object-cover" data-ai-hint={beyondQuadrantsImage.imageHint} />}
             </div>
         </section>
@@ -300,14 +300,14 @@ const CoreServicesPage: React.FC = () => {
                         <p className="mt-2 text-xl font-semibold text-accent">{thinkQuarkProduct.tagline}</p>
                         <p className="mt-6 text-lg text-muted-foreground">{thinkQuarkProduct.detailedDescription}</p>
                         <div className="mt-8">
-                            <Button asChild size="lg">
-                                <Link href="/contact">Learn More <ArrowRight className="ml-2" /></Link>
-                            </Button>
+                            <Link href="/contact" className="inline-flex items-center gap-2 text-lg font-semibold text-primary transition-colors hover:text-accent">
+                                Learn More <ArrowRight className="h-5 w-5" />
+                            </Link>
                         </div>
                     </div>
                 </AnimatedSection>
             </div>
-            <div className="relative min-h-[450px] md:min-h-full w-full">
+            <div className="relative min-h-full w-full">
                 {thinkQuarkImage && <Image src={thinkQuarkImage.imageUrl} alt={thinkQuarkImage.description} fill className="object-cover" data-ai-hint={thinkQuarkImage.imageHint} />}
             </div>
         </section>
@@ -323,14 +323,14 @@ const CoreServicesPage: React.FC = () => {
                         <p className="mt-2 text-xl font-semibold text-accent">{singleOneProduct.tagline}</p>
                         <p className="mt-6 text-lg text-muted-foreground">{singleOneProduct.detailedDescription}</p>
                         <div className="mt-8">
-                            <Button asChild size="lg">
-                                <Link href="/contact">Learn More <ArrowRight className="ml-2" /></Link>
-                            </Button>
+                            <Link href="/contact" className="inline-flex items-center gap-2 text-lg font-semibold text-primary transition-colors hover:text-accent">
+                                Learn More <ArrowRight className="h-5 w-5" />
+                            </Link>
                         </div>
                     </div>
                 </AnimatedSection>
             </div>
-            <div className="relative min-h-[450px] md:min-h-full w-full">
+            <div className="relative min-h-full w-full">
                 {singleOneImage && <Image src={singleOneImage.imageUrl} alt={singleOneImage.description} fill className="object-cover" data-ai-hint={singleOneImage.imageHint} />}
             </div>
         </section>
