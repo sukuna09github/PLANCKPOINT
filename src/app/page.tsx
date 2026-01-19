@@ -96,7 +96,7 @@ const HomePage: React.FC = () => {
                     <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-headline text-white mb-6 leading-tight max-w-3xl">
                         {heroSlides[currentSlide].headline}
                     </h1>
-                    <Link href="/resulting" className="text-white font-semibold hover:underline flex items-center w-fit">
+                    <Link href="/core-services" className="text-white font-semibold hover:underline flex items-center w-fit">
                         Learn More
                         <ArrowRight className="w-4 h-4 ml-2" />
                     </Link>
@@ -171,7 +171,7 @@ const HomePage: React.FC = () => {
                             variant="ghost"
                             style={{ fontFamily: 'Inter, sans-serif', fontWeight: 500 }}
                           >
-                            <Link href="/resulting">
+                            <Link href="/core-services">
                               Learn More
                               <ArrowRight className="w-4 h-4 ml-2" />
                             </Link>
@@ -240,7 +240,7 @@ const HomePage: React.FC = () => {
                               </CardContent>
                               <CardFooter className="p-0 pt-4">
                                   <Button variant="ghost" asChild className="text-white hover:bg-white/10">
-                                  <Link href="/resulting">Learn More</Link>
+                                  <Link href="/solutions">Learn More</Link>
                                   </Button>
                               </CardFooter>
                               </div>
@@ -265,7 +265,7 @@ const HomePage: React.FC = () => {
           <AnimatedSection>
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-normal text-foreground">
-                Latest Research
+                Latest Insights
               </h2>
               <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
                 Explore our newest publications and analysis.
@@ -335,7 +335,7 @@ const HomePage: React.FC = () => {
           </AnimatedSection>
           <AnimatedSection className="mt-12 text-center" delay={0.4}>
             <Button size="lg" asChild>
-              <Link href="/research">Explore All Research</Link>
+              <Link href="/insights">Explore All Insights</Link>
             </Button>
           </AnimatedSection>
         </div>
