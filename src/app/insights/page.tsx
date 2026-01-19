@@ -66,6 +66,10 @@ const InsightsPage: React.FC = () => {
     .slice(0, 5);
 
   const [featuredInsight, ...otherInsights] = latestInsights;
+  
+  const thoughts = mockResearchData.filter(insight => 
+    ['Future of Work', 'AI Ethics', 'Economics'].includes(insight.category)
+  ).slice(0, 4);
 
   useEffect(() => {
     if (searchTerm.trim() === '') {
@@ -172,6 +176,65 @@ const InsightsPage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Thoughts Section */}
+      <section className="py-24 bg-background">
+        <div className="max-w-[120rem] mx-auto px-16">
+            <AnimatedSection className="text-center mb-16">
+                <h2 className="text-4xl font-headline font-normal text-primary mb-6">Thoughts</h2>
+                <p className="text-lg font-body text-foreground/80 max-w-3xl mx-auto">
+                    Forward-looking perspectives and speculative analyses on the future of technology and society.
+                </p>
+            </AnimatedSection>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {thoughts.map((insight, index) => (
+                    <motion.div
+                      key={insight._id}
+                      initial={{ opacity: 0, y: 30 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.8, delay: index * 0.1 }}
+                      viewport={{ once: true }}
+                    >
+                      <Card className="h-full hover:shadow-xl hover:shadow-accent/10 transition-all duration-500 hover:-translate-y-2 hover:scale-105 bg-white border-0 shadow-sm group">
+                        <div className="block h-full">
+                          <CardContent className="p-0 h-full flex flex-col">
+                            {insight.mainImage && (
+                              <div className="overflow-hidden">
+                                <Image
+                                  src={insight.mainImage}
+                                  alt={insight.title || 'Insight article'}
+                                  className="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-500"
+                                  width={400}
+                                  height={225}
+                                />
+                              </div>
+                            )}
+                            
+                            <div className="p-6 flex-1 flex flex-col">
+                              <div className="mb-3">
+                                <span className="text-xs font-body text-accent font-medium">
+                                  {formatDate(insight.publicationDate)}
+                                </span>
+                              </div>
+
+                              <h3 className="text-lg font-headline font-semibold text-primary mb-3 flex-shrink-0">
+                                {insight.title}
+                              </h3>
+                              
+                              <p className="text-sm font-body text-foreground/80 mb-4 flex-1 line-clamp-2">
+                                {insight.summary}
+                              </p>
+
+                            </div>
+                          </CardContent>
+                        </div>
+                      </Card>
+                    </motion.div>
+                ))}
+            </div>
+        </div>
+    </section>
 
       {/* Research Categories */}
       <section className="py-24 bg-background">
