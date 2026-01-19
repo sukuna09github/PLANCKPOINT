@@ -13,6 +13,9 @@ export default function AboutPage() {
   const teamImages = PlaceHolderImages.filter(img => LEADERSHIP_TEAM.some(i => i.imageId === img.id));
   const findImage = (imageId: string) => teamImages.find(img => img.id === imageId);
 
+  const leadershipFirstRow = LEADERSHIP_TEAM.slice(0, 4);
+  const leadershipSecondRow = LEADERSHIP_TEAM.slice(4);
+
   const heroImage = {
     description: "Hand holding a jar of stars",
     imageUrl: "https://images.pexels.com/photos/2098428/pexels-photo-2098428.jpeg",
@@ -131,7 +134,7 @@ export default function AboutPage() {
             </div>
           </AnimatedSection>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {LEADERSHIP_TEAM.map((member, index) => {
+            {leadershipFirstRow.map((member, index) => {
               const image = findImage(member.imageId);
               return (
                 <AnimatedSection key={member.name} delay={index * 0.1}>
@@ -151,6 +154,29 @@ export default function AboutPage() {
               );
             })}
           </div>
+          {leadershipSecondRow.length > 0 && (
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:w-3/4 mx-auto">
+              {leadershipSecondRow.map((member, index) => {
+                const image = findImage(member.imageId);
+                return (
+                  <AnimatedSection key={member.name} delay={(index + leadershipFirstRow.length) * 0.1}>
+                    <div className="group liquid-glass-card">
+                      <div className="liquid-glass-card-content">
+                        <div className="liquid-glass-card-header">
+                            {image && <div className="w-32 h-32 relative mb-4"><Image src={image.imageUrl} alt={member.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
+                            <h3 className="mt-4 text-xl font-bold text-white text-center">{member.name}</h3>
+                            <p className="text-accent-foreground font-medium text-center">{member.role}</p>
+                        </div>
+                        <div className="liquid-glass-card-bio">
+                            <p className="text-sm text-primary-foreground/80">{member.bio}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </AnimatedSection>
+                );
+              })}
+            </div>
+          )}
           
           <div id="board-mentors" className="mt-24">
             <AnimatedSection>
