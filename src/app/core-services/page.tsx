@@ -249,7 +249,6 @@ const CoreServicesPage: React.FC = () => {
             <div className="bg-background flex items-center justify-center p-12 md:p-16 lg:p-24">
                 <AnimatedSection className="max-w-lg">
                     <div>
-                        <Badge variant="secondary" className="mb-2">Flagship Product</Badge>
                         <h2 className="text-3xl font-bold text-primary">{atomicAiProduct.name}</h2>
                         <p className="mt-2 text-xl font-semibold text-accent">{atomicAiProduct.tagline}</p>
                         <p className="mt-6 text-lg text-muted-foreground">{atomicAiProduct.detailedDescription}</p>
@@ -272,7 +271,6 @@ const CoreServicesPage: React.FC = () => {
             <div className="bg-primary/5 flex items-center justify-center p-12 md:p-16 lg:p-24">
                 <AnimatedSection className="max-w-lg">
                     <div>
-                        <Badge variant="secondary" className="mb-2">Evaluation Framework</Badge>
                         <h2 className="text-3xl font-bold text-primary">{beyondQuadrantsProduct.name}</h2>
                         <p className="mt-2 text-xl font-semibold text-accent">{beyondQuadrantsProduct.tagline}</p>
                         <p className="mt-6 text-lg text-muted-foreground">{beyondQuadrantsProduct.detailedDescription}</p>
@@ -295,7 +293,6 @@ const CoreServicesPage: React.FC = () => {
             <div className="bg-background flex items-center justify-center p-12 md:p-16 lg:p-24">
                 <AnimatedSection className="max-w-lg">
                     <div>
-                        <Badge variant="secondary" className="mb-2">Quantum-Inspired Computing</Badge>
                         <h2 className="text-3xl font-bold text-primary">{thinkQuarkProduct.name}</h2>
                         <p className="mt-2 text-xl font-semibold text-accent">{thinkQuarkProduct.tagline}</p>
                         <p className="mt-6 text-lg text-muted-foreground">{thinkQuarkProduct.detailedDescription}</p>
@@ -318,7 +315,6 @@ const CoreServicesPage: React.FC = () => {
             <div className="bg-primary/5 flex items-center justify-center p-12 md:p-16 lg:p-24">
                 <AnimatedSection className="max-w-lg">
                     <div>
-                        <Badge variant="secondary" className="mb-2">Unified Intelligence</Badge>
                         <h2 className="text-3xl font-bold text-primary">{singleOneProduct.name}</h2>
                         <p className="mt-2 text-xl font-semibold text-accent">{singleOneProduct.tagline}</p>
                         <p className="mt-6 text-lg text-muted-foreground">{singleOneProduct.detailedDescription}</p>
