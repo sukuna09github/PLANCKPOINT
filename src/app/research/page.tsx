@@ -117,7 +117,7 @@ const ResearchPage: React.FC = () => {
                    <div className="mt-10 grid grid-cols-2 gap-8">
                       {otherInsights.map((insight, index) => insight && (
                           <AnimatedSection key={insight._id} delay={0.2 + index * 0.1}>
-                            <Link href={`/case-studies/${insight._id}`} className="block h-full">
+                            <div className="block h-full">
                               <div className="relative aspect-video overflow-hidden group h-full">
                                   <Image
                                       src={insight.mainImage}
@@ -134,7 +134,7 @@ const ResearchPage: React.FC = () => {
                                       </div>
                                   </div>
                               </div>
-                            </Link>
+                            </div>
                           </AnimatedSection>
                       ))}
                   </div>
@@ -145,7 +145,7 @@ const ResearchPage: React.FC = () => {
                   {featuredInsight && (
                       <AnimatedSection delay={0.1} className="flex-grow">
                            <Card className="bg-white/10 backdrop-blur-md border-white/20 h-full group flex flex-col">
-                              <Link href={`/case-studies/${featuredInsight._id}`} className="block h-full flex flex-col">
+                              <div className="block h-full flex flex-col">
                                 <div className="relative aspect-video overflow-hidden w-full">
                                   <Image
                                       src={featuredInsight.mainImage}
@@ -165,7 +165,7 @@ const ResearchPage: React.FC = () => {
                                 <CardFooter>
                                     <Button variant="ghost" className="text-white hover:bg-white/10">Read the research <ArrowRight className="ml-2" /></Button>
                                 </CardFooter>
-                              </Link>
+                              </div>
                           </Card>
                       </AnimatedSection>
                   )}
@@ -312,8 +312,8 @@ const ResearchPage: React.FC = () => {
                   transition={{ duration: 0.8, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <Card className="h-full hover:shadow-xl hover:shadow-accent/10 transition-all duration-500 hover:-translate-y-2 hover:scale-105 bg-white border-0 shadow-sm group cursor-pointer">
-                    <Link href={`/case-studies/${insight._id}`} className="block h-full">
+                  <Card className="h-full hover:shadow-xl hover:shadow-accent/10 transition-all duration-500 hover:-translate-y-2 hover:scale-105 bg-white border-0 shadow-sm group">
+                    <div className="block h-full">
                       <CardContent className="p-0 h-full flex flex-col">
                         {insight.mainImage && (
                           <div className="overflow-hidden">
@@ -334,7 +334,7 @@ const ResearchPage: React.FC = () => {
                             </span>
                           </div>
 
-                          <h3 className="text-lg font-headline font-semibold text-primary mb-3 group-hover:text-secondary transition-colors duration-300 flex-shrink-0">
+                          <h3 className="text-lg font-headline font-semibold text-primary mb-3 flex-shrink-0">
                             {insight.title}
                           </h3>
                           
@@ -342,18 +342,9 @@ const ResearchPage: React.FC = () => {
                             {insight.summary}
                           </p>
 
-                          <div className="flex items-center justify-between mt-auto">
-                            <span
-                              
-                              className="text-accent hover:underline font-semibold flex items-center"
-                            >
-                              Read Article
-                              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
-                            </span>
-                          </div>
                         </div>
                       </CardContent>
-                    </Link>
+                    </div>
                   </Card>
                 </motion.div>
               ))}
@@ -421,5 +412,6 @@ export default ResearchPage;
     
 
     
+
 
 

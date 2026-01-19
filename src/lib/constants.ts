@@ -6,7 +6,6 @@ import { Lightbulb, Target, Users, Bot, Star, BarChart, Gem, Briefcase, Drafting
 export const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/resulting", label: "Core Services" },
-  { href: "/case-studies", label: "Case Studies" },
   { href: "/research", label: "Research" },
   { href: "/about", label: "About Us" },
 ];
@@ -222,7 +221,6 @@ export const FOOTER_LINKS = [
         title: "Company",
         links: [
             { label: "About Us", href: "/about" },
-            { label: "Case Studies", href: "/case-studies" },
             { label: "Research", href: "/research" },
         ],
     },

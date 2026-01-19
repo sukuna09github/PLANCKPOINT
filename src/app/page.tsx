@@ -294,7 +294,7 @@ const HomePage: React.FC = () => {
                         viewport={{ once: true, amount: 0.5 }}
                         className="group h-full"
                       >
-                      <Link href={`/case-studies/${insight._id}`} className="block group h-full">
+                      <div className="block group h-full">
                         <div className="bg-white overflow-hidden shadow-sm hover:shadow-xl hover:shadow-accent/20 transition-all duration-300 ease-apple hover:-translate-y-2 flex flex-col h-full group/card">
                           <div className="flex-1 relative overflow-hidden flex flex-col justify-between">
                             {image && (
@@ -314,7 +314,7 @@ const HomePage: React.FC = () => {
                                 {insight.category}
                               </Badge>
 
-                              <h3 className="text-lg font-headline font-semibold text-primary mb-2 group-hover/card:text-accent transition-colors duration-300 ease-apple flex-grow">
+                              <h3 className="text-lg font-headline font-semibold text-primary mb-2 flex-grow">
                                 {insight.title}
                               </h3>
 
@@ -322,14 +322,10 @@ const HomePage: React.FC = () => {
                                 {insight.summary}
                               </p>
 
-                              <span className="text-primary font-semibold hover:underline flex items-center mt-auto">
-                                  Read more
-                                  <ArrowRight className="w-3 h-3 ml-2 transition-transform duration-300 ease-apple group-hover/card:translate-x-1" />
-                              </span>
                             </div>
                           </div>
                         </div>
-                      </Link>
+                      </div>
                       </motion.div>
                     </CarouselItem>
                   );
