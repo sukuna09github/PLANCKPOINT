@@ -81,13 +81,13 @@
     {
       "id": "insight5",
       "description": "Image for quantum cybersecurity.",
-      "imageUrl": "https://images.unsplash.com/photo-1609705024873-7add858e3036?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxxdWFudHVtJTIwY29tcHV0aW5nfGVufDB8fHx8MTc2NTIyNzM1Mnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1609705024873-7add858e3036?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxxdWFudHVtJTIwY29tcHV0aW5nfGVufDB8fHx8MTc2NTIyNzM1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "quantum computing"
     },
     {
       "id": "insight6",
       "description": "Image for UX design for augmented reality.",
-      "imageUrl": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhdWdtZW50ZWQlMjByZWFsaXR5fGVufDB8fHx8MTc2NTIyNzM1Mnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhdWdtZW50ZWQlMjByZWFsaXR5fGVufDB8fHx8MTc2NTIyNzM1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "augmented reality"
     },
     {
@@ -99,7 +99,7 @@
     {
       "id": "research-hero2",
       "description": "An abstract visualization of a neural network.",
-      "imageUrl": "https://images.unsplash.com/photo-1655890006065-edefcd764af6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxuZXVyYWwlMjBuZXR3b3JrfGVufDB8fHx8MTc2NDg0NTkxNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1655890006065-edefcd764af6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxuZXVyYWwlMjBuZXR3b3JrfGVufDB8fHx8MTc2NDg0NTkxNnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "neural network"
     },
     {
@@ -129,7 +129,7 @@
     {
       "id": "research4",
       "description": "Image for remote collaboration.",
-      "imageUrl": "https://images.unsplash.com/photo-1616587226157-48e49175ee20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dmlkZW8lMjBjb25mZXJlbmNlfGVufDB8fHx8MTc2NDg2MTUwOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1616587226157-48e49175ee20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dmlkZW8lMjBjb25mZXJlbmNlfGVufDB8fHx8MTc2NDg2MTUwOHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "video conference"
     },
     {
@@ -177,7 +177,7 @@
     {
       "id": "leader6",
       "description": "AI Intern QELLA.",
-      "imageUrl": "https://images.unsplash.com/photo-1679639539537-0d2e452890f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhYnN0cmFjdCUyMEFJfGVufDB8fHx8MTc2ODc5NDYyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1679639539537-0d2e452890f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhYnN0cmFjdCUyMEFJfGVufDB8fHx8MTc2ODc5NDYyN3ww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "abstract AI"
     },
     {
@@ -189,19 +189,19 @@
     {
       "id": "leader8",
       "description": "AI Intern Luther.",
-      "imageUrl": "https://images.unsplash.com/photo-1680783954745-3249be59e527?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhYnN0cmFjdCUyMEFJfGVufDB8fHx8MTc2ODc5NDYyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1680783954745-3249be59e527?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhYnN0cmFjdCUyMEFJfGVufDB8fHx8MTc2ODc5NDYyN3ww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "abstract AI"
     },
     {
       "id": "about-hero",
       "description": "A modern, well-lit architectural space.",
-      "imageUrl": "https://images.unsplash.com/photo-1631974474717-d69d3646d5df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0ZWFsJTIwfGVufDB8fHx8MTc2NTUzMDUzOXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1631974474717-d69d3646d5df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0ZWFsJTIwfGVufDB8fHx8MTc2NTUzMDUzOXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "teal abstract"
     },
     {
       "id": "hero-abstract-1",
       "description": "AI-generated abstract image with teal and blue flowing lines.",
-      "imageUrl": "https://images.unsplash.com/photo-1533748347742-b2e2ff602786?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0ZWFsJTIwfGVufDB8fHx8MTc2ODYzNzc4M3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1533748347742-b2e2ff602786?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0ZWFsJTIwfGVufDB8fHx8MTc2ODYzNzc4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "abstract teal"
     },
     {
@@ -303,13 +303,13 @@
     {
       "id": "product-thinkquark",
       "description": "Abstract representation of quantum computing",
-      "imageUrl": "https://images.unsplash.com/photo-1678527973176-e53c88287c7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxxdWFudHVtJTIwY29tcHV0aW5nfGVufDB8fHx8MTc2ODczMTU4N3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1678527973176-e53c88287c7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxxdWFudHVtJTIwY29tcHV0aW5nfGVufDB8fHx8MTc2ODczMTU4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "quantum computing"
     },
     {
       "id": "product-singleone",
       "description": "Abstract representation of a unified data crystal",
-      "imageUrl": "https://images.unsplash.com/photo-1746889028671-74515b0d7f92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkYXRhJTIwY3J5c3RhbHxlbnwwfHx8fDE3Njg4MTgxODJ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1746889028671-74515b0d7f92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkYXRhJTIwY3J5c3RhbHxlbnwwfHx8fDE3Njg4MTgxODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "data crystal"
     },
     {
@@ -393,13 +393,13 @@
     {
       "id": "research16",
       "description": "An image representing the metaverse.",
-      "imageUrl": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhdmVyc2UlMjByZWFsaXR5fGVufDB8fHx8MTcxNzU5ODgyNHww&ixlib=rb-4.1_0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhdmVyc2UlMjByZWFsaXR5fGVufDB8fHx8MTcxNzU5ODgyNHww&ixlib-rb-4.1_0&q=80&w=1080",
       "imageHint": "metaverse reality"
     },
     {
       "id": "research17",
       "description": "An image representing privacy-preserving machine learning.",
-      "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcml2YWN5JTIwbGVhcm5pbmd8ZW58MHx8fHwxNzE3NTk4ODU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcml2YWN5JTIwbGVhcm5pbmd8ZW58MHx8fHwxNzE3NTk4ODU2fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "privacy learning"
     },
     {
@@ -495,7 +495,7 @@
     {
       "id": "prod-cat-strategy",
       "description": "Abstract image representing business strategy and growth",
-      "imageUrl": "https://images.unsplash.com/photo-1708778002586-37c4f23b7f3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXJrJTIwdGVhbCUyMGFic3RyYWN0fGVufDB8fHx8MTc2NjAwNDk1MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1708778002586-37c4f23b7f3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXJrJTIwdGVhbCUyMGFic3RyYWN0fGVufDB8fHx8MTc2NjAwNDk1MHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "business strategy"
     },
     {
@@ -507,7 +507,7 @@
     {
       "id": "prod-cat-people",
       "description": "Abstract image representing people, talent, and collaboration",
-      "imageUrl": "https://images.unsplash.com/photo-1687093777245-bc60c636ddf0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkYXJrJTIwdGVhbCUyMGFic3RyYWN0fGVufDB8fHx8MTc2NjAwNDk1MHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1687093777245-bc60c636ddf0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkYXJrJTIwdGVhbCUyMGFic3RyYWN0fGVufDB8fHx8MTc2NjAwNDk1MHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "people talent"
     },
     {
@@ -519,7 +519,7 @@
     {
       "id": "industry-finance",
       "description": "Abstract image representing finance and banking",
-      "imageUrl": "https://images.unsplash.com/photo-1664395365741-07cb6d014963?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmdXR1cmlzdGljJTIwbGlicmFyeXxlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1664395365741-07cb6d014963?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmdXR1cmlzdGljJTIwbGlicmFyeXxlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "finance banking"
     },
     {
@@ -531,7 +531,7 @@
     {
       "id": "industry-tech",
       "description": "Abstract image representing technology and innovation",
-      "imageUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkYXRhJTIwbmV0d29ya3xlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkYXRhJTIwbmV0d29ya3xlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "technology innovation"
     },
     {
@@ -539,6 +539,30 @@
       "description": "Abstract image representing the legal field and justice",
       "imageUrl": "https://images.unsplash.com/photo-1758275966059-462a4d0fba23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnYXZlbCUyMGNpcmN1aXR8ZW58MHx8fHwxNzY0ODYxNTA4fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "legal justice"
+    },
+    {
+      "id": "board1",
+      "description": "Portrait of Dinesh Goel.",
+      "imageUrl": "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW4lMjBwb3J0cmFpdCUyMHNrZXRjaHxlbnwwfHx8fDE3NjkyMTA0MDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "board2",
+      "description": "Portrait of Peter Dean.",
+      "imageUrl": "https://images.unsplash.com/photo-1557862921-37829c790f19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYW4lMjBwb3J0cmFpdCUyMHNrZXRjaHxlbnwwfHx8fDE3NjkyMTA0MDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "board3",
+      "description": "Portrait of Ulrich Meister.",
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtYW4lMjBwb3J0cmFpdCUyMHNrZXRjaHxlbnwwfHx8fDE3NjkyMTA0MDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "board4",
+      "description": "Portrait of Sriharsha.",
+      "imageUrl": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYW4lMjBwb3J0cmFpdCUyMHNrZXRjaHxlbnwwfHx8fDE3NjkyMTA0MDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
     }
   ]
 }

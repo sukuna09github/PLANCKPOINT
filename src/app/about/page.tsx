@@ -10,8 +10,11 @@ import { GlobalPresence } from "@/components/pages/home/global-presence";
 import { StackedCardDeck } from "@/components/stacked-card-deck";
 
 export default function AboutPage() {
-  const teamImages = PlaceHolderImages.filter(img => LEADERSHIP_TEAM.some(i => i.imageId === img.id));
-  const findImage = (imageId: string) => teamImages.find(img => img.id === imageId);
+  const peopleImages = PlaceHolderImages.filter(img => 
+    LEADERSHIP_TEAM.some(i => i.imageId === img.id) ||
+    BOARD_OF_ADVISORS.some(i => i.imageId === img.id)
+  );
+  const findImage = (imageId: string) => peopleImages.find(img => img.id === imageId);
 
   const leadershipFirstRow = LEADERSHIP_TEAM.slice(0, 4);
   const leadershipSecondRow = LEADERSHIP_TEAM.slice(4);
@@ -188,16 +191,25 @@ export default function AboutPage() {
               </div>
             </AnimatedSection>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-              {BOARD_OF_ADVISORS.map((mentor, index) => (
-                <AnimatedSection key={mentor.name} delay={index * 0.1}>
-                  <div className="group liquid-glass-card">
-                    <div className="p-6 h-full flex flex-col items-center justify-center relative z-10">
-                        <h3 className="text-xl font-bold text-white">{mentor.name}</h3>
-                        <p className="text-accent-foreground font-medium mt-2 text-center">{mentor.role}</p>
+              {BOARD_OF_ADVISORS.map((mentor, index) => {
+                const image = findImage(mentor.imageId);
+                return (
+                  <AnimatedSection key={mentor.name} delay={index * 0.1}>
+                    <div className="group liquid-glass-card">
+                      <div className="liquid-glass-card-content">
+                        <div className="liquid-glass-card-header">
+                            {image && <div className="w-32 h-32 relative mb-4"><Image src={image.imageUrl} alt={mentor.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
+                            <h3 className="mt-4 text-xl font-bold text-white text-center">{mentor.name}</h3>
+                            <p className="text-accent-foreground font-medium text-center">{mentor.role}</p>
+                        </div>
+                        <div className="liquid-glass-card-bio">
+                            <p className="text-sm text-primary-foreground/80">{mentor.bio}</p>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </AnimatedSection>
-              ))}
+                  </AnimatedSection>
+                );
+              })}
             </div>
           </div>
 
@@ -209,5 +221,3 @@ export default function AboutPage() {
     </main>
   );
 }
-
-    

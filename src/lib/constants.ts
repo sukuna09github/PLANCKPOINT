@@ -213,10 +213,10 @@ export const LEADERSHIP_TEAM = [
 ];
 
 export const BOARD_OF_ADVISORS = [
-    { name: "Dinesh Goel", role: "-- to be confirmed" },
-    { name: "Peter Dean", role: " " },
-    { name: "Ulrich Meister", role: " " },
-    { name: "Sriharsha", role: " " },
+    { name: "Dinesh Goel", role: "-- to be confirmed", imageId: "board1", bio: "" },
+    { name: "Peter Dean", role: " ", imageId: "board2", bio: "" },
+    { name: "Ulrich Meister", role: " ", imageId: "board3", bio: "" },
+    { name: "Sriharsha", role: " ", imageId: "board4", bio: "" },
 ];
 
 export const FOOTER_LINKS = [
