@@ -119,7 +119,7 @@ export default function AboutPage() {
 
       <section 
         id="leadership" 
-        className="py-20 lg:py-24 text-white bg-transparent min-h-[calc(100vh+60px)] overflow-hidden fixed-bg-section"
+        className="py-20 lg:py-24 text-white bg-transparent overflow-hidden fixed-bg-section"
         style={{ backgroundImage: `url(${leadershipBgUrl})` }}
       >
         <div className="absolute inset-0 bg-primary/70"></div>
@@ -151,31 +151,30 @@ export default function AboutPage() {
               );
             })}
           </div>
-        </div>
-      </section>
-      
-      <section id="board-mentors" className="py-20 lg:py-24 bg-background text-primary">
-        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <AnimatedSection>
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-normal">Our Elite Board Mentors</h2>
-              <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
-                Guiding our strategic direction with unparalleled expertise and industry foresight.
-              </p>
+          
+          <div id="board-mentors" className="mt-24">
+            <AnimatedSection>
+              <div className="text-center mb-16">
+                <h2 className="text-3xl md:text-4xl font-normal text-white">Our Elite Board Mentors</h2>
+                <p className="mt-4 text-lg text-primary-foreground/80 max-w-3xl mx-auto">
+                  Guiding our strategic direction with unparalleled expertise and industry foresight.
+                </p>
+              </div>
+            </AnimatedSection>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+              {BOARD_OF_ADVISORS.map((mentor, index) => (
+                <AnimatedSection key={mentor.name} delay={index * 0.1}>
+                  <Card className="h-full text-center bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg">
+                    <CardContent className="p-6 flex flex-col items-center justify-center h-full">
+                      <h3 className="text-xl font-bold text-white">{mentor.name}</h3>
+                      <p className="text-accent-foreground font-medium mt-2 text-center">{mentor.role}</p>
+                    </CardContent>
+                  </Card>
+                </AnimatedSection>
+              ))}
             </div>
-          </AnimatedSection>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {BOARD_OF_ADVISORS.map((mentor, index) => (
-              <AnimatedSection key={mentor.name} delay={index * 0.1}>
-                <Card className="h-full text-center border-0 shadow-lg">
-                  <CardContent className="pt-6 flex flex-col items-center justify-center h-full">
-                    <h3 className="text-xl font-bold text-primary">{mentor.name}</h3>
-                    <p className="text-muted-foreground mt-2">{mentor.role}</p>
-                  </CardContent>
-                </Card>
-              </AnimatedSection>
-            ))}
           </div>
+
         </div>
       </section>
 
