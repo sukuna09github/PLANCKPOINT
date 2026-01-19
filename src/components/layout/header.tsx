@@ -70,7 +70,7 @@ export function Header() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <Link href="/" legacyBehavior passHref>
+                <Link href="/" asChild>
                   <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), pathname === "/" ? "text-primary" : "text-muted-foreground", "bg-transparent text-lg")}>
                     Home
                   </NavigationMenuLink>
@@ -158,7 +158,7 @@ export function Header() {
               </NavigationMenuItem>
 
                <NavigationMenuItem>
-                <Link href="/about" legacyBehavior passHref>
+                <Link href="/about" asChild>
                   <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), pathname === "/about" ? "text-primary" : "text-muted-foreground", "bg-transparent text-lg")}>
                     About Us
                   </NavigationMenuLink>
