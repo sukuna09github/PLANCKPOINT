@@ -190,12 +190,12 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {BOARD_OF_ADVISORS.map((mentor, index) => (
                 <AnimatedSection key={mentor.name} delay={index * 0.1}>
-                  <Card className="h-full text-center bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg">
-                    <CardContent className="p-6 flex flex-col items-center justify-center h-full">
-                      <h3 className="text-xl font-bold text-white">{mentor.name}</h3>
-                      <p className="text-accent-foreground font-medium mt-2 text-center">{mentor.role}</p>
-                    </CardContent>
-                  </Card>
+                  <div className="group liquid-glass-card">
+                    <div className="p-6 h-full flex flex-col items-center justify-center relative z-10">
+                        <h3 className="text-xl font-bold text-white">{mentor.name}</h3>
+                        <p className="text-accent-foreground font-medium mt-2 text-center">{mentor.role}</p>
+                    </div>
+                  </div>
                 </AnimatedSection>
               ))}
             </div>
@@ -209,3 +209,5 @@ export default function AboutPage() {
     </main>
   );
 }
+
+    
