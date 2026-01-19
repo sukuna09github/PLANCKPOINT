@@ -5,7 +5,7 @@ import { Lightbulb, Target, Users, Bot, Star, BarChart, Gem, Briefcase, Drafting
 
 export const NAV_LINKS = [
   { href: "/", label: "Home" },
-  { href: "/resulting", label: "Resulting" },
+  { href: "/resulting", label: "Core Services" },
   { href: "/case-studies", label: "Case Studies" },
   { href: "/research", label: "Research" },
   { href: "/about", label: "About Us" },
@@ -478,3 +478,6 @@ export const PRODUCTS = [
     { id: "skillorbit", name: "SkillOrbit™", description: "Map, measure, and manage the critical skills that drive your organization's success.", icon: UsersRound, imageId: 'product-skillorbit', tagline: 'Align talent with strategy.', detailedDescription: "In a rapidly changing world, having the right skills is paramount. SkillOrbit™ is a dynamic platform for talent and capability management. We help you map your organization's existing skills, identify future needs, and create targeted development pathways to bridge the gap.", keyBenefits: 'Gain a clear view of your organization\'s skill landscape.\nAlign talent development with strategic priorities.\nImprove employee engagement and retention.\nBuild a more agile and resilient workforce.', learnMoreUrl: '#' },
 ];
 
+
+
+    
