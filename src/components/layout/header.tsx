@@ -24,13 +24,14 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
+  Omit<React.ComponentPropsWithoutRef<typeof Link>, "href"> & { href: string }
+>(({ className, title, children, href, ...props }, ref) => {
   return (
     <li>
       <NavigationMenuLink asChild>
-        <a
+        <Link
           ref={ref}
+          href={href}
           className={cn(
             "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
             className
@@ -41,7 +42,7 @@ const ListItem = React.forwardRef<
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
             {children}
           </p>
-        </a>
+        </Link>
       </NavigationMenuLink>
     </li>
   );
@@ -63,18 +64,21 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="flex h-16 w-full items-center justify-between px-6 sm:px-8 lg:px-16">
+      <div className="mx-auto flex h-16 w-full max-w-[120rem] items-center justify-between px-6 sm:px-8 lg:px-16">
         <Logo />
         
         <nav className="hidden md:flex">
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <Link href="/" asChild>
-                  <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), pathname === "/" ? "text-primary" : "text-muted-foreground", "bg-transparent text-lg")}>
+                <NavigationMenuLink asChild>
+                  <Link
+                    href="/"
+                    className={cn(navigationMenuTriggerStyle(), pathname === "/" ? "text-primary" : "text-muted-foreground", "bg-transparent text-lg")}
+                  >
                     Home
-                  </NavigationMenuLink>
-                </Link>
+                  </Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
@@ -158,20 +162,23 @@ export function Header() {
               </NavigationMenuItem>
 
                <NavigationMenuItem>
-                <Link href="/about" asChild>
-                  <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), pathname === "/about" ? "text-primary" : "text-muted-foreground", "bg-transparent text-lg")}>
+                <NavigationMenuLink asChild>
+                  <Link
+                    href="/about"
+                    className={cn(navigationMenuTriggerStyle(), pathname === "/about" ? "text-primary" : "text-muted-foreground", "bg-transparent text-lg")}
+                  >
                     About Us
-                  </NavigationMenuLink>
-                </Link>
+                  </Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
         </nav>
 
         <div className="hidden md:flex items-center space-x-2">
-            <Link href="/contact">
-                <Button variant="brand-outline"><span>Contact Us</span></Button>
-            </Link>
+            <Button asChild variant="brand-outline">
+                <Link href="/contact">Contact Us</Link>
+            </Button>
         </div>
 
         <div className="md:hidden">
