@@ -57,19 +57,19 @@
     {
       "id": "insight1",
       "description": "Image for a survey report.",
-      "imageUrl": "https://images.unsplash.com/photo-1665979738279-bd2441290e02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdXJ2ZXklMjByZXBvcnR8ZW58MHx8fHwxNzY0ODYxNTA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1665979738279-bd2441290e02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdXJ2ZXklMjByZXBvcnR8ZW58MHx8fHwxNzY0ODYxNTA4fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "survey report"
     },
     {
       "id": "insight2",
       "description": "Image for a blog about hybrid work.",
-      "imageUrl": "https://images.unsplash.com/photo-1631891425069-a0e16ba9c24e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aHlicmlkJTIwd29ya3xlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1631891425069-a0e16ba9c24e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aHlicmlkJTIwd29ya3xlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "hybrid work"
     },
     {
       "id": "insight3",
       "description": "Image for a case study on retail tech.",
-      "imageUrl": "https://images.unsplash.com/photo-1703165552745-37e85f0273cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyZXRhaWwlMjB0ZWNobm9sb2d5fGVufDB8fHx8MTc2NDg2MTUwOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1703165552745-37e85f0273cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyZXRhaWwlMjB0ZWNobm9sb2d5fGVufDB8fHx8MTc2NDg2MTUwOHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "retail technology"
     },
     {
@@ -123,7 +123,7 @@
     {
       "id": "research3",
       "description": "Image for developer productivity.",
-      "imageUrl": "https://images.unsplash.com/photo-1529429612779-c8e40ef2f36d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb2RlJTIwc2NyZWVufGVufDB8fHx8MTc2NDc2ODkxN3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1529429612779-c8e40ef2f36d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb2RlJTIwc2NyZWVufGVufDB8fHx8MTc2NDc2ODkxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "code screen"
     },
     {
@@ -167,6 +167,30 @@
       "description": "Portrait of Ulrich Meister.",
       "imageUrl": "/images/ulrich sketch.png",
       "imageHint": "man portrait sketch"
+    },
+    {
+      "id": "leader5",
+      "description": "Portrait of Rika Dutta.",
+      "imageUrl": "https://images.unsplash.com/photo-1764032759724-22608ed91af8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3b21hbiUyMHBvcnRyYWl0JTIwc2tldGNofGVufDB8fHx8MTc2ODgyMjkzMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait sketch"
+    },
+    {
+      "id": "leader6",
+      "description": "AI Intern QELLA.",
+      "imageUrl": "https://images.unsplash.com/photo-1679639539537-0d2e452890f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhYnN0cmFjdCUyMEFJfGVufDB8fHx8MTc2ODc5NDYyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract AI"
+    },
+    {
+      "id": "leader7",
+      "description": "AI Intern KORIX.",
+      "imageUrl": "https://images.unsplash.com/photo-1711831521065-e546a5aca68e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMEFJfGVufDB8fHx8MTc2ODc5NDYyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract AI"
+    },
+    {
+      "id": "leader8",
+      "description": "AI Intern Luther.",
+      "imageUrl": "https://images.unsplash.com/photo-1680783954745-3249be59e527?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhYnN0cmFjdCUyMEFJfGVufDB8fHx8MTc2ODc5NDYyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract AI"
     },
     {
       "id": "about-hero",
@@ -279,13 +303,13 @@
     {
       "id": "product-thinkquark",
       "description": "Abstract representation of quantum computing",
-      "imageUrl": "https://images.unsplash.com/photo-1678527973176-e53c88287c7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxxdWFudHVtJTIwY29tcHV0aW5nfGVufDB8fHx8MTc2ODczMTU4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1678527973176-e53c88287c7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxxdWFudHVtJTIwY29tcHV0aW5nfGVufDB8fHx8MTc2ODczMTU4N3ww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "quantum computing"
     },
     {
       "id": "product-singleone",
       "description": "Abstract representation of a unified data crystal",
-      "imageUrl": "https://images.unsplash.com/photo-1746889028671-74515b0d7f92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkYXRhJTIwY3J5c3RhbHxlbnwwfHx8fDE3Njg4MTgxODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1746889028671-74515b0d7f92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkYXRhJTIwY3J5c3RhbHxlbnwwfHx8fDE3Njg4MTgxODJ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "data crystal"
     },
     {
@@ -495,19 +519,19 @@
     {
       "id": "industry-finance",
       "description": "Abstract image representing finance and banking",
-      "imageUrl": "https://images.unsplash.com/photo-1664395365741-07cb6d014963?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmdXR1cmlzdGljJTIwbGlicmFyeXxlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1664395365741-07cb6d014963?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmdXR1cmlzdGljJTIwbGlicmFyeXxlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "finance banking"
     },
     {
       "id": "industry-healthcare",
       "description": "Abstract image representing healthcare and medicine",
-      "imageUrl": "https://images.unsplash.com/photo-1459664018906-085c36f472af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0ZWFsfGVufDB8fHx8MTc2ODQyNDQ4OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1459664018906-085c36f472af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0ZWFsfGVufDB8fHx8MTc2ODQyNDQ4OHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "healthcare medicine"
     },
     {
       "id": "industry-tech",
       "description": "Abstract image representing technology and innovation",
-      "imageUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkYXRhJTIwbmV0d29ya3xlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkYXRhJTIwbmV0d29ya3xlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "technology innovation"
     },
     {
