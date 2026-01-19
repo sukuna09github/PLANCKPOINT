@@ -262,7 +262,7 @@ const CoreServicesPage: React.FC = () => {
                         </div>
                     </AnimatedSection>
                     <AnimatedSection delay={0.2}>
-                        <div className="aspect-[4/3] relative overflow-hidden shadow-xl rounded-lg">
+                        <div className="relative h-full min-h-[450px] overflow-hidden shadow-xl rounded-lg">
                             {atomicAiImage && <Image src={atomicAiImage.imageUrl} alt={atomicAiImage.description} fill className="object-cover" data-ai-hint={atomicAiImage.imageHint} />}
                         </div>
                     </AnimatedSection>
@@ -289,7 +289,7 @@ const CoreServicesPage: React.FC = () => {
                         </div>
                     </AnimatedSection>
                     <AnimatedSection className="md:order-1">
-                        <div className="aspect-[4/3] relative overflow-hidden shadow-xl rounded-lg">
+                        <div className="relative h-full min-h-[450px] overflow-hidden shadow-xl rounded-lg">
                             {beyondQuadrantsImage && <Image src={beyondQuadrantsImage.imageUrl} alt={beyondQuadrantsImage.description} fill className="object-cover" data-ai-hint={beyondQuadrantsImage.imageHint} />}
                         </div>
                     </AnimatedSection>
@@ -316,7 +316,7 @@ const CoreServicesPage: React.FC = () => {
                         </div>
                     </AnimatedSection>
                     <AnimatedSection delay={0.2}>
-                        <div className="aspect-[4/3] relative overflow-hidden shadow-xl rounded-lg">
+                        <div className="relative h-full min-h-[450px] overflow-hidden shadow-xl rounded-lg">
                             {thinkQuarkImage && <Image src={thinkQuarkImage.imageUrl} alt={thinkQuarkImage.description} fill className="object-cover" data-ai-hint={thinkQuarkImage.imageHint} />}
                         </div>
                     </AnimatedSection>
@@ -343,7 +343,7 @@ const CoreServicesPage: React.FC = () => {
                         </div>
                     </AnimatedSection>
                     <AnimatedSection className="md:order-1">
-                        <div className="aspect-[4/3] relative overflow-hidden shadow-xl rounded-lg">
+                        <div className="relative h-full min-h-[450px] overflow-hidden shadow-xl rounded-lg">
                             {singleOneImage && <Image src={singleOneImage.imageUrl} alt={singleOneImage.description} fill className="object-cover" data-ai-hint={singleOneImage.imageHint} />}
                         </div>
                     </AnimatedSection>
