@@ -57,19 +57,19 @@
     {
       "id": "insight1",
       "description": "Image for a survey report.",
-      "imageUrl": "https://images.unsplash.com/photo-1665979738279-bd2441290e02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdXJ2ZXklMjByZXBvcnR8ZW58MHx8fHwxNzY0ODYxNTA4fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1665979738279-bd2441290e02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdXJ2ZXklMjByZXBvcnR8ZW58MHx8fHwxNzY0ODYxNTA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "survey report"
     },
     {
       "id": "insight2",
       "description": "Image for a blog about hybrid work.",
-      "imageUrl": "https://images.unsplash.com/photo-1631891425069-a0e16ba9c24e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aHlicmlkJTIwd29ya3xlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1631891425069-a0e16ba9c24e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aHlicmlkJTIwd29ya3xlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "hybrid work"
     },
     {
       "id": "insight3",
       "description": "Image for a case study on retail tech.",
-      "imageUrl": "https://images.unsplash.com/photo-1703165552745-37e85f0273cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyZXRhaWwlMjB0ZWNobm9sb2d5fGVufDB8fHx8MTc2NDg2MTUwOHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1703165552745-37e85f0273cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyZXRhaWwlMjB0ZWNobm9sb2d5fGVufDB8fHx8MTc2NDg2MTUwOHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "retail technology"
     },
     {
@@ -99,7 +99,7 @@
     {
       "id": "research-hero2",
       "description": "An abstract visualization of a neural network.",
-      "imageUrl": "https://images.unsplash.com/photo-1655890006065-edefcd764af6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxuZXVyYWwlMjBuZXR3b3JrfGVufDB8fHx8MTc2NDg0NTkxNnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1655890006065-edefcd764af6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxuZXVyYWwlMjBuZXR3b3JrfGVufDB8fHx8MTc2NDg0NTkxNnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "neural network"
     },
     {
@@ -123,7 +123,7 @@
     {
       "id": "research3",
       "description": "Image for developer productivity.",
-      "imageUrl": "https://images.unsplash.com/photo-1529429612779-c8e40ef2f36d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb2RlJTIwc2NyZWVufGVufDB8fHx8MTc2NDc2ODkxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1529429612779-c8e40ef2f36d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb2RlJTIwc2NyZWVufGVufDB8fHx8MTc2NDc2ODkxN3ww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "code screen"
     },
     {
@@ -177,7 +177,7 @@
     {
       "id": "leader6",
       "description": "AI Intern QELLA.",
-      "imageUrl": "https://images.unsplash.com/photo-1679639539537-0d2e452890f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhYnN0cmFjdCUyMEFJfGVufDB8fHx8MTc2ODc5NDYyN3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1679639539537-0d2e452890f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhYnN0cmFjdCUyMEFJfGVufDB8fHx8MTc2ODc5NDYyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "abstract AI"
     },
     {
@@ -189,7 +189,7 @@
     {
       "id": "leader8",
       "description": "AI Intern Luther.",
-      "imageUrl": "https://images.unsplash.com/photo-1680783954745-3249be59e527?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhYnN0cmFjdCUyMEFJfGVufDB8fHx8MTc2ODc5NDYyN3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1680783954745-bc60c636ddf0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhYnN0cmFjdCUyMEFJfGVufDB8fHx8MTc2ODc5NDYyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "abstract AI"
     },
     {
@@ -213,7 +213,7 @@
     {
       "id": "hero-abstract-3",
       "description": "AI-generated abstract image with soft gradients of teal and light green.",
-      "imageUrl": "https://images.unsplash.com/photo-1517503347350-3924f175a9d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0ZWFsJTIwZ3JhZGllbnR8ZW58MHx8fHwxNzY0ODY4NjUwfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1517503347350-3924f175a9d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0ZWFsJTIwZ3JhZGllbnR8ZW58MHx8fHwxNzY0ODY4NjUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "teal gradient"
     },
     {
@@ -307,10 +307,10 @@
       "imageHint": "quantum computing"
     },
     {
-      "id": "product-singleone",
-      "description": "Abstract representation of a unified data crystal",
-      "imageUrl": "https://images.unsplash.com/photo-1746889028671-74515b0d7f92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkYXRhJTIwY3J5c3RhbHxlbnwwfHx8fDE3Njg4MTgxODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "data crystal"
+      "id": "product-signalone",
+      "description": "Bespoke research and intelligence",
+      "imageUrl": "https://images.unsplash.com/photo-1518186258327-0b70ef424a13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbnRlbGxpZ2VuY2V8ZW58MHx8fHwxNzY5MjkwMzQyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "intelligence research"
     },
     {
       "id": "product-elwis",
@@ -327,13 +327,13 @@
     {
       "id": "product-skillorbit",
       "description": "Teal poly background",
-      "imageUrl": "https://images.unsplash.com/photo-1764437518343-5d269fe75805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxBQlNUUkFDVCUyMFRFQUwlMjB8ZW58MHx8fHwxNzY1MjA1NzI0fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1764437518343-5d269fe75805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxBQlNUUkFDVCUyMFRFQUwlMjB8ZW58MHx8fHwxNzY1MjA1NzI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "teal poly"
     },
     {
       "id": "skillorbit-background",
       "description": "Abstract image for SkillOrbit.",
-      "imageUrl": "https://images.unsplash.com/photo-1764437518343-5d269fe75805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxBQlNUUkFDVCUyMFRFQUwlMjB8ZW58MHx8fHwxNzY1MjA1NzI0fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1764437518343-5d269fe75805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxBQlNUUkFDVCUyMFRFQUwlMjB8ZW58MHx8fHwxNzY1MjA1NzI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "skill ecosystem"
     },
     {
@@ -393,13 +393,13 @@
     {
       "id": "research16",
       "description": "An image representing the metaverse.",
-      "imageUrl": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhdmVyc2UlMjByZWFsaXR5fGVufDB8fHx8MTcxNzU5ODgyNHww&ixlib-rb-4.1_0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhdmVyc2UlMjByZWFsaXR5fGVufDB8fHx8MTcxNzU5ODgyNHww&ixlib=rb-4.1_0&q=80&w=1080",
       "imageHint": "metaverse reality"
     },
     {
       "id": "research17",
       "description": "An image representing privacy-preserving machine learning.",
-      "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcml2YWN5JTIwbGVhcm5pbmd8ZW58MHx8fHwxNzE3NTk4ODU2fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcml2YWN5JTIwbGVhcm5pbmd8ZW58MHx8fHwxNzE3NTk4ODU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "privacy learning"
     },
     {
@@ -495,13 +495,13 @@
     {
       "id": "prod-cat-strategy",
       "description": "Abstract image representing business strategy and growth",
-      "imageUrl": "https://images.unsplash.com/photo-1708778002586-37c4f23b7f3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXJrJTIwdGVhbCUyMGFic3RyYWN0fGVufDB8fHx8MTc2NjAwNDk1MHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1708778002586-37c4f23b7f3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXJrJTIwdGVhbCUyMGFic3RyYWN0fGVufDB8fHx8MTc2NjAwNDk1MHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "business strategy"
     },
     {
       "id": "prod-cat-operations",
       "description": "Abstract image representing operational efficiency and gears",
-      "imageUrl": "https://images.unsplash.com/photo-1708778002531-5bb1c27c4ea3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhYnN0cmFjdCUyMHRlYWx8ZW58MHx8fHwxNzY1OTk4NTc2fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1708778002531-5bb1c27c4ea3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhYnN0cmFjdCUyMHRlYWx8ZW58MHx8fHwxNzY1OTk4NTc2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "operations efficiency"
     },
     {
@@ -525,7 +525,7 @@
     {
       "id": "industry-healthcare",
       "description": "Abstract image representing healthcare and medicine",
-      "imageUrl": "https://images.unsplash.com/photo-1459664018906-085c36f472af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0ZWFsfGVufDB8fHx8MTc2ODQyNDQ4OHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1459664018906-085c36f472af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0ZWFsfGVufDB8fHx8MTc2ODQyNDQ4OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "healthcare medicine"
     },
     {
@@ -555,7 +555,7 @@
     {
       "id": "board3",
       "description": "Portrait of Ulrich Meister.",
-      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtYW4lMjBwb3J0cmFpdCUyMHNrZXRjaHxlbnwwfHx8fDE3NjkyMTA0MDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtYW4lMjBwb3J0cmFpdCUyMHNrZXRjaHxlbnwwfHx8fDE3NjkyMTA0MDB8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "man portrait"
     },
     {
