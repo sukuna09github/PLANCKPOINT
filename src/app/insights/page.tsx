@@ -186,7 +186,7 @@ const InsightsPage: React.FC = () => {
       </section>
 
       {/* Thoughts Section */}
-      <section className="py-24 bg-background">
+      <section id="thoughts" className="py-24 bg-background">
         <div className="max-w-[120rem] mx-auto px-16">
             <AnimatedSection className="text-center mb-16">
                 <h2 className="text-4xl font-headline font-normal text-primary mb-6">Thoughts</h2>
@@ -245,7 +245,7 @@ const InsightsPage: React.FC = () => {
     </section>
 
       {/* Concepts Section */}
-      <section className="py-24 bg-primary/5">
+      <section id="concepts" className="py-24 bg-primary/5">
         <div className="max-w-[120rem] mx-auto px-16">
             <AnimatedSection className="text-center mb-16">
                 <h2 className="text-4xl font-headline font-normal text-primary mb-6">Concepts</h2>
@@ -304,7 +304,7 @@ const InsightsPage: React.FC = () => {
     </section>
 
       {/* Ideas Section */}
-      <section className="py-24 bg-background">
+      <section id="ideas" className="py-24 bg-background">
         <div className="max-w-[120rem] mx-auto px-16">
             <AnimatedSection className="text-center mb-16">
                 <h2 className="text-4xl font-headline font-normal text-primary mb-6">Ideas</h2>
@@ -444,7 +444,7 @@ const InsightsPage: React.FC = () => {
         </div>
       </section>
       {/* Research Articles */}
-      <section id="research-articles" className="py-24 bg-background">
+      <section id="insight-articles" className="py-24 bg-background">
         <div className="max-w-[120rem] mx-auto px-16">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

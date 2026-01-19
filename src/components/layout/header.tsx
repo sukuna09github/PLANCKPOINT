@@ -4,13 +4,19 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 
 import { NAV_LINKS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Logo } from "@/components/logo";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,24 +24,57 @@ export function Header() {
 
   const navLinks = NAV_LINKS.filter(link => link.label !== 'Products');
 
+  const insightLinks = [
+    { href: "/insights#thoughts", label: "Thoughts" },
+    { href: "/insights#insight-articles", label: "Insights" },
+    { href: "/insights#concepts", label: "Concepts" },
+    { href: "/insights#ideas", label: "Ideas" },
+  ];
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="flex h-16 w-full items-center justify-between px-6 sm:px-8 lg:px-16">
         <Logo />
         
         <nav className="hidden md:flex items-center space-x-8">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={cn(
-                "text-lg font-medium transition-colors duration-300 ease-apple hover:text-primary",
-                pathname === link.href ? "text-primary" : "text-muted-foreground"
-              )}
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+             if (link.label === 'Insights') {
+              return (
+                <DropdownMenu key={link.href}>
+                  <DropdownMenuTrigger asChild>
+                     <button
+                      className={cn(
+                        "text-lg font-medium transition-colors duration-300 ease-apple hover:text-primary flex items-center gap-1 focus:outline-none data-[state=open]:[&>svg]:rotate-180",
+                        pathname.startsWith(link.href) ? "text-primary" : "text-muted-foreground"
+                      )}
+                    >
+                      {link.label}
+                      <ChevronDown className="h-4 w-4 transition-transform duration-200" />
+                    </button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent>
+                    {insightLinks.map((insightLink) => (
+                       <DropdownMenuItem key={insightLink.href} asChild>
+                        <Link href={insightLink.href}>{insightLink.label}</Link>
+                      </DropdownMenuItem>
+                    ))}
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              );
+            }
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={cn(
+                  "text-lg font-medium transition-colors duration-300 ease-apple hover:text-primary",
+                  pathname === link.href ? "text-primary" : "text-muted-foreground"
+                )}
+              >
+                {link.label}
+              </Link>
+            )
+          })}
         </nav>
 
         <div className="hidden md:flex items-center space-x-2">
@@ -65,19 +104,49 @@ export function Header() {
                   </SheetTrigger>
                 </div>
                 <nav className="flex flex-col space-y-4 p-4 mt-4">
-                  {navLinks.map((link) => (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      onClick={() => setIsOpen(false)}
-                      className={cn(
-                        "text-lg font-medium transition-colors duration-300 ease-apple hover:text-primary",
-                        pathname === link.href ? "text-primary" : "text-foreground"
-                      )}
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
+                  {navLinks.map((link) => {
+                    if (link.label === 'Insights') {
+                      return (
+                        <div key={link.href}>
+                           <Link
+                            href={link.href}
+                            onClick={() => setIsOpen(false)}
+                            className={cn(
+                              "text-lg font-medium transition-colors duration-300 ease-apple hover:text-primary",
+                              pathname.startsWith(link.href) ? "text-primary" : "text-foreground"
+                            )}
+                          >
+                            {link.label}
+                          </Link>
+                          <div className="flex flex-col space-y-2 pl-4 mt-2">
+                            {insightLinks.map((insightLink) => (
+                              <Link
+                                key={insightLink.href}
+                                href={insightLink.href}
+                                onClick={() => setIsOpen(false)}
+                                className="text-muted-foreground hover:text-primary"
+                              >
+                                {insightLink.label}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      )
+                    }
+                    return (
+                      <Link
+                        key={link.href}
+                        href={link.href}
+                        onClick={() => setIsOpen(false)}
+                        className={cn(
+                          "text-lg font-medium transition-colors duration-300 ease-apple hover:text-primary",
+                          pathname === link.href ? "text-primary" : "text-foreground"
+                        )}
+                      >
+                        {link.label}
+                      </Link>
+                    )
+                  })}
                 </nav>
                 <div className="mt-auto p-4">
                   <Button variant="outline" className="w-full" asChild>
