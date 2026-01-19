@@ -191,4 +191,21 @@
     pointer-events: none;
     transform: scale(1.5);
   }
+  
+  .nav-link {
+    @apply relative text-muted-foreground transition-colors duration-300 ease-apple hover:text-primary;
+  }
+  .nav-link[data-active='true'],
+  .nav-link[data-state='open'] {
+      @apply text-primary;
+  }
+  .nav-link::after {
+      content: '';
+      @apply absolute bottom-2 left-4 right-4 h-[1.5px] origin-center scale-x-0 bg-primary transition-transform duration-300 ease-apple;
+  }
+  .nav-link:hover::after,
+  .nav-link[data-state='open']::after,
+  .nav-link[data-active='true']::after {
+      @apply scale-x-100;
+  }
 }

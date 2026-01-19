@@ -64,116 +64,120 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="mx-auto flex h-16 w-full max-w-[120rem] items-center justify-between px-6 sm:px-8 lg:px-16">
+      <div className="mx-auto flex h-16 w-full max-w-full items-center justify-between px-6 sm:px-8 lg:px-16">
         <Logo />
         
-        <nav className="hidden md:flex">
-          <NavigationMenu>
-            <NavigationMenuList>
-              <NavigationMenuItem>
-                <NavigationMenuLink asChild>
-                  <Link
-                    href="/"
-                    className={cn(navigationMenuTriggerStyle(), pathname === "/" ? "text-primary" : "text-muted-foreground", "bg-transparent text-lg")}
-                  >
-                    Home
-                  </Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
+        <div className="flex-1 flex justify-center">
+          <nav className="hidden md:flex">
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuLink asChild>
+                    <Link
+                      href="/"
+                      className={cn(navigationMenuTriggerStyle(), "bg-transparent text-lg nav-link")}
+                      data-active={pathname === "/"}
+                    >
+                      Home
+                    </Link>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
 
-              <NavigationMenuItem>
-                <NavigationMenuTrigger className={cn(pathname.startsWith("/core-services") && "text-primary", "bg-transparent text-lg")}>
-                  Core Services
-                </NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <div className="grid md:grid-cols-[1fr_300px] gap-8 p-6 w-[800px] lg:w-[900px]">
-                    <div>
-                      <h3 className="text-lg font-medium text-primary mb-4">
-                        <Link href="/core-services" className="flex items-center hover:underline">
-                          Core Services
-                          <ArrowRight className="ml-2 h-4 w-4" />
-                        </Link>
-                      </h3>
-                      <ul className="grid grid-cols-2 gap-3">
-                        {PRODUCTS.map((product) => (
-                          <ListItem
-                            key={product.name}
-                            href={`/core-services#${product.id}`}
-                            title={product.name}
-                          >
-                            {product.tagline}
-                          </ListItem>
-                        ))}
-                      </ul>
-                    </div>
-                    <div className="bg-muted/50 p-6 rounded-md flex flex-col justify-center">
-                      <h4 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4">Featured</h4>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className={cn("bg-transparent text-lg nav-link")} data-active={pathname.startsWith("/core-services")}>
+                    Core Services
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <div className="grid md:grid-cols-[1fr_300px] gap-8 p-6 w-[800px] lg:w-[900px]">
                       <div>
-                        <h5 className="text-base font-semibold mb-2 text-foreground">{PRODUCTS[0].name}</h5>
-                        <p className="text-sm text-muted-foreground mb-4 line-clamp-3">{PRODUCTS[0].description}</p>
-                        <Link href={`/core-services#${PRODUCTS[0].id}`} className="text-sm font-semibold text-primary hover:underline">
-                          Learn more &rarr;
-                        </Link>
+                        <h3 className="text-lg font-medium text-primary mb-4">
+                          <Link href="/core-services" className="flex items-center hover:underline">
+                            Core Services
+                            <ArrowRight className="ml-2 h-4 w-4" />
+                          </Link>
+                        </h3>
+                        <ul className="grid grid-cols-2 gap-3">
+                          {PRODUCTS.map((product) => (
+                            <ListItem
+                              key={product.name}
+                              href={`/core-services#${product.id}`}
+                              title={product.name}
+                            >
+                              {product.tagline}
+                            </ListItem>
+                          ))}
+                        </ul>
                       </div>
-                      <hr className="my-4 border-border"/>
-                       <div>
-                        <h5 className="text-base font-semibold mb-2 text-foreground">{PRODUCTS[1].name}</h5>
-                        <p className="text-sm text-muted-foreground mb-4 line-clamp-3">{PRODUCTS[1].description}</p>
-                        <Link href={`/core-services#${PRODUCTS[1].id}`} className="text-sm font-semibold text-primary hover:underline">
-                          Learn more &rarr;
-                        </Link>
+                      <div className="bg-muted/50 p-6 rounded-md flex flex-col justify-center">
+                        <h4 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4">Featured</h4>
+                        <div>
+                          <h5 className="text-base font-semibold mb-2 text-foreground">{PRODUCTS[0].name}</h5>
+                          <p className="text-sm text-muted-foreground mb-4 line-clamp-3">{PRODUCTS[0].description}</p>
+                          <Link href={`/core-services#${PRODUCTS[0].id}`} className="text-sm font-semibold text-primary hover:underline">
+                            Learn more &rarr;
+                          </Link>
+                        </div>
+                        <hr className="my-4 border-border"/>
+                         <div>
+                          <h5 className="text-base font-semibold mb-2 text-foreground">{PRODUCTS[1].name}</h5>
+                          <p className="text-sm text-muted-foreground mb-4 line-clamp-3">{PRODUCTS[1].description}</p>
+                          <Link href={`/core-services#${PRODUCTS[1].id}`} className="text-sm font-semibold text-primary hover:underline">
+                            Learn more &rarr;
+                          </Link>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-              
-              <NavigationMenuItem>
-                <NavigationMenuTrigger className={cn(pathname.startsWith("/insights") && "text-primary", "bg-transparent text-lg")}>
-                  Insights
-                </NavigationMenuTrigger>
-                <NavigationMenuContent>
-                   <div className="grid md:grid-cols-[1fr_300px] gap-8 p-6 w-[700px] lg:w-[800px]">
-                     <div>
-                       <h3 className="text-lg font-medium text-primary mb-4">
-                        <Link href="/insights" className="flex items-center hover:underline">
-                          Insights
-                          <ArrowRight className="ml-2 h-4 w-4" />
-                        </Link>
-                      </h3>
-                       <ul className="grid grid-cols-2 gap-3">
-                        {insightLinks.map(link => (
-                           <ListItem key={link.title} href={link.href} title={link.title}>
-                            {link.description}
-                           </ListItem>
-                        ))}
-                      </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+                
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className={cn("bg-transparent text-lg nav-link")} data-active={pathname.startsWith("/insights")}>
+                    Insights
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                     <div className="grid md:grid-cols-[1fr_300px] gap-8 p-6 w-[700px] lg:w-[800px]">
+                       <div>
+                         <h3 className="text-lg font-medium text-primary mb-4">
+                          <Link href="/insights" className="flex items-center hover:underline">
+                            Insights
+                            <ArrowRight className="ml-2 h-4 w-4" />
+                          </Link>
+                        </h3>
+                         <ul className="grid grid-cols-2 gap-3">
+                          {insightLinks.map(link => (
+                             <ListItem key={link.title} href={link.href} title={link.title}>
+                              {link.description}
+                             </ListItem>
+                          ))}
+                        </ul>
+                       </div>
+                        <div className="bg-muted/50 p-6 rounded-md flex flex-col justify-center">
+                          <h4 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4">Featured Insight</h4>
+                          <h5 className="text-base font-semibold mb-2 text-foreground">{latestInsight.title}</h5>
+                          <p className="text-sm text-muted-foreground mb-4 line-clamp-3">{latestInsight.summary}</p>
+                          <Link href={`/insights#insight-articles`} className="text-sm font-semibold text-primary hover:underline">
+                            Read more &rarr;
+                          </Link>
+                        </div>
                      </div>
-                      <div className="bg-muted/50 p-6 rounded-md flex flex-col justify-center">
-                        <h4 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4">Featured Insight</h4>
-                        <h5 className="text-base font-semibold mb-2 text-foreground">{latestInsight.title}</h5>
-                        <p className="text-sm text-muted-foreground mb-4 line-clamp-3">{latestInsight.summary}</p>
-                        <Link href={`/insights#insight-articles`} className="text-sm font-semibold text-primary hover:underline">
-                          Read more &rarr;
-                        </Link>
-                      </div>
-                   </div>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
 
-               <NavigationMenuItem>
-                <NavigationMenuLink asChild>
-                  <Link
-                    href="/about"
-                    className={cn(navigationMenuTriggerStyle(), pathname === "/about" ? "text-primary" : "text-muted-foreground", "bg-transparent text-lg")}
-                  >
-                    About Us
-                  </Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
-        </nav>
+                 <NavigationMenuItem>
+                  <NavigationMenuLink asChild>
+                    <Link
+                      href="/about"
+                      className={cn(navigationMenuTriggerStyle(), "bg-transparent text-lg nav-link")}
+                      data-active={pathname === "/about"}
+                    >
+                      About Us
+                    </Link>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+          </nav>
+        </div>
 
         <div className="hidden md:flex items-center space-x-2">
             <Button asChild variant="brand-outline">
