@@ -213,10 +213,10 @@ export const LEADERSHIP_TEAM = [
 ];
 
 export const BOARD_OF_ADVISORS = [
-    { name: "Dinesh Goel", role: "-- to be confirmed", imageId: "board1", bio: "" },
-    { name: "Peter Dean", role: " ", imageId: "board2", bio: "" },
-    { name: "Ulrich Meister", role: " ", imageId: "board3", bio: "" },
-    { name: "Sriharsha", role: " ", imageId: "board4", bio: "" },
+    { name: "Dinesh Goel", role: "-- to be confirmed", imageId: "board1", bio: "With decades of experience in global technology and strategy, Dinesh provides invaluable guidance on market expansion and innovation." },
+    { name: "Peter Dean", role: " ", imageId: "board2", bio: "A seasoned expert in enterprise software and digital transformation, Peter helps shape our product strategy and long-term vision." },
+    { name: "Ulrich Meister", role: " ", imageId: "board3", bio: "Ulrich brings a deep understanding of corporate governance and risk management, ensuring our strategies are both ambitious and sound." },
+    { name: "Sriharsha", role: " ", imageId: "board4", bio: "As a leader in data science and AI, Sriharsha advises on cutting-edge technological advancements and their practical applications." },
 ];
 
 export const FOOTER_LINKS = [
