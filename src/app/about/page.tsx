@@ -3,7 +3,7 @@
 
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
-import { LEADERSHIP_TEAM } from "@/lib/constants";
+import { LEADERSHIP_TEAM, BOARD_OF_ADVISORS } from "@/lib/constants";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { AnimatedSection } from "@/components/animated-section";
 import { GlobalPresence } from "@/components/pages/home/global-presence";
@@ -126,7 +126,7 @@ export default function AboutPage() {
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
           <AnimatedSection>
             <div className="text-center mb-16 max-w-none">
-              <h2 className="text-3xl md:text-4xl font-normal">Leadership</h2>
+              <h2 className="text-3xl md:text-4xl font-normal">Our People</h2>
               <p className="mt-4 text-lg text-primary-foreground/80">PlanckPoint is led by experienced researchers, strategists, and practitioners who have worked at the intersection of technology, transformation, and risk. Our team combines deep industry experience with analytical discipline. We understand how decisions are made in boardrooms, how programs fail in delivery, and where execution risk hides long before it becomes visible in outcomes. We work across strategy, technology, procurement, and transformation leadership, bringing perspectives shaped by real accountability and not theoretical models. This allows us to challenge assumptions, test claims, and apply judgment where data alone is insufficient.</p>
             </div>
           </AnimatedSection>
@@ -154,6 +154,31 @@ export default function AboutPage() {
         </div>
       </section>
       
+      <section id="board-mentors" className="py-20 lg:py-24 bg-background text-primary">
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <AnimatedSection>
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-normal">Our Elite Board Mentors</h2>
+              <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
+                Guiding our strategic direction with unparalleled expertise and industry foresight.
+              </p>
+            </div>
+          </AnimatedSection>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {BOARD_OF_ADVISORS.map((mentor, index) => (
+              <AnimatedSection key={mentor.name} delay={index * 0.1}>
+                <Card className="h-full text-center border-0 shadow-lg">
+                  <CardContent className="pt-6 flex flex-col items-center justify-center h-full">
+                    <h3 className="text-xl font-bold text-primary">{mentor.name}</h3>
+                    <p className="text-muted-foreground mt-2">{mentor.role}</p>
+                  </CardContent>
+                </Card>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <GlobalPresence />
 
     </main>
