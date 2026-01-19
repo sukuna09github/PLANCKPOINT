@@ -23,15 +23,14 @@ import {
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  Omit<React.ComponentPropsWithoutRef<typeof Link>, "href"> & { href: string }
->(({ className, title, children, href, ...props }, ref) => {
+  React.ElementRef<typeof Link>,
+  React.ComponentPropsWithoutRef<typeof Link>
+>(({ className, title, children, ...props }, ref) => {
   return (
     <li>
       <NavigationMenuLink asChild>
         <Link
           ref={ref}
-          href={href}
           className={cn(
             "group block select-none space-y-1 p-3 leading-none no-underline outline-none transition-colors",
             className
@@ -60,6 +59,13 @@ export function Header() {
     { title: "Concepts", href: "/insights#concepts", description: "Exploring foundational technologies and frameworks." },
     { title: "Ideas", href: "/insights#ideas", description: "Innovative strategies for the evolving business landscape." },
     { title: "All Insight Articles", href: "/insights#insight-articles", description: "Browse our full collection of articles." },
+  ];
+
+  const aboutLinks = [
+    { title: "Our Philosophy", href: "/about#our-philosophy", description: "Discover the principles that guide our work and our mission." },
+    { title: "Who We Are", href: "/about#who-we-are", description: "Learn about our approach to solving complex challenges." },
+    { title: "Our Inspiration", href: "/about#our-inspiration", description: "Explore the ideas and values that fuel our innovation." },
+    { title: "Our People", href: "/about#leadership", description: "Meet the experienced team behind PlanckPoint." },
   ];
 
   return (
@@ -164,16 +170,27 @@ export function Header() {
                 </NavigationMenuItem>
 
                  <NavigationMenuItem>
-                  <NavigationMenuLink asChild>
-                    <Link
-                      href="/about"
-                      className={cn(navigationMenuTriggerStyle(), "bg-transparent text-lg nav-link")}
-                      data-active={pathname === "/about"}
-                    >
+                    <NavigationMenuTrigger className={cn("bg-transparent text-lg nav-link")} data-active={pathname.startsWith("/about")}>
                       About Us
-                    </Link>
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <div className="p-6 w-[500px] lg:w-[600px]">
+                        <h3 className="text-lg font-medium text-primary mb-4">
+                          <Link href="/about" className="flex items-center hover:underline">
+                            About Planckpoint
+                            <ArrowRight className="ml-2 h-4 w-4" />
+                          </Link>
+                        </h3>
+                        <ul className="grid grid-cols-2 gap-3">
+                          {aboutLinks.map(link => (
+                            <ListItem key={link.title} href={link.href} title={link.title}>
+                              {link.description}
+                            </ListItem>
+                          ))}
+                        </ul>
+                      </div>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
           </nav>
@@ -237,9 +254,21 @@ export function Header() {
                         </div>
                       </AccordionContent>
                     </AccordionItem>
+                    <AccordionItem value="about-us" className="border-b-0">
+                      <AccordionTrigger className={cn("py-2 text-lg font-medium hover:no-underline justify-between", pathname.startsWith("/about") ? "text-primary" : "text-foreground")}>
+                        <Link href="/about" onClick={() => setIsOpen(false)} className="flex-1 text-left">About Us</Link>
+                      </AccordionTrigger>
+                      <AccordionContent>
+                         <div className="flex flex-col space-y-2 pl-6 pt-2">
+                          {aboutLinks.map((link) => (
+                            <Link key={link.href} href={link.href} onClick={() => setIsOpen(false)} className="text-base text-muted-foreground hover:text-primary">
+                              {link.title}
+                            </Link>
+                          ))}
+                        </div>
+                      </AccordionContent>
+                    </AccordionItem>
                   </Accordion>
-                  
-                  <Link href="/about" onClick={() => setIsOpen(false)} className={cn("py-2 text-lg font-medium", pathname === "/about" ? "text-primary" : "text-foreground")}>About Us</Link>
                 </nav>
                 <div className="mt-auto p-4 border-t">
                   <Button variant="outline" className="w-full" asChild>
