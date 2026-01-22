@@ -157,7 +157,7 @@ const InsightsPage: React.FC = () => {
                   {featuredInsight && (
                       <AnimatedSection delay={0.1} className="flex-grow">
                            <Card className="bg-white/10 backdrop-blur-md border-white/20 h-full group flex flex-col">
-                              <div className="block h-full flex flex-col">
+                              <Link href={`/insights/${featuredInsight._id}`} className="block h-full flex flex-col">
                                 <div className="relative aspect-video overflow-hidden w-full">
                                   <Image
                                       src={featuredInsight.mainImage}
@@ -176,10 +176,10 @@ const InsightsPage: React.FC = () => {
                                 </CardContent>
                                 <CardFooter>
                                     <Button asChild variant="ghost" className="text-white hover:bg-white/10">
-                                      <Link href={`/insights/${featuredInsight._id}`}>Read the Insight <ArrowRight className="ml-2" /></Link>
+                                      <span>Read the Insight <ArrowRight className="inline-block ml-2 h-4 w-4" /></span>
                                     </Button>
                                 </CardFooter>
-                              </div>
+                              </Link>
                           </Card>
                       </AnimatedSection>
                   )}
@@ -208,7 +208,7 @@ const InsightsPage: React.FC = () => {
                       viewport={{ once: true }}
                     >
                       <Card className="h-full hover:shadow-xl hover:shadow-accent/10 transition-all duration-500 hover:-translate-y-2 hover:scale-105 bg-white border-0 shadow-sm group">
-                        <div className="block h-full">
+                        <Link href={`/insights/${insight._id}`} className="block h-full">
                           <CardContent className="p-0 h-full flex flex-col">
                             {insight.mainImage && (
                               <div className="overflow-hidden">
@@ -239,11 +239,11 @@ const InsightsPage: React.FC = () => {
                             </div>
                             <CardFooter>
                                 <Button asChild variant="link" className="p-0 font-semibold text-primary">
-                                    <Link href={`/insights/${insight._id}`}>Read More <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                                    <span>Read More <ArrowRight className="ml-2 h-4 w-4" /></span>
                                 </Button>
                             </CardFooter>
                           </CardContent>
-                        </div>
+                        </Link>
                       </Card>
                     </motion.div>
                 ))}
@@ -271,7 +271,7 @@ const InsightsPage: React.FC = () => {
                       viewport={{ once: true }}
                     >
                       <Card className="h-full hover:shadow-xl hover:shadow-accent/10 transition-all duration-500 hover:-translate-y-2 hover:scale-105 bg-white border-0 shadow-sm group">
-                        <div className="block h-full">
+                        <Link href={`/insights/${insight._id}`} className="block h-full">
                           <CardContent className="p-0 h-full flex flex-col">
                             {insight.mainImage && (
                               <div className="overflow-hidden">
@@ -302,11 +302,11 @@ const InsightsPage: React.FC = () => {
                             </div>
                             <CardFooter>
                                 <Button asChild variant="link" className="p-0 font-semibold text-primary">
-                                    <Link href={`/insights/${insight._id}`}>Read More <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                                    <span>Read More <ArrowRight className="ml-2 h-4 w-4" /></span>
                                 </Button>
                             </CardFooter>
                           </CardContent>
-                        </div>
+                        </Link>
                       </Card>
                     </motion.div>
                 ))}
@@ -334,7 +334,7 @@ const InsightsPage: React.FC = () => {
                     viewport={{ once: true }}
                   >
                     <Card className="h-full hover:shadow-xl hover:shadow-accent/10 transition-all duration-500 hover:-translate-y-2 hover:scale-105 bg-white border-0 shadow-sm group">
-                      <div className="block h-full">
+                      <Link href={`/insights/${insight._id}`} className="block h-full">
                         <CardContent className="p-0 h-full flex flex-col">
                           {insight.mainImage && (
                             <div className="overflow-hidden">
@@ -366,11 +366,11 @@ const InsightsPage: React.FC = () => {
                           </div>
                           <CardFooter>
                             <Button asChild variant="link" className="p-0 font-semibold text-primary">
-                                <Link href={`/insights/${insight._id}`}>Read More <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                                <span>Read More <ArrowRight className="ml-2 h-4 w-4" /></span>
                             </Button>
                           </CardFooter>
                         </CardContent>
-                      </div>
+                      </Link>
                     </Card>
                   </motion.div>
                 ))}
@@ -517,7 +517,7 @@ const InsightsPage: React.FC = () => {
                   viewport={{ once: true }}
                 >
                   <Card className="h-full hover:shadow-xl hover:shadow-accent/10 transition-all duration-500 hover:-translate-y-2 hover:scale-105 bg-white border-0 shadow-sm group">
-                    <div className="block h-full">
+                    <Link href={`/insights/${insight._id}`} className="block h-full">
                       <CardContent className="p-0 h-full flex flex-col">
                         {insight.mainImage && (
                           <div className="overflow-hidden">
@@ -548,11 +548,11 @@ const InsightsPage: React.FC = () => {
                         </div>
                         <CardFooter>
                             <Button asChild variant="link" className="p-0 font-semibold text-primary">
-                                <Link href={`/insights/${insight._id}`}>Read More <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                                <span>Read More <ArrowRight className="ml-2 h-4 w-4" /></span>
                             </Button>
                         </CardFooter>
                       </CardContent>
-                    </div>
+                    </Link>
                   </Card>
                 </motion.div>
               ))}
