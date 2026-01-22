@@ -238,6 +238,36 @@
   .spatial-carousel-content {
     @apply relative z-20 p-8 h-full flex flex-col justify-end text-white;
   }
+
+  .nav-glass-panel {
+    background-color: hsl(var(--card) / 0.75);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    @apply rounded-xl border border-white/10 shadow-2xl;
+  }
+  
+  .dark .nav-glass-panel {
+    background-color: hsl(var(--card) / 0.6);
+    @apply border-white/20;
+  }
+  
+  .nav-glass-inner-panel {
+    background-color: hsl(var(--card) / 0.5);
+    @apply rounded-lg border border-white/10;
+  }
+
+  .dark .nav-glass-inner-panel {
+    background-color: hsl(var(--card) / 0.4);
+    @apply border-white/20;
+  }
+
+  .nav-list-item {
+    @apply rounded-lg transition-colors duration-200 ease-apple;
+  }
+
+  .nav-list-item:hover {
+    background-color: hsl(var(--primary) / 0.1);
+  }
 }
 
 @layer utilities {

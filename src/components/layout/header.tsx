@@ -1,9 +1,11 @@
+
 "use client";
 
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown, ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 import { NAV_LINKS, PRODUCTS, mockResearchData } from "@/lib/constants";
 import { cn } from "@/lib/utils";
@@ -31,13 +33,13 @@ const ListItem = React.forwardRef<
         <Link
           ref={ref}
           className={cn(
-            "group block select-none space-y-1 p-3 leading-none no-underline outline-none transition-colors",
+            "block select-none space-y-1 p-3 leading-none no-underline outline-none transition-colors nav-list-item",
             className
           )}
           {...props}
         >
-          <div className="text-sm font-medium leading-none group-hover:text-primary">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground group-hover:text-primary">
+          <div className="text-sm font-medium leading-none text-foreground">{title}</div>
+          <p className="line-clamp-2 text-sm leading-snug text-foreground/80">
             {children}
           </p>
         </Link>
@@ -72,6 +74,12 @@ export function Header() {
     { title: "Our People", href: "/about#leadership", description: "Meet the experienced team behind PlanckPoint." },
   ];
 
+  const motionVariants = {
+    initial: { opacity: 0, scale: 0.98, y: -10 },
+    animate: { opacity: 1, scale: 1, y: 0 },
+    transition: { duration: 0.3, ease: [0.4, 0, 0.2, 1] },
+  };
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="mx-auto flex h-16 w-full max-w-full items-center justify-between px-6 sm:px-8 lg:px-16">
@@ -98,46 +106,48 @@ export function Header() {
                     <NavigationMenuTrigger className={cn("bg-transparent text-lg nav-link")} data-active={pathname.startsWith("/core-services")}>
                       Core Services
                     </NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                      <div className="grid md:grid-cols-[1fr_300px] gap-8 p-6 w-[800px] lg:w-[900px]">
-                        <div>
-                          <h3 className="text-lg font-medium text-primary mb-4">
-                            <Link href="/core-services" className="flex items-center hover:underline">
-                              Core Services
-                              <ArrowRight className="ml-2 h-4 w-4" />
-                            </Link>
-                          </h3>
-                          <ul className="grid grid-cols-2 gap-3">
-                            {PRODUCTS.map((product) => (
-                              <ListItem
-                                key={product.name}
-                                href={`/core-services#${product.id}`}
-                                title={product.name}
-                              >
-                                {product.tagline}
-                              </ListItem>
-                            ))}
-                          </ul>
-                        </div>
-                        <div className="bg-muted/50 p-6 rounded-md flex flex-col justify-center">
-                          <h4 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4">Featured</h4>
+                    <NavigationMenuContent className="nav-glass-panel">
+                      <motion.div {...motionVariants}>
+                        <div className="grid md:grid-cols-[1fr_300px] gap-8 p-6 w-[800px] lg:w-[900px]">
                           <div>
-                            <h5 className="text-base font-semibold mb-2 text-foreground">{PRODUCTS[0].name}</h5>
-                            <p className="text-sm text-muted-foreground mb-4 line-clamp-3">{PRODUCTS[0].description}</p>
-                            <Link href={`/core-services#${PRODUCTS[0].id}`} className="text-sm font-semibold text-primary hover:underline">
-                              Learn more &rarr;
-                            </Link>
+                            <h3 className="text-lg font-medium text-primary mb-4">
+                              <Link href="/core-services" className="flex items-center hover:underline">
+                                Core Services
+                                <ArrowRight className="ml-2 h-4 w-4" />
+                              </Link>
+                            </h3>
+                            <ul className="grid grid-cols-2 gap-3">
+                              {PRODUCTS.map((product) => (
+                                <ListItem
+                                  key={product.name}
+                                  href={`/core-services#${product.id}`}
+                                  title={product.name}
+                                >
+                                  {product.tagline}
+                                </ListItem>
+                              ))}
+                            </ul>
                           </div>
-                          <hr className="my-4 border-border"/>
-                           <div>
-                            <h5 className="text-base font-semibold mb-2 text-foreground">{PRODUCTS[1].name}</h5>
-                            <p className="text-sm text-muted-foreground mb-4 line-clamp-3">{PRODUCTS[1].description}</p>
-                            <Link href={`/core-services#${PRODUCTS[1].id}`} className="text-sm font-semibold text-primary hover:underline">
-                              Learn more &rarr;
-                            </Link>
+                          <div className="nav-glass-inner-panel p-6 flex flex-col justify-center">
+                            <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground/80 mb-4">Featured</h4>
+                            <div>
+                              <h5 className="text-base font-semibold mb-2 text-foreground">{PRODUCTS[0].name}</h5>
+                              <p className="text-sm text-foreground/80 mb-4 line-clamp-3">{PRODUCTS[0].description}</p>
+                              <Link href={`/core-services#${PRODUCTS[0].id}`} className="text-sm font-semibold text-primary hover:underline">
+                                Learn more &rarr;
+                              </Link>
+                            </div>
+                            <hr className="my-4 border-border"/>
+                            <div>
+                              <h5 className="text-base font-semibold mb-2 text-foreground">{PRODUCTS[1].name}</h5>
+                              <p className="text-sm text-foreground/80 mb-4 line-clamp-3">{PRODUCTS[1].description}</p>
+                              <Link href={`/core-services#${PRODUCTS[1].id}`} className="text-sm font-semibold text-primary hover:underline">
+                                Learn more &rarr;
+                              </Link>
+                            </div>
                           </div>
                         </div>
-                      </div>
+                      </motion.div>
                     </NavigationMenuContent>
                   </NavigationMenuItem>
                   
@@ -145,7 +155,8 @@ export function Header() {
                     <NavigationMenuTrigger className={cn("bg-transparent text-lg nav-link")} data-active={pathname.startsWith("/insights")}>
                       Insights
                     </NavigationMenuTrigger>
-                    <NavigationMenuContent>
+                    <NavigationMenuContent className="nav-glass-panel">
+                      <motion.div {...motionVariants}>
                        <div className="grid md:grid-cols-[1fr_300px] gap-8 p-6 w-[700px] lg:w-[800px]">
                          <div>
                            <h3 className="text-lg font-medium text-primary mb-4">
@@ -162,15 +173,16 @@ export function Header() {
                             ))}
                           </ul>
                          </div>
-                          <div className="bg-muted/50 p-6 rounded-md flex flex-col justify-center">
-                            <h4 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4">Featured Insight</h4>
+                          <div className="nav-glass-inner-panel p-6 flex flex-col justify-center">
+                            <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground/80 mb-4">Featured Insight</h4>
                             <h5 className="text-base font-semibold mb-2 text-foreground">{latestInsight.title}</h5>
-                            <p className="text-sm text-muted-foreground mb-4 line-clamp-3">{latestInsight.summary}</p>
+                            <p className="text-sm text-foreground/80 mb-4 line-clamp-3">{latestInsight.summary}</p>
                             <Link href={`/insights#insight-articles`} className="text-sm font-semibold text-primary hover:underline">
                               Read more &rarr;
                             </Link>
                           </div>
                        </div>
+                      </motion.div>
                     </NavigationMenuContent>
                   </NavigationMenuItem>
 
@@ -178,22 +190,24 @@ export function Header() {
                       <NavigationMenuTrigger className={cn("bg-transparent text-lg nav-link")} data-active={pathname.startsWith("/about")}>
                         About Us
                       </NavigationMenuTrigger>
-                      <NavigationMenuContent>
-                        <div className="p-6 w-[500px] lg:w-[600px]">
-                          <h3 className="text-lg font-medium text-primary mb-4">
-                            <Link href="/about" className="flex items-center hover:underline">
-                              About Planckpoint
-                              <ArrowRight className="ml-2 h-4 w-4" />
-                            </Link>
-                          </h3>
-                          <ul className="grid grid-cols-2 gap-3">
-                            {aboutLinks.map(link => (
-                              <ListItem key={link.title} href={link.href} title={link.title}>
-                                {link.description}
-                              </ListItem>
-                            ))}
-                          </ul>
-                        </div>
+                      <NavigationMenuContent className="nav-glass-panel">
+                        <motion.div {...motionVariants}>
+                          <div className="p-6 w-[500px] lg:w-[600px]">
+                            <h3 className="text-lg font-medium text-primary mb-4">
+                              <Link href="/about" className="flex items-center hover:underline">
+                                About Planckpoint
+                                <ArrowRight className="ml-2 h-4 w-4" />
+                              </Link>
+                            </h3>
+                            <ul className="grid grid-cols-2 gap-3">
+                              {aboutLinks.map(link => (
+                                <ListItem key={link.title} href={link.href} title={link.title}>
+                                  {link.description}
+                                </ListItem>
+                              ))}
+                            </ul>
+                          </div>
+                        </motion.div>
                       </NavigationMenuContent>
                     </NavigationMenuItem>
                 </NavigationMenuList>
