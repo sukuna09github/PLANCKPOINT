@@ -336,7 +336,7 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-        <section className="py-24 bg-primary">
+        <section className="py-24 bg-primary bg-dotted-pattern">
           <div className="max-w-[120rem] mx-auto px-16">
             <AnimatedSection
               className="text-center mb-16"

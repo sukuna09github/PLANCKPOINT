@@ -190,3 +190,10 @@
       @apply scale-x-100;
   }
 }
+
+@layer utilities {
+  .bg-dotted-pattern {
+    background-image: radial-gradient(circle at 1px 1px, hsla(0, 0%, 100%, 0.1) 1px, transparent 0);
+    background-size: 20px 20px;
+  }
+}
