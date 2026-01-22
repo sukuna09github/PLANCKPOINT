@@ -27,8 +27,8 @@
     {
       "id": "product2",
       "description": "Abstract image for BeyondQuadrants.",
-      "imageUrl": "https://images.pexels.com/photos/8100064/pexels-photo-8100064.jpeg",
-      "imageHint": "abstract quadrants"
+      "imageUrl": "https://images.unsplash.com/photo-1651488829517-95af02975dd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMHRlYWx8ZW58MHx8fHwxNzY5MTAxMTE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "teal geometry"
     },
     {
       "id": "product4",
@@ -75,7 +75,7 @@
     {
       "id": "insight4",
       "description": "Image for AI ethics in hiring.",
-      "imageUrl": "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb3Jwb3JhdGUlMjBoaXJpbmd8ZW58MHx8fHwxNzY1MjI3MzUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHhjYWlybmd8ZW58MHx8fHwxNzY1MjI3MzUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "corporate hiring"
     },
     {
@@ -273,8 +273,8 @@
     {
       "id": "beyondquadrants-background",
       "description": "Abstract image for BeyondQuadrants.",
-      "imageUrl": "https://images.pexels.com/photos/8100064/pexels-photo-8100064.jpeg",
-      "imageHint": "abstract quadrants"
+      "imageUrl": "https://images.unsplash.com/photo-1651488829517-95af02975dd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMHRlYWx8ZW58MHx8fHwxNzY5MTAxMTE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "teal geometry"
     },
     {
       "id": "elwis-background",
@@ -297,7 +297,7 @@
     {
       "id": "product-beyondquadrants",
       "description": "Teal geometric shapes",
-      "imageUrl": "https://images.pexels.com/photos/8100064/pexels-photo-8100064.jpeg",
+      "imageUrl": "https://images.unsplash.com/photo-1651488829517-95af02975dd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMHRlYWx8ZW58MHx8fHwxNzY5MTAxMTE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "teal geometry"
     },
     {
@@ -393,7 +393,7 @@
     {
       "id": "research16",
       "description": "An image representing the metaverse.",
-      "imageUrl": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhdmVyc2UlMjByZWFsaXR5fGVufDB8fHx8MTcxNzU5ODgyNHww&ixlib-rb-4.1_0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhdmVyc2UlMjByZWFsaXR5fGVufDB8fHx8MTcxNzU5ODgyNHww&ixlib=rb-4.1_0&q=80&w=1080",
       "imageHint": "metaverse reality"
     },
     {
