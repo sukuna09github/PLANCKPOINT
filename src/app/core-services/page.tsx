@@ -464,11 +464,11 @@ const CoreServicesPage: React.FC = () => {
                                     <motion.div 
                                         initial={{ opacity: 0 }}
                                         animate={{ opacity: 1, transition: { delay: 0.2, duration: 0.4 } }}
-                                        exit={{ opacity: 0, transition: { duration: 0.15 } }}
+                                        exit={{ opacity: 0, transition: { duration: 0.3 } }}
                                         className="relative z-10"
                                     >
                                         <button onClick={() => setSelectedProduct(null)} className="absolute top-4 right-4 text-white/70 hover:text-white transition-colors z-20">
-                                            <X className="w-6 h-6" />
+                                            <X className="w-5 h-5" />
                                         </button>
                                         <h3 className="text-2xl font-bold mb-2">{selectedProduct.name}</h3>
                                         <p className="text-base font-semibold text-accent mb-4">{selectedProduct.tagline}</p>
