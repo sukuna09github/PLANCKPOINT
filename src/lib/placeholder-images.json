@@ -33,7 +33,7 @@
     {
       "id": "product4",
       "description": "Abstract image for ELWIS.",
-      "imageUrl": "https://images.unsplash.com/photo-1634476229749-a2e480a919d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxN3x8V09SS0ZMT1d8ZW58MHx8fHwxNzY1MjA1MzE5fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1634476229749-a2e480a919d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxN3x8V09SS0ZMT1d8ZW58MHx8fHwxNzY1MjA1MzE5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "workflow integration"
     },
     {
@@ -249,7 +249,7 @@
     {
       "id": "what-we-do-1",
       "description": "Abstract image of teal smoke.",
-      "imageUrl": "https://images.unsplash.com/photo-1635732346025-d0ed3500ea7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8YXRvbWljJTIwYWl8ZW58MHx8fHwxNzY1MjAxMTk3fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1635732346025-d0ed3500ea7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8YXRvbWljJTIwYWl8ZW58MHx8fHwxNzY1MjAxMTk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "teal circuits"
     },
     {
@@ -267,7 +267,7 @@
     {
       "id": "atomicai-background",
       "description": "A futuristic, glowing teal cube with circuit-like patterns, representing AI and technology.",
-      "imageUrl": "https://images.unsplash.com/photo-1635732346025-d0ed3500ea7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8QVRPTUlDJTIwQUl8ZW58MHx8fHwxNzY1MjAzNDY0fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1635732346025-d0ed3500ea7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8QVRPTUlDJTIwQUl8ZW58MHx8fHwxNzY1MjAzNDY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "AI technology"
     },
     {
@@ -279,7 +279,7 @@
     {
       "id": "elwis-background",
       "description": "Abstract image for ELWIS.",
-      "imageUrl": "https://images.unsplash.com/photo-1634476229749-a2e480a919d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxN3x8V09SS0ZMT1d8ZW58MHx8fHwxNzY1MjA1MzE5fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1634476229749-a2e480a919d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxN3x8V09SS0ZMT1d8ZW58MHx8fHwxNzY1MjA1MzE5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "workflow integration"
     },
     {
@@ -291,7 +291,7 @@
     {
       "id": "product-atomicai",
       "description": "Teal abstract circuits",
-      "imageUrl": "https://images.unsplash.com/photo-1635732346025-d0ed3500ea7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8QVRPTUlDJTIwQUl8ZW58MHx8fHwxNzY1MjAzNDY0fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1635732346025-d0ed3500ea7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8QVRPTUlDJTIwQUl8ZW58MHx8fHwxNzY1MjAzNDY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "teal circuits"
     },
     {
@@ -315,13 +315,13 @@
     {
       "id": "product-elwis",
       "description": "Teal light trails",
-      "imageUrl": "https://images.unsplash.com/photo-1634476229749-a2e480a919d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxN3x8d29ya2Zsb3d8ZW58MHx8fHwxNzY1MjAxNjA3fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1634476229749-a2e480a919d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxN3x8d29ya2Zsb3d8ZW58MHx8fHwxNzY1MjAxNjA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "teal light"
     },
     {
       "id": "product-propricing",
       "description": "Teal liquid art",
-      "imageUrl": "https://images.unsplash.com/photo-1651341050677-24dba59ce0fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxQUklDSU5HfGVufDB8fHx8MTc2NTIwNTU2NHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1651341050677-24dba59ce0fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxQUklDSU5HfGVufDB8fHx8MTc2NTIwNTU2NHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "teal liquid"
     },
     {
@@ -549,8 +549,8 @@
     {
       "id": "board2",
       "description": "Portrait of Peter Dean.",
-      "imageUrl": "https://images.unsplash.com/photo-1557862921-37829c790f19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYW4lMjBwb3J0cmFpdCUyMHNrZXRjaHxlbnwwfHx8fDE3NjkyMTA0MDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "man portrait"
+      "imageUrl": "/images/peter dean sketch.png",
+      "imageHint": "man portrait sketch"
     },
     {
       "id": "board3",
