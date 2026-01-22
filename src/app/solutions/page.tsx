@@ -292,7 +292,7 @@ const SolutionsPage: React.FC = () => {
                                 <motion.div
                                     className="relative z-10"
                                     initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1, transition: { delay: 0.2, duration: 0.3 } }}
+                                    animate={{ opacity: 1, transition: { delay: 0.3, duration: 0.2 } }}
                                 >
                                     <button onClick={() => setSelectedProduct(null)} className="absolute top-4 right-4 text-white/70 hover:text-white transition-colors z-20">
                                         <X className="w-5 h-5" />
