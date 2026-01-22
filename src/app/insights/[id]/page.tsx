@@ -10,6 +10,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { ShareButtons } from '@/components/pages/insights/share-buttons';
+import { ArrowRight } from 'lucide-react';
 
 export default function InsightDetailPage({ params }: { params: { id: string } }) {
     const article = mockResearchData.find((p) => p._id === params.id);
