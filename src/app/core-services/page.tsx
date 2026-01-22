@@ -393,7 +393,7 @@ const CoreServicesPage: React.FC = () => {
         <div className="absolute inset-0 bg-primary/70"></div>
         <div className="max-w-[120rem] mx-auto px-6 md:px-12 relative">
           <LayoutGroup>
-            <div className={cn("grid grid-cols-1 gap-8 transition-all duration-500", selectedProduct && "md:grid-cols-2")}>
+            <div className={cn("grid grid-cols-1 gap-8", selectedProduct && "md:grid-cols-2")}>
                 
                 <motion.div layout="position">
                     <AnimatedSection className="text-center mb-16">
@@ -451,44 +451,46 @@ const CoreServicesPage: React.FC = () => {
                 </motion.div>
 
                 <div className="relative">
-                    <AnimatePresence>
+                    <AnimatePresence mode="wait">
                         {selectedProduct && (
                             <motion.div
-                                className="sticky top-24"
+                                key={selectedProduct.id}
+                                layoutId={selectedProduct.id}
+                                className="premium-glass-card sticky top-24"
+                                transition={{
+                                    duration: 0.5,
+                                    ease: [0.4, 0, 0.2, 1],
+                                }}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0, transition: { duration: 0.2 } }}
                             >
                                 <motion.div
-                                    layoutId={selectedProduct.id}
-                                    className="premium-glass-card"
-                                    transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
+                                    className="relative z-10"
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1, transition: { delay: 0.2, duration: 0.3 } }}
                                 >
-                                    <motion.div 
-                                        initial={{ opacity: 0 }}
-                                        animate={{ opacity: 1, transition: { delay: 0.2, duration: 0.4 } }}
-                                        exit={{ opacity: 0, transition: { duration: 0.3 } }}
-                                        className="relative z-10"
-                                    >
-                                        <button onClick={() => setSelectedProduct(null)} className="absolute top-4 right-4 text-white/70 hover:text-white transition-colors z-20">
-                                            <X className="w-5 h-5" />
-                                        </button>
-                                        <h3 className="text-2xl font-bold mb-2">{selectedProduct.name}</h3>
-                                        <p className="text-base font-semibold text-accent mb-4">{selectedProduct.tagline}</p>
-                                        <div className="text-sm text-white/80 space-y-4">
-                                            <p>{selectedProduct.detailedDescription}</p>
-                                            <div>
-                                                <h4 className="font-semibold mb-2">Key Benefits:</h4>
-                                                <ul className="list-disc list-inside space-y-1">
-                                                    {selectedProduct.keyBenefits.split('\n').map((benefit, i) => (
-                                                        <li key={i}>{benefit}</li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                            <div className="pt-4">
-                                                <Link href="/contact" className="font-semibold text-accent hover:underline">
-                                                    Contact us to learn more &rarr;
-                                                </Link>
-                                            </div>
+                                    <button onClick={() => setSelectedProduct(null)} className="absolute top-4 right-4 text-white/70 hover:text-white transition-colors z-20">
+                                        <X className="w-5 h-5" />
+                                    </button>
+                                    <h3 className="text-2xl font-bold mb-2">{selectedProduct.name}</h3>
+                                    <p className="text-base font-semibold text-accent mb-4">{selectedProduct.tagline}</p>
+                                    <div className="text-sm text-white/80 space-y-4">
+                                        <p>{selectedProduct.detailedDescription}</p>
+                                        <div>
+                                            <h4 className="font-semibold mb-2">Key Benefits:</h4>
+                                            <ul className="list-disc list-inside space-y-1">
+                                                {selectedProduct.keyBenefits.split('\n').map((benefit, i) => (
+                                                    <li key={i}>{benefit}</li>
+                                                ))}
+                                            </ul>
                                         </div>
-                                    </motion.div>
+                                        <div className="pt-4">
+                                            <Link href="/contact" className="font-semibold text-accent hover:underline">
+                                                Contact us to learn more &rarr;
+                                            </Link>
+                                        </div>
+                                    </div>
                                 </motion.div>
                             </motion.div>
                         )}
