@@ -212,7 +212,7 @@ const HomePage: React.FC = () => {
                   {products.map((product) => {
                     const image = findImage(product.imageId);
                     return (
-                        <CarouselItem key={product.id} className="pl-4 sm:pl-8 md:basis-1/2 lg:basis-1/3">
+                        <CarouselItem key={product.id} className="pl-4 sm:pl-8 md:basis-1/2 lg:basis-1/3 h-[450px]">
                         <div className="p-1 h-full">
                           <Card className="h-full flex flex-col bg-card text-card-foreground border-0 group overflow-hidden relative">
                               {image && (
