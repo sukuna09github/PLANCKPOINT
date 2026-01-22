@@ -85,7 +85,6 @@ const ServicesPage: React.FC = () => {
         className="relative min-h-screen flex items-center justify-center overflow-hidden fixed-bg-section"
         style={{ backgroundImage: heroBgImage ? `url(${heroBgImage.imageUrl})` : 'none' }}
       >
-        <div className="absolute inset-0 bg-primary/70" />
         <div className="absolute inset-0 bg-dotted-pattern" />
         <div className="relative z-10 w-full px-6 sm:px-8 lg:px-16 2xl:px-32">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
@@ -143,11 +142,11 @@ const ServicesPage: React.FC = () => {
                                 src={productImage.imageUrl}
                                 alt={product.name || 'Product'}
                                 fill
-                                className="object-cover opacity-40 group-hover:opacity-50 transition-opacity duration-300"
+                                className="object-cover opacity-50 group-hover:opacity-60 transition-opacity duration-300"
                                 data-ai-hint={productImage.imageHint}
                               />
                             )}
-                            <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-primary/10 to-transparent"></div>
+                            <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-primary/5 to-transparent"></div>
 
                             <div className="spatial-carousel-content">
                               <motion.h3 
