@@ -154,11 +154,11 @@ const CoreServicesPage: React.FC = () => {
                                 src={productImage.imageUrl}
                                 alt={product.name || 'Product'}
                                 fill
-                                className="object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-300"
+                                className="object-cover opacity-40 group-hover:opacity-50 transition-opacity duration-300"
                                 data-ai-hint={productImage.imageHint}
                               />
                             )}
-                            <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-primary/30 to-transparent"></div>
+                            <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-primary/10 to-transparent"></div>
 
                             <div className="spatial-carousel-content">
                               <motion.h3 
@@ -432,3 +432,5 @@ const CoreServicesPage: React.FC = () => {
 };
 
 export default CoreServicesPage;
+
+    
