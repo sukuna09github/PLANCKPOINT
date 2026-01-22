@@ -336,8 +336,9 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-        <section className="py-24 bg-primary bg-dotted-pattern">
-          <div className="max-w-[120rem] mx-auto px-16">
+        <section className="py-24 bg-primary relative">
+          <div className="absolute inset-0 bg-dotted-pattern"></div>
+          <div className="relative z-10 max-w-[120rem] mx-auto px-16">
             <AnimatedSection
               className="text-center mb-16"
             >
