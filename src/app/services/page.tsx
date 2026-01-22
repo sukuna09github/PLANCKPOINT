@@ -142,7 +142,7 @@ const ServicesPage: React.FC = () => {
                                 src={productImage.imageUrl}
                                 alt={product.name || 'Product'}
                                 fill
-                                className="object-cover opacity-50 group-hover:opacity-60 transition-opacity duration-300"
+                                className="object-cover opacity-80 group-hover:opacity-90 transition-opacity duration-300"
                                 data-ai-hint={productImage.imageHint}
                               />
                             )}
@@ -342,5 +342,7 @@ export default ServicesPage;
 
 
 
+
+    
 
     
