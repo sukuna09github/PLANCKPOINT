@@ -128,7 +128,7 @@ const InsightsPage: React.FC = () => {
                    <div className="mt-10 grid grid-cols-2 gap-8">
                       {otherInsights.map((insight, index) => insight && (
                           <AnimatedSection key={insight._id} delay={0.2 + index * 0.1}>
-                            <div className="block h-full">
+                            <Link href={`/insights/${insight._id}`} className="block h-full">
                               <div className="relative aspect-video overflow-hidden group h-full">
                                   <Image
                                       src={insight.mainImage}
@@ -140,12 +140,13 @@ const InsightsPage: React.FC = () => {
                                       <div className="transition-opacity duration-300 group-hover:opacity-0 w-full">
                                         <p className="font-semibold text-white text-sm">{insight.title}</p>
                                       </div>
-                                      <div className="absolute inset-0 flex items-center justify-center p-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                          <p className="text-white text-xs transform transition-transform duration-300 group-hover:scale-100 scale-90">{insight.summary}</p>
+                                      <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                          <p className="text-white text-xs transform transition-transform duration-300 group-hover:scale-100 scale-90 mb-2">{insight.summary}</p>
+                                          <Button variant="link" className="text-white p-0 h-auto font-semibold text-xs">Read More <ArrowRight className="ml-1 w-3 h-3"/></Button>
                                       </div>
                                   </div>
                               </div>
-                            </div>
+                            </Link>
                           </AnimatedSection>
                       ))}
                   </div>
@@ -174,7 +175,9 @@ const InsightsPage: React.FC = () => {
                                     <p className="text-white/80 line-clamp-2">{featuredInsight.summary}</p>
                                 </CardContent>
                                 <CardFooter>
-                                    <Button variant="ghost" className="text-white hover:bg-white/10">Read the Insight <ArrowRight className="ml-2" /></Button>
+                                    <Button asChild variant="ghost" className="text-white hover:bg-white/10">
+                                      <Link href={`/insights/${featuredInsight._id}`}>Read the Insight <ArrowRight className="ml-2" /></Link>
+                                    </Button>
                                 </CardFooter>
                               </div>
                           </Card>
@@ -233,8 +236,12 @@ const InsightsPage: React.FC = () => {
                               <p className="text-sm font-body text-foreground/80 mb-4 flex-1 line-clamp-2">
                                 {insight.summary}
                               </p>
-
                             </div>
+                            <CardFooter>
+                                <Button asChild variant="link" className="p-0 font-semibold text-primary">
+                                    <Link href={`/insights/${insight._id}`}>Read More <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                                </Button>
+                            </CardFooter>
                           </CardContent>
                         </div>
                       </Card>
@@ -292,8 +299,12 @@ const InsightsPage: React.FC = () => {
                               <p className="text-sm font-body text-foreground/80 mb-4 flex-1 line-clamp-2">
                                 {insight.summary}
                               </p>
-
                             </div>
+                            <CardFooter>
+                                <Button asChild variant="link" className="p-0 font-semibold text-primary">
+                                    <Link href={`/insights/${insight._id}`}>Read More <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                                </Button>
+                            </CardFooter>
                           </CardContent>
                         </div>
                       </Card>
@@ -353,6 +364,11 @@ const InsightsPage: React.FC = () => {
                             </p>
 
                           </div>
+                          <CardFooter>
+                            <Button asChild variant="link" className="p-0 font-semibold text-primary">
+                                <Link href={`/insights/${insight._id}`}>Read More <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                            </Button>
+                          </CardFooter>
                         </CardContent>
                       </div>
                     </Card>
@@ -529,8 +545,12 @@ const InsightsPage: React.FC = () => {
                           <p className="text-sm font-body text-foreground/80 mb-4 flex-1 line-clamp-2">
                             {insight.summary}
                           </p>
-
                         </div>
+                        <CardFooter>
+                            <Button asChild variant="link" className="p-0 font-semibold text-primary">
+                                <Link href={`/insights/${insight._id}`}>Read More <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                            </Button>
+                        </CardFooter>
                       </CardContent>
                     </div>
                   </Card>
