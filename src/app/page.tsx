@@ -226,12 +226,7 @@ const HomePage: React.FC = () => {
                               )}
                               <div className="relative z-10 flex flex-col flex-grow p-6 bg-foreground/60 text-background backdrop-blur-sm">
                               <CardHeader className="p-0">
-                                  <div className="flex items-center gap-4">
-                                      <div className="bg-white/20 text-white p-3">
-                                          <product.icon className="h-6 w-6" />
-                                      </div>
-                                      <CardTitle className="!text-xl text-white">{product.name}</CardTitle>
-                                  </div>
+                                <CardTitle className="!text-xl text-white">{product.name}</CardTitle>
                               </CardHeader>
                               <CardContent className="p-0 pt-4 flex-grow">
                                   <p className="text-sm text-white/80">
