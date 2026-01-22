@@ -9,7 +9,6 @@ export function Footer() {
 
   return (
     <footer className="bg-primary text-background relative">
-      <div className="absolute inset-0 bg-dotted-pattern"></div>
       <div className="relative z-10 mx-auto w-full px-6 sm:px-8 lg:px-16 py-16">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
           <div className="md:col-span-4 flex flex-col">
