@@ -3,7 +3,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, LayoutGroup } from 'framer-motion';
-import { ArrowRight, X } from 'lucide-react';
+import { ArrowRight, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
@@ -23,11 +23,8 @@ const SolutionsPage: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [animatingHeaders, setAnimatingHeaders] = useState<Set<string>>(new Set());
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [isAutoplay, setIsAutoplay] = useState(true);
-  const [isDragging, setIsDragging] = useState(false);
-  const dragStartX = useRef(0);
-  const autoplayTimer = useRef<NodeJS.Timeout | null>(null);
   const pathname = usePathname();
+  const [isClient, setIsClient] = useState(false);
   
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
@@ -35,50 +32,14 @@ const SolutionsPage: React.FC = () => {
     return PlaceHolderImages.find(p => p.id === imageId);
   };
   
-  const heroBgImage = PlaceHolderImages.find(p => p.id === 'solutions-hero-background');
+  const heroBgImage = PlaceHolderImages.find(p => p.id === 'hero-abstract-1');
   const introArtImage = PlaceHolderImages.find(p => p.id === 'page-intro-art');
   const servicesBgImage = PlaceHolderImages.find(p => p.id === 'hero-abstract-1');
 
   useEffect(() => {
     setLoading(false);
+    setIsClient(true);
   }, []);
-
-  // Autoplay logic
-  useEffect(() => {
-    if (!isAutoplay || products.length === 0) return;
-
-    autoplayTimer.current = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % products.length);
-    }, 6000);
-
-    return () => {
-      if (autoplayTimer.current) clearInterval(autoplayTimer.current);
-    };
-  }, [isAutoplay, products.length]);
-
-  const handleMouseEnter = () => setIsAutoplay(false);
-  const handleMouseLeave = () => setIsAutoplay(true);
-
-  const handleDragStart = (e: React.MouseEvent | React.TouchEvent) => {
-    setIsDragging(true);
-    dragStartX.current = 'touches' in e ? e.touches[0].clientX : e.clientX;
-  };
-
-  const handleDragEnd = (e: React.MouseEvent | React.TouchEvent) => {
-    if (!isDragging) return;
-    setIsDragging(false);
-
-    const endX = 'changedTouches' in e ? e.changedTouches[0].clientX : (e as React.MouseEvent).clientX;
-    const diff = dragStartX.current - endX;
-
-    if (Math.abs(diff) > 50) {
-      if (diff > 0) {
-        setCurrentSlide((prev) => (prev + 1) % products.length);
-      } else {
-        setCurrentSlide((prev) => (prev - 1 + products.length) % products.length);
-      }
-    }
-  };
 
   // Handle hash-based scrolling when the page loads or hash changes
   useEffect(() => {
@@ -117,9 +78,10 @@ const SolutionsPage: React.FC = () => {
     <div className="min-h-screen bg-background">
       {/* Hero Section with 2-Column Layout */}
       <section
-        className="relative min-h-screen flex items-center justify-center overflow-hidden"
+        className="relative min-h-screen flex items-center justify-center overflow-hidden fixed-bg-section"
+        style={{ backgroundImage: heroBgImage ? `url(${heroBgImage.imageUrl})` : 'none' }}
       >
-        <div className="absolute inset-0 moving-gradient" />
+        <div className="absolute inset-0 bg-primary/70" />
         <div className="absolute inset-0 bg-dotted-pattern" />
         <div className="relative z-10 w-full px-6 sm:px-8 lg:px-16 2xl:px-32">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
@@ -131,111 +93,120 @@ const SolutionsPage: React.FC = () => {
               className="z-10 text-center md:text-left"
             >
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-headline text-white mb-6 leading-tight">
-                Strategic Capabilities for Modern Enterprises
+                Strategic Intelligence Systems
               </h1>
               <p className="text-lg md:text-xl font-body text-white/80 leading-relaxed max-w-xl mx-auto md:mx-0">
-                Innovative solutions designed to bridge the gap between human potential and technological advancement. Explore our suite of solutions crafted for modern enterprises.
+                Our capabilities are designed to provide clarity and drive growth. Explore the systems we've engineered to address the distinct challenges of modern enterprises.
               </p>
             </motion.div>
 
-            {/* Right Column - Product Slider */}
+            {/* Right Column - Spatial Carousel */}
             <motion.div
-              initial={{ opacity: 0, x: 40 }}
-              animate={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
-              className="relative h-[24rem] sm:h-[30rem] md:h-[32rem] lg:h-[36rem] z-10"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-              onMouseDown={handleDragStart}
-              onMouseUp={handleDragEnd}
-              onTouchStart={handleDragStart}
-              onTouchEnd={handleDragEnd}
+              className="relative h-[24rem] sm:h-[30rem] md:h-[32rem] lg:h-[40rem] z-10 perspective-1000"
             >
-              <AnimatePresence mode="sync">
-                {products.map((product, index) => {
-                  const position = (index - currentSlide + products.length) % products.length;
-                  const isActive = position === 0;
-                  const isNext = position === 1;
-                  const isPrev = position === products.length - 1;
-                  const productImage = findProductImage(product.imageId);
+              {isClient && (
+                <>
+                  <div className="relative w-full h-full" style={{ transformStyle: 'preserve-3d' }}>
+                    {products.map((product, index) => {
+                      const position = index - currentSlide;
+                      const isActive = index === currentSlide;
+                      const productImage = findProductImage(product.imageId);
 
-                  return (
-                    <motion.div
-                      key={product.id}
-                      initial={{ opacity: 0, scale: 0.8, x: 100 }}
-                      animate={{
-                        opacity: isActive ? 1 : isNext ? 0.4 : isPrev ? 0.2 : 0,
-                        scale: isActive ? 1 : isNext ? 0.92 : isPrev ? 0.85 : 0.8,
-                        x: isActive ? 0 : isNext ? 100 : isPrev ? -100 : 100,
-                        zIndex: isActive ? 30 : isNext ? 20 : isPrev ? 10 : 0,
-                      }}
-                      transition={{ duration: 0.7, ease: 'easeOut' }}
-                      className="absolute inset-0 w-full h-full"
-                    >
-                       <Link
-                        href={isActive ? `#${product.id}` : '#'}
-                        onClick={(e) => {
-                            if (isActive) {
-                                e.preventDefault();
-                                setSelectedProduct(product);
-                                const element = document.getElementById('solutions');
-                                if (element) {
-                                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                                }
-                            }
-                        }}
-                        className={cn(`group w-full h-full overflow-hidden shadow-2xl relative`, isActive ? 'cursor-pointer' : 'cursor-grab active:cursor-grabbing')}
-                      >
-                        {productImage && (
-                           <div className="w-full h-full relative overflow-hidden flex-shrink-0">
-                            <Image
-                              src={productImage.imageUrl}
-                              alt={product.name || 'Product'}
-                              fill
-                              className="object-cover transition-transform duration-500 group-hover:scale-105"
-                              data-ai-hint={productImage.imageHint}
-                            />
-                          </div>
-                        )}
-                        
-                        <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 bg-gradient-to-t from-black/60 to-transparent transition-opacity duration-300 group-hover:opacity-0">
-                           <h3 className="text-2xl md:text-3xl font-bold text-primary-foreground">
-                              {product.name}
-                            </h3>
-                        </div>
+                      return (
+                        <motion.div
+                          key={product.id}
+                          className="spatial-carousel-panel"
+                          animate={{
+                            rotateY: position * -30,
+                            x: `${position * 20}%`,
+                            z: isActive ? 0 : -200,
+                            opacity: isActive ? 1 : 0.4,
+                            scale: isActive ? 1 : 0.8,
+                          }}
+                          transition={{ type: 'spring', stiffness: 100, damping: 20 }}
+                          style={{ zIndex: products.length - Math.abs(position) }}
+                        >
+                          <motion.div 
+                            className="spatial-carousel-card w-full h-full group"
+                            whileHover={isActive ? { scale: 1.05, z: 50 } : {}}
+                            transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+                          >
+                            {productImage && (
+                              <Image
+                                src={productImage.imageUrl}
+                                alt={product.name || 'Product'}
+                                fill
+                                className="object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-300"
+                                data-ai-hint={productImage.imageHint}
+                              />
+                            )}
+                            <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-primary/30 to-transparent"></div>
 
-                        <div className="absolute inset-0 bg-black/20 backdrop-blur-md p-6 md:p-8 flex flex-col justify-center items-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                           <h3 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-2">
-                              {product.name}
-                            </h3>
-                            <p className="text-white/80 text-sm line-clamp-3">
-                              {product.description}
-                            </p>
-                        </div>
-                      </Link>
-                    </motion.div>
-                  );
-                })}
-              </AnimatePresence>
+                            <div className="spatial-carousel-content">
+                              <motion.h3 
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ delay: 0.2 }}
+                                className="text-3xl font-bold text-white mb-2"
+                              >
+                                {product.name}
+                              </motion.h3>
+                              <AnimatePresence>
+                                {isActive && (
+                                  <motion.div
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0, transition: { delay: 0.4, duration: 0.4 } }}
+                                    exit={{ opacity: 0, y: -10 }}
+                                  >
+                                    <p className="text-white/80 text-sm line-clamp-3">
+                                      {product.description}
+                                    </p>
+                                    <Button variant="link" asChild className="text-white p-0 mt-4 font-semibold">
+                                      <Link href={`#${product.id}`} onClick={(e) => {
+                                        e.preventDefault();
+                                        setSelectedProduct(product);
+                                        document.getElementById('solutions')?.scrollIntoView({ behavior: 'smooth' });
+                                      }}>
+                                        View Details <ArrowRight className="ml-2 w-4 h-4"/>
+                                      </Link>
+                                    </Button>
+                                  </motion.div>
+                                )}
+                              </AnimatePresence>
+                            </div>
+                          </motion.div>
+                        </motion.div>
+                      );
+                    })}
+                  </div>
+                  
+                  {/* Navigation */}
+                  <Button variant="ghost" size="icon" className="absolute top-1/2 -translate-y-1/2 -left-16 text-white/70 hover:text-white hover:bg-white/10" onClick={() => setCurrentSlide(s => (s - 1 + products.length) % products.length)}>
+                    <ChevronLeft className="w-8 h-8"/>
+                  </Button>
+                  <Button variant="ghost" size="icon" className="absolute top-1/2 -translate-y-1/2 -right-16 text-white/70 hover:text-white hover:bg-white/10" onClick={() => setCurrentSlide(s => (s + 1) % products.length)}>
+                    <ChevronRight className="w-8 h-8"/>
+                  </Button>
 
-              {/* Slide Indicator Dots - Subtle */}
-              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 z-40">
-                {products.map((_, index) => (
-                  <motion.button
-                    key={index}
-                    onClick={() => {
-                      setCurrentSlide(index);
-                      setIsAutoplay(false);
-                    }}
-                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                      index === currentSlide
-                        ? 'bg-white w-8'
-                        : 'bg-white/40 hover:bg-white/60'
-                    }`}
-                    aria-label={`Go to slide ${index + 1}`}
-                  />
-                ))}
-              </div>
+                  <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 flex gap-3 z-40">
+                    {products.map((_, index) => (
+                      <button
+                        key={index}
+                        onClick={() => setCurrentSlide(index)}
+                        className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+                          index === currentSlide
+                            ? 'bg-white scale-125'
+                            : 'bg-white/40 hover:bg-white/60'
+                        }`}
+                        aria-label={`Go to capability ${index + 1}`}
+                      />
+                    ))}
+                  </div>
+                </>
+              )}
             </motion.div>
           </div>
         </div>
@@ -363,4 +334,5 @@ export default SolutionsPage;
     
 
     
+
 
