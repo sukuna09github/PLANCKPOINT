@@ -240,24 +240,24 @@
   }
 
   .nav-glass-panel {
-    background-color: hsl(var(--card) / 0.75);
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: hsl(var(--card) / 0.85);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
     @apply rounded-xl border border-white/10 shadow-2xl;
   }
   
   .dark .nav-glass-panel {
-    background-color: hsl(var(--card) / 0.6);
+    background-color: hsl(var(--card) / 0.8);
     @apply border-white/20;
   }
   
   .nav-glass-inner-panel {
-    background-color: hsl(var(--card) / 0.5);
+    background-color: hsl(var(--card) / 0.7);
     @apply rounded-lg border border-white/10;
   }
 
   .dark .nav-glass-inner-panel {
-    background-color: hsl(var(--card) / 0.4);
+    background-color: hsl(var(--card) / 0.6);
     @apply border-white/20;
   }
 
