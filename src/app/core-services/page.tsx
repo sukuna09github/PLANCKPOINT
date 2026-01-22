@@ -135,6 +135,7 @@ const CoreServicesPage: React.FC = () => {
         className="relative min-h-screen flex items-center justify-center overflow-hidden"
       >
         <div className="absolute inset-0 moving-gradient" />
+        <div className="absolute inset-0 bg-dotted-pattern" />
         <div className="relative z-10 w-full px-6 sm:px-8 lg:px-16 2xl:px-32">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
             {/* Left Column - Content */}
