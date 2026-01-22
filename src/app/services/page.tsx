@@ -142,11 +142,10 @@ const ServicesPage: React.FC = () => {
                                 src={productImage.imageUrl}
                                 alt={product.name || 'Product'}
                                 fill
-                                className="object-cover opacity-80 group-hover:opacity-90 transition-opacity duration-300"
+                                className="object-cover opacity-100 transition-opacity duration-300"
                                 data-ai-hint={productImage.imageHint}
                               />
                             )}
-                            <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-primary/5 to-transparent"></div>
 
                             <div className="spatial-carousel-content">
                               <motion.h3 
