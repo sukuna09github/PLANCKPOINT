@@ -106,9 +106,6 @@ const CoreServicesPage: React.FC = () => {
 
       {beyondQuadrantsProduct && (
         <section id="beyondquadrants" className="grid grid-cols-1 md:grid-cols-2 w-full">
-             <div className="relative min-h-full w-full order-last md:order-first">
-                {beyondQuadrantsImage && <Image src={beyondQuadrantsImage.imageUrl} alt={beyondQuadrantsImage.description} fill className="object-cover" data-ai-hint={beyondQuadrantsImage.imageHint} />}
-            </div>
             <div className="bg-primary/5 flex items-center justify-center p-12 md:p-16 lg:p-24">
                 <AnimatedSection className="max-w-lg">
                     <div>
@@ -122,6 +119,9 @@ const CoreServicesPage: React.FC = () => {
                         </div>
                     </div>
                 </AnimatedSection>
+            </div>
+            <div className="relative min-h-full w-full">
+                {beyondQuadrantsImage && <Image src={beyondQuadrantsImage.imageUrl} alt={beyondQuadrantsImage.description} fill className="object-cover" data-ai-hint={beyondQuadrantsImage.imageHint} />}
             </div>
         </section>
       )}
@@ -150,9 +150,6 @@ const CoreServicesPage: React.FC = () => {
 
       {signaloneProduct && (
         <section id="signalone" className="grid grid-cols-1 md:grid-cols-2 w-full">
-            <div className="relative min-h-full w-full order-last md:order-first">
-                {signaloneImage && <Image src={signaloneImage.imageUrl} alt={signaloneImage.description} fill className="object-cover" data-ai-hint={signaloneImage.imageHint} />}
-            </div>
             <div className="bg-primary/5 flex items-center justify-center p-12 md:p-16 lg:p-24">
                 <AnimatedSection className="max-w-lg">
                     <div>
@@ -166,6 +163,9 @@ const CoreServicesPage: React.FC = () => {
                         </div>
                     </div>
                 </AnimatedSection>
+            </div>
+            <div className="relative min-h-full w-full">
+                {signaloneImage && <Image src={signaloneImage.imageUrl} alt={signaloneImage.description} fill className="object-cover" data-ai-hint={signaloneImage.imageHint} />}
             </div>
         </section>
       )}
