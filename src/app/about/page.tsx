@@ -86,7 +86,7 @@ export default function AboutPage() {
         <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <div className="text-center">
-              <h2 className="text-3xl font-bold">Who We Are</h2>
+              <h2 className="text-3xl font-normal">Who We Are</h2>
               <p className="mt-4 text-muted-foreground text-lg">PlanckPoint is a foresight and intelligence firm built for decision-makers navigating complex markets, technologies, and vendor ecosystems. Using AI-assisted analysis combined with structured expert judgment, we show leaders what is likely to work, what is expected to fail, and why.</p>
               <p className="mt-4 text-muted-foreground text-lg">We go beyond analyst narratives and visual shortcuts, integrating execution signals, delivery risk, and organisational realities into evidence-based decision frameworks.</p>
               <p className="mt-4 text-muted-foreground text-lg">We blend AI-powered analysis with deep strategic thinking to uncover the smallest credible signals that spark the biggest shifts. At our core, we are researchers, analysts, and advisors committed to delivering clarity, credibility, and confidence in every insight we produce.</p>
@@ -103,7 +103,7 @@ export default function AboutPage() {
                     <div className="mt-6 text-lg md:text-xl space-y-4 text-center max-w-4xl mx-auto text-muted-foreground">
                         <p>PlanckPoint draws inspiration from Max Planck’s groundbreaking theory that identified the smallest measurable unit in the universe, a boundary where classical physics gives way to quantum insight. In the same spirit, we believe that powerful decisions begin with the smallest, most precise signals.</p>
                         <p>The rise of AI has accelerated markets beyond the limits of traditional research, and PlanckPoint exists to close the gap with intelligence built for faster, higher-stakes decisions.</p>
-                        <p>At PlanckPoint, we distil complexity into clarity, delivering insight at the scale where transformation begins.</p>
+                        <p className="mt-4 text-primary">At PlanckPoint, we distil complexity into clarity, delivering insight at the scale where transformation begins.</p>
                     </div>
                 </div>
             </AnimatedSection>
@@ -126,19 +126,19 @@ export default function AboutPage() {
               const image = findImage(member.imageId);
               return (
                 <AnimatedSection key={member.name} delay={index * 0.1} className="h-full">
-                  <div className="flex flex-col items-center h-full">
+                  <div className="flex flex-col items-center h-full text-center">
                       {image && <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden shrink-0"><Image src={image.imageUrl} alt={member.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
-                      <div className="w-full max-w-sm text-left flex flex-col flex-grow">
+                      <div className="w-full max-w-sm flex flex-col flex-grow">
                           <div className="flex-grow">
                             <h3 className="mt-4 text-xl font-bold text-primary">{member.name}</h3>
                             <p className="text-secondary font-medium">{member.role}</p>
                           </div>
-                          <Collapsible className="w-full">
+                          <Collapsible className="w-full mt-auto">
                               <CollapsibleTrigger asChild>
                                   <Button variant="link" className="mt-2 p-0">Learn More</Button>
                               </CollapsibleTrigger>
                               <CollapsibleContent>
-                                  <p className="pt-2 text-muted-foreground text-sm">
+                                  <p className="pt-2 text-muted-foreground text-sm text-left">
                                       {member.bio}
                                   </p>
                               </CollapsibleContent>
@@ -155,19 +155,19 @@ export default function AboutPage() {
                 const image = findImage(member.imageId);
                 return (
                   <AnimatedSection key={member.name} delay={(index + leadershipFirstRow.length) * 0.1} className="h-full">
-                     <div className="flex flex-col items-center h-full">
+                     <div className="flex flex-col items-center h-full text-center">
                         {image && <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden shrink-0"><Image src={image.imageUrl} alt={member.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
-                        <div className="w-full max-w-sm text-left flex flex-col flex-grow">
+                        <div className="w-full max-w-sm flex flex-col flex-grow">
                             <div className="flex-grow">
                               <h3 className="mt-4 text-xl font-bold text-primary">{member.name}</h3>
                               <p className="text-secondary font-medium">{member.role}</p>
                             </div>
-                            <Collapsible className="w-full">
+                            <Collapsible className="w-full mt-auto">
                                 <CollapsibleTrigger asChild>
                                     <Button variant="link" className="mt-2 p-0">Learn More</Button>
                                 </CollapsibleTrigger>
                                 <CollapsibleContent>
-                                    <p className="pt-2 text-muted-foreground text-sm">
+                                    <p className="pt-2 text-muted-foreground text-sm text-left">
                                         {member.bio}
                                     </p>
                                 </CollapsibleContent>
@@ -189,24 +189,24 @@ export default function AboutPage() {
                 </p>
               </div>
             </AnimatedSection>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:w-3/4 mx-auto">
               {BOARD_OF_ADVISORS.map((mentor, index) => {
                 const image = findImage(mentor.imageId);
                 return (
                   <AnimatedSection key={mentor.name} delay={index * 0.1} className="h-full">
-                    <div className="flex flex-col items-center h-full">
+                    <div className="flex flex-col items-center h-full text-center">
                         {image && <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden shrink-0"><Image src={image.imageUrl} alt={mentor.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
-                        <div className="w-full max-w-sm text-left flex flex-col flex-grow">
+                        <div className="w-full max-w-sm flex flex-col flex-grow">
                             <div className="flex-grow">
                               <h3 className="mt-4 text-xl font-bold text-primary">{mentor.name}</h3>
                               <p className="text-secondary font-medium">{mentor.role}</p>
                             </div>
-                            <Collapsible className="w-full">
+                            <Collapsible className="w-full mt-auto">
                                 <CollapsibleTrigger asChild>
                                     <Button variant="link" className="mt-2 p-0">Learn More</Button>
                                 </CollapsibleTrigger>
                                 <CollapsibleContent>
-                                    <p className="pt-2 text-muted-foreground text-sm">
+                                    <p className="pt-2 text-muted-foreground text-sm text-left">
                                         {mentor.bio}
                                     </p>
                                 </CollapsibleContent>
