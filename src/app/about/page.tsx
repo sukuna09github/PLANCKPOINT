@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -25,7 +24,7 @@ export default function AboutPage() {
 
   return (
     <main>
-      <section id="our-inspiration" className="relative min-h-screen flex items-center justify-start overflow-hidden text-primary">
+      <section id="our-inspiration" className="relative min-h-screen flex items-start pt-40 justify-start overflow-hidden text-primary">
           <video
               autoPlay
               loop
@@ -35,7 +34,7 @@ export default function AboutPage() {
           >
               <source src="/videos/core services.mp4" type="video/mp4" />
           </video>
-          <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative z-10 w-full px-6 sm:px-8 lg:px-16">
               <AnimatedSection>
                   <div className="text-left">
                       <h1 className="text-4xl md:text-5xl font-normal">Our Inspiration</h1>
