@@ -80,135 +80,23 @@ const ServicesPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section with 2-Column Layout */}
       <section
-        className="relative min-h-screen flex items-center justify-center overflow-hidden fixed-bg-section"
-        style={{ backgroundImage: heroBgImage ? `url(${heroBgImage.imageUrl})` : 'none' }}
+        className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-background"
       >
-        <div className="absolute inset-0 bg-dotted-pattern" />
         <div className="relative z-10 w-full px-6 sm:px-8 lg:px-16 2xl:px-32">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
-            {/* Left Column - Content */}
+          <div className="text-center">
             <motion.div
               initial={{ opacity: 0, x: -40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut' }}
-              className="z-10 text-center md:text-left"
+              className="z-10"
             >
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-headline text-white mb-6 leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-headline text-primary mb-6 leading-tight">
                 Strategic Intelligence Systems
               </h1>
-              <p className="text-lg md:text-xl font-body text-white/80 leading-relaxed max-w-xl mx-auto md:mx-0">
+              <p className="text-lg md:text-xl font-body text-muted-foreground leading-relaxed max-w-3xl mx-auto">
                 Our capabilities are designed to provide clarity and drive growth. Explore the systems we've engineered to address the distinct challenges of modern enterprises.
               </p>
-            </motion.div>
-
-            {/* Right Column - Spatial Carousel */}
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
-              className="relative h-[24rem] sm:h-[30rem] md:h-[32rem] lg:h-[40rem] z-10 perspective-1000"
-            >
-              {isClient && (
-                <>
-                  <div className="relative w-full h-full" style={{ transformStyle: 'preserve-3d' }}>
-                    {products.map((product, index) => {
-                      const position = index - currentSlide;
-                      const isActive = index === currentSlide;
-                      const productImage = findProductImage(product.imageId);
-
-                      return (
-                        <motion.div
-                          key={product.id}
-                          className="spatial-carousel-panel"
-                          animate={{
-                            rotateY: position * -30,
-                            x: `${position * 20}%`,
-                            z: isActive ? 0 : -200,
-                            opacity: isActive ? 1 : 0.4,
-                            scale: isActive ? 1 : 0.8,
-                          }}
-                          transition={{ type: 'spring', stiffness: 100, damping: 20 }}
-                          style={{ zIndex: products.length - Math.abs(position) }}
-                        >
-                          <motion.div 
-                            className="spatial-carousel-card w-full h-full group"
-                            whileHover={isActive ? { scale: 1.05, z: 50 } : {}}
-                            transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-                          >
-                            {productImage && (
-                              <Image
-                                src={productImage.imageUrl}
-                                alt={product.name || 'Product'}
-                                fill
-                                className="object-cover opacity-100 transition-opacity duration-300"
-                                data-ai-hint={productImage.imageHint}
-                              />
-                            )}
-
-                            <div className="spatial-carousel-content">
-                              <motion.h3 
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                transition={{ delay: 0.2 }}
-                                className="text-3xl font-bold text-white mb-2"
-                              >
-                                {product.name}
-                              </motion.h3>
-                              <AnimatePresence>
-                                {isActive && (
-                                  <motion.div
-                                    initial={{ opacity: 0, y: 10 }}
-                                    animate={{ opacity: 1, y: 0, transition: { delay: 0.4, duration: 0.4 } }}
-                                    exit={{ opacity: 0, y: -10 }}
-                                  >
-                                    <p className="text-white/80 text-sm line-clamp-3">
-                                      {product.description}
-                                    </p>
-                                    <Button variant="link" asChild className="text-white p-0 mt-4 font-semibold">
-                                      <Link href={`#${product.id}`} onClick={(e) => {
-                                        e.preventDefault();
-                                        setSelectedProduct(product);
-                                        document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
-                                      }}>
-                                        View Details <ArrowRight className="ml-2 w-4 h-4"/>
-                                      </Link>
-                                    </Button>
-                                  </motion.div>
-                                )}
-                              </AnimatePresence>
-                            </div>
-                          </motion.div>
-                        </motion.div>
-                      );
-                    })}
-                  </div>
-                  
-                  {/* Navigation */}
-                  <Button variant="ghost" size="icon" className="absolute top-1/2 -translate-y-1/2 -left-16 text-white/70 hover:text-white hover:bg-white/10" onClick={() => setCurrentSlide(s => (s - 1 + products.length) % products.length)}>
-                    <ChevronLeft className="w-8 h-8"/>
-                  </Button>
-                  <Button variant="ghost" size="icon" className="absolute top-1/2 -translate-y-1/2 -right-16 text-white/70 hover:text-white hover:bg-white/10" onClick={() => setCurrentSlide(s => (s + 1) % products.length)}>
-                    <ChevronRight className="w-8 h-8"/>
-                  </Button>
-
-                  <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 flex gap-3 z-40">
-                    {products.map((_, index) => (
-                      <button
-                        key={index}
-                        onClick={() => setCurrentSlide(index)}
-                        className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-                          index === currentSlide
-                            ? 'bg-white scale-125'
-                            : 'bg-white/40 hover:bg-white/60'
-                        }`}
-                        aria-label={`Go to capability ${index + 1}`}
-                      />
-                    ))}
-                  </div>
-                </>
-              )}
             </motion.div>
           </div>
         </div>
@@ -216,18 +104,16 @@ const ServicesPage: React.FC = () => {
       
       <section 
         id="services" 
-        className="py-16 md:py-24 overflow-hidden fixed-bg-section"
-        style={{ backgroundImage: `url(${servicesBgImage?.imageUrl})` }}
+        className="py-16 md:py-24 overflow-hidden bg-background text-primary"
       >
-        <div className="absolute inset-0 bg-primary/70"></div>
         <div className="max-w-[120rem] mx-auto px-6 md:px-12 relative">
           <LayoutGroup>
             <div className={cn("grid grid-cols-1 gap-8", selectedProduct && "md:grid-cols-2")}>
                 
                 <motion.div layout="position">
                     <AnimatedSection className="text-center mb-16">
-                        <h2 className="text-4xl font-headline font-normal text-primary-foreground mb-6">Our Services</h2>
-                        <p className="text-lg font-body text-primary-foreground/80 max-w-3xl mx-auto">
+                        <h2 className="text-4xl font-headline font-normal text-primary mb-6">Our Services</h2>
+                        <p className="text-lg font-body text-muted-foreground max-w-3xl mx-auto">
                             We offer a range of services designed to provide strategic clarity and drive impactful results for your organization.
                         </p>
                     </AnimatedSection>
@@ -236,7 +122,7 @@ const ServicesPage: React.FC = () => {
                         <AnimatedSection>
                             <TabsList className="flex items-center justify-center gap-8 bg-transparent p-0 h-auto">
                                 {SERVICE_CATEGORIES.map(category => (
-                                    <TabsTrigger key={category.id} value={category.id} className="text-lg font-medium text-white/70 data-[state=active]:text-white p-2 bg-transparent shadow-none border-0 focus:ring-0 focus:outline-none data-[state=active]:shadow-[inset_0_-2px_0_0_white] rounded-none">
+                                    <TabsTrigger key={category.id} value={category.id} className="text-lg font-medium text-muted-foreground data-[state=active]:text-primary p-2 bg-transparent shadow-none border-0 focus:ring-0 focus:outline-none data-[state=active]:shadow-[inset_0_-2px_0_0_hsl(var(--primary))] rounded-none">
                                         {category.name}
                                     </TabsTrigger>
                                 ))}
@@ -251,10 +137,10 @@ const ServicesPage: React.FC = () => {
                                         animate={{ opacity: 1, y: 0 }}
                                         transition={{ duration: 0.5 }}
                                     >
-                                        <div className="p-8 md:p-12 flex flex-col justify-center min-h-[350px] text-center bg-black/20 rounded-lg">
-                                            <h3 className="text-2xl font-bold text-white mb-3">{category.name}</h3>
-                                            <p className="text-white/70 mb-6 max-w-2xl mx-auto">{category.description}</p>
-                                            <p className="font-semibold text-white mb-2">Relevant Products:</p>
+                                        <div className="p-8 md:p-12 flex flex-col justify-center min-h-[350px] text-center bg-primary/5 rounded-lg">
+                                            <h3 className="text-2xl font-bold text-primary mb-3">{category.name}</h3>
+                                            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">{category.description}</p>
+                                            <p className="font-semibold text-primary mb-2">Relevant Products:</p>
                                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto w-full">
                                                 {category.products.map(productId => {
                                                     const product = PRODUCTS.find(p => p.id === productId);
@@ -262,9 +148,9 @@ const ServicesPage: React.FC = () => {
                                                     return (
                                                       <motion.div key={product.id} layoutId={product.id}>
                                                         <button onClick={() => setSelectedProduct(product)} className="block group text-left w-full h-full">
-                                                            <div className="bg-white/5 p-4 hover:bg-white/10 transition-colors h-full rounded-md">
-                                                                <h4 className="font-semibold text-white group-hover:text-accent">{product.name}</h4>
-                                                                <p className="text-sm text-white/70">{product.description}</p>
+                                                            <div className="bg-background/50 p-4 hover:bg-background transition-colors h-full rounded-md border">
+                                                                <h4 className="font-semibold text-primary group-hover:text-accent">{product.name}</h4>
+                                                                <p className="text-sm text-muted-foreground">{product.description}</p>
                                                             </div>
                                                         </button>
                                                       </motion.div>
@@ -285,7 +171,7 @@ const ServicesPage: React.FC = () => {
                             <motion.div
                                 key={selectedProduct.id}
                                 layoutId={selectedProduct.id}
-                                className="premium-glass-card sticky top-24"
+                                className="bg-card border shadow-lg sticky top-24 rounded-lg p-8"
                                 transition={{
                                     duration: 0.5,
                                     ease: [0.4, 0, 0.2, 1],
@@ -299,15 +185,15 @@ const ServicesPage: React.FC = () => {
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: 1, transition: { delay: 0.3, duration: 0.2 } }}
                                 >
-                                    <button onClick={() => setSelectedProduct(null)} className="absolute top-4 right-4 text-white/70 hover:text-white transition-colors z-20">
+                                    <button onClick={() => setSelectedProduct(null)} className="absolute top-4 right-4 text-muted-foreground hover:text-primary transition-colors z-20">
                                         <X className="w-5 h-5" />
                                     </button>
-                                    <h3 className="text-2xl font-bold mb-2">{selectedProduct.name}</h3>
+                                    <h3 className="text-2xl font-bold mb-2 text-primary">{selectedProduct.name}</h3>
                                     <p className="text-base font-semibold text-accent mb-4">{selectedProduct.tagline}</p>
-                                    <div className="text-sm text-white/80 space-y-4">
+                                    <div className="text-sm text-muted-foreground space-y-4">
                                         <p>{selectedProduct.detailedDescription}</p>
                                         <div>
-                                            <h4 className="font-semibold mb-2">Key Benefits:</h4>
+                                            <h4 className="font-semibold text-primary mb-2">Key Benefits:</h4>
                                             <ul className="list-disc list-inside space-y-1">
                                                 {selectedProduct.keyBenefits.split('\n').map((benefit, i) => (
                                                     <li key={i}>{benefit}</li>
@@ -334,16 +220,3 @@ const ServicesPage: React.FC = () => {
 };
 
 export default ServicesPage;
-
-    
-
-    
-
-    
-
-
-
-
-    
-
-    
