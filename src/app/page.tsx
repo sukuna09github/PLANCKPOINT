@@ -235,7 +235,7 @@ const HomePage: React.FC = () => {
                               </CardContent>
                               <CardFooter className="p-0 pt-4">
                                   <Button variant="ghost" asChild className="text-white hover:bg-white/10">
-                                  <Link href="/solutions">Learn More</Link>
+                                  <Link href={`/core-services#${product.id}`}>Learn More</Link>
                                   </Button>
                               </CardFooter>
                               </div>
@@ -249,7 +249,7 @@ const HomePage: React.FC = () => {
             </AnimatedSection>
             <AnimatedSection className="mt-12 text-center" delay={0.4}>
               <Button size="lg" asChild>
-                <Link href="/solutions">View All Solutions</Link>
+                <Link href="/core-services">View All Solutions</Link>
               </Button>
             </AnimatedSection>
           </div>
@@ -412,3 +412,5 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
+    

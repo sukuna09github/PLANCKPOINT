@@ -12,13 +12,9 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { AnimatedSection } from "@/components/animated-section";
 
 export function ProductsTeaser() {
-  const productsToShow = PRODUCTS.slice(0, 6);
   const findImage = (imageId: string) => PlaceHolderImages.find(img => img.id === imageId);
   const atomicAiImage = PlaceHolderImages.find(p => p.id === 'atomicai-background');
   const beyondQuadrantsImage = PlaceHolderImages.find(p => p.id === 'beyondquadrants-background');
-  const elwisImage = PlaceHolderImages.find(p => p.id === 'elwis-background');
-  const propricingImage = PlaceHolderImages.find(p => p.id === 'propricing-background');
-  const skillorbitImage = PlaceHolderImages.find(p => p.id === 'skillorbit-background');
 
   return (
     <section className="py-20 lg:py-32 bg-background text-foreground">
@@ -50,12 +46,6 @@ export function ProductsTeaser() {
                   image = atomicAiImage;
                 } else if (product.id === 'beyondquadrants') {
                   image = beyondQuadrantsImage;
-                } else if (product.id === 'elwis') {
-                  image = elwisImage;
-                } else if (product.id === 'propricing') {
-                  image = propricingImage;
-                } else if (product.id === 'skillorbit') {
-                  image = skillorbitImage;
                 } else {
                   image = findImage(product.imageId);
                 }
@@ -89,7 +79,7 @@ export function ProductsTeaser() {
                           </CardContent>
                           <CardFooter className="p-0 pt-4">
                             <Button variant="ghost" asChild className="text-white hover:bg-white/10">
-                              <Link href={`/products/${product.id}`}>Learn More</Link>
+                              <Link href={`/core-services#${product.id}`}>Learn More</Link>
                             </Button>
                           </CardFooter>
                         </div>
@@ -103,10 +93,12 @@ export function ProductsTeaser() {
         </AnimatedSection>
         <AnimatedSection className="mt-12 text-center" delay={0.4}>
           <Button size="lg" asChild>
-            <Link href="/products">View All Products</Link>
+            <Link href="/core-services">View All Solutions</Link>
           </Button>
         </AnimatedSection>
       </div>
     </section>
   );
 }
+
+    

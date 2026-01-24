@@ -379,7 +379,7 @@ export const SERVICE_CATEGORIES = [
         name: 'Consulting',
         description: 'We help leadership teams translate insight into decisions that are structured, defensible, and executable. Our consulting work focuses on decision quality, risk exposure, and governance — not delivery management. Our consulting capabilities include: 	Decision structuring and option analysis to clarify trade-offs, dependencies, and failure modes before commitments are made 	Transformation risk diagnostics identifying execution bottlenecks across people, process, platform, and partners 	Decision governance and assurance supporting executive, board, and risk committee review with clear evidence and accountability The focus is not activity. It is an informed judgment under uncertainty.',
         icon: Users,
-        products: ['elwis', 'skillorbit'],
+        products: [],
         imageId: "industry-healthcare"
     },
     {
@@ -387,7 +387,7 @@ export const SERVICE_CATEGORIES = [
         name: 'Vendor Evaluations',
         description: 'We conduct rigorous, evidence-based evaluations of technology vendors beyond narrative claims and simplified visual models. Each evaluation is grounded in execution reality, not positioning. Our vendor evaluation capabilities include: 	Experience delivered across various clients, projects, and scenarios. 	Execution capability assessment across delivery maturity, operating model resilience, and scalability 	Talent and operating model analysis examining depth, stability, and alignment to the work required 	Risk exposure mapping across delivery, dependency, concentration, and continuity dimensions The outcome is a clear view of what is likely to perform, what is likely to fail, and the conditions that influence both.',
         icon: BarChart,
-        products: ['propricing'],
+        products: [],
         imageId: "industry-tech"
     }
 ]
@@ -398,7 +398,7 @@ export const INDUSTRY_SOLUTIONS = [
         name: 'Finance',
         description: 'Solutions for financial services, banking, and insurance industries.',
         icon: Banknote,
-        products: ['propricing', 'atomicai'],
+        products: ['atomicai'],
         imageId: "industry-finance"
     },
     {
@@ -406,7 +406,7 @@ export const INDUSTRY_SOLUTIONS = [
         name: 'Healthcare',
         description: 'Solutions for healthcare providers, pharmaceuticals, and life sciences.',
         icon: HeartHandshake,
-        products: ['elwis', 'skillorbit'],
+        products: [],
         imageId: "industry-healthcare"
     },
     {
@@ -414,7 +414,7 @@ export const INDUSTRY_SOLUTIONS = [
         name: 'Technology',
         description: 'Solutions for software, hardware, and telecommunications companies.',
         icon: Cpu,
-        products: ['atomicai', 'beyondquadrants', 'skillorbit'],
+        products: ['atomicai', 'beyondquadrants'],
         imageId: "industry-tech"
     },
     {
@@ -422,7 +422,7 @@ export const INDUSTRY_SOLUTIONS = [
         name: 'Legal',
         description: 'Solutions for law firms, corporate legal departments, and compliance.',
         icon: Scale,
-        products: ['elwis'],
+        products: [],
         imageId: "industry-legal"
     }
 ];
@@ -430,9 +430,6 @@ export const INDUSTRY_SOLUTIONS = [
 export const PRODUCTS = [
     { id: "atomicai", name: "AtomicAI™", description: "Our flagship product for granular, real-time analysis of human-computer interaction.", icon: Cpu, imageId: 'product-atomicai', tagline: 'Measure everything. Move faster.', detailedDescription: 'AtomicAI is built for leaders who are done with AI theatre. It decomposes real work into atomic tasks and scores each one for AI feasibility, automation upside, cost impact, and risk. You see exactly where AI replaces effort, where it augments judgment, and where humans must stay in control. No generic use cases. No black-box promises.   AtomicAI produces a clear, defensible AI operating model tied to measurable ROI. This is how AI moves from experimentation to execution, one task at a time.', keyBenefits: "Identify and eliminate workflow inefficiencies.\nGain a deep understanding of user behavior.\nImprove team productivity and satisfaction.\nMake data-driven decisions about technology adoption.", learnMoreUrl: '#' },
     { id: "beyondquadrants", name: "BeyondQuadrants™", description: "Move beyond simplistic vendor comparisons with our multi-dimensional evaluation framework.", icon: Target, imageId: 'product-beyondquadrants', tagline: 'Clarity beyond the noise.', detailedDescription: 'BeyondQuadrants challenges the very idea of ranking vendors as dots on a grid. Traditional quadrants reflect analyst opinion. We start with customer truth. Our intelligence is built on real client feedback, delivery outcomes, and lived experience. By analysing customer experience signals, we predict the likelihood of project success before it fails.  Vendors are evaluated on what actually happens after the contract is signed. Execution gaps, hidden strengths, and real risks are surfaced early. No abstract positioning. No glossy narratives. Just evidence-backed insight from the customer’s side of the table. BeyondQuadrants turns feedback into decisions you can stand behind.', keyBenefits: 'Go beyond surface-level vendor analysis.\nAlign technology choices with business goals.\nMitigate risks in your technology partnerships.\nGet a clear, actionable view of the vendor landscape.', learnMoreUrl: '#' },
-    { id: "elwis", name: "ELWIS™", description: "Our Early Warning & Intervention System for large-scale technology programs.", icon: Shield, imageId: 'product-elwis', tagline: 'See risk before it sees you.', detailedDescription: 'Large-scale technology programs are notoriously difficult to manage. ELWIS™ is your intelligent co-pilot, continuously monitoring program health and identifying early warning signs of trouble. By combining data from multiple sources, ELWIS™ helps you intervene before risks escalate into crises.', keyBenefits: 'Gain real-time visibility into program health.\nIdentify and mitigate risks proactively.\nImprove the success rate of large-scale initiatives.\nEnhance stakeholder confidence and communication.', learnMoreUrl: '#' },
-    { id: "propricing", name: "ProPRICING™", description: "An advanced pricing and proposal generation engine for complex technology services.", icon: Banknote, imageId: 'product-propricing', tagline: 'Price with precision. Win with confidence.', detailedDescription: 'Pricing complex technology services is both an art and a science. ProPRICING™ brings data-driven rigor to the process. Our engine analyzes historical data, market benchmarks, and your unique value proposition to generate optimal pricing strategies and compelling proposals.', keyBenefits: 'Optimize pricing for profitability and win rates.\nStandardize and accelerate your proposal process.\nImprove negotiation outcomes with data-backed insights.\nGain a deeper understanding of your pricing power.', learnMoreUrl: '#' },
-    { id: "skillorbit", name: "SkillOrbit™", description: "Map, measure, and manage the critical skills that drive your organization's success.", icon: UsersRound, imageId: 'product-skillorbit', tagline: 'Align talent with strategy.', detailedDescription: "In a rapidly changing world, having the right skills is paramount. SkillOrbit™ is a dynamic platform for talent and capability management. We help you map your organization's existing skills, identify future needs, and create targeted development pathways to bridge the gap.", keyBenefits: 'Gain a clear view of your organization\'s skill landscape.\nAlign talent development with strategic priorities.\nImprove employee engagement and retention.\nBuild a more agile and resilient workforce.', learnMoreUrl: '#' },
     { id: "thinkquark", name: "ThinkQuark™", description: "Harness the power of quantum-inspired computing to solve your most complex optimization problems.", icon: BrainCircuit, imageId: 'product-thinkquark', tagline: 'Solve the unsolvable.', detailedDescription: 'ThinkQuark is a new form of thought leadership built for how decisions are actually made. We replace long, bloated publications with sharp, one-page concept papers. Each ThinkQuark challenges a dominant assumption, model, or industry habit. No background filler. No recycled frameworks. Just one powerful idea, clearly argued and grounded in real signals. Designed for leaders who think quickly and make decisions swiftly. Easy to read. Hard to ignore. ThinkQuark turns original thinking into immediate action.', keyBenefits: "Solve complex optimization problems faster.\nUnlock new possibilities in research and development.\nGain a competitive edge with cutting-edge technology.\nIntegrate seamlessly with your existing data pipelines.", learnMoreUrl: '#' },
     { id: "signalone", name: "SignalOne™", description: "Bespoke research and decision-ready intelligence tailored to your strategic questions.", icon: Lightbulb, imageId: 'product-signalone', tagline: 'Intelligence for your decisions.', detailedDescription: 'SignalOne delivers bespoke research built around your real strategic questions. We don’t publish generic reports. We design intelligence for specific decisions. Our research directly informs strategy, go-to-market initiatives, and sales enablement. Every insight is tailored to your market, buyers, and competitive reality. We combine data, field signals, and expert judgment to reduce blind spots. No shelfware. No recycled decks. Just decision-ready intelligence that sharpens strategy and strengthens sales.', keyBenefits: "Decision-ready intelligence.\nSharpened strategy and sales enablement.\nReduced strategic blind spots.\nCustom research for your specific needs.", learnMoreUrl: '#' },
 ];
