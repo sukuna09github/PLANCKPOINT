@@ -1,4 +1,3 @@
-
 "use client";
 
 import React from "react";
@@ -132,28 +131,15 @@ export function Header() {
                   </NavigationMenuItem>
                   
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger className={cn("bg-transparent text-lg nav-link")} data-active={pathname.startsWith("/insights")}>
-                      Insights
-                    </NavigationMenuTrigger>
-                    <NavigationMenuContent className="nav-glass-panel">
-                      <motion.div {...motionVariants}>
-                       <div className="p-6 w-[500px] lg:w-[600px]">
-                           <h3 className="text-lg font-medium text-primary mb-4">
-                            <Link href="/insights" className="flex items-center hover:underline">
-                              Insights
-                              <ArrowRight className="ml-2 h-4 w-4" />
-                            </Link>
-                          </h3>
-                           <ul className="grid grid-cols-2 gap-3">
-                            {insightLinks.map(link => (
-                               <ListItem key={link.title} href={link.href} title={link.title}>
-                                {link.description}
-                               </ListItem>
-                            ))}
-                          </ul>
-                       </div>
-                      </motion.div>
-                    </NavigationMenuContent>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href="/insights"
+                        className={cn(navigationMenuTriggerStyle(), "bg-transparent text-lg nav-link")}
+                        data-active={pathname.startsWith("/insights")}
+                      >
+                        Insights
+                      </Link>
+                    </NavigationMenuLink>
                   </NavigationMenuItem>
 
                    <NavigationMenuItem>
@@ -215,6 +201,7 @@ export function Header() {
                   </div>
                   <nav className="flex flex-col p-4 mt-4 text-lg font-medium">
                     <Link href="/" onClick={() => setIsOpen(false)} className={cn("py-2", pathname === "/" ? "text-primary" : "text-foreground")}>Home</Link>
+                    <Link href="/insights" onClick={() => setIsOpen(false)} className={cn("py-2", pathname.startsWith("/insights") ? "text-primary" : "text-foreground")}>Insights</Link>
                     
                     <Accordion type="multiple" className="w-full">
                       <AccordionItem value="core-services" className="border-b-0">
@@ -226,20 +213,6 @@ export function Header() {
                             {PRODUCTS.map((product) => (
                               <Link key={product.id} href={`/core-services#${product.id}`} onClick={() => setIsOpen(false)} className="text-base text-muted-foreground hover:text-primary">
                                 {product.name}
-                              </Link>
-                            ))}
-                          </div>
-                        </AccordionContent>
-                      </AccordionItem>
-                      <AccordionItem value="insights" className="border-b-0">
-                        <AccordionTrigger className={cn("py-2 text-lg font-medium hover:no-underline justify-between", pathname.startsWith("/insights") ? "text-primary" : "text-foreground")}>
-                          <Link href="/insights" onClick={() => setIsOpen(false)} className="flex-1 text-left">Insights</Link>
-                        </AccordionTrigger>
-                        <AccordionContent>
-                           <div className="flex flex-col space-y-2 pl-6 pt-2">
-                            {insightLinks.map((link) => (
-                              <Link key={link.href} href={link.href} onClick={() => setIsOpen(false)} className="text-base text-muted-foreground hover:text-primary">
-                                {link.title}
                               </Link>
                             ))}
                           </div>
