@@ -116,8 +116,7 @@ const HomePage: React.FC = () => {
                 What We Do
               </h2>
               <p className="text-lg font-body text-foreground/80 max-w-3xl mx-auto">
-                We provide strategic consulting and research services that help organizations navigate 
-                the complex intersection of human behavior and technology.
+                PlanckPoint is a foresight and intelligence firm built for decision-makers navigating complex markets, technologies, and vendor ecosystems. We combine AI-assisted analysis with structured expert judgment to reveal what is likely to work, what may fail, and why—going beyond traditional analyst narratives by integrating execution signals, delivery risk, and organisational realities into evidence-based decision frameworks. At our core, we are researchers, analysts, and advisors focused on uncovering the smallest credible signals that drive the biggest shifts, delivering clarity, credibility, and confidence with every insight.
               </p>
             </AnimatedSection>
             
