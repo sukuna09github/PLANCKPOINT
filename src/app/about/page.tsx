@@ -126,22 +126,22 @@ export default function AboutPage() {
               const image = findImage(member.imageId);
               return (
                 <AnimatedSection key={member.name} delay={index * 0.1}>
-                  <div className="text-center">
-                    <div className="flex flex-col items-center">
-                        {image && <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden"><Image src={image.imageUrl} alt={member.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
-                        <h3 className="mt-4 text-xl font-bold text-primary">{member.name}</h3>
-                        <p className="text-secondary font-medium">{member.role}</p>
-                        <Collapsible className="w-full max-w-sm">
-                            <CollapsibleTrigger asChild>
-                                <Button variant="link" className="mt-2">Learn More</Button>
-                            </CollapsibleTrigger>
-                            <CollapsibleContent>
-                                <p className="pt-2 text-muted-foreground text-sm text-left">
-                                    {member.bio}
-                                </p>
-                            </CollapsibleContent>
-                        </Collapsible>
-                    </div>
+                  <div className="flex flex-col items-center">
+                      {image && <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden"><Image src={image.imageUrl} alt={member.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
+                      <div className="w-full max-w-sm text-left">
+                          <h3 className="mt-4 text-xl font-bold text-primary">{member.name}</h3>
+                          <p className="text-secondary font-medium">{member.role}</p>
+                          <Collapsible className="w-full">
+                              <CollapsibleTrigger asChild>
+                                  <Button variant="link" className="mt-2 p-0">Learn More</Button>
+                              </CollapsibleTrigger>
+                              <CollapsibleContent>
+                                  <p className="pt-2 text-muted-foreground text-sm">
+                                      {member.bio}
+                                  </p>
+                              </CollapsibleContent>
+                          </Collapsible>
+                      </div>
                   </div>
                 </AnimatedSection>
               );
@@ -153,17 +153,17 @@ export default function AboutPage() {
                 const image = findImage(member.imageId);
                 return (
                   <AnimatedSection key={member.name} delay={(index + leadershipFirstRow.length) * 0.1}>
-                     <div className="text-center">
-                        <div className="flex flex-col items-center">
-                            {image && <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden"><Image src={image.imageUrl} alt={member.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
+                     <div className="flex flex-col items-center">
+                        {image && <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden"><Image src={image.imageUrl} alt={member.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
+                        <div className="w-full max-w-sm text-left">
                             <h3 className="mt-4 text-xl font-bold text-primary">{member.name}</h3>
                             <p className="text-secondary font-medium">{member.role}</p>
-                            <Collapsible className="w-full max-w-sm">
+                            <Collapsible className="w-full">
                                 <CollapsibleTrigger asChild>
-                                    <Button variant="link" className="mt-2">Learn More</Button>
+                                    <Button variant="link" className="mt-2 p-0">Learn More</Button>
                                 </CollapsibleTrigger>
                                 <CollapsibleContent>
-                                    <p className="pt-2 text-muted-foreground text-sm text-left">
+                                    <p className="pt-2 text-muted-foreground text-sm">
                                         {member.bio}
                                     </p>
                                 </CollapsibleContent>
@@ -190,17 +190,17 @@ export default function AboutPage() {
                 const image = findImage(mentor.imageId);
                 return (
                   <AnimatedSection key={mentor.name} delay={index * 0.1}>
-                    <div className="text-center">
-                        <div className="flex flex-col items-center">
-                            {image && <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden"><Image src={image.imageUrl} alt={mentor.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
+                    <div className="flex flex-col items-center">
+                        {image && <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden"><Image src={image.imageUrl} alt={mentor.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
+                        <div className="w-full max-w-sm text-left">
                             <h3 className="mt-4 text-xl font-bold text-primary">{mentor.name}</h3>
                             <p className="text-secondary font-medium">{mentor.role}</p>
-                            <Collapsible className="w-full max-w-sm">
+                            <Collapsible className="w-full">
                                 <CollapsibleTrigger asChild>
-                                    <Button variant="link" className="mt-2">Learn More</Button>
+                                    <Button variant="link" className="mt-2 p-0">Learn More</Button>
                                 </CollapsibleTrigger>
                                 <CollapsibleContent>
-                                    <p className="pt-2 text-muted-foreground text-sm text-left">
+                                    <p className="pt-2 text-muted-foreground text-sm">
                                         {mentor.bio}
                                     </p>
                                 </CollapsibleContent>
