@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect } from 'react';
@@ -51,7 +52,7 @@ const CoreServicesPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-background">
       <section
-        className="relative min-h-screen flex items-center justify-center overflow-hidden"
+        className="relative min-h-screen flex items-center justify-start overflow-hidden"
       >
         <video
             autoPlay
@@ -63,17 +64,17 @@ const CoreServicesPage: React.FC = () => {
             <source src="/videos/core services.mp4" type="video/mp4" />
         </video>
         <div className="relative z-10 w-full px-6 sm:px-8 lg:px-16 2xl:px-32">
-          <div className="text-center">
+          <div className="text-left">
             <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, x: -40 }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut' }}
               className="z-10"
             >
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-headline text-white mb-6 leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-headline text-primary mb-6 leading-tight max-w-3xl">
                 Strategic Intelligence Systems
               </h1>
-              <p className="text-lg md:text-xl font-body text-white/80 leading-relaxed max-w-3xl mx-auto">
+              <p className="text-lg md:text-xl font-body text-secondary leading-relaxed max-w-3xl">
                 Our capabilities are designed to provide clarity and drive growth. Explore the systems we've engineered to address the distinct challenges of modern enterprises.
               </p>
             </motion.div>
