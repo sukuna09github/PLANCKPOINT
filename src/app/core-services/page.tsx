@@ -74,7 +74,7 @@ const CoreServicesPage: React.FC = () => {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-headline text-primary mb-6 leading-tight max-w-3xl">
                 Strategic Intelligence Systems
               </h1>
-              <p className="text-lg md:text-xl font-body text-secondary leading-relaxed max-w-3xl">
+              <p className="text-lg md:text-xl font-body text-foreground leading-relaxed max-w-3xl">
                 Our capabilities are designed to provide clarity and drive growth. Explore the systems we've engineered to address the distinct challenges of modern enterprises.
               </p>
             </motion.div>
