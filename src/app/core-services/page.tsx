@@ -52,7 +52,7 @@ const CoreServicesPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-background">
       <section
-        className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-background"
+        className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background"
       >
         <div className="relative z-10 w-full px-6 sm:px-8 lg:px-16 2xl:px-32">
           <div className="text-center">
