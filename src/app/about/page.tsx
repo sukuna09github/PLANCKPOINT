@@ -23,12 +23,6 @@ export default function AboutPage() {
     imageUrl: "https://images.pexels.com/photos/2098428/pexels-photo-2098428.jpeg",
     imageHint: "hand stars"
   };
-
-  const values = [
-    { title: "Inspiration", description: "Inspiration at PlanckPoint comes from intellectual honesty and first-principles thinking. By operating at the deepest level of strategic decision-making, we empower leaders to question inherited assumptions, rethink conventional approaches, and design strategies that are both ambitious and executable. Our work encourages confidence rooted in understanding, not optimism." },
-    { title: "Integrity", description: "Integrity is enforced through evidence-based analysis and methodological rigor. Our insights are derived from AI-assisted signal evaluation combined with structured expert judgment, ensuring conclusions are grounded in observable realities rather than assumptions or consensus narratives. We prioritise accuracy and transparency, exposing risk and uncertainty so leaders can make fully informed decisions." },
-    { title: "Clarity", description: "Clarity at PlanckPoint is achieved by reducing complex strategic technology decisions to their fundamental execution variables. We move beyond abstract frameworks and surface-level metrics to analyse delivery risk, organisational capability, and real-world constraints. This approach enables leaders to evaluate feasibility, failure modes, and long-term impact before decisions become irreversible" },
-  ];
   
   const heroImageUrl = "https://images.pexels.com/photos/2098428/pexels-photo-2098428.jpeg";
 
@@ -85,31 +79,15 @@ export default function AboutPage() {
         id="who-we-are" 
         className="py-20 lg:py-24 bg-background text-primary"
       >
-        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
-            <AnimatedSection>
-              <div>
-                <h2 className="text-3xl font-bold">Who We Are</h2>
-                <p className="mt-4 text-muted-foreground text-lg">PlanckPoint is a foresight and intelligence firm built for decision-makers navigating complex markets, technologies, and vendor ecosystems. Using AI-assisted analysis combined with structured expert judgment, we show leaders what is likely to work, what is expected to fail, and why.</p>
-                <p className="mt-4 text-muted-foreground text-lg">We go beyond analyst narratives and visual shortcuts, integrating execution signals, delivery risk, and organisational realities into evidence-based decision frameworks.</p>
-                <p className="mt-4 text-muted-foreground text-lg">We blend AI-powered analysis with deep strategic thinking to uncover the smallest credible signals that spark the biggest shifts. At our core, we are researchers, analysts, and advisors committed to delivering clarity, credibility, and confidence in every insight we produce.</p>
-              </div>
-            </AnimatedSection>
-            <div className="space-y-8">
-                {values.map((value, index) => (
-                    <AnimatedSection key={index} delay={index * 0.1}>
-                        <Card className="bg-card border shadow-lg">
-                            <CardHeader>
-                                <CardTitle className="text-primary">{value.title}</CardTitle>
-                            </CardHeader>
-                            <CardContent>
-                                <p className="text-muted-foreground">{value.description}</p>
-                            </CardContent>
-                        </Card>
-                    </AnimatedSection>
-                ))}
+        <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <AnimatedSection>
+            <div className="text-center">
+              <h2 className="text-3xl font-bold">Who We Are</h2>
+              <p className="mt-4 text-muted-foreground text-lg">PlanckPoint is a foresight and intelligence firm built for decision-makers navigating complex markets, technologies, and vendor ecosystems. Using AI-assisted analysis combined with structured expert judgment, we show leaders what is likely to work, what is expected to fail, and why.</p>
+              <p className="mt-4 text-muted-foreground text-lg">We go beyond analyst narratives and visual shortcuts, integrating execution signals, delivery risk, and organisational realities into evidence-based decision frameworks.</p>
+              <p className="mt-4 text-muted-foreground text-lg">We blend AI-powered analysis with deep strategic thinking to uncover the smallest credible signals that spark the biggest shifts. At our core, we are researchers, analysts, and advisors committed to delivering clarity, credibility, and confidence in every insight we produce.</p>
             </div>
-          </div>
+          </AnimatedSection>
         </div>
       </section>
       
