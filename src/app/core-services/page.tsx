@@ -52,8 +52,18 @@ const CoreServicesPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-background">
       <section
-        className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background"
+        className="relative min-h-screen flex items-center justify-center overflow-hidden"
       >
+        <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+        >
+            <source src="/videos/core services.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10 w-full px-6 sm:px-8 lg:px-16 2xl:px-32">
           <div className="text-center">
             <motion.div
@@ -62,10 +72,10 @@ const CoreServicesPage: React.FC = () => {
               transition={{ duration: 0.8, ease: 'easeOut' }}
               className="z-10"
             >
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-headline text-primary mb-6 leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-headline text-white mb-6 leading-tight">
                 Strategic Intelligence Systems
               </h1>
-              <p className="text-lg md:text-xl font-body text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+              <p className="text-lg md:text-xl font-body text-white/80 leading-relaxed max-w-3xl mx-auto">
                 Our capabilities are designed to provide clarity and drive growth. Explore the systems we've engineered to address the distinct challenges of modern enterprises.
               </p>
             </motion.div>
