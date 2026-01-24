@@ -24,7 +24,7 @@ export default function AboutPage() {
 
   return (
     <main>
-      <section id="our-inspiration" className="relative min-h-screen flex items-start pt-40 justify-start overflow-hidden text-primary">
+      <section id="our-inspiration" className="relative min-h-screen flex items-start pt-52 justify-start overflow-hidden text-primary">
           <video
               autoPlay
               loop
