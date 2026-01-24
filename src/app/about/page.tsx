@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -24,7 +25,7 @@ export default function AboutPage() {
 
   return (
     <main>
-      <section id="our-inspiration" className="relative min-h-screen flex items-start pt-64 justify-start overflow-hidden text-primary">
+      <section id="our-inspiration" className="relative min-h-screen flex items-center pt-32 justify-start overflow-hidden text-primary">
           <video
               autoPlay
               loop
@@ -37,7 +38,7 @@ export default function AboutPage() {
           <div className="relative z-10 w-full px-6 sm:px-8 lg:px-16">
               <AnimatedSection>
                   <div className="text-left">
-                      <h1 className="text-4xl md:text-5xl font-normal">Our Inspiration</h1>
+                      <h1 className="text-4xl md:text-5xl font-normal text-primary">Our Inspiration</h1>
                       <div className="mt-6 text-lg md:text-xl space-y-4 text-left max-w-4xl">
                           <p className="text-foreground/90">PlanckPoint draws inspiration from Max Planck’s groundbreaking theory that identified the smallest measurable unit in the universe, a boundary where classical physics gives way to quantum insight. In the same spirit, we believe that powerful decisions begin with the smallest, most precise signals.</p>
                           <p className="text-foreground/90">The rise of AI has accelerated markets beyond the limits of traditional research, and PlanckPoint exists to close the gap with intelligence built for faster, higher-stakes decisions.</p>
@@ -53,7 +54,7 @@ export default function AboutPage() {
           <AnimatedSection>
             <div className="text-center">
               <h2 className="text-3xl md:text-4xl font-normal">Our Guiding Philosophy</h2>
-              <p className="mt-6 text-lg md:text-xl max-w-3xl mx-auto">
+              <p className="mt-6 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
                 At Planckpoint, we believe in a pragmatic approach to innovation. Our strategy is simple yet powerful: dedicate 20% of our efforts to pioneering research that pushes boundaries, and channel a focused 80% into robust production that delivers real-world value to our clients today. This balance ensures we remain at the cutting edge while delivering reliable, impactful solutions.
               </p>
             </div>
