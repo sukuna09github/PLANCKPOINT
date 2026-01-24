@@ -22,50 +22,8 @@ export default function AboutPage() {
   const leadershipFirstRow = LEADERSHIP_TEAM.slice(0, 4);
   const leadershipSecondRow = LEADERSHIP_TEAM.slice(4);
 
-  const heroImage = {
-    description: "Hand holding a jar of stars",
-    imageUrl: "https://images.pexels.com/photos/2098428/pexels-photo-2098428.jpeg",
-    imageHint: "hand stars"
-  };
-  
-  const heroImageUrl = "https://images.pexels.com/photos/2098428/pexels-photo-2098428.jpeg";
-
   return (
     <main>
-      <section className="relative w-full h-screen overflow-hidden">
-        {heroImage && (
-            <Image
-                src={heroImageUrl}
-                alt={heroImage.description}
-                fill
-                className="object-cover object-center"
-                data-ai-hint={heroImage.imageHint}
-                priority
-            />
-        )}
-        <div className="absolute inset-0 bg-accent/20"></div>
-        
-        <div className="absolute inset-0 flex items-center justify-center text-center">
-            <div className="font-bold uppercase tracking-widest text-white">
-                <h1 className="text-[calc(2.25rem+5px)] md:text-[calc(3.75rem+5px)] lg:text-[calc(6rem+5px)] font-normal bg-cover bg-center text-transparent bg-clip-text" style={{ backgroundImage: `url(${heroImageUrl})`, textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}>
-                    Quantum
-                </h1>
-                <h2 className="text-2xl md:text-3xl font-normal">
-                    Origins
-                </h2>
-                
-                <div className="mt-4">
-                    <h1 className="text-[calc(2.25rem+5px)] md:text-[calc(3.75rem+5px)] lg:text-[calc(6rem+5px)] font-normal bg-cover bg-center text-transparent bg-clip-text" style={{ backgroundImage: `url(${heroImageUrl})`, textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}>
-                        Infinite
-                    </h1>
-                    <h2 className="text-2xl md:text-3xl font-normal">
-                        DESTINIES
-                    </h2>
-                </div>
-            </div>
-        </div>
-      </section>
-
       <section id="our-philosophy" className="py-20 lg:py-24 bg-white text-primary">
         <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
