@@ -24,7 +24,7 @@ export default function AboutPage() {
 
   return (
     <main>
-      <section id="our-inspiration" className="relative min-h-screen flex items-center justify-center overflow-hidden text-white">
+      <section id="our-inspiration" className="relative min-h-screen flex items-center justify-start overflow-hidden text-white">
           <video
               autoPlay
               loop
@@ -36,9 +36,9 @@ export default function AboutPage() {
           </video>
           <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
               <AnimatedSection>
-                  <div className="text-center">
-                      <h1 className="text-4xl md:text-5xl font-bold">Our Inspiration</h1>
-                      <div className="mt-6 text-lg md:text-xl space-y-4 text-center max-w-4xl mx-auto text-white/90">
+                  <div className="text-left">
+                      <h1 className="text-4xl md:text-5xl font-normal">Our Inspiration</h1>
+                      <div className="mt-6 text-lg md:text-xl space-y-4 text-left max-w-4xl text-white/90">
                           <p>PlanckPoint draws inspiration from Max Planck’s groundbreaking theory that identified the smallest measurable unit in the universe, a boundary where classical physics gives way to quantum insight. In the same spirit, we believe that powerful decisions begin with the smallest, most precise signals.</p>
                           <p>The rise of AI has accelerated markets beyond the limits of traditional research, and PlanckPoint exists to close the gap with intelligence built for faster, higher-stakes decisions.</p>
                           <p className="mt-4 text-white font-semibold">At PlanckPoint, we distil complexity into clarity, delivering insight at the scale where transformation begins.</p>
