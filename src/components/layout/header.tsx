@@ -108,8 +108,7 @@ export function Header() {
                     </NavigationMenuTrigger>
                     <NavigationMenuContent className="nav-glass-panel">
                       <motion.div {...motionVariants}>
-                        <div className="grid md:grid-cols-[1fr_300px] gap-8 p-6 w-[800px] lg:w-[900px]">
-                          <div>
+                        <div className="p-6 w-[500px] lg:w-[600px]">
                             <h3 className="text-lg font-medium text-primary mb-4">
                               <Link href="/core-services" className="flex items-center hover:underline">
                                 Core Services
@@ -127,25 +126,6 @@ export function Header() {
                                 </ListItem>
                               ))}
                             </ul>
-                          </div>
-                          <div className="nav-glass-inner-panel p-6 flex flex-col justify-center">
-                            <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground/80 mb-4">Featured</h4>
-                            <div>
-                              <h5 className="text-base font-semibold mb-2 text-foreground">{PRODUCTS[0].name}</h5>
-                              <p className="text-sm text-foreground/80 mb-4 line-clamp-3">{PRODUCTS[0].description}</p>
-                              <Link href={`/core-services#${PRODUCTS[0].id}`} className="text-sm font-semibold text-primary hover:underline">
-                                Learn more &rarr;
-                              </Link>
-                            </div>
-                            <hr className="my-4 border-border"/>
-                            <div>
-                              <h5 className="text-base font-semibold mb-2 text-foreground">{PRODUCTS[1].name}</h5>
-                              <p className="text-sm text-foreground/80 mb-4 line-clamp-3">{PRODUCTS[1].description}</p>
-                              <Link href={`/core-services#${PRODUCTS[1].id}`} className="text-sm font-semibold text-primary hover:underline">
-                                Learn more &rarr;
-                              </Link>
-                            </div>
-                          </div>
                         </div>
                       </motion.div>
                     </NavigationMenuContent>
@@ -157,8 +137,7 @@ export function Header() {
                     </NavigationMenuTrigger>
                     <NavigationMenuContent className="nav-glass-panel">
                       <motion.div {...motionVariants}>
-                       <div className="grid md:grid-cols-[1fr_300px] gap-8 p-6 w-[700px] lg:w-[800px]">
-                         <div>
+                       <div className="p-6 w-[500px] lg:w-[600px]">
                            <h3 className="text-lg font-medium text-primary mb-4">
                             <Link href="/insights" className="flex items-center hover:underline">
                               Insights
@@ -172,15 +151,6 @@ export function Header() {
                                </ListItem>
                             ))}
                           </ul>
-                         </div>
-                          <div className="nav-glass-inner-panel p-6 flex flex-col justify-center">
-                            <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground/80 mb-4">Featured Insight</h4>
-                            <h5 className="text-base font-semibold mb-2 text-foreground">{latestInsight.title}</h5>
-                            <p className="text-sm text-foreground/80 mb-4 line-clamp-3">{latestInsight.summary}</p>
-                            <Link href={`/insights#insight-articles`} className="text-sm font-semibold text-primary hover:underline">
-                              Read more &rarr;
-                            </Link>
-                          </div>
                        </div>
                       </motion.div>
                     </NavigationMenuContent>
