@@ -97,11 +97,11 @@ export default function AboutPage() {
                   <div className="flex flex-col items-center h-full text-center">
                       {image && <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden shrink-0"><Image src={image.imageUrl} alt={member.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
                       <div className="w-full max-w-sm flex flex-col flex-grow">
-                          <div className="flex-grow">
+                          <div className="h-24">
                             <h3 className="mt-4 text-xl font-bold text-primary">{member.name}</h3>
                             <p className="text-secondary font-medium">{member.role}</p>
                           </div>
-                          <Collapsible className="w-full mt-auto">
+                          <Collapsible className="w-full">
                               <CollapsibleTrigger asChild>
                                   <Button variant="link" className="mt-2 p-0">Learn More</Button>
                               </CollapsibleTrigger>
@@ -126,11 +126,11 @@ export default function AboutPage() {
                      <div className="flex flex-col items-center h-full text-center">
                         {image && <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden shrink-0"><Image src={image.imageUrl} alt={member.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
                         <div className="w-full max-w-sm flex flex-col flex-grow">
-                            <div className="flex-grow">
+                            <div className="h-24">
                               <h3 className="mt-4 text-xl font-bold text-primary">{member.name}</h3>
                               <p className="text-secondary font-medium">{member.role}</p>
                             </div>
-                            <Collapsible className="w-full mt-auto">
+                            <Collapsible className="w-full">
                                 <CollapsibleTrigger asChild>
                                     <Button variant="link" className="mt-2 p-0">Learn More</Button>
                                 </CollapsibleTrigger>
@@ -165,11 +165,11 @@ export default function AboutPage() {
                     <div className="flex flex-col items-center h-full text-center">
                         {image && <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden shrink-0"><Image src={image.imageUrl} alt={mentor.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
                         <div className="w-full max-w-sm flex flex-col flex-grow">
-                            <div className="flex-grow">
+                            <div className="h-24">
                               <h3 className="mt-4 text-xl font-bold text-primary">{mentor.name}</h3>
                               <p className="text-secondary font-medium">{mentor.role}</p>
                             </div>
-                            <Collapsible className="w-full mt-auto">
+                            <Collapsible className="w-full">
                                 <CollapsibleTrigger asChild>
                                     <Button variant="link" className="mt-2 p-0">Learn More</Button>
                                 </CollapsibleTrigger>
