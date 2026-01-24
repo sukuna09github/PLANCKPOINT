@@ -34,7 +34,6 @@ export default function AboutPage() {
           >
               <source src="/videos/core services.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-primary/40" />
           <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
               <AnimatedSection>
                   <div className="text-center">
