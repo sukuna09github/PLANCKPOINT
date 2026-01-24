@@ -41,17 +41,11 @@ const CoreServicesPage: React.FC = () => {
   const beyondQuadrantsProduct = PRODUCTS.find(p => p.id === 'beyondquadrants');
   const thinkQuarkProduct = PRODUCTS.find(p => p.id === 'thinkquark');
   const signaloneProduct = PRODUCTS.find(p => p.id === 'signalone');
-  const elwisProduct = PRODUCTS.find(p => p.id === 'elwis');
-  const propricingProduct = PRODUCTS.find(p => p.id === 'propricing');
-  const skillorbitProduct = PRODUCTS.find(p => p.id === 'skillorbit');
 
   const atomicAiImage = findProductImage('product-atomicai');
   const beyondQuadrantsImage = findProductImage('product-beyondquadrants');
   const thinkQuarkImage = findProductImage('product-thinkquark');
   const signaloneImage = findProductImage('product-signalone');
-  const elwisImage = findProductImage('product-elwis');
-  const propricingImage = findProductImage('product-propricing');
-  const skillorbitImage = findProductImage('product-skillorbit');
 
   useEffect(() => {
     setLoading(false);
@@ -319,72 +313,6 @@ const CoreServicesPage: React.FC = () => {
         </section>
       )}
 
-      {elwisProduct && (
-        <section id="elwis" className="grid grid-cols-1 md:grid-cols-2 w-full">
-            <div className="bg-background flex items-center justify-center p-12 md:p-16 lg:p-24">
-                <AnimatedSection className="max-w-lg">
-                    <div>
-                        <h2 className="text-3xl font-bold text-primary">{elwisProduct.name}</h2>
-                        <p className="mt-2 text-xl font-semibold text-accent">{elwisProduct.tagline}</p>
-                        <p className="mt-6 text-lg text-muted-foreground">{elwisProduct.detailedDescription}</p>
-                        <div className="mt-8">
-                            <Link href="/contact" className="inline-flex items-center gap-2 text-lg font-semibold text-primary transition-colors hover:text-accent">
-                                Learn More <ArrowRight className="h-5 w-5" />
-                            </Link>
-                        </div>
-                    </div>
-                </AnimatedSection>
-            </div>
-            <div className="relative min-h-full w-full">
-                {elwisImage && <Image src={elwisImage.imageUrl} alt={elwisImage.description} fill className="object-cover" data-ai-hint={elwisImage.imageHint} />}
-            </div>
-        </section>
-      )}
-
-      {propricingProduct && (
-        <section id="propricing" className="grid grid-cols-1 md:grid-cols-2 w-full">
-            <div className="bg-primary/5 flex items-center justify-center p-12 md:p-16 lg:p-24">
-                <AnimatedSection className="max-w-lg">
-                    <div>
-                        <h2 className="text-3xl font-bold text-primary">{propricingProduct.name}</h2>
-                        <p className="mt-2 text-xl font-semibold text-accent">{propricingProduct.tagline}</p>
-                        <p className="mt-6 text-lg text-muted-foreground">{propricingProduct.detailedDescription}</p>
-                        <div className="mt-8">
-                            <Link href="/contact" className="inline-flex items-center gap-2 text-lg font-semibold text-primary transition-colors hover:text-accent">
-                                Learn More <ArrowRight className="h-5 w-5" />
-                            </Link>
-                        </div>
-                    </div>
-                </AnimatedSection>
-            </div>
-            <div className="relative min-h-full w-full">
-                {propricingImage && <Image src={propricingImage.imageUrl} alt={propricingImage.description} fill className="object-cover" data-ai-hint={propricingImage.imageHint} />}
-            </div>
-        </section>
-      )}
-
-      {skillorbitProduct && (
-        <section id="skillorbit" className="grid grid-cols-1 md:grid-cols-2 w-full">
-            <div className="bg-background flex items-center justify-center p-12 md:p-16 lg:p-24">
-                <AnimatedSection className="max-w-lg">
-                    <div>
-                        <h2 className="text-3xl font-bold text-primary">{skillorbitProduct.name}</h2>
-                        <p className="mt-2 text-xl font-semibold text-accent">{skillorbitProduct.tagline}</p>
-                        <p className="mt-6 text-lg text-muted-foreground">{skillorbitProduct.detailedDescription}</p>
-                        <div className="mt-8">
-                            <Link href="/contact" className="inline-flex items-center gap-2 text-lg font-semibold text-primary transition-colors hover:text-accent">
-                                Learn More <ArrowRight className="h-5 w-5" />
-                            </Link>
-                        </div>
-                    </div>
-                </AnimatedSection>
-            </div>
-            <div className="relative min-h-full w-full">
-                {skillorbitImage && <Image src={skillorbitImage.imageUrl} alt={skillorbitImage.description} fill className="object-cover" data-ai-hint={skillorbitImage.imageHint} />}
-            </div>
-        </section>
-      )}
-      
       <section 
         id="services" 
         className="py-16 md:py-24 overflow-hidden fixed-bg-section"
@@ -505,6 +433,8 @@ const CoreServicesPage: React.FC = () => {
 };
 
 export default CoreServicesPage;
+    
+
     
 
     
