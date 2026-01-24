@@ -1,41 +1,29 @@
 
 "use client";
 
-import React, { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence, LayoutGroup } from 'framer-motion';
-import { ArrowRight, X, ChevronLeft, ChevronRight } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
-import { PRODUCTS, SERVICE_CATEGORIES } from "@/lib/constants";
+import { PRODUCTS } from "@/lib/constants";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { DecipherText } from '@/components/decipher-text';
 import { Button } from '@/components/ui/button';
 import { AnimatedSection } from '@/components/animated-section';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Card, CardContent } from '@/components/ui/card';
-import { cn } from '@/lib/utils';
-import { Badge } from '@/components/ui/badge';
 
 type Product = typeof PRODUCTS[0];
 
 const CoreServicesPage: React.FC = () => {
   const products = PRODUCTS.slice(0, 6);
   const [loading, setLoading] = useState(true);
-  const [animatingHeaders, setAnimatingHeaders] = useState<Set<string>>(new Set());
   const [currentSlide, setCurrentSlide] = useState(0);
-  const pathname = usePathname();
   const [isClient, setIsClient] = useState(false);
-
-  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
   const findProductImage = (imageId: string) => {
     return PlaceHolderImages.find(p => p.id === imageId);
   };
   
   const heroBgImage = PlaceHolderImages.find(p => p.id === 'hero-abstract-1');
-  const introArtImage = PlaceHolderImages.find(p => p.id === 'page-intro-art');
-  const servicesBgImage = PlaceHolderImages.find(p => p.id === 'hero-abstract-1');
 
   const atomicAiProduct = PRODUCTS.find(p => p.id === 'atomicai');
   const beyondQuadrantsProduct = PRODUCTS.find(p => p.id === 'beyondquadrants');
@@ -51,32 +39,6 @@ const CoreServicesPage: React.FC = () => {
     setLoading(false);
     setIsClient(true);
   }, []);
-
-  // Handle hash-based scrolling when the page loads or hash changes
-  useEffect(() => {
-    if (loading) return;
-
-    const hash = window.location.hash.slice(1); // Remove the '#' character
-    if (hash) {
-      // Small delay to ensure DOM is fully rendered
-      const timer = setTimeout(() => {
-        const product = PRODUCTS.find(p => p.id === hash);
-        if (product) {
-            setSelectedProduct(product);
-        }
-        const element = document.getElementById('services');
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      }, 100);
-      return () => clearTimeout(timer);
-    }
-  }, [pathname, loading]);
-
-  // Trigger header animations when cards fade in
-  const handleCardFadeIn = (productId: string) => {
-    setAnimatingHeaders((prev) => new Set(prev).add(productId));
-  };
 
   if (loading) {
     return (
@@ -312,122 +274,6 @@ const CoreServicesPage: React.FC = () => {
             </div>
         </section>
       )}
-
-      <section 
-        id="services" 
-        className="py-16 md:py-24 overflow-hidden fixed-bg-section"
-        style={{ backgroundImage: `url(${servicesBgImage?.imageUrl})` }}
-      >
-        <div className="absolute inset-0 bg-primary/70"></div>
-        <div className="max-w-[120rem] mx-auto px-6 md:px-12 relative">
-          <LayoutGroup>
-            <div className={cn("grid grid-cols-1 gap-8", selectedProduct && "md:grid-cols-2")}>
-                
-                <motion.div layout="position">
-                    <AnimatedSection className="text-center mb-16">
-                        <h2 className="text-4xl font-headline font-normal text-primary-foreground mb-6">Our Services</h2>
-                        <p className="text-lg font-body text-primary-foreground/80 max-w-3xl mx-auto">
-                            We offer a range of services designed to provide strategic clarity and drive impactful results for your organization.
-                        </p>
-                    </AnimatedSection>
-    
-                    <Tabs defaultValue={SERVICE_CATEGORIES[0].id} className="w-full">
-                        <AnimatedSection>
-                            <TabsList className="flex items-center justify-center gap-8 bg-transparent p-0 h-auto">
-                                {SERVICE_CATEGORIES.map(category => (
-                                    <TabsTrigger key={category.id} value={category.id} className="text-lg font-medium text-white/70 data-[state=active]:text-white p-2 bg-transparent shadow-none border-0 focus:ring-0 focus:outline-none data-[state=active]:shadow-[inset_0_-2px_0_0_white] rounded-none">
-                                        {category.name}
-                                    </TabsTrigger>
-                                ))}
-                            </TabsList>
-                        </AnimatedSection>
-    
-                        {SERVICE_CATEGORIES.map(category => {
-                            return (
-                                <TabsContent key={category.id} value={category.id} className="mt-8">
-                                    <motion.div 
-                                        initial={{ opacity: 0, y: 20 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        transition={{ duration: 0.5 }}
-                                    >
-                                        <div className="p-8 md:p-12 flex flex-col justify-center min-h-[350px] text-center bg-black/20 rounded-lg">
-                                            <h3 className="text-2xl font-bold text-white mb-3">{category.name}</h3>
-                                            <p className="text-white/70 mb-6 max-w-2xl mx-auto">{category.description}</p>
-                                            <p className="font-semibold text-white mb-2">Relevant Products:</p>
-                                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto w-full">
-                                                {category.products.map(productId => {
-                                                    const product = PRODUCTS.find(p => p.id === productId);
-                                                    if (!product) return null;
-                                                    return (
-                                                        <motion.div key={product.id} layoutId={product.id}>
-                                                          <button onClick={() => setSelectedProduct(product)} className="block group text-left w-full h-full">
-                                                              <div className="bg-white/5 p-4 hover:bg-white/10 transition-colors h-full rounded-md">
-                                                                  <h4 className="font-semibold text-white group-hover:text-accent">{product.name}</h4>
-                                                                  <p className="text-sm text-white/70">{product.description}</p>
-                                                              </div>
-                                                          </button>
-                                                        </motion.div>
-                                                    );
-                                                })}
-                                            </div>
-                                        </div>
-                                    </motion.div>
-                                </TabsContent>
-                            )
-                        })}
-                    </Tabs>
-                </motion.div>
-
-                <div className="relative">
-                    <AnimatePresence mode="wait">
-                        {selectedProduct && (
-                            <motion.div
-                                key={selectedProduct.id}
-                                layoutId={selectedProduct.id}
-                                className="premium-glass-card sticky top-24"
-                                transition={{
-                                    duration: 0.5,
-                                    ease: [0.4, 0, 0.2, 1],
-                                }}
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                exit={{ opacity: 0, transition: { duration: 0.2 } }}
-                            >
-                                <motion.div
-                                    className="relative z-10"
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1, transition: { delay: 0.3, duration: 0.2 } }}
-                                >
-                                    <button onClick={() => setSelectedProduct(null)} className="absolute top-4 right-4 text-white/70 hover:text-white transition-colors z-20">
-                                        <X className="w-5 h-5" />
-                                    </button>
-                                    <h3 className="text-2xl font-bold mb-2">{selectedProduct.name}</h3>
-                                    <p className="text-base font-semibold text-accent mb-4">{selectedProduct.tagline}</p>
-                                    <div className="text-sm text-white/80 space-y-4">
-                                        <p>{selectedProduct.detailedDescription}</p>
-                                        <div>
-                                            <h4 className="font-semibold mb-2">Key Benefits:</h4>
-                                            <ul className="list-disc list-inside space-y-1">
-                                                {selectedProduct.keyBenefits.split('\n').map((benefit, i) => (
-                                                    <li key={i}>{benefit}</li>
-                                                ))}
-                                            </ul>
-                                        </div>
-                                        <div className="pt-4">
-                                            <Link href="/contact" className="font-semibold text-accent hover:underline">
-                                                Contact us to learn more &rarr;
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </motion.div>
-                            </motion.div>
-                        )}
-                    </AnimatePresence>
-                </div>
-            </div>
-          </LayoutGroup>
-        </div>
-      </section>
     </div>
   );
 };
