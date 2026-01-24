@@ -1,3 +1,4 @@
+
 import { AnimatedSection } from "@/components/animated-section";
 import { ContactForm } from "@/components/pages/contact/contact-form";
 import { Mail, MapPin, Phone } from "lucide-react";
@@ -8,18 +9,12 @@ export default function ContactPage() {
     <main className="bg-background">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-          <AnimatedSection>
-            <div className="lg:sticky top-24">
+          <div className="lg:sticky top-24 space-y-12">
+            <AnimatedSection>
               <h1 className="text-4xl md:text-5xl font-normal text-primary">Get in Touch</h1>
               <p className="mt-6 text-lg text-muted-foreground max-w-md">
                 We're here to answer your questions. Reach out and we'll respond as soon as we can. Whether you have a question about our services, want to collaborate, or just want to say hello, we'd love to hear from you.
               </p>
-            </div>
-          </AnimatedSection>
-
-          <div className="space-y-12">
-            <AnimatedSection delay={0.1}>
-              <ContactForm />
             </AnimatedSection>
             
             <AnimatedSection delay={0.2}>
@@ -51,6 +46,12 @@ export default function ContactPage() {
                     </div>
                   </div>
                 </div>
+            </AnimatedSection>
+          </div>
+
+          <div className="space-y-12">
+            <AnimatedSection delay={0.1}>
+              <ContactForm />
             </AnimatedSection>
           </div>
         </div>
