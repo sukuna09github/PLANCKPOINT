@@ -125,12 +125,14 @@ export default function AboutPage() {
             {leadershipFirstRow.map((member, index) => {
               const image = findImage(member.imageId);
               return (
-                <AnimatedSection key={member.name} delay={index * 0.1}>
-                  <div className="flex flex-col items-center">
-                      {image && <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden"><Image src={image.imageUrl} alt={member.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
-                      <div className="w-full max-w-sm text-left">
-                          <h3 className="mt-4 text-xl font-bold text-primary">{member.name}</h3>
-                          <p className="text-secondary font-medium">{member.role}</p>
+                <AnimatedSection key={member.name} delay={index * 0.1} className="h-full">
+                  <div className="flex flex-col items-center h-full">
+                      {image && <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden shrink-0"><Image src={image.imageUrl} alt={member.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
+                      <div className="w-full max-w-sm text-left flex flex-col flex-grow">
+                          <div className="flex-grow">
+                            <h3 className="mt-4 text-xl font-bold text-primary">{member.name}</h3>
+                            <p className="text-secondary font-medium">{member.role}</p>
+                          </div>
                           <Collapsible className="w-full">
                               <CollapsibleTrigger asChild>
                                   <Button variant="link" className="mt-2 p-0">Learn More</Button>
@@ -152,12 +154,14 @@ export default function AboutPage() {
               {leadershipSecondRow.map((member, index) => {
                 const image = findImage(member.imageId);
                 return (
-                  <AnimatedSection key={member.name} delay={(index + leadershipFirstRow.length) * 0.1}>
-                     <div className="flex flex-col items-center">
-                        {image && <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden"><Image src={image.imageUrl} alt={member.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
-                        <div className="w-full max-w-sm text-left">
-                            <h3 className="mt-4 text-xl font-bold text-primary">{member.name}</h3>
-                            <p className="text-secondary font-medium">{member.role}</p>
+                  <AnimatedSection key={member.name} delay={(index + leadershipFirstRow.length) * 0.1} className="h-full">
+                     <div className="flex flex-col items-center h-full">
+                        {image && <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden shrink-0"><Image src={image.imageUrl} alt={member.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
+                        <div className="w-full max-w-sm text-left flex flex-col flex-grow">
+                            <div className="flex-grow">
+                              <h3 className="mt-4 text-xl font-bold text-primary">{member.name}</h3>
+                              <p className="text-secondary font-medium">{member.role}</p>
+                            </div>
                             <Collapsible className="w-full">
                                 <CollapsibleTrigger asChild>
                                     <Button variant="link" className="mt-2 p-0">Learn More</Button>
@@ -189,12 +193,14 @@ export default function AboutPage() {
               {BOARD_OF_ADVISORS.map((mentor, index) => {
                 const image = findImage(mentor.imageId);
                 return (
-                  <AnimatedSection key={mentor.name} delay={index * 0.1}>
-                    <div className="flex flex-col items-center">
-                        {image && <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden"><Image src={image.imageUrl} alt={mentor.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
-                        <div className="w-full max-w-sm text-left">
-                            <h3 className="mt-4 text-xl font-bold text-primary">{mentor.name}</h3>
-                            <p className="text-secondary font-medium">{mentor.role}</p>
+                  <AnimatedSection key={mentor.name} delay={index * 0.1} className="h-full">
+                    <div className="flex flex-col items-center h-full">
+                        {image && <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden shrink-0"><Image src={image.imageUrl} alt={mentor.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
+                        <div className="w-full max-w-sm text-left flex flex-col flex-grow">
+                            <div className="flex-grow">
+                              <h3 className="mt-4 text-xl font-bold text-primary">{mentor.name}</h3>
+                              <p className="text-secondary font-medium">{mentor.role}</p>
+                            </div>
                             <Collapsible className="w-full">
                                 <CollapsibleTrigger asChild>
                                     <Button variant="link" className="mt-2 p-0">Learn More</Button>
