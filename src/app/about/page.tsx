@@ -6,6 +6,15 @@ import { LEADERSHIP_TEAM, BOARD_OF_ADVISORS } from "@/lib/constants";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { AnimatedSection } from "@/components/animated-section";
 import { GlobalPresence } from "@/components/pages/home/global-presence";
+import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 export default function AboutPage() {
   const peopleImages = PlaceHolderImages.filter(img => 
@@ -126,7 +135,29 @@ export default function AboutPage() {
                         {image && <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden"><Image src={image.imageUrl} alt={member.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
                         <h3 className="mt-4 text-xl font-bold text-primary">{member.name}</h3>
                         <p className="text-secondary font-medium">{member.role}</p>
-                        <p className="text-sm text-muted-foreground mt-4 text-left">{member.bio}</p>
+                        <Dialog>
+                            <DialogTrigger asChild>
+                                <Button variant="link" className="mt-2">Learn More</Button>
+                            </DialogTrigger>
+                            <DialogContent className="sm:max-w-lg">
+                                <DialogHeader>
+                                    <div className="flex items-center flex-col sm:flex-row gap-4">
+                                        {image && (
+                                            <div className="relative h-24 w-24 rounded-full overflow-hidden flex-shrink-0">
+                                                <Image src={image.imageUrl} alt={member.name} fill className="object-cover" />
+                                            </div>
+                                        )}
+                                        <div className="text-center sm:text-left">
+                                            <DialogTitle className="text-2xl">{member.name}</DialogTitle>
+                                            <DialogDescription className="text-lg">{member.role}</DialogDescription>
+                                        </div>
+                                    </div>
+                                </DialogHeader>
+                                <div className="py-4 text-muted-foreground text-base text-left">
+                                    {member.bio}
+                                </div>
+                            </DialogContent>
+                        </Dialog>
                     </div>
                   </div>
                 </AnimatedSection>
@@ -144,7 +175,29 @@ export default function AboutPage() {
                             {image && <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden"><Image src={image.imageUrl} alt={member.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
                             <h3 className="mt-4 text-xl font-bold text-primary">{member.name}</h3>
                             <p className="text-secondary font-medium">{member.role}</p>
-                            <p className="text-sm text-muted-foreground mt-4 text-left">{member.bio}</p>
+                            <Dialog>
+                                <DialogTrigger asChild>
+                                    <Button variant="link" className="mt-2">Learn More</Button>
+                                </DialogTrigger>
+                                <DialogContent className="sm:max-w-lg">
+                                    <DialogHeader>
+                                        <div className="flex items-center flex-col sm:flex-row gap-4">
+                                            {image && (
+                                                <div className="relative h-24 w-24 rounded-full overflow-hidden flex-shrink-0">
+                                                    <Image src={image.imageUrl} alt={member.name} fill className="object-cover" />
+                                                </div>
+                                            )}
+                                            <div className="text-center sm:text-left">
+                                                <DialogTitle className="text-2xl">{member.name}</DialogTitle>
+                                                <DialogDescription className="text-lg">{member.role}</DialogDescription>
+                                            </div>
+                                        </div>
+                                    </DialogHeader>
+                                    <div className="py-4 text-muted-foreground text-base text-left">
+                                        {member.bio}
+                                    </div>
+                                </DialogContent>
+                            </Dialog>
                         </div>
                     </div>
                   </AnimatedSection>
@@ -172,7 +225,29 @@ export default function AboutPage() {
                             {image && <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden"><Image src={image.imageUrl} alt={mentor.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
                             <h3 className="mt-4 text-xl font-bold text-primary">{mentor.name}</h3>
                             <p className="text-secondary font-medium">{mentor.role}</p>
-                            <p className="text-sm text-muted-foreground mt-4 text-left">{mentor.bio}</p>
+                            <Dialog>
+                                <DialogTrigger asChild>
+                                    <Button variant="link" className="mt-2">Learn More</Button>
+                                </DialogTrigger>
+                                <DialogContent className="sm:max-w-lg">
+                                    <DialogHeader>
+                                        <div className="flex items-center flex-col sm:flex-row gap-4">
+                                            {image && (
+                                                <div className="relative h-24 w-24 rounded-full overflow-hidden flex-shrink-0">
+                                                    <Image src={image.imageUrl} alt={mentor.name} fill className="object-cover" />
+                                                </div>
+                                            )}
+                                            <div className="text-center sm:text-left">
+                                                <DialogTitle className="text-2xl">{mentor.name}</DialogTitle>
+                                                <DialogDescription className="text-lg">{mentor.role}</DialogDescription>
+                                            </div>
+                                        </div>
+                                    </DialogHeader>
+                                    <div className="py-4 text-muted-foreground text-base text-left">
+                                        {mentor.bio}
+                                    </div>
+                                </DialogContent>
+                            </Dialog>
                         </div>
                     </div>
                   </AnimatedSection>
