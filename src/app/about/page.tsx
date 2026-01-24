@@ -2,7 +2,6 @@
 "use client";
 
 import Image from "next/image";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { LEADERSHIP_TEAM, BOARD_OF_ADVISORS } from "@/lib/constants";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { AnimatedSection } from "@/components/animated-section";
@@ -122,14 +121,14 @@ export default function AboutPage() {
               const image = findImage(member.imageId);
               return (
                 <AnimatedSection key={member.name} delay={index * 0.1}>
-                  <Card className="text-center h-full p-6">
+                  <div className="text-center">
                     <div className="flex flex-col items-center">
                         {image && <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden"><Image src={image.imageUrl} alt={member.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
                         <h3 className="mt-4 text-xl font-bold text-primary">{member.name}</h3>
                         <p className="text-secondary font-medium">{member.role}</p>
                         <p className="text-sm text-muted-foreground mt-4 text-left">{member.bio}</p>
                     </div>
-                  </Card>
+                  </div>
                 </AnimatedSection>
               );
             })}
@@ -140,14 +139,14 @@ export default function AboutPage() {
                 const image = findImage(member.imageId);
                 return (
                   <AnimatedSection key={member.name} delay={(index + leadershipFirstRow.length) * 0.1}>
-                     <Card className="text-center h-full p-6">
+                     <div className="text-center">
                         <div className="flex flex-col items-center">
                             {image && <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden"><Image src={image.imageUrl} alt={member.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
                             <h3 className="mt-4 text-xl font-bold text-primary">{member.name}</h3>
                             <p className="text-secondary font-medium">{member.role}</p>
                             <p className="text-sm text-muted-foreground mt-4 text-left">{member.bio}</p>
                         </div>
-                    </Card>
+                    </div>
                   </AnimatedSection>
                 );
               })}
@@ -168,14 +167,14 @@ export default function AboutPage() {
                 const image = findImage(mentor.imageId);
                 return (
                   <AnimatedSection key={mentor.name} delay={index * 0.1}>
-                    <Card className="text-center h-full p-6">
+                    <div className="text-center">
                         <div className="flex flex-col items-center">
                             {image && <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden"><Image src={image.imageUrl} alt={mentor.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
                             <h3 className="mt-4 text-xl font-bold text-primary">{mentor.name}</h3>
                             <p className="text-secondary font-medium">{mentor.role}</p>
                             <p className="text-sm text-muted-foreground mt-4 text-left">{mentor.bio}</p>
                         </div>
-                    </Card>
+                    </div>
                   </AnimatedSection>
                 );
               })}
