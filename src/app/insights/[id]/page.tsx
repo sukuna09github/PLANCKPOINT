@@ -1,4 +1,3 @@
-
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -95,7 +94,7 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
                                     </AnimatedSection>
                                 )}
                                 <AnimatedSection delay={0.4}>
-                                   <ShareButtons title={article.title} />
+                                   <ShareButtons title={article.title} pdfUrl={article.pdfUrl} />
                                 </AnimatedSection>
                             </div>
                         </aside>

@@ -1,12 +1,12 @@
 "use client";
 
-import { Twitter, Linkedin, Link as LinkIcon } from 'lucide-react';
+import { Twitter, Linkedin, Link as LinkIcon, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
-export const ShareButtons = ({ title }: { title: string }) => {
+export const ShareButtons = ({ title, pdfUrl }: { title: string, pdfUrl?: string }) => {
     const { toast } = useToast();
     const pathname = usePathname();
     const [url, setUrl] = useState('');
@@ -48,6 +48,13 @@ export const ShareButtons = ({ title }: { title: string }) => {
                 <Button variant="outline" size="icon" onClick={copyLink} title="Copy link">
                     <LinkIcon className="h-5 w-5" />
                 </Button>
+                {pdfUrl && (
+                    <Button asChild variant="outline" size="icon" title="Download PDF">
+                        <a href={pdfUrl} download>
+                            <Download className="h-5 w-5" />
+                        </a>
+                    </Button>
+                )}
             </div>
         </div>
     );
