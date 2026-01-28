@@ -1,9 +1,8 @@
-
 "use client";
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, Search, Mail } from 'lucide-react';
+import { ArrowRight, Search, Mail, Download } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useForm } from 'react-hook-form';
@@ -516,9 +515,8 @@ const InsightsPage: React.FC = () => {
                   transition={{ duration: 0.8, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <Card className="h-full hover:shadow-xl hover:shadow-accent/10 transition-all duration-500 hover:-translate-y-2 hover:scale-105 bg-white border-0 shadow-sm group">
-                    <Link href={`/insights/${insight._id}`} className="block h-full">
-                      <CardContent className="p-0 h-full flex flex-col">
+                  <Card className="h-full hover:shadow-xl hover:shadow-accent/10 transition-all duration-500 hover:-translate-y-2 hover:scale-105 bg-white border-0 shadow-sm group flex flex-col">
+                      <Link href={`/insights/${insight._id}`} className="block">
                         {insight.mainImage && (
                           <div className="overflow-hidden">
                             <Image
@@ -530,29 +528,37 @@ const InsightsPage: React.FC = () => {
                             />
                           </div>
                         )}
-                        
-                        <div className="p-6 flex-1 flex flex-col">
-                          <div className="mb-3">
-                            <span className="text-xs font-body text-accent font-medium">
-                              {formatDate(insight.publicationDate)}
-                            </span>
-                          </div>
-
-                          <h3 className="text-lg font-headline font-semibold text-primary mb-3 flex-shrink-0">
-                            {insight.title}
-                          </h3>
-                          
-                          <p className="text-sm font-body text-foreground/80 mb-4 flex-1 line-clamp-2">
-                            {insight.summary}
-                          </p>
-                        </div>
-                        <CardFooter>
-                            <Button asChild variant="link" className="p-0 font-semibold text-primary">
+                      </Link>
+                    <div className="p-6 flex-1 flex flex-col">
+                      <div className="mb-3">
+                        <span className="text-xs font-body text-accent font-medium">
+                          {formatDate(insight.publicationDate)}
+                        </span>
+                      </div>
+                      <Link href={`/insights/${insight._id}`}>
+                        <h3 className="text-lg font-headline font-semibold text-primary mb-3 flex-shrink-0 group-hover:text-accent transition-colors">
+                          {insight.title}
+                        </h3>
+                      </Link>
+                      <p className="text-sm font-body text-foreground/80 mb-4 flex-grow line-clamp-2">
+                        {insight.summary}
+                      </p>
+                    </div>
+                    <CardFooter className="p-6 pt-0 flex justify-between items-center">
+                        <Button asChild variant="link" className="p-0 font-semibold text-primary">
+                            <Link href={`/insights/${insight._id}`}>
                                 <span>Read More <ArrowRight className="ml-2 h-4 w-4" /></span>
+                            </Link>
+                        </Button>
+                        {insight.pdfUrl && (
+                            <Button asChild variant="ghost" size="icon" title="Download PDF">
+                                <a href={insight.pdfUrl} download>
+                                    <Download className="h-5 w-5 text-muted-foreground hover:text-primary" />
+                                    <span className="sr-only">Download PDF</span>
+                                </a>
                             </Button>
-                        </CardFooter>
-                      </CardContent>
-                    </Link>
+                        )}
+                    </CardFooter>
                   </Card>
                 </motion.div>
               ))}
