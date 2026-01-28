@@ -268,7 +268,6 @@ const HomePage: React.FC = () => {
             >
               <CarouselContent className="-ml-4 sm:-ml-8">
                 {latestResearch.map((insight) => {
-                  const image = findImage(insight.imageId);
                   return (
                     <CarouselItem key={insight._id} className="pl-4 sm:pl-8 md:basis-1/2 lg:basis-1/3">
                       <motion.div
@@ -281,14 +280,13 @@ const HomePage: React.FC = () => {
                       <Link href={`/insights/${insight._id}`} className="block group h-full">
                         <div className="bg-white overflow-hidden shadow-sm hover:shadow-xl hover:shadow-accent/20 transition-all duration-300 ease-apple hover:-translate-y-2 flex flex-col h-full group/card">
                           <div className="flex-1 relative overflow-hidden flex flex-col justify-between">
-                            {image && (
+                            {insight.mainImage && (
                                <div className="aspect-video relative w-full overflow-hidden">
                                 <Image
-                                  src={image.imageUrl}
+                                  src={insight.mainImage}
                                   alt={insight.title}
                                   fill
                                   className="object-cover group-hover/card:scale-105 transition-transform duration-300 ease-apple"
-                                  data-ai-hint={image.imageHint}
                                 />
                                </div>
                             )}
