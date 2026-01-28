@@ -27,9 +27,9 @@ export function Footer() {
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="#" className="text-white/70 hover:text-white transition-colors duration-300 ease-apple">
+              <Link href="https://x.com" className="text-white/70 hover:text-white transition-colors duration-300 ease-apple">
                 <XLogo />
-                <span className="sr-only">X</span>
+                <span className="sr-only">X.com</span>
               </Link>
             </div>
           </div>
