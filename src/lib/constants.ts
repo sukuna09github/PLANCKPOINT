@@ -250,7 +250,7 @@ export const mockResearchData = [
     title: 'Prompt Debt: AI’s Quiet Margin Killer',
     summary: 'A gap is emerging between AI activity and AI impact. This article explores why AI\'s benefits flatten at scale and how \'Prompt Debt\' quietly erodes margins.',
     mainImage: '/Articles/article 1.jpeg',
-    publicationDate: new Date('2026-01-25'),
+    publicationDate: new Date('2024-07-19'),
     category: 'Artificial Intelligence',
     imageId: 'research4',
     pdfUrl: '/Articles/Article 1.pdf',
@@ -615,6 +615,8 @@ export const PRODUCTS = [
 
 
 
+
+    
 
     
 
