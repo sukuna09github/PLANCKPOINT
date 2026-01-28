@@ -363,6 +363,7 @@ export const mockResearchData = [
         <p>There is a familiar precedent here. Organisations spent years learning that technical debt constrained agility and margins long after software worked. Prompt Debt follows the same logic, faster, and across a much broader workforce.</p>
         <h2>How should organisations manage their Prompt Debt?</h2>
         <p>Prompt Debt accumulates when prompts move from individual experimentation to shared, operational use without ownership, standards, or economic accountability. It does not break AI. It prevents AI from compounding value. Managing Prompt Debt is therefore not a technical exercise. It is an organisational discipline.</p>
+        <img src="/Articles/article1.1.png" alt="What Organisations Must Do" class="my-6 rounded-lg shadow-md" />
         <div class="overflow-x-auto">
         <table class="min-w-full">
             <thead>
