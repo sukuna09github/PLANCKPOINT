@@ -459,31 +459,40 @@ export const mockResearchData = [
   },
   {
     _id: 'mock-3',
-    title: 'Measuring Developer Productivity',
-    summary: 'Data-driven insights into the correlation between employee wellness programs and overall productivity levels.',
+    title: 'Why Knowing What You Want Is Harder Than Getting It Done, Especially in Artificial Intelligence Efforts',
+    summary: "The central challenge for leaders today isn't just execution, which AI can handle, but defining with absolute clarity what needs to be done. This article explores why strategic clarity is the new, critical discipline in the age of AI.",
     mainImage: 'https://static.wixstatic.com/media/61c56d_efd169792bfb434581b1736268834290~mv2.jpg',
     publicationDate: new Date('2024-11-05'),
-    category: 'Developer Tools',
+    category: 'Artificial Intelligence',
     imageId: 'research3',
     author: {
         name: 'Amit Dengle',
         role: 'Founder',
         avatarImageId: 'leader1'
     },
-    tags: ['Productivity', 'Development', 'Metrics'],
-     content: `
-        <h2>Beyond Lines of Code</h2>
-        <p>For decades, the software development industry has struggled with a fundamental question: how do we measure productivity? The old metric of "lines of code" has been widely discredited, yet many organizations still lack a meaningful alternative. This research introduces a holistic framework for understanding and measuring developer productivity that focuses on impact, not just activity.</p>
-        <h3>The SPACE Framework</h3>
-        <p>Our approach is inspired by the SPACE framework (Satisfaction and Well-being, Performance, Activity, Communication and Collaboration, Efficiency and Flow), which we have adapted for practical application. We propose a balanced scorecard of metrics:</p>
-        <ul>
-            <li><strong>System Performance:</strong> Metrics like deployment frequency, change failure rate, and mean time to recovery (MTTR).</li>
-            <li><strong>Developer Satisfaction:</strong> Regular surveys on toolchain effectiveness, code quality, and overall job satisfaction.</li>
-            <li><strong>Flow State:</strong> Minimizing interruptions and context switching, which can be tracked through calendar analysis and developer feedback.</li>
-            <li><strong>Code Quality & Maintainability:</strong> Using tools to track code complexity, test coverage, and code churn.</li>
-        </ul>
-        <blockquote>Productivity is not about how much you do, but about the value you create. Stop counting and start measuring what matters.</blockquote>
-        <p>By adopting a multi-faceted view of productivity, organizations can move away from vanity metrics and focus on creating an environment where developers can do their best work. This not only leads to better software but also improves developer retention and engagement.</p>
+    tags: ['AI', 'Strategy', 'Leadership', 'Execution'],
+    content: `
+        <blockquote>
+            <p>"Would you tell me, please, which way I ought to go from here?"</p>
+            <p>"That depends a good deal on where you want to get to," said the Cat.</p>
+            <p>"I don't much care where,” said Alice.</p>
+            <p>"Then it doesn't matter which way you go," said the Cat.</p>
+            <cite>- Lewis Carroll, Alice's Adventures in Wonderland</cite>
+        </blockquote>
+        <p>When <em>Execution: The Discipline of Getting Things Done</em> was published in 2002, it captured the dominant management challenge of the era. Most organisations had a reasonable sense of direction. Strategies were articulated, targets were set, and priorities were broadly understood. The problem was execution. Leaders struggled with follow-through, coordination, and operational discipline.</p>
+        <p>That challenge no longer defines the moment. Today, artificial intelligence executes instructions with a level of consistency, speed, and endurance that human systems never could. What was once the hardest part of management is now automated, scalable, and increasingly inexpensive. Execution, at least in its traditional sense, has become easier. The difficulty has moved upstream. The central leadership challenge today is not whether a strategy can be executed. It is whether leaders can specify, with sufficient clarity and completeness, what should be executed in the first place.</p>
+        <h2>When execution stops being the bottleneck</h2>
+        <p>Modern AI systems do not hesitate, reinterpret, or apply judgment. They execute exactly what they are instructed to do, continuously and at machine speed. As a result, the core managerial question has shifted. It is no longer “Can we make this happen?” but “Have we told the system precisely what should happen, and what must never happen?” When execution becomes trivial, strategic clarity becomes critical.</p>
+        <h2>Why strategic clarity is now harder than execution</h2>
+        <p>Traditional goal setting today is incomplete unless its constraints are made explicit. Acceptable response times, quality thresholds, escalation rules, prohibited tactics, compliance requirements, and ethical red lines must all be specified. The challenge is not goal setting. Organisations solved that decades ago. The challenge is constraint completeness. Leaders often discover their unstated assumptions only when an AI system violates them while still meeting the target. When retention improves through manipulative tactics, the metric is achieved, but the outcome is wrong.</p>
+        <h2>Rethinking people, strategy, and operations</h2>
+        <p>This shift fundamentally alters the familiar triad of people, strategy, and operations. In people processes, high performance once meant operational discipline and consistent execution. Today, the most valuable capability is judgment. Organisations must reward those who can identify when a system is executing the wrong objective efficiently. Ethical reasoning, systems thinking, and governance literacy matter more than speed or output. In strategy, direction is no longer enough. Leaders must translate intent into executable specifications that include constraints, trade-offs, escalation triggers, and verification mechanisms. Direction without specification invites failure at scale. In operations, the focus has moved from doing to governing. Operations now involve monitoring automated execution at granular levels, detecting drift, intervening when context changes, and enforcing oversight even as systems operate faster than human decision cycles. The mismatch between machine speed and human governance introduces risks that did not exist in earlier eras.</p>
+        <h2>What has not changed</h2>
+        <p>Despite these shifts, a core insight from 2002 still holds. Execution cannot be delegated. What has changed is the form it takes. Leadership now means owning strategic clarity with the same intensity once applied to follow-through. It requires understanding the limits of AI, building governance-focused cultures, and maintaining the courage to override automated recommendations when they conflict with values or long-term outcomes. Uncertainty has not disappeared. It has become more compressed and more consequential.</p>
+        <h2>Getting somewhere is no longer the problem</h2>
+        <p>It is easy to forget that getting somewhere is not the same as getting to the right place. With AI, organisations can move very quickly. That is precisely the risk.</p>
+        <p>AI solves the execution problem that dominated management thinking in the early 2000s, but it creates a deeper challenge. Humans are no longer naturally positioned to govern systems that act faster than judgment can keep pace. Organisations that succeed in the AI era will master strategic clarity as rigorously as earlier leaders mastered execution discipline. They will articulate objectives with precision, define boundaries with care, and preserve human judgement as automation scales.</p>
+        <h2>The discipline of this decade is not getting things done. It is ensuring that where you end up is where you intended to go.</h2>
     `
   },
   {
