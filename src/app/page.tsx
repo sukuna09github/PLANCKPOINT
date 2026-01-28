@@ -7,7 +7,7 @@ import { ArrowRight, Globe, Users, Building2 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { INSIGHTS_TEASER_CARDS, WHAT_WE_DO_CARDS, RESEARCH_ARTICLES, PRODUCTS } from "@/lib/constants";
+import { INSIGHTS_TEASER_CARDS, WHAT_WE_DO_CARDS, RESEARCH_ARTICLES, PRODUCTS, mockResearchData } from "@/lib/constants";
 import { PlaceHolderImages, type ImagePlaceholder } from "@/lib/placeholder-images";
 import { AnimatedSection } from "@/components/animated-section";
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
@@ -29,18 +29,12 @@ const HomePage: React.FC = () => {
   const [latestResearch, setLatestResearch] = useState<Research[]>([]);
   const [products, setProducts] = useState<Product[]>([]);
 
-  const heroSlides = [
-    {
-      video: "/videos/hero.mp4",
-      headline: 'The Psychology of UI: How Color and Shape Influence User Behavior.',
-      id: 'mock-1'
-    },
-    {
-      video: "/videos/hero.mp4",
-      headline: 'AI in 2025: Predicting the Next Wave of Disruptive Innovation.',
-      id: 'mock-2'
-    }
-  ];
+  const heroSlides = mockResearchData.slice(0, 3).map(insight => ({
+    video: "/videos/hero.mp4",
+    headline: insight.title,
+    id: insight._id,
+    href: `/insights/${insight._id}`
+  }));
 
   useEffect(() => {
     setIsClient(true);
@@ -96,8 +90,8 @@ const HomePage: React.FC = () => {
                     <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-headline text-white mb-6 leading-tight max-w-3xl">
                         {heroSlides[currentSlide].headline}
                     </h1>
-                    <Link href="/core-services" className="text-white font-semibold hover:underline flex items-center w-fit">
-                        Learn More
+                    <Link href={heroSlides[currentSlide].href} className="text-white font-semibold hover:underline flex items-center w-fit">
+                        Read the Insight
                         <ArrowRight className="w-4 h-4 ml-2" />
                     </Link>
                 </motion.div>
@@ -411,5 +405,3 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
-
-    
