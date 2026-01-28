@@ -16,12 +16,12 @@ export const WHAT_WE_DO_CARDS: { title: string; description: string; Icon: Lucid
 ];
 
 export const INSIGHTS_TEASER_CARDS = [
-    { title: "Global Tech Impact Survey 2024", category: "Surveys", description: "Our annual survey provides a comprehensive overview of the technology landscape. We analyze critical trends, benchmark industry standards, and offer forward-looking predictions for the year ahead.", imageId: "insight1", date: "Oct 22, 2024", readTime: "8 min read", _id: "research1" },
-    { title: "The Rise of the Hybrid Workforce", category: "Blogs", description: "Explore our expert analysis on the evolving nature of work. This blog post delves into the challenges and opportunities presented by hybrid models and offers strategies for building a resilient and connected remote team.", imageId: "insight2", date: "Oct 15, 2024", readTime: "5 min read", _id: "research2" },
-    { title: "Transforming Retail with AtomicAI™", category: "Case Studies", description: "Discover how a leading retailer leveraged AtomicAI™ to revolutionize their customer experience and drive revenue. This case study details the implementation process, key performance indicators, and the impressive results achieved.", imageId: "insight3", date: "Oct 1, 2024", readTime: "12 min read", _id: "research3" },
-    { title: "The Ethics of AI in Hiring", category: "AI Ethics", description: "This article navigates the complex ethical considerations of using AI in recruitment and talent acquisition. We discuss potential biases in algorithms and propose a framework for responsible, fair, and transparent implementation.", imageId: "insight4", date: "Sep 25, 2024", readTime: "7 min read", _id: "research4" },
-    { title: "Cybersecurity in the Quantum Era", category: "Cybersecurity", description: "As quantum computing advances, new cybersecurity threats emerge that could break current encryption standards. Our research explores the potential risks and outlines strategies for future-proofing your security infrastructure.", imageId: "insight5", date: "Sep 18, 2024", readTime: "10 min read", _id: "research5" },
-    { title: "UX for AR: Designing for New Realities", category: "UX Design", description: "Augmented reality presents unique design challenges that go beyond traditional screen-based interfaces. This article provides best practices for creating intuitive and engaging user experiences in AR environments.", imageId: "insight6", date: "Sep 10, 2024", readTime: "9 min read", _id: "research6" }
+    { title: "Global Tech Impact Survey 2024", category: "Surveys", description: "Our annual survey provides a comprehensive overview of the technology landscape. We analyze critical trends, benchmark industry standards, and offer forward-looking predictions for the year ahead.", imageId: "insight1", date: "Jan 28, 2026", readTime: "8 min read", _id: "research1" },
+    { title: "The Rise of the Hybrid Workforce", category: "Blogs", description: "Explore our expert analysis on the evolving nature of work. This blog post delves into the challenges and opportunities presented by hybrid models and offers strategies for building a resilient and connected remote team.", imageId: "insight2", date: "Jan 28, 2026", readTime: "5 min read", _id: "research2" },
+    { title: "Transforming Retail with AtomicAI™", category: "Case Studies", description: "Discover how a leading retailer leveraged AtomicAI™ to revolutionize their customer experience and drive revenue. This case study details the implementation process, key performance indicators, and the impressive results achieved.", imageId: "insight3", date: "Jan 28, 2026", readTime: "12 min read", _id: "research3" },
+    { title: "The Ethics of AI in Hiring", category: "AI Ethics", description: "This article navigates the complex ethical considerations of using AI in recruitment and talent acquisition. We discuss potential biases in algorithms and propose a framework for responsible, fair, and transparent implementation.", imageId: "insight4", date: "Jan 28, 2026", readTime: "7 min read", _id: "research4" },
+    { title: "Cybersecurity in the Quantum Era", category: "Cybersecurity", description: "As quantum computing advances, new cybersecurity threats emerge that could break current encryption standards. Our research explores the potential risks and outlines strategies for future-proofing your security infrastructure.", imageId: "insight5", date: "Jan 28, 2026", readTime: "10 min read", _id: "research5" },
+    { title: "UX for AR: Designing for New Realities", category: "UX Design", description: "Augmented reality presents unique design challenges that go beyond traditional screen-based interfaces. This article provides best practices for creating intuitive and engaging user experiences in AR environments.", imageId: "insight6", date: "Jan 28, 2026", readTime: "9 min read", _id: "research6" }
 ];
 
 export const RESEARCH_CATEGORIES = [
@@ -43,7 +43,7 @@ export const RESEARCH_ARTICLES = [
     category: "UX Research", 
     imageId: "research1",
     summary: "A comprehensive analysis of how remote work has transformed organizational culture.",
-    publicationDate: "2024-11-15",
+    publicationDate: "2026-01-28",
   },
   { 
     _id: "mock-2",
@@ -51,7 +51,7 @@ export const RESEARCH_ARTICLES = [
     category: "Artificial Intelligence", 
     imageId: "research2",
     summary: "A comprehensive analysis of how remote work has transformed organizational culture.",
-    publicationDate: "2024-11-15",
+    publicationDate: "2026-01-28",
   },
   { 
     _id: "mock-3",
@@ -59,7 +59,7 @@ export const RESEARCH_ARTICLES = [
     category: "Developer Tools", 
     imageId: "research3",
     summary: "A comprehensive analysis of how remote work has transformed organizational culture.",
-    publicationDate: "2024-11-15",
+    publicationDate: "2026-01-28",
   },
   { 
     _id: "mock-4",
@@ -67,7 +67,7 @@ export const RESEARCH_ARTICLES = [
     category: "Future of Work", 
     imageId: "research4",
     summary: "A comprehensive analysis of how remote work has transformed organizational culture.",
-    publicationDate: "2024-11-15",
+    publicationDate: "2026-01-28",
   },
   { 
     _id: "mock-5",
@@ -75,7 +75,7 @@ export const RESEARCH_ARTICLES = [
     category: "AI Ethics", 
     imageId: "research5",
     summary: "A comprehensive analysis of how remote work has transformed organizational culture.",
-    publicationDate: "2024-11-15",
+    publicationDate: "2026-01-28",
   },
   { 
     _id: "mock-6",
@@ -83,7 +83,7 @@ export const RESEARCH_ARTICLES = [
     category: "Cybersecurity", 
     imageId: "research6",
     summary: "A comprehensive analysis of how remote work has transformed organizational culture.",
-    publicationDate: "2024-11-15",
+    publicationDate: "2026-01-28",
   },
   { 
     _id: "mock-7",
@@ -91,7 +91,7 @@ export const RESEARCH_ARTICLES = [
     category: "Economics", 
     imageId: "research7",
     summary: "A comprehensive analysis of how remote work has transformed organizational culture.",
-    publicationDate: "2024-11-15",
+    publicationDate: "2026-01-28",
   },
   { 
     _id: "mock-8",
@@ -99,7 +99,7 @@ export const RESEARCH_ARTICLES = [
     category: "Data Science", 
     imageId: "research8",
     summary: "A comprehensive analysis of how remote work has transformed organizational culture.",
-    publicationDate: "2024-11-15",
+    publicationDate: "2026-01-28",
   },
   { 
     _id: "mock-9",
@@ -107,7 +107,7 @@ export const RESEARCH_ARTICLES = [
     category: "Future of Work", 
     imageId: "research9",
     summary: "A comprehensive analysis of how remote work has transformed organizational culture.",
-    publicationDate: "2024-11-15",
+    publicationDate: "2026-01-28",
   },
   { 
     _id: "mock-10",
@@ -115,7 +115,7 @@ export const RESEARCH_ARTICLES = [
     category: "Artificial Intelligence", 
     imageId: "research10",
     summary: "A comprehensive analysis of how remote work has transformed organizational culture.",
-    publicationDate: "2024-11-15",
+    publicationDate: "2026-01-28",
   },
   { 
     _id: "mock-11",
@@ -123,7 +123,7 @@ export const RESEARCH_ARTICLES = [
     category: "UX Research", 
     imageId: "research11",
     summary: "A comprehensive analysis of how remote work has transformed organizational culture.",
-    publicationDate: "2024-11-15",
+    publicationDate: "2026-01-28",
   },
   { 
     _id: "mock-12",
@@ -131,7 +131,7 @@ export const RESEARCH_ARTICLES = [
     category: "Cybersecurity", 
     imageId: "research12",
     summary: "A comprehensive analysis of how remote work has transformed organizational culture.",
-    publicationDate: "2024-11-15",
+    publicationDate: "2026-01-28",
   },
   { 
     _id: "mock-13",
@@ -139,7 +139,7 @@ export const RESEARCH_ARTICLES = [
     category: "Psychology", 
     imageId: "research13",
     summary: "A comprehensive analysis of how remote work has transformed organizational culture.",
-    publicationDate: "2024-11-15",
+    publicationDate: "2026-01-28",
   },
   { 
     _id: "mock-14",
@@ -147,7 +147,7 @@ export const RESEARCH_ARTICLES = [
     category: "Developer Tools", 
     imageId: "research14",
     summary: "A comprehensive analysis of how remote work has transformed organizational culture.",
-    publicationDate: "2024-11-15",
+    publicationDate: "2026-01-28",
   },
   { 
     _id: "mock-15",
@@ -155,7 +155,7 @@ export const RESEARCH_ARTICLES = [
     category: "Artificial Intelligence", 
     imageId: "research15",
     summary: "A comprehensive analysis of how remote work has transformed organizational culture.",
-    publicationDate: "2024-11-15",
+    publicationDate: "2026-01-28",
   },
   { 
     _id: "mock-16",
@@ -163,7 +163,7 @@ export const RESEARCH_ARTICLES = [
     category: "Future of Work", 
     imageId: "research16",
     summary: "A comprehensive analysis of how remote work has transformed organizational culture.",
-    publicationDate: "2024-11-15",
+    publicationDate: "2026-01-28",
   },
   { 
     _id: "mock-17",
@@ -171,7 +171,7 @@ export const RESEARCH_ARTICLES = [
     category: "AI Ethics", 
     imageId: "research17",
     summary: "A comprehensive analysis of how remote work has transformed organizational culture.",
-    publicationDate: "2024-11-15",
+    publicationDate: "2026-01-28",
   },
   { 
     _id: "mock-18",
@@ -179,7 +179,7 @@ export const RESEARCH_ARTICLES = [
     category: "Data Science", 
     imageId: "research18",
     summary: "A comprehensive analysis of how remote work has transformed organizational culture.",
-    publicationDate: "2024-11-15",
+    publicationDate: "2026-01-28",
   },
   { 
     _id: "mock-19",
@@ -187,7 +187,7 @@ export const RESEARCH_ARTICLES = [
     category: "Cybersecurity", 
     imageId: "research19",
     summary: "A comprehensive analysis of how remote work has transformed organizational culture.",
-    publicationDate: "2024-11-15",
+    publicationDate: "2026-01-28",
   },
   { 
     _id: "mock-20",
@@ -195,7 +195,7 @@ export const RESEARCH_ARTICLES = [
     category: "AI Ethics", 
     imageId: "research20",
     summary: "A comprehensive analysis of how remote work has transformed organizational culture.",
-    publicationDate: "2024-11-15",
+    publicationDate: "2026-01-28",
   },
 ];
 
@@ -464,7 +464,7 @@ export const mockResearchData = [
     title: 'Why Knowing What You Want Is Harder Than Getting It Done, Especially in Artificial Intelligence Efforts',
     summary: "The central challenge for leaders today isn't just execution, which AI can handle, but defining with absolute clarity what needs to be done. This article explores why strategic clarity is the new, critical discipline in the age of AI.",
     mainImage: '/Articles/article 3.jpeg',
-    publicationDate: new Date('2024-11-05'),
+    publicationDate: new Date('2026-01-28'),
     category: 'Artificial Intelligence',
     imageId: 'research3',
     pdfUrl: '/Articles/Article 3.pdf',
@@ -512,7 +512,7 @@ export const mockResearchData = [
     title: 'Cybersecurity in Distributed Teams',
     summary: 'Best practices for maintaining security protocols in organizations with distributed and remote workforce.',
     mainImage: 'https://static.wixstatic.com/media/61c56d_4361fe968edb461487cc7515b778b550~mv2.jpg',
-    publicationDate: new Date('2024-10-28'),
+    publicationDate: new Date('2026-01-28'),
     category: 'Cybersecurity',
     imageId: 'research6',
     pdfUrl: '/Articles/Article 4.pdf',
@@ -615,6 +615,8 @@ export const PRODUCTS = [
 
 
 
+
+    
 
     
 
