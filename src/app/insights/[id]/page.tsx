@@ -41,7 +41,7 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
             <article>
                 <header className="relative py-24 md:py-32 lg:py-40">
                     <div className="absolute inset-0">
-                        <Image src={article.mainImage} alt={article.title} fill className="object-cover" priority />
+                        <Image src={article.mainImage} alt={article.title} fill className="object-cover" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent" />
                     </div>
                     <div className="relative container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center text-white">
