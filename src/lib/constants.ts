@@ -247,30 +247,181 @@ export const HOME_HERO_CONTENT = [
 export const mockResearchData = [
   {
     _id: 'mock-1',
-    title: 'The Evolution of Remote Work Culture',
-    summary: 'Comprehensive analysis of how remote work has transformed organizational culture and employee engagement over the past three years.',
+    title: 'Prompt Debt: AI’s Quiet Margin Killer',
+    summary: 'A gap is emerging between AI activity and AI impact. This article explores why AI\'s benefits flatten at scale and how \'Prompt Debt\' quietly erodes margins.',
     mainImage: 'https://static.wixstatic.com/media/61c56d_f6cd93b30bf640b3a4325a8b6b06308f~mv2.jpg',
     publicationDate: new Date('2024-11-15'),
-    category: 'Future of Work',
+    category: 'Artificial Intelligence',
     imageId: 'research4',
     author: {
-        name: 'Florian Scheibmayr',
-        role: 'Co-Founder',
-        avatarImageId: 'leader2'
+        name: 'Amit Dengle',
+        role: 'Founder',
+        avatarImageId: 'leader1'
     },
-    tags: ['Remote Work', 'Culture', 'Engagement'],
+    tags: ['AI', 'Prompt Engineering', 'ROI', 'Productivity'],
     content: `
-        <h2>The Dawn of a New Era</h2>
-        <p>The past three years have acted as a catalyst, accelerating a shift towards remote work that was already underway. This transition has been more than a logistical challenge; it has fundamentally reshaped organizational culture and the very fabric of employee engagement. This article delves into the nuances of this transformation, offering a comprehensive analysis of the trends, challenges, and opportunities that have emerged.</p>
-        <blockquote>The biggest challenge in the remote work revolution isn't technology; it's cultivating trust and fostering a culture of autonomy.</blockquote>
-        <p>Our research, surveying over 5,000 employees across various industries, indicates that companies thriving in this new environment are those that have actively dismantled traditional management paradigms. Micromanagement, a relic of the physical office, has proven to be a significant drag on productivity and morale in remote settings, with a 40% higher reported level of employee burnout in micromanaged teams.</p>
-        <h3>Key Pillars of a Successful Remote Culture</h3>
+        <p>In just two years, organisations have gone from testing AI at the margins to relying on it in the middle of everyday work. AI now drafts what we send, analyses what we decide, and shapes how customers experience us. Usage is exploding. Productivity looks up. But something far more important is unfolding beneath the surface.</p>
+        <p>A gap is emerging between AI activity and AI impact.</p>
+        <p>Many organisations report heavy usage but modest improvements in margins, decision speed, or automation at scale. Benefits that appeared compelling in pilots flatten as AI spreads across teams. Senior leaders find themselves more involved in review and validation, not less. Automation timelines slip, even as investment continues.</p>
+        <blockquote>Prompt Debt accumulates when prompts are created quickly, shared informally, and embedded into workflows without ownership, standards, or economic accountability. What begins as flexibility gradually becomes fragility. Small inefficiencies compound, confidence in outputs declines, and manual safeguards quietly expand.</blockquote>
+        <h2>Strategic Impact of Prompt Debt</h2>
+        <p>These impacts affect growth, margins, and long-term scalability. They are usually discussed at the board and executive level, often without being linked back to prompts.</p>
+        <div class="overflow-x-auto">
+        <table class="min-w-full">
+            <thead>
+                <tr class="border-b">
+                    <th class="px-4 py-2 text-left font-semibold">Strategic Impact</th>
+                    <th class="px-4 py-2 text-left font-semibold">Lines impacted</th>
+                    <th class="px-4 py-2 text-left font-semibold">Typical Impact</th>
+                    <th class="px-4 py-2 text-left font-semibold">What Leadership Sees</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border-t px-4 py-2">EBITDA margin compression</td>
+                    <td class="border-t px-4 py-2">EBITDA</td>
+                    <td class="border-t px-4 py-2">2–5 point erosion</td>
+                    <td class="border-t px-4 py-2">AI ROI below plan, margins flatten</td>
+                </tr>
+                <tr>
+                    <td class="border-t px-4 py-2">Revenue upside erosion</td>
+                    <td class="border-t px-4 py-2">Revenue growth</td>
+                    <td class="border-t px-4 py-2">15–30% of expected uplift lost</td>
+                    <td class="border-t px-4 py-2">AI growth cases revised downward</td>
+                </tr>
+                <tr>
+                    <td class="border-t px-4 py-2">Automation payback delay</td>
+                    <td class="border-t px-4 py-2">Cash flow and ROI timing</td>
+                    <td class="border-t px-4 py-2">6–18-month delay</td>
+                    <td class="border-t px-4 py-2">Benefits pushed to later phases</td>
+                </tr>
+                <tr>
+                    <td class="border-t px-4 py-2">Cost pyramid inversion</td>
+                    <td class="border-t px-4 py-2">SG&A and delivery cost</td>
+                    <td class="border-t px-4 py-2">10–20% senior effort uplift</td>
+                    <td class="border-t px-4 py-2">Higher blended cost per unit</td>
+                </tr>
+                <tr>
+                    <td class="border-t px-4 py-2">Decision velocity decline</td>
+                    <td class="border-t px-4 py-2">Opportunity cost</td>
+                    <td class="border-t px-4 py-2">3–7% slower cycles</td>
+                    <td class="border-t px-4 py-2">Slower execution, more reviews</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <p class="text-sm text-muted-foreground mt-2"><em>Source: Planckpoint research, 2026</em></p>
+        <h2>Operational Impact of Prompt Debt</h2>
+        <p>These are the day-to-day mechanics through which strategic damage accumulates.</p>
+        <div class="overflow-x-auto">
+        <table class="min-w-full">
+            <thead>
+                <tr class="border-b">
+                    <th class="px-4 py-2 text-left font-semibold">Operational Impact Area</th>
+                    <th class="px-4 py-2 text-left font-semibold">Line Impacted</th>
+                    <th class="px-4 py-2 text-left font-semibold">Typical Impact</th>
+                    <th class="px-4 py-2 text-left font-semibold">What Teams See on the Ground</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border-t px-4 py-2">Labour productivity loss</td>
+                    <td class="border-t px-4 py-2">Cost of labour</td>
+                    <td class="border-t px-4 py-2">5–12% output loss</td>
+                    <td class="border-t px-4 py-2">More drafting, retries, refinements</td>
+                </tr>
+                <tr>
+                    <td class="border-t px-4 py-2">Rework and correction cost</td>
+                    <td class="border-t px-4 py-2">Delivery and ops cost</td>
+                    <td class="border-t px-4 py-2">8–15% effort duplication</td>
+                    <td class="border-t px-4 py-2">AI outputs routinely need fixing</td>
+                </tr>
+                <tr>
+                    <td class="border-t px-4 py-2">Compute and run-cost inflation</td>
+                    <td class="border-t px-4 py-2">Technology opex</td>
+                    <td class="border-t px-4 py-2">12–25% excess cost</td>
+                    <td class="border-t px-4 py-2">Rising AI spend without output gain</td>
+                </tr>
+                <tr>
+                    <td class="border-t px-4 py-2">Quality assurance overhead</td>
+                    <td class="border-t px-4 py-2">QA and compliance cost</td>
+                    <td class="border-t px-4 py-2">5–10% extra effort</td>
+                    <td class="border-t px-4 py-2">Added checks and duplicated reviews</td>
+                </tr>
+                <tr>
+                    <td class="border-t px-4 py-2">Onboarding and reuse drag</td>
+                    <td class="border-t px-4 py-2">HR and training cost</td>
+                    <td class="border-t px-4 py-2">15–30% longer ramp-up</td>
+                    <td class="border-t px-4 py-2">New hires cannot replicate results</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <p class="text-sm text-muted-foreground mt-2"><em>Source: Planckpoint research, 2026</em></p>
+        <h2>Why This Is Not a Skills Problem</h2>
+        <p>Prompt Debt is often misdiagnosed as a training gap. It is not. Well-trained teams still generate Prompt Debt when prompts are treated as informal artefacts rather than as shared organisational assets. Without ownership, lifecycle management, and economic accountability, debt is inevitable.</p>
+        <p>There is a familiar precedent here. Organisations spent years learning that technical debt constrained agility and margins long after software worked. Prompt Debt follows the same logic, faster, and across a much broader workforce.</p>
+        <h2>How should organisations manage their Prompt Debt?</h2>
+        <p>Prompt Debt accumulates when prompts move from individual experimentation to shared, operational use without ownership, standards, or economic accountability. It does not break AI. It prevents AI from compounding value. Managing Prompt Debt is therefore not a technical exercise. It is an organisational discipline.</p>
+        <div class="overflow-x-auto">
+        <table class="min-w-full">
+            <thead>
+                <tr class="border-b">
+                    <th class="px-4 py-2 text-left font-semibold">What Organisations Must Do</th>
+                    <th class="px-4 py-2 text-left font-semibold">Why It Matters</th>
+                    <th class="px-4 py-2 text-left font-semibold">What Changes in Practice</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border-t px-4 py-2">Treat prompts as assets</td>
+                    <td class="border-t px-4 py-2">Prompts shape outcomes, cost, and risk</td>
+                    <td class="border-t px-4 py-2">High-impact prompts have named owners</td>
+                </tr>
+                <tr>
+                    <td class="border-t px-4 py-2">Measure before fixing</td>
+                    <td class="border-t px-4 py-2">Prompt Debt is unevenly distributed</td>
+                    <td class="border-t px-4 py-2">Intervention focuses on where value leaks</td>
+                </tr>
+                <tr>
+                    <td class="border-t px-4 py-2">Enforce ownership</td>
+                    <td class="border-t px-4 py-2">No owner means guaranteed debt</td>
+                    <td class="border-t px-4 py-2">Prompt changes are controlled</td>
+                </tr>
+                <tr>
+                    <td class="border-t px-4 py-2">Apply lifecycle discipline</td>
+                    <td class="border-t px-4 py-2">Unreviewed prompts quietly decay</td>
+                    <td class="border-t px-4 py-2">Prompts are reviewed and retired</td>
+                </tr>
+                <tr>
+                    <td class="border-t px-4 py-2">Standardise selectively</td>
+                    <td class="border-t px-4 py-2">Scale needs discipline, not rigidity</td>
+                    <td class="border-t px-4 py-2">Core workflows stabilise</td>
+                </tr>
+                <tr>
+                    <td class="border-t px-4 py-2">Link prompts to economics</td>
+                    <td class="border-t px-4 py-2">Quality alone does not change behaviour</td>
+                    <td class="border-t px-4 py-2">Productivity and cost become visible</td>
+                </tr>
+                <tr>
+                    <td class="border-t px-4 py-2">Embed governance</td>
+                    <td class="border-t px-4 py-2">Side programs are ignored</td>
+                    <td class="border-t px-4 py-2">Prompt discipline becomes routine</td>
+                </tr>
+                <tr>
+                    <td class="border-t px-4 py-2">Monitor continuously</td>
+                    <td class="border-t px-4 py-2">Debt compounds as AI scales</td>
+                    <td class="border-t px-4 py-2">Prompt Debt trends down over time</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <h2>The Bottom Line</h2>
         <ul>
-            <li><strong>Asynchronous Communication:</strong> We found that teams moving away from the expectation of immediate responses see a 25% increase in deep work sessions. This fosters not only productivity but also accommodates a global talent pool across different time zones.</li>
-            <li><strong>Outcome-Oriented Performance:</strong> Shifting focus from hours logged to results delivered is critical. Our data shows this approach empowers employees, leading to a 30% increase in reported job satisfaction and a stronger sense of ownership.</li>
-            <li><strong>Intentional Social Connection:</strong> Loneliness is a real threat in remote work. Successful organizations create structured (e.g., virtual coffee breaks) and unstructured (e.g., dedicated 'watercooler' channels) opportunities for virtual social interaction to combat isolation and build team cohesion.</li>
+            <li>Prompt Debt is not a technical flaw. It is an organisational cost of scaling AI without discipline.</li>
+            <li>AI creates opportunity. Prompt discipline determines how much of that opportunity survives.</li>
+            <li>Organisations that manage Prompt Debt early preserve productivity gains, protect margins, and accelerate automation. Those who do not will keep asking why AI feels helpful, but never truly transformational.</li>
         </ul>
-        <p>The tools we use are merely enablers. The real evolution is in our mindset and management practices. As we look to the future, the organizations that embrace this cultural evolution will not only survive but will lead the way in attracting and retaining top talent in a globally competitive market.</p>
     `
   },
   {
@@ -432,5 +583,7 @@ export const PRODUCTS = [
     { id: "thinkquark", name: "ThinkQuark™", description: "Harness the power of quantum-inspired computing to solve your most complex optimization problems.", icon: BrainCircuit, imageId: 'product-thinkquark', tagline: 'Solve the unsolvable.', detailedDescription: 'ThinkQuark is a new form of thought leadership built for how decisions are actually made. We replace long, bloated publications with sharp, one-page concept papers. Each ThinkQuark challenges a dominant assumption, model, or industry habit. No background filler. No recycled frameworks. Just one powerful idea, clearly argued and grounded in real signals. Designed for leaders who think quickly and make decisions swiftly. Easy to read. Hard to ignore. ThinkQuark turns original thinking into immediate action.', keyBenefits: "Solve complex optimization problems faster.\nUnlock new possibilities in research and development.\nGain a competitive edge with cutting-edge technology.\nIntegrate seamlessly with your existing data pipelines.", learnMoreUrl: '#' },
     { id: "signalone", name: "SignalOne™", description: "Bespoke research and decision-ready intelligence tailored to your strategic questions.", icon: Lightbulb, imageId: 'product-signalone', tagline: 'Intelligence for your decisions.', detailedDescription: 'SignalOne delivers bespoke research built around your real strategic questions. We don’t publish generic reports. We design intelligence for specific decisions. Our research directly informs strategy, go-to-market initiatives, and sales enablement. Every insight is tailored to your market, buyers, and competitive reality. We combine data, field signals, and expert judgment to reduce blind spots. No shelfware. No recycled decks. Just decision-ready intelligence that sharpens strategy and strengthens sales.', keyBenefits: "Decision-ready intelligence.\nSharpened strategy and sales enablement.\nReduced strategic blind spots.\nCustom research for your specific needs.", learnMoreUrl: '#' },
 ];
+
+    
 
     
