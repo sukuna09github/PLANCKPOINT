@@ -1,10 +1,16 @@
 "use client";
 
-import { Twitter, Linkedin, Link as LinkIcon, Download } from 'lucide-react';
+import { Linkedin, Link as LinkIcon, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
+
+const XLogo = () => (
+    <svg viewBox="0 0 1200 1227" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5">
+        <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L114.011 78.66H302.085L610.136 505.694L657.604 573.588L1083.99 1154.33H895.912L569.165 687.854V687.828Z" fill="currentColor"/>
+    </svg>
+);
 
 export const ShareButtons = ({ title, pdfUrl }: { title: string, pdfUrl?: string }) => {
     const { toast } = useToast();
@@ -35,9 +41,9 @@ export const ShareButtons = ({ title, pdfUrl }: { title: string, pdfUrl?: string
         <div>
             <h3 className="font-semibold text-xl mb-4 border-b pb-2">Share</h3>
             <div className="flex items-center gap-2">
-                <Button asChild variant="outline" size="icon" title="Share on Twitter">
+                <Button asChild variant="outline" size="icon" title="Share on X">
                     <a href={twitterUrl} target="_blank" rel="noopener noreferrer">
-                        <Twitter className="h-5 w-5" />
+                        <XLogo />
                     </a>
                 </Button>
                 <Button asChild variant="outline" size="icon" title="Share on LinkedIn">
