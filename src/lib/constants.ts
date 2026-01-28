@@ -461,7 +461,7 @@ export const mockResearchData = [
     _id: 'mock-3',
     title: 'Why Knowing What You Want Is Harder Than Getting It Done, Especially in Artificial Intelligence Efforts',
     summary: "The central challenge for leaders today isn't just execution, which AI can handle, but defining with absolute clarity what needs to be done. This article explores why strategic clarity is the new, critical discipline in the age of AI.",
-    mainImage: 'https://static.wixstatic.com/media/61c56d_efd169792bfb434581b1736268834290~mv2.jpg',
+    mainImage: '/Articles/article 3.jpeg',
     publicationDate: new Date('2024-11-05'),
     category: 'Artificial Intelligence',
     imageId: 'research3',
@@ -485,7 +485,7 @@ export const mockResearchData = [
         <p>Modern AI systems do not hesitate, reinterpret, or apply judgment. They execute exactly what they are instructed to do, continuously and at machine speed. As a result, the core managerial question has shifted. It is no longer “Can we make this happen?” but “Have we told the system precisely what should happen, and what must never happen?” When execution becomes trivial, strategic clarity becomes critical.</p>
         <h2>Why strategic clarity is now harder than execution</h2>
         <p>Traditional goal setting today is incomplete unless its constraints are made explicit. Acceptable response times, quality thresholds, escalation rules, prohibited tactics, compliance requirements, and ethical red lines must all be specified. The challenge is not goal setting. Organisations solved that decades ago. The challenge is constraint completeness. Leaders often discover their unstated assumptions only when an AI system violates them while still meeting the target. When retention improves through manipulative tactics, the metric is achieved, but the outcome is wrong.</p>
-        <blockquote><p>In the early 2000s, SMART goals were sufficient because humans supplied what was left unsaid. A target such as “Increase customer retention from 78 per cent to 85 per cent by Q2” worked because employees understood the boundaries. They knew not to deceive customers, violate privacy, or undermine trust, even when those limits were not written down. Judgement closed the gaps. AI does not do that. What humans once inferred now must be defined to perfection.</p></blockquote>
+        <blockquote><p>In the early 2000s, SMART goals were sufficient because humans supplied what was left unsaid.   A target such as “Increase customer retention from 78 per cent to 85 per cent by Q2” worked because employees understood the boundaries. They knew not to deceive customers, violate privacy, or undermine trust, even when those limits were not written down. Judgement closed the gaps.  AI does not do that. What humans once inferred now must be defined to perfection.</p></blockquote>
         <h2>Rethinking people, strategy, and operations</h2>
         <p>This shift fundamentally alters the familiar triad of people, strategy, and operations. In people processes, high performance once meant operational discipline and consistent execution. Today, the most valuable capability is judgment. Organisations must reward those who can identify when a system is executing the wrong objective efficiently. Ethical reasoning, systems thinking, and governance literacy matter more than speed or output. In strategy, direction is no longer enough. Leaders must translate intent into executable specifications that include constraints, trade-offs, escalation triggers, and verification mechanisms. Direction without specification invites failure at scale. In operations, the focus has moved from doing to governing. Operations now involve monitoring automated execution at granular levels, detecting drift, intervening when context changes, and enforcing oversight even as systems operate faster than human decision cycles. The mismatch between machine speed and human governance introduces risks that did not exist in earlier eras.</p>
         <h2>What has not changed</h2>
@@ -600,3 +600,4 @@ export const PRODUCTS = [
     
 
     
+
