@@ -464,11 +464,10 @@ export const mockResearchData = [
     imageId: 'research10',
     pdfUrl: undefined,
     author: {
-        name: 'Mayurika Dutta',
-        role: 'Subject Matter Expert',
-        avatarImageId: 'leader5'
+        name: 'Florian Scheibmayr',
+        role: 'Co-Founder',
+        avatarImageId: 'leader2'
     },
-    tags: ['Machine Learning', 'AI', 'Democratization', 'Business'],
     content: `
         <h2>The ML Democratization Paradox.</h2>
         <p>More important than using Machine Learning, apply its Core Principles</p>
@@ -578,7 +577,6 @@ export const PRODUCTS = [
     { id: "thinkquark", name: "ThinkQuark™", description: "Harness the power of quantum-inspired computing to solve your most complex optimization problems.", icon: BrainCircuit, imageId: 'product-thinkquark', tagline: 'Solve the unsolvable.', detailedDescription: 'ThinkQuark is a new form of thought leadership built for how decisions are actually made. We replace long, bloated publications with sharp, one-page concept papers. Each ThinkQuark challenges a dominant assumption, model, or industry habit. No background filler. No recycled frameworks. Just one powerful idea, clearly argued and grounded in real signals. Designed for leaders who think quickly and make decisions swiftly. Easy to read. Hard to ignore. ThinkQuark turns original thinking into immediate action.', keyBenefits: "Solve complex optimization problems faster.\nUnlock new possibilities in research and development.\nGain a competitive edge with cutting-edge technology.\nIntegrate seamlessly with your existing data pipelines.", learnMoreUrl: '#' },
     { id: "signalone", name: "SignalOne™", description: "Bespoke research and decision-ready intelligence tailored to your strategic questions.", icon: Lightbulb, imageId: 'product-signalone', tagline: 'Intelligence for your decisions.', detailedDescription: 'SignalOne delivers bespoke research built around your real strategic questions. We don’t publish generic reports. We design intelligence for specific decisions. Our research directly informs strategy, go-to-market initiatives, and sales enablement. Every insight is tailored to your market, buyers, and competitive reality. We combine data, field signals, and expert judgment to reduce blind spots. No shelfware. No recycled decks. Just decision-ready intelligence that sharpens strategy and strengthens sales.', keyBenefits: "Decision-ready intelligence.\nSharpened strategy and sales enablement.\nReduced strategic blind spots.\nCustom research for your specific needs.", learnMoreUrl: '#' },
 ];
-
     
 
     
