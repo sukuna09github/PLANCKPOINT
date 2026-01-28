@@ -427,32 +427,34 @@ export const mockResearchData = [
   },
   {
     _id: 'mock-2',
-    title: 'AI Integration in Enterprise Systems',
-    summary: 'Study on successful AI implementation strategies and their impact on operational efficiency and cost reduction.',
+    title: 'The End of Linear IT Spending – From facilitation to leverage',
+    summary: 'Enterprises are rethinking how they spend on technology. IT budgets are no longer treated as a linear function of revenue, headcount, or scale.',
     mainImage: 'https://static.wixstatic.com/media/61c56d_8801d0855b1f4ab981404fef841c824e~mv2.jpg',
     publicationDate: new Date('2024-11-10'),
-    category: 'Artificial Intelligence',
+    category: 'Economics',
     imageId: 'research2',
     author: {
         name: 'Kiran K',
         role: 'Chief Technology Officer',
         avatarImageId: 'leader3'
     },
-    tags: ['AI', 'Enterprise', 'Efficiency'],
+    tags: ['IT Spending', 'Economics', 'ROI'],
     content: `
-        <h2>From Pilot to Production</h2>
-        <p>Artificial Intelligence has moved from the innovation lab to the core of enterprise strategy. However, successful integration remains a significant hurdle for many organizations. This study analyzes over 100 enterprise AI projects to identify the key strategies that separate successful implementations from costly failures.</p>
-        <h3>The AI Maturity Model</h3>
-        <p>We've developed a five-stage AI Maturity Model that helps organizations benchmark their current capabilities and chart a course for growth:</p>
-        <ol>
-            <li><strong>Experimental:</strong> Ad-hoc projects, lack of clear strategy.</li>
-            <li><strong>Foundational:</strong> Investment in data infrastructure and talent.</li>
-            <li><strong>Operational:</strong> AI integrated into specific business processes, delivering measurable ROI.</li>
-            <li><strong>Systemic:</strong> AI is a core component of multiple business functions, driving competitive advantage.</li>
-            <li><strong>Transformational:</strong> AI fundamentally reshapes the business model and value proposition.</li>
-        </ol>
-        <blockquote>An AI strategy without a data strategy is just a hallucination.</blockquote>
-        <p>Our findings show that a robust, clean, and accessible data pipeline is the single most important predictor of AI project success. Organizations that invest in data governance and infrastructure upfront are three times more likely to achieve their desired outcomes. The article further explores the importance of change management, ethical considerations, and building in-house AI talent to sustain long-term success.</p>
+        <h2>The idea</h2>
+        <p>Enterprises are rethinking how they spend on technology. IT budgets are no longer treated as a linear function of revenue, headcount, or scale. Instead, organisations are increasingly directing technology spend towards non-linear investments that deliver disproportionate impact, reduce marginal cost, and compound value over time.</p>
+        <h2>What is driving non-linear technology spending</h2>
+        <p>The traditional logic of IT spending was built for a world where technology supported the business. Today, technology increasingly defines how the business operates, competes, and grows. As digital platforms, automation, and AI become embedded in core operations, enterprises are realising that not all technology spend is equal. Some investments simply maintain the status quo, while others fundamentally change cost curves, decision quality, and scalability. As a result, leaders are no longer asking, “How much should we spend on IT?” They are asking, “Where can technology change the economics of the business?”</p>
+        <h2>What has changed inside the enterprise</h2>
+        <p>Several forces are converging: First, technology can now scale independently of labour. Cloud platforms, automation, and AI allow enterprises to grow volumes, customers, or transactions without adding people at the same rate. This breaks the historic link between business growth and IT cost growth.</p>
+        <p>Second, data and AI create compounding returns. Once built, data assets and models improve with use. The value generated in year three can be materially higher than in year one, without proportional increases in spend.</p>
+        <p>Third, risk has become asymmetric. When technology drives decisions, automation, and customer outcomes, failure carries outsized downside. This pushes enterprises to concentrate investment on fewer, higher-leverage initiatives that are well-governed and resilient, rather than spreading spend thinly across many programmes.</p>
+        <p>Fourth, financial discipline has tightened. Boards and CFOs are increasingly sceptical of large, open-ended transformation programmes. They favour investments with clear leverage, faster payback, and visible operating impact.</p>
+        <h2>How spending behaviour is changing</h2>
+        <p>Enterprise IT spending is becoming more selective and punctuated. Organisations pause initiatives quickly when leverage does not materialise and accelerate those that show early compounding effects. Long, linear roadmaps are giving way to modular bets that can scale rapidly or be stopped with limited sunk cost. Budgets are also shifting away from capacity maintenance towards capability creation. More funding flows to platforms, shared data layers, automation, and core digital assets. Less flows to work that must be repeated each year to sustain the same level of output.</p>
+        <h2>The underlying logic</h2>
+        <p>At its core, this shift reflects a change in how enterprises think about technology value. Linear IT spending buys capacity. Non-linear technology investment buys leverage. Capacity must be paid for repeatedly. Leverage continues to pay back over time.</p>
+        <h2>The bottom line</h2>
+        <p>Enterprises are not abandoning IT spending. They are becoming far more deliberate about it. As technology becomes central to business economics, leaders are concentrating investment where it reshapes cost curves, decision quality, and scalability. The future of enterprise IT is not about spending more or less. It is about spending differently.</p>
     `
   },
   {
@@ -588,3 +590,4 @@ export const PRODUCTS = [
     
 
     
+
