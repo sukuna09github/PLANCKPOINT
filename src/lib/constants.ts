@@ -462,7 +462,7 @@ export const mockResearchData = [
     publicationDate: new Date('2026-01-28'),
     category: 'Artificial Intelligence',
     imageId: 'research10',
-    pdfUrl: undefined,
+    pdfUrl: '/Articles/Article 4.pdf',
     author: {
         name: 'Florian Scheibmayr',
         role: 'Co-Founder',
@@ -496,7 +496,7 @@ export const mockResearchData = [
             <li>Baselined quantity support tickets vs. actual support workload support</li>
             <li>Expected referrals generated vs. actual referrals collected</li>
         </ul>
-        <p>Ideally, each of those deviations would be weighted by its business impact. For example, losing a high-spending customer (high weight) would generate a much larger "loss" than losing a one-time shopper or similarly underutilizing a minor feature (low weight). The aggregated view would provide an objective measure of how far your customer experience deviates from optimal—and more importantly, where you're losing the most value. So, you would measure reality, not perception.</p>
+        <p>Ideally, each of those deviations would be weighted by its business impact. For example, losing a high-spending customer (high weight) would generate a much larger "loss" than losing a one-time shopper or similarly underutilizing a minor feature (low weight).   The aggregated view would provide an objective measure of how far your customer experience deviates from optimal—and more importantly, where you're losing the most value. So, you would measure reality, not perception.</p>
         <h3>A way out</h3>
         <p>It seems that complex mathematics, such as the stochastic methods that underpin machine learning, are still confined to the working spaces of data scientists and ML engineers who understand loss functions, gradient descent, and optimization. These specialists, often considered nerds, build the systems that learn and improve automatically, but these conceptual frameworks are not spreading beyond the borders of the narrowest technical domain.</p>
         <p>Business leaders, meanwhile, have become heavy consumers of the outputs without absorbing the underlying principles. They trust, for example, ML-powered recommendations for inventory management, but at the same time continue measuring customer satisfaction as if the last 30 years of ML development never happened.</p>
@@ -605,3 +605,4 @@ export const PRODUCTS = [
 
 
     
+
