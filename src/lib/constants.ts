@@ -469,9 +469,9 @@ export const mockResearchData = [
     imageId: 'research3',
     pdfUrl: '/Articles/Article 3.pdf',
     author: {
-        name: 'Amit Dengle',
-        role: 'Founder',
-        avatarImageId: 'leader1'
+        name: 'Florian Scheibmayr',
+        role: 'Co-Founder',
+        avatarImageId: 'leader2'
     },
     tags: ['AI', 'Strategy', 'Leadership', 'Execution'],
     content: `
@@ -623,3 +623,6 @@ export const PRODUCTS = [
     
 
 
+
+
+    
