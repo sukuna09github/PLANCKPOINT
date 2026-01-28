@@ -43,7 +43,7 @@ const HomePage: React.FC = () => {
     setLatestResearch(
       [...RESEARCH_ARTICLES]
         .sort((a, b) => new Date(b.publicationDate).getTime() - new Date(a.publicationDate).getTime())
-        .slice(0, 6)
+        .slice(0, 3)
     );
     setProducts(PRODUCTS);
   }, []);
