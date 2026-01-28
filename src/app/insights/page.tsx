@@ -544,20 +544,12 @@ const InsightsPage: React.FC = () => {
                         {insight.summary}
                       </p>
                     </div>
-                    <CardFooter className="p-6 pt-0 flex justify-between items-center">
-                        <Button asChild variant="link" className="p-0 font-semibold text-primary">
-                            <Link href={`/insights/${insight._id}`}>
-                                <span>Read More <ArrowRight className="ml-2 h-4 w-4" /></span>
-                            </Link>
-                        </Button>
-                        {insight.pdfUrl && (
-                            <Button asChild variant="ghost" size="icon" title="Download PDF">
-                                <a href={insight.pdfUrl} download>
-                                    <Download className="h-5 w-5 text-muted-foreground hover:text-primary" />
-                                    <span className="sr-only">Download PDF</span>
-                                </a>
-                            </Button>
-                        )}
+                    <CardFooter className="p-6 pt-0">
+                      <Button asChild variant="link" className="p-0 font-semibold text-primary">
+                        <Link href={`/insights/${insight._id}`}>
+                          <span>Read More <ArrowRight className="ml-2 h-4 w-4" /></span>
+                        </Link>
+                      </Button>
                     </CardFooter>
                   </Card>
                 </motion.div>
@@ -615,3 +607,5 @@ const InsightsPage: React.FC = () => {
 };
 
 export default InsightsPage;
+
+    

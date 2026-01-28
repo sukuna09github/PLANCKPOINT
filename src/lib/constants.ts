@@ -252,7 +252,6 @@ export const mockResearchData = [
     publicationDate: new Date('2024-11-15'),
     category: 'Artificial Intelligence',
     imageId: 'research4',
-    pdfUrl: '/Articles/Article 1.pdf',
     author: {
         name: 'Amit Dengle',
         role: 'Founder',
@@ -433,7 +432,6 @@ export const mockResearchData = [
     publicationDate: new Date('2024-11-10'),
     category: 'Economics',
     imageId: 'research2',
-    pdfUrl: '/Articles/Article 2.pdf',
     author: {
         name: 'Kiran K',
         role: 'Chief Technology Officer',
@@ -466,7 +464,6 @@ export const mockResearchData = [
     publicationDate: new Date('2024-11-05'),
     category: 'Artificial Intelligence',
     imageId: 'research3',
-    pdfUrl: '/Articles/Article 3.pdf',
     author: {
         name: 'Amit Dengle',
         role: 'Founder',
@@ -506,7 +503,6 @@ export const mockResearchData = [
     publicationDate: new Date('2024-10-28'),
     category: 'Cybersecurity',
     imageId: 'research6',
-    pdfUrl: '/Articles/Article 4.pdf',
      author: {
         name: 'Mayurika Dutta',
         role: 'Subject Matter Expert',
@@ -605,3 +601,6 @@ export const PRODUCTS = [
     
 
 
+
+
+    
