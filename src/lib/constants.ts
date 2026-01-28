@@ -429,7 +429,7 @@ export const mockResearchData = [
     _id: 'mock-2',
     title: 'The End of Linear IT Spending – From facilitation to leverage',
     summary: 'Enterprises are rethinking how they spend on technology. IT budgets are no longer treated as a linear function of revenue, headcount, or scale.',
-    mainImage: 'https://static.wixstatic.com/media/61c56d_8801d0855b1f4ab981404fef841c824e~mv2.jpg',
+    mainImage: '/Articles/article 2.jpeg',
     publicationDate: new Date('2024-11-10'),
     category: 'Economics',
     imageId: 'research2',
@@ -590,4 +590,3 @@ export const PRODUCTS = [
     
 
     
-
