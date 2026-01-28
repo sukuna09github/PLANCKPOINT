@@ -175,7 +175,7 @@ const InsightsPage: React.FC = () => {
                                 </CardContent>
                                 <CardFooter>
                                     <Button asChild variant="ghost" className="text-white hover:bg-white/10">
-                                      <span>Read the Insight <ArrowRight className="inline-block ml-2 h-4 w-4" /></span>
+                                      <span className="flex items-center">Read the Insight <ArrowRight className="inline-block ml-2 h-4 w-4" /></span>
                                     </Button>
                                 </CardFooter>
                               </Link>
@@ -237,9 +237,9 @@ const InsightsPage: React.FC = () => {
                               </p>
                             </div>
                             <CardFooter>
-                                <Button asChild variant="link" className="p-0 font-semibold text-primary">
-                                    <span>Read More <ArrowRight className="ml-2 h-4 w-4" /></span>
-                                </Button>
+                                <span className="p-0 font-semibold text-primary flex items-center group-hover:underline">
+                                    Read More <ArrowRight className="ml-2 h-4 w-4" />
+                                </span>
                             </CardFooter>
                           </CardContent>
                         </Link>
@@ -300,9 +300,9 @@ const InsightsPage: React.FC = () => {
                               </p>
                             </div>
                             <CardFooter>
-                                <Button asChild variant="link" className="p-0 font-semibold text-primary">
-                                    <span>Read More <ArrowRight className="ml-2 h-4 w-4" /></span>
-                                </Button>
+                                <span className="p-0 font-semibold text-primary flex items-center group-hover:underline">
+                                    Read More <ArrowRight className="ml-2 h-4 w-4" />
+                                </span>
                             </CardFooter>
                           </CardContent>
                         </Link>
@@ -364,9 +364,9 @@ const InsightsPage: React.FC = () => {
 
                           </div>
                           <CardFooter>
-                            <Button asChild variant="link" className="p-0 font-semibold text-primary">
-                                <span>Read More <ArrowRight className="ml-2 h-4 w-4" /></span>
-                            </Button>
+                            <span className="p-0 font-semibold text-primary flex items-center group-hover:underline">
+                                Read More <ArrowRight className="ml-2 h-4 w-4" />
+                            </span>
                           </CardFooter>
                         </CardContent>
                       </Link>
@@ -547,7 +547,7 @@ const InsightsPage: React.FC = () => {
                     <CardFooter className="p-6 pt-0">
                       <Button asChild variant="link" className="p-0 font-semibold text-primary">
                         <Link href={`/insights/${insight._id}`}>
-                          <span>Read More <ArrowRight className="ml-2 h-4 w-4" /></span>
+                          <span className="flex items-center">Read More <ArrowRight className="ml-2 h-4 w-4" /></span>
                         </Link>
                       </Button>
                     </CardFooter>
@@ -607,5 +607,4 @@ const InsightsPage: React.FC = () => {
 };
 
 export default InsightsPage;
-
     

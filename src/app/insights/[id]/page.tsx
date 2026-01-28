@@ -127,7 +127,7 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
                                             <p className="text-sm text-muted-foreground mt-2 line-clamp-3">{insight.summary}</p>
                                         </CardContent>
                                         <CardFooter>
-                                            <span className="text-sm font-semibold text-primary">Read More <ArrowRight className="inline-block ml-1 h-4 w-4" /></span>
+                                            <span className="text-sm font-semibold text-primary group-hover:underline flex items-center">Read More <ArrowRight className="ml-2 h-4 w-4" /></span>
                                         </CardFooter>
                                     </Link>
                                 </Card>

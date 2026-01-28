@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState, useEffect } from 'react';
@@ -304,7 +303,7 @@ const HomePage: React.FC = () => {
                                 {insight.summary}
                               </p>
                               <div className="pt-4">
-                                <span className="text-sm font-semibold text-primary group-hover:text-accent transition-colors">Read More <ArrowRight className="inline-block ml-1 h-4 w-4" /></span>
+                                <span className="flex items-center text-sm font-semibold text-primary group-hover:text-accent transition-colors">Read More <ArrowRight className="ml-2 h-4 w-4" /></span>
                               </div>
                             </div>
                           </div>
