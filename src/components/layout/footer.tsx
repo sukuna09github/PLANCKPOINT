@@ -2,7 +2,13 @@
 import { FOOTER_LINKS, GLOBAL_OFFICES } from "@/lib/constants";
 import { Logo } from "@/components/logo";
 import Link from "next/link";
-import { Linkedin, Twitter } from "lucide-react";
+import { Linkedin } from "lucide-react";
+
+const XLogo = () => (
+    <svg viewBox="0 0 1200 1227" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5">
+        <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L114.011 78.66H302.085L610.136 505.694L657.604 573.588L1083.99 1154.33H895.912L569.165 687.854V687.828Z" fill="currentColor"/>
+    </svg>
+);
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -22,8 +28,8 @@ export function Footer() {
                 <span className="sr-only">LinkedIn</span>
               </Link>
               <Link href="#" className="text-white/70 hover:text-white transition-colors duration-300 ease-apple">
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
+                <XLogo />
+                <span className="sr-only">X</span>
               </Link>
             </div>
           </div>
