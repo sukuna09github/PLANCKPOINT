@@ -17,7 +17,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/componen
 
 type Insight = typeof INSIGHTS_TEASER_CARDS[0];
 type WhatWeDo = typeof WHAT_WE_DO_CARDS[0];
-type Research = typeof RESEARCH_ARTICLES[0];
+type Research = typeof mockResearchData[0];
 type Product = typeof PRODUCTS[0];
 
 const HomePage: React.FC = () => {
@@ -40,11 +40,7 @@ const HomePage: React.FC = () => {
     setIsClient(true);
     setInsights(INSIGHTS_TEASER_CARDS.slice(0, 5));
     setWhatWeDoImages(PlaceHolderImages.filter(img => WHAT_WE_DO_CARDS.some(i => i.imageId === img.id)));
-    setLatestResearch(
-      [...RESEARCH_ARTICLES]
-        .sort((a, b) => new Date(b.publicationDate).getTime() - new Date(a.publicationDate).getTime())
-        .slice(0, 3)
-    );
+    setLatestResearch(mockResearchData.slice(0, 3));
     setProducts(PRODUCTS);
   }, []);
   
@@ -274,7 +270,7 @@ const HomePage: React.FC = () => {
                 {latestResearch.map((insight) => {
                   const image = findImage(insight.imageId);
                   return (
-                    <CarouselItem key={insight.title} className="pl-4 sm:pl-8 md:basis-1/2 lg:basis-1/3">
+                    <CarouselItem key={insight._id} className="pl-4 sm:pl-8 md:basis-1/2 lg:basis-1/3">
                       <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -282,7 +278,7 @@ const HomePage: React.FC = () => {
                         viewport={{ once: true, amount: 0.5 }}
                         className="group h-full"
                       >
-                      <div className="block group h-full">
+                      <Link href={`/insights/${insight._id}`} className="block group h-full">
                         <div className="bg-white overflow-hidden shadow-sm hover:shadow-xl hover:shadow-accent/20 transition-all duration-300 ease-apple hover:-translate-y-2 flex flex-col h-full group/card">
                           <div className="flex-1 relative overflow-hidden flex flex-col justify-between">
                             {image && (
@@ -302,18 +298,20 @@ const HomePage: React.FC = () => {
                                 {insight.category}
                               </Badge>
 
-                              <h3 className="text-lg font-headline font-semibold text-primary mb-2 flex-grow">
+                              <h3 className="text-lg font-headline font-semibold text-primary mb-2 flex-grow group-hover:text-accent transition-colors">
                                 {insight.title}
                               </h3>
 
                               <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
                                 {insight.summary}
                               </p>
-
+                              <div className="pt-4">
+                                <span className="text-sm font-semibold text-primary group-hover:text-accent transition-colors">Read More <ArrowRight className="inline-block ml-1 h-4 w-4" /></span>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </Link>
                       </motion.div>
                     </CarouselItem>
                   );
