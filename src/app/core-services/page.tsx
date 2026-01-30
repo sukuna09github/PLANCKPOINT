@@ -81,19 +81,19 @@ const CoreServicesPage: React.FC = () => {
       id: 'vendor',
       title: "Vendor Evaluation & Comparison",
       description: "Rigorous, evidence-based evaluations of technology vendors beyond narrative claims and simplified visual models.",
-      imageId: "category-data"
+      imageId: "hero-abstract-1"
     },
     {
       id: 'landscape',
       title: "Technology Landscape & Usage Analysis",
       description: "Data-driven analysis of technology adoption, usage patterns, and emerging market trends to inform strategy.",
-      imageId: "category-tech"
+      imageId: "hero-abstract-2"
     },
     {
       id: 'benchmarking',
       title: "Benchmarking",
       description: "Comparative analysis against industry standards to identify opportunities for improvement and competitive advantage. (pricing, user experience, location, operational metrics)",
-      imageId: "category-econ"
+      imageId: "hero-abstract-3"
     }
   ];
 
@@ -447,4 +447,5 @@ export default CoreServicesPage;
     
 
     
+
 
