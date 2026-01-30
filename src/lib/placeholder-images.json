@@ -27,7 +27,7 @@
     {
       "id": "product2",
       "description": "Abstract image for BeyondQuadrants.",
-      "imageUrl": "https://images.unsplash.com/photo-1651488829517-95af02975dd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMHRlYWx8ZW58MHx8fHwxNzY5MTAxMTE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1651488829517-95af02975dd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMHRlYWx8ZW58MHx8fHwxNzY5MTAxMTE2fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "teal geometry"
     },
     {
@@ -489,7 +489,7 @@
     {
       "id": "board2",
       "description": "Portrait of Peter Dean.",
-      "imageUrl": "/images/peter dean sketch.png",
+      "imageUrl": "/images/peter.jpg",
       "imageHint": "man portrait sketch"
     },
     {
