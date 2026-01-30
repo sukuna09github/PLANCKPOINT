@@ -251,7 +251,7 @@ const CoreServicesPage: React.FC = () => {
                             stroke="currentColor"
                             strokeWidth="1.5"
                           >
-                            <path d="M128 16L20 16L0 0" />
+                            <path d="M128 16L20 16L0 32" />
                           </svg>
                           <p className="text-base text-left text-muted-foreground">
                             {capability.description}
