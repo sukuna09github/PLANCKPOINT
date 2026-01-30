@@ -130,9 +130,6 @@ const CoreServicesPage: React.FC = () => {
                                     <div className="h-full">
                                         <Card className="h-full bg-primary/5 border-primary/20 hover:border-primary hover:bg-primary/10 transition-colors duration-300">
                                             <CardContent className="p-8 text-center flex flex-col items-center justify-center min-h-[220px]">
-                                                <div className="flex-shrink-0 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
-                                                    <ArrowRight className="h-6 w-6 text-primary" />
-                                                </div>
                                                 <p className="text-base font-medium text-foreground flex-grow">{item}</p>
                                             </CardContent>
                                         </Card>
@@ -243,6 +240,7 @@ export default CoreServicesPage;
     
 
     
+
 
 
 
