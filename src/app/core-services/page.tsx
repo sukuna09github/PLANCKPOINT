@@ -227,8 +227,8 @@ const CoreServicesPage: React.FC = () => {
                       {capability.subtext && <p className="text-base opacity-90 mt-2">{capability.subtext}</p>}
                     </div>
                     
-                    <div className="absolute left-full top-1/2 -translate-y-1/2 ml-12 w-52 p-2 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-apple pointer-events-none z-10 transform group-hover:translate-x-0 translate-x-[-10px]">
-                      <div className="absolute right-full top-1/2 -translate-y-1/2 h-px w-12 bg-gray-400"></div>
+                    <div className="absolute left-full top-1/2 -translate-y-1/2 ml-24 w-52 p-2 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-apple pointer-events-none z-10 transform group-hover:translate-x-0 translate-x-[-10px]">
+                      <div className="absolute right-full top-1/2 -translate-y-1/2 h-px w-24 bg-gray-400"></div>
                       <p className="text-base text-left text-muted-foreground">
                         {capability.description}
                       </p>
@@ -361,6 +361,8 @@ export default CoreServicesPage;
 
     
 
+
+    
 
     
 
