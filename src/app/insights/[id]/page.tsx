@@ -37,7 +37,7 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
 
     return (
         <main className="bg-white text-black font-body">
-            <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-20 pb-24">
+            <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-20 pb-24">
                 <header className="text-left mb-12">
                     <p className="text-sm font-semibold uppercase tracking-wider text-gray-600">{article.category}</p>
                     <h1 className="text-4xl md:text-5xl font-bold mt-4 text-primary !leading-tight">{article.title}</h1>
@@ -50,12 +50,12 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
                 
                 <hr className="mb-12" />
 
-                <div className="grid grid-cols-12 gap-x-8">
-                    <div className="col-span-12 lg:col-span-8 mckinsey-article-body">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    <div className="lg:col-span-8 mckinsey-article-body">
                         <div dangerouslySetInnerHTML={{ __html: contentWithBold || ''}} />
                     </div>
-                    <aside className="col-span-12 lg:col-span-4">
-                        <div className="sticky top-24 space-y-10">
+                    <aside className="lg:col-span-4">
+                        <div className="sticky top-24 space-y-8">
                             {article.author && (
                                 <div>
                                     <h3 className="text-sm font-bold uppercase tracking-wider text-gray-700 border-b pb-3">Author</h3>
@@ -79,7 +79,7 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
                                     </a>
                                 )}
                             </div>
-                            <ShareButtons title={article.title} pdfUrl={article.pdfUrl} />
+                            <ShareButtons title={article.title} />
                         </div>
                     </aside>
                 </div>

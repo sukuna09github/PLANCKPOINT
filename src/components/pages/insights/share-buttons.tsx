@@ -1,6 +1,6 @@
 "use client";
 
-import { Linkedin, Link as LinkIcon, Download } from 'lucide-react';
+import { Linkedin, Link as LinkIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 import { usePathname } from 'next/navigation';
@@ -12,7 +12,7 @@ const XLogo = () => (
     </svg>
 );
 
-export const ShareButtons = ({ title, pdfUrl }: { title: string, pdfUrl?: string }) => {
+export const ShareButtons = ({ title }: { title: string }) => {
     const { toast } = useToast();
     const pathname = usePathname();
     const [url, setUrl] = useState('');
@@ -39,8 +39,8 @@ export const ShareButtons = ({ title, pdfUrl }: { title: string, pdfUrl?: string
 
     return (
         <div>
-            <h3 className="font-semibold text-xl mb-4 border-b pb-2">Share</h3>
-            <div className="flex items-center gap-2">
+            <h3 className="text-sm font-bold uppercase tracking-wider text-gray-700 border-b pb-3">Share</h3>
+            <div className="mt-4 flex items-center gap-2">
                 <Button asChild variant="outline" size="icon" title="Share on X">
                     <a href={twitterUrl} target="_blank" rel="noopener noreferrer">
                         <XLogo />
@@ -54,13 +54,6 @@ export const ShareButtons = ({ title, pdfUrl }: { title: string, pdfUrl?: string
                 <Button variant="outline" size="icon" onClick={copyLink} title="Copy link">
                     <LinkIcon className="h-5 w-5" />
                 </Button>
-                {pdfUrl && (
-                    <Button asChild variant="outline" size="icon" title="Download PDF">
-                        <a href={pdfUrl} download>
-                            <Download className="h-5 w-5" />
-                        </a>
-                    </Button>
-                )}
             </div>
         </div>
     );
