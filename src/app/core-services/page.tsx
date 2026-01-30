@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState, useEffect } from 'react';
@@ -197,6 +196,19 @@ const CoreServicesPage: React.FC = () => {
                   <h3 className="text-xl font-bold">Vendor evaluation and comparison</h3>
                 </div>
               </div>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      <section id="resulting-difference" className="py-20 lg:py-24 bg-background text-primary">
+        <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <AnimatedSection>
+            <div className="text-center">
+              <h2 className="text-3xl md:text-4xl font-normal">The Resulting Difference</h2>
+              <p className="mt-6 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
+                We integrate research and consulting in every engagement because serious advisory requires a foundation of facts, data, and evidence. Our "Resulting" approach reflects our commitment to client outcomes rather than billable hours. We focus on the results that matter to your business, bringing coherence to complexity and clarity to transition.
+              </p>
             </div>
           </AnimatedSection>
         </div>
