@@ -113,6 +113,8 @@ const CoreServicesPage: React.FC = () => {
         </div>
       </section>
 
+      <hr className="subtle-divider" />
+
       <section id="resulting" className="py-20 lg:py-24 bg-white text-primary">
         <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
@@ -125,6 +127,8 @@ const CoreServicesPage: React.FC = () => {
           </AnimatedSection>
         </div>
       </section>
+      
+      <hr className="subtle-divider" />
 
       <section id="consulting-services" className="py-20 lg:py-24 bg-background text-primary">
         <div className="w-full px-4 sm:px-6 lg:px-8">
@@ -177,6 +181,8 @@ const CoreServicesPage: React.FC = () => {
         </div>
       </section>
 
+      <hr className="subtle-divider" />
+
       <section id="research-capabilities" className="py-20 lg:py-24 bg-white text-primary">
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
@@ -198,7 +204,7 @@ const CoreServicesPage: React.FC = () => {
                       }}
                   >
                       <div className="flex flex-col items-center">
-                          <h3 className="text-lg font-medium leading-tight">Vendor evaluation and comparison</h3>
+                          <h3 className="text-base font-medium leading-tight">Vendor evaluation and comparison</h3>
                       </div>
                   </div>
                   <div
@@ -212,7 +218,7 @@ const CoreServicesPage: React.FC = () => {
                       }}
                   >
                       <div className="flex flex-col items-center">
-                          <h3 className="text-lg font-medium leading-tight">Technology landscape and usage analysis</h3>
+                          <h3 className="text-base font-medium leading-tight">Technology landscape and usage analysis</h3>
                       </div>
                   </div>
                   <div
@@ -226,7 +232,7 @@ const CoreServicesPage: React.FC = () => {
                       }}
                   >
                       <div className="flex flex-col items-center justify-center h-full">
-                          <h3 className="text-lg font-medium leading-tight">Benchmarking</h3>
+                          <h3 className="text-base font-medium leading-tight">Benchmarking</h3>
                           <p className="text-sm text-white/80 mt-1">(pricing, user experience, location, operational metrics)</p>
                       </div>
                   </div>
@@ -237,6 +243,8 @@ const CoreServicesPage: React.FC = () => {
         </div>
       </section>
 
+      <hr className="subtle-divider" />
+      
       <section id="resulting-difference" className="py-20 lg:py-24 bg-background text-primary">
         <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
