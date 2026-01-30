@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect } from 'react';
@@ -28,16 +29,11 @@ const HomePage: React.FC = () => {
   const [latestResearch, setLatestResearch] = useState<Research[]>([]);
   const [products, setProducts] = useState<Product[]>([]);
 
-  const heroSlides = mockResearchData.slice(0, 3).map((insight, index) => {
-    const subheadlines = [
-        "The hidden cost of innovation that's silently eroding your margins.",
-        "From cost center to value driver: rethinking your IT budget for the new economy.",
-        "In the age of AI, strategic clarity is the new execution. Are you ready?"
-    ];
+  const heroSlides = mockResearchData.slice(0, 3).map((insight) => {
     return {
         video: "/videos/hero.mp4",
         headline: insight.title,
-        subheadline: subheadlines[index],
+        subheadline: insight.summary,
         id: insight._id,
         href: `/insights/${insight._id}`
     }
@@ -411,3 +407,5 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
+    
