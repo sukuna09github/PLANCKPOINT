@@ -186,9 +186,9 @@ const CoreServicesPage: React.FC = () => {
                 We ground every engagement in data-driven analysis:
               </p>
               <div className="mt-16 flex justify-center" style={{ filter: 'drop-shadow(rgba(0, 0, 0, 0.1) 0px 25px 20px)' }}>
-                <div className="w-full max-w-2xl flex flex-col items-center -space-y-1">
+                <div className="w-full max-w-3xl flex flex-col items-center -space-y-1">
                   <div
-                      className="relative flex items-center justify-center text-center text-white p-4"
+                      className="relative flex items-center justify-center text-center text-white p-6"
                       style={{
                           width: '40%',
                           height: '120px',
@@ -202,7 +202,7 @@ const CoreServicesPage: React.FC = () => {
                       </div>
                   </div>
                   <div
-                      className="relative flex items-center justify-center text-center text-white p-4"
+                      className="relative flex items-center justify-center text-center text-white p-6"
                       style={{
                           width: '70%',
                           height: '95px',
@@ -216,7 +216,7 @@ const CoreServicesPage: React.FC = () => {
                       </div>
                   </div>
                   <div
-                      className="relative flex items-center justify-center text-center text-white p-4"
+                      className="relative flex items-center justify-center text-center text-white p-6"
                       style={{
                           width: '100%',
                           height: '110px',
