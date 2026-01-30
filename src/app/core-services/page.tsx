@@ -56,7 +56,7 @@ const CoreServicesPage: React.FC = () => {
     { text: "Go-to-Market and Market Entry Strategies", icon: Rocket, imageId: "hero-abstract-1" },
     { text: "Competitive Positioning and Differentiation", icon: Palette, imageId: "hero-abstract-2" },
     { text: "Win Strategy Development", icon: Star, imageId: "hero-abstract-3" },
-    { text: "Technology and Software Selection", icon: Cpu, imageId: "what-we-do-1" },
+    { text: "Technology and Software Selection", icon: Cpu, imageId: "what-we-do-2" },
     { text: "AI-Enabled Organizational Transformation", icon: BrainCircuit, imageId: "category-ai" }
   ];
 
@@ -255,3 +255,4 @@ export default CoreServicesPage;
     
 
     
+
