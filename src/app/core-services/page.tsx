@@ -195,10 +195,10 @@ const CoreServicesPage: React.FC = () => {
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
             <div className="mt-16 flex justify-center" style={{filter: 'drop-shadow(rgba(0, 0, 0, 0.04) 0px 10px 8px) drop-shadow(rgba(0, 0, 0, 0.1) 0px 4px 3px)'}}>
-              <div className="w-full max-w-2xl flex flex-col items-center space-y-2">
+              <div className="w-full max-w-4xl flex flex-col items-center space-y-2">
                   {/* Layer 3: Top */}
                   <div style={{
-                      width: '300px',
+                      width: '400px',
                       height: '100px',
                       backgroundColor: 'hsl(var(--accent))',
                       clipPath: 'polygon(50% 0%, 100% 100%, 0% 100%)',
@@ -207,18 +207,18 @@ const CoreServicesPage: React.FC = () => {
                       justifyContent: 'center',
                       color: 'white',
                       textAlign: 'center',
-                      padding: '0 2rem',
+                      padding: '0 3rem',
                       fontWeight: 500,
                   }}>
-                      <h3 className="leading-tight">Vendor Evaluation & Comparison</h3>
+                      <h3 className="leading-tight text-lg">Vendor Evaluation & Comparison</h3>
                   </div>
 
                   {/* Layer 2: Middle */}
                   <div style={{
-                      width: '550px',
+                      width: '700px',
                       height: '100px',
                       backgroundColor: 'hsl(var(--secondary))',
-                      clipPath: 'polygon(22.7% 0, 77.3% 0, 100% 100%, 0% 100%)',
+                      clipPath: 'polygon(21.5% 0, 78.5% 0, 100% 100%, 0% 100%)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
@@ -227,15 +227,15 @@ const CoreServicesPage: React.FC = () => {
                       padding: '0 2rem',
                       fontWeight: 500,
                   }}>
-                      <h3 className="leading-tight">Technology Landscape & Usage Analysis</h3>
+                      <h3 className="leading-tight text-xl">Technology Landscape & Usage Analysis</h3>
                   </div>
 
                   {/* Layer 1: Bottom */}
                   <div style={{
-                      width: '800px',
+                      width: '1000px',
                       height: '100px',
                       backgroundColor: 'hsl(var(--primary))',
-                      clipPath: 'polygon(15.625% 0, 84.375% 0, 100% 100%, 0% 100%)',
+                      clipPath: 'polygon(15% 0, 85% 0, 100% 100%, 0% 100%)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
@@ -244,8 +244,8 @@ const CoreServicesPage: React.FC = () => {
                       padding: '0 2rem',
                   }}>
                       <div>
-                          <h3 className="font-medium">Benchmarking</h3>
-                          <p className="text-sm opacity-80 mt-1">(pricing, user experience, location, operational metrics)</p>
+                          <h3 className="font-medium text-2xl">Benchmarking</h3>
+                          <p className="text-base opacity-80 mt-1">(pricing, user experience, location, operational metrics)</p>
                       </div>
                   </div>
               </div>
@@ -370,6 +370,9 @@ export default CoreServicesPage;
 
 
 
+
+
+    
 
 
     
