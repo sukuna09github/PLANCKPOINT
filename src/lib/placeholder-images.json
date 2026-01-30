@@ -63,13 +63,13 @@
     {
       "id": "insight5",
       "description": "Image for quantum cybersecurity.",
-      "imageUrl": "https://images.unsplash.com/photo-1609705024873-7add858e3036?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxxdWFudHVtJTIwY29tcHV0aW5nfGVufDB8fHx8MTc2NTIyNzM1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1609705024873-7add858e3036?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxxdWFudHVtJTIwY29tcHV0aW5nfGVufDB8fHx8MTc2NTIyNzM1Mnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "quantum computing"
     },
     {
       "id": "insight6",
       "description": "Image for UX design for augmented reality.",
-      "imageUrl": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhdWdtZW50ZWQlMjByZWFsaXR5fGVufDB8fHx8MTc2NTIyNzM1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhdWdtZW50ZWQlMjByZWFsaXR5fGVufDB8fHx8MTc2NTIyNzM1Mnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "augmented reality"
     },
     {
@@ -81,19 +81,19 @@
     {
       "id": "research-hero2",
       "description": "An abstract visualization of a neural network.",
-      "imageUrl": "https://images.unsplash.com/photo-1655890006065-edefcd764af6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxuZXVyYWwlMjBuZXR3b3JrfGVufDB8fHx8MTc2NDg0NTkxNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1655890006065-edefcd764af6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxuZXVyYWwlMjBuZXR3b3JrfGVufDB8fHx8MTc2NDg0NTkxNnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "neural network"
     },
     {
       "id": "research-hero3",
       "description": "A library with a futuristic glowing book.",
-      "imageUrl": "https://images.unsplash.com/photo-1664395365741-07cb6d014963?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmdXR1cmlzdGljJTIwbGlicmFyeXxlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1664395365741-07cb6d014963?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmdXR1cmlzdGljJTIwbGlicmFyeXxlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "futuristic library"
     },
     {
       "id": "research1",
       "description": "Image for UX research.",
-      "imageUrl": "https://images.unsplash.com/photo-1587440871875-191322ee64b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx1c2VyJTIwaW50ZXJmYWNlfGVufDB8fHx8MTc2NDc2NTkyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1587440871875-191322ee64b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx1c2VyJTIwaW50ZXJmYWNlfGVufDB8fHx8MTc2NDc2NTkyM3ww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "user interface"
     },
     {
@@ -105,31 +105,31 @@
     {
       "id": "research3",
       "description": "Image for developer productivity.",
-      "imageUrl": "https://images.unsplash.com/photo-1529429612779-c8e40ef2f36d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb2RlJTIwc2NyZWVufGVufDB8fHx8MTc2NDc2ODkxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1529429612779-c8e40ef2f36d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb2RlJTIwc2NyZWVufGVufDB8fHx8MTc2NDc2ODkxN3ww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "code screen"
     },
     {
       "id": "research4",
       "description": "Image for remote collaboration.",
-      "imageUrl": "https://images.unsplash.com/photo-1616587226157-48e49175ee20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dmlkZW8lMjBjb25mZXJlbmNlfGVufDB8fHx8MTc2NDg2MTUwOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1616587226157-48e49175ee20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dmlkZW8lMjBjb25mZXJlbmNlfGVufDB8fHx8MTc2NDg2MTUwOHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "video conference"
     },
     {
       "id": "research5",
       "description": "Image for AI ethics.",
-      "imageUrl": "https://images.unsplash.com/photo-1758275966059-462a4d0fba23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnYXZlbCUyMGNpcmN1aXR8ZW58MHx8fHwxNzY0ODYxNTA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758275966059-462a4d0fba23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnYXZlbCUyMGNpcmN1aXR8ZW58MHx8fHwxNzY0ODYxNTA4fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "gavel circuit"
     },
     {
       "id": "research6",
       "description": "Image for quantum computing.",
-      "imageUrl": "https://images.unsplash.com/photo-1609705024873-7add858e3036?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxxdWFudHVtJTIwY29tcHV0ZXJ8ZW58MHx8fHwxNzY0Nzc2MDM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1609705024873-7add858e3036?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxxdWFudHVtJTIwY29tcHV0ZXJ8ZW58MHx8fHwxNzY0Nzc2MDM0fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "quantum computer"
     },
     {
       "id": "leader1",
       "description": "Portrait of Amit Dengle.",
-      "imageUrl": "/images/amit sketch.png",
+      "imageUrl": "/images/amit.png",
       "imageHint": "man portrait sketch"
     },
     {
@@ -177,25 +177,25 @@
     {
       "id": "about-hero",
       "description": "A modern, well-lit architectural space.",
-      "imageUrl": "https://images.unsplash.com/photo-1631974474717-d69d3646d5df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0ZWFsJTIwfGVufDB8fHx8MTc2NTUzMDUzOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1631974474717-d69d3646d5df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0ZWFsJTIwfGVufDB8fHx8MTc2NTUzMDUzOXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "teal abstract"
     },
     {
       "id": "hero-abstract-1",
       "description": "AI-generated abstract image with teal and blue flowing lines.",
-      "imageUrl": "https://images.unsplash.com/photo-1533748347742-b2e2ff602786?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0ZWFsJTIwfGVufDB8fHx8MTc2ODYzNzc4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1533748347742-b2e2ff602786?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0ZWFsJTIwfGVufDB8fHx8MTc2ODYzNzc4M3ww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "abstract teal"
     },
     {
       "id": "hero-abstract-2",
       "description": "AI-generated abstract image with geometric shapes in teal and dark blue.",
-      "imageUrl": "https://images.unsplash.com/photo-1738005787790-cdd55b3bddec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0ZWFsJTIwZ2VvbWV0cnl8ZW58MHx8fHwxNzY0ODY4NjUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1738005787790-cdd55b3bddec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0ZWFsJTIwZ2VvbWV0cnl8ZW58MHx8fHwxNzY0ODY4NjUwfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "teal geometry"
     },
     {
       "id": "hero-abstract-3",
       "description": "AI-generated abstract image with soft gradients of teal and light green.",
-      "imageUrl": "https://images.unsplash.com/photo-1517503347350-3924f175a9d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0ZWFsJTIwZ3JhZGllbnR8ZW58MHx8fHwxNzY0ODY4NjUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1517503347350-3924f175a9d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0ZWFsJTIwZ3JhZGllbnR8ZW58MHx8fHwxNzY0ODY4NjUwfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "teal gradient"
     },
     {
@@ -231,7 +231,7 @@
     {
       "id": "what-we-do-1",
       "description": "Abstract image of teal smoke.",
-      "imageUrl": "https://images.unsplash.com/photo-1635732346025-d0ed3500ea7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8YXRvbWljJTIwYWl8ZW58MHx8fHwxNzY1MjAxMTk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1635732346025-d0ed3500ea7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8YXRvbWljJTIwYWl8ZW58MHx8fHwxNzY1MjAxMTk3fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "teal circuits"
     },
     {
@@ -249,37 +249,37 @@
     {
       "id": "atomicai-background",
       "description": "A futuristic, glowing teal cube with circuit-like patterns, representing AI and technology.",
-      "imageUrl": "https://images.unsplash.com/photo-1635732346025-d0ed3500ea7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8QVRPTUlDJTIwQUl8ZW58MHx8fHwxNzY1MjAzNDY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1635732346025-d0ed3500ea7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8QVRPTUlDJTIwQUl8ZW58MHx8fHwxNzY1MjAzNDY0fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "AI technology"
     },
     {
       "id": "beyondquadrants-background",
       "description": "Abstract image for BeyondQuadrants.",
-      "imageUrl": "https://images.unsplash.com/photo-1651488829517-95af02975dd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMHRlYWx8ZW58MHx8fHwxNzY5MTAxMTE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1651488829517-95af02975dd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMHRlYWx8ZW58MHx8fHwxNzY5MTAxMTE2fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "teal geometry"
     },
     {
       "id": "product-atomicai",
       "description": "Teal abstract circuits",
-      "imageUrl": "https://images.unsplash.com/photo-1708778002531-5bb1c27c4ea3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMHRlYWx8ZW58MHx8fHwxNzY5MTAxMTE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1708778002531-5bb1c27c4ea3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMHRlYWx8ZW58MHx8fHwxNzY5MTAxMTE2fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "teal circuits"
     },
     {
       "id": "product-beyondquadrants",
       "description": "Teal geometric shapes",
-      "imageUrl": "https://images.unsplash.com/photo-1651488829517-95af02975dd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMHRlYWx8ZW58MHx8fHwxNzY5MTAxMTE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1651488829517-95af02975dd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMHRlYWx8ZW58MHx8fHwxNzY5MTAxMTE2fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "teal geometry"
     },
     {
       "id": "product-thinkquark",
       "description": "Abstract representation of quantum computing",
-      "imageUrl": "https://images.unsplash.com/photo-1708778002586-37c4f23b7f3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhYnN0cmFjdCUyMHRlYWx8ZW58MHx8fHwxNzY5MTAxMTE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1708778002586-37c4f23b7f3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhYnN0cmFjdCUyMHRlYWx8ZW58MHx8fHwxNzY5MTAxMTE2fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "quantum computing"
     },
     {
       "id": "product-signalone",
       "description": "Bespoke research and decision-ready intelligence tailored to your strategic questions.",
-      "imageUrl": "https://images.unsplash.com/photo-1658955827223-5c75d28fd3b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOHx8YWJzdHJhY3QlMjBhaXxlbnwwfHx8fDE3NjkwNzg0MTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1658955827223-5c75d28fd3b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOHx8YWJzdHJhY3QlMjBhaXxlbnwwfHx8fDE3NjkwNzg0MTd8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "intelligence research"
     },
     {
@@ -291,61 +291,61 @@
     {
       "id": "research8",
       "description": "An image representing data sonification.",
-      "imageUrl": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb3VuZCUyMHdhdmVzfGVufDB8fHx8MTcxNzU5ODQzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb3VuZCUyMHdhdmVzfGVufDB8fHx8MTcxNzU5ODQzNHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "sound waves"
     },
     {
       "id": "research9",
       "description": "An image representing the gig economy.",
-      "imageUrl": "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnYWclMjBlY29ub215fGVufDB8fHx8MTcxNzU5ODQ5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnYWclMjBlY29ub215fGVufDB8fHx8MTcxNzU5ODQ5OHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "gig economy"
     },
     {
       "id": "research10",
       "description": "An image representing human-AI collaboration.",
-      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBSSUyMGNvbGxhYm9yYXRpb258ZW58MHx8fHwxNzE3NTk4NTMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBSSUyMGNvbGxhYm9yYXRpb258ZW58MHx8fHwxNzE3NTk4NTMxfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "AI collaboration"
     },
     {
       "id": "research11",
       "description": "An image representing empathy in design.",
-      "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkZXNpZ24lMjBlbXBhdGh5fGVufDB8fHx8MTcxNzU5ODU1OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkZXNpZ24lMjBlbXBhdGh5fGVufDB8fHx8MTcxNzU5ODU1OXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "design empathy"
     },
     {
       "id": "research12",
       "description": "An image representing cyber-physical systems.",
-      "imageUrl": "https://images.unsplash.com/photo-1530836592837-a06a2f3a67d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjeWJlciUyMHBoeXNpY2FsfGVufDB8fHx8MTcxNzU5ODYxMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1530836592837-a06a2f3a67d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjeWJlciUyMHBoeXNpY2FsfGVufDB8fHx8MTcxNzU5ODYxMHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "cyber physical"
     },
     {
       "id": "research13",
       "description": "An image representing the psychology of gamification.",
-      "imageUrl": "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnYW1pZmljYXRpb24lMjBwc3ljaG9sb2d5fGVufDB8fHx8MTcxNzU5ODcwN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnYW1pZmljYXRpb24lMjBwc3ljaG9sb2d5fGVufDB8fHx8MTcxNzU5ODcwN3ww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "gamification psychology"
     },
     {
       "id": "research14",
       "description": "An image representing low-code/no-code platforms.",
-      "imageUrl": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuYy1jb2RlfGVufDB8fHx8MTcxNzU5ODc0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuYy1jb2RlfGVufDB8fHx8MTcxNzU5ODc0N3ww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "no-code"
     },
     {
       "id": "research15",
       "description": "An image representing neuro-symbolic AI.",
-      "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuZXVybyUyMHN5bWJvbGljfGVufDB8fHx8MTcxNzU5ODc5Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuZXVybyUyMHN5bWJvbGljfGVufDB8fHx8MTcxNzU5ODc5Mnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "neuro symbolic"
     },
     {
       "id": "research16",
       "description": "An image representing the metaverse.",
-      "imageUrl": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhdmVyc2UlMjByZWFsaXR5fGVufDB8fHx8MTcxNzU5ODgyNHww&ixlib=rb-4.1_0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhdmVyc2UlMjByZWFsaXR5fGVufDB8fHx8MTcxNzU5ODgyNHww&ixlib-rb-4.1_0&q=80&w=1080",
       "imageHint": "metaverse reality"
     },
     {
       "id": "research17",
       "description": "An image representing privacy-preserving machine learning.",
-      "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcml2YWN5JTIwbGVhcm5pbmd8ZW58MHx8fHwxNzE3NTk4ODU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcml2YWN5JTIwbGVhcm5pbmd8ZW58MHx8fHwxNzE3NTk4ODU2fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "privacy learning"
     },
     {
@@ -441,19 +441,19 @@
     {
       "id": "prod-cat-strategy",
       "description": "Abstract image representing business strategy and growth",
-      "imageUrl": "https://images.unsplash.com/photo-1708778002586-37c4f23b7f3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXJrJTIwdGVhbCUyMGFic3RyYWN0fGVufDB8fHx8MTc2NjAwNDk1MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1708778002586-37c4f23b7f3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXJrJTIwdGVhbCUyMGFic3RyYWN0fGVufDB8fHx8MTc2NjAwNDk1MHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "business strategy"
     },
     {
       "id": "prod-cat-operations",
       "description": "Abstract image representing operational efficiency and gears",
-      "imageUrl": "https://images.unsplash.com/photo-1708778002531-5bb1c27c4ea3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhYnN0cmFjdCUyMHRlYWx8ZW58MHx8fHwxNzY1OTk4NTc2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1708778002531-5bb1c27c4ea3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhYnN0cmFjdCUyMHRlYWx8ZW58MHx8fHwxNzY1OTk4NTc2fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "operations efficiency"
     },
     {
       "id": "prod-cat-people",
       "description": "Abstract image representing people, talent, and collaboration",
-      "imageUrl": "https://images.unsplash.com/photo-1687093777245-bc60c636ddf0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkYXJrJTIwdGVhbCUyMGFic3RyYWN0fGVufDB8fHx8MTc2NjAwNDk1MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1687093777245-bc60c636ddf0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkYXJrJTIwdGVhbCUyMGFic3RyYWN0fGVufDB8fHx8MTc2NjAwNDk1MHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "people talent"
     },
     {
@@ -465,25 +465,25 @@
     {
       "id": "industry-finance",
       "description": "Abstract image representing finance and banking",
-      "imageUrl": "https://images.unsplash.com/photo-1664395365741-07cb6d014963?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmdXR1cmlzdGljJTIwbGlicmFyeXxlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1664395365741-07cb6d014963?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmdXR1cmlzdGljJTIwbGlicmFyeXxlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "finance banking"
     },
     {
       "id": "industry-healthcare",
       "description": "Abstract image representing healthcare and medicine",
-      "imageUrl": "https://images.unsplash.com/photo-1459664018906-085c36f472af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0ZWFsfGVufDB8fHx8MTc2ODQyNDQ4OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1459664018906-085c36f472af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0ZWFsfGVufDB8fHx8MTc2ODQyNDQ4OHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "healthcare medicine"
     },
     {
       "id": "industry-tech",
       "description": "Abstract image representing technology and innovation",
-      "imageUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkYXRhJTIwbmV0d29ya3xlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkYXRhJTIwbmV0d29ya3xlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "technology innovation"
     },
     {
       "id": "industry-legal",
       "description": "Abstract image representing the legal field and justice",
-      "imageUrl": "https://images.unsplash.com/photo-1758275966059-462a4d0fba23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnYXZlbCUyMGNpcmN1aXR8ZW58MHx8fHwxNzY0ODYxNTA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758275966059-462a4d0fba23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnYXZlbCUyMGNpcmN1aXR8ZW58MHx8fHwxNzY0ODYxNTA4fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "legal justice"
     },
     {
