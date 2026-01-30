@@ -271,10 +271,10 @@ export const mockResearchData = [
         <table class="min-w-full">
             <thead>
                 <tr class="border-b">
-                    <th class="px-4 py-2 text-left font-semibold">Strategic Impact</th>
-                    <th class="px-4 py-2 text-left font-semibold">Lines impacted</th>
-                    <th class="px-4 py-2 text-left font-semibold">Typical Impact</th>
-                    <th class="px-4 py-2 text-left font-semibold">What Leadership Sees</th>
+                    <th class="px-4 py-2 text-left font-semibold text-primary">Strategic Impact</th>
+                    <th class="px-4 py-2 text-left font-semibold text-primary">Lines impacted</th>
+                    <th class="px-4 py-2 text-left font-semibold text-primary">Typical Impact</th>
+                    <th class="px-4 py-2 text-left font-semibold text-primary">What Leadership Sees</th>
                 </tr>
             </thead>
             <tbody>
@@ -317,14 +317,14 @@ export const mockResearchData = [
         <p>There is a familiar precedent here. Organisations spent years learning that technical debt constrained agility and margins long after software worked. Prompt Debt follows the same logic, faster, and across a much broader workforce.</p>
         <h2>How should organisations manage their Prompt Debt?</h2>
         <p>Prompt Debt accumulates when prompts move from individual experimentation to shared, operational use without ownership, standards, or economic accountability. It does not break AI. It prevents AI from compounding value. Managing Prompt Debt is therefore not a technical exercise. It is an organisational discipline.</p>
-        <img src="/Articles/article1.1.png" alt="What Organisations Must Do" class="my-6 w-full" />
+        <img src="/Articles/article1.1.svg" alt="What Organisations Must Do" class="my-6 w-full" />
         <div class="overflow-x-auto">
         <table class="min-w-full">
             <thead>
                 <tr class="border-b">
-                    <th class="px-4 py-2 text-left font-semibold">What Organisations Must Do</th>
-                    <th class="px-4 py-2 text-left font-semibold">Why It Matters</th>
-                    <th class="px-4 py-2 text-left font-semibold">What Changes in Practice</th>
+                    <th class="px-4 py-2 text-left font-semibold text-primary">What Organisations Must Do</th>
+                    <th class="px-4 py-2 text-left font-semibold text-primary">Why It Matters</th>
+                    <th class="px-4 py-2 text-left font-semibold text-primary">What Changes in Practice</th>
                 </tr>
             </thead>
             <tbody>
@@ -605,6 +605,7 @@ export const PRODUCTS = [
 
 
     
+
 
 
 
