@@ -41,6 +41,30 @@ const CoreServicesPage: React.FC = () => {
     setIsClient(true);
   }, []);
 
+  const researchCapabilities = [
+    {
+      id: 'vendor',
+      title: "Vendor Evaluation & Comparison",
+      description: "Rigorous, evidence-based evaluations of technology vendors beyond narrative claims and simplified visual models.",
+      className: "bg-accent text-accent-foreground",
+      subtext: null
+    },
+    {
+      id: 'landscape',
+      title: "Technology Landscape & Usage Analysis",
+      description: "Data-driven analysis of technology adoption, usage patterns, and emerging market trends to inform strategy.",
+      className: "bg-secondary text-secondary-foreground",
+      subtext: null
+    },
+    {
+      id: 'benchmarking',
+      title: "Benchmarking",
+      description: "Comparative analysis against industry standards to identify opportunities for improvement and competitive advantage.",
+      className: "bg-primary text-primary-foreground",
+      subtext: "(pricing, user experience, location, operational metrics)"
+    }
+  ];
+
   if (loading) {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
@@ -194,16 +218,23 @@ const CoreServicesPage: React.FC = () => {
             </div>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
-            <div className="mt-16 max-w-3xl mx-auto space-y-4">
-              <div className="bg-accent text-accent-foreground p-6 rounded-lg text-center shadow-lg">
-                <h3 className="text-xl font-semibold">Vendor Evaluation & Comparison</h3>
-              </div>
-              <div className="bg-secondary text-secondary-foreground p-6 rounded-lg text-center shadow-lg">
-                <h3 className="text-xl font-semibold">Technology Landscape & Usage Analysis</h3>
-              </div>
-              <div className="bg-primary text-primary-foreground p-8 rounded-lg text-center shadow-lg">
-                <h3 className="text-xl font-semibold">Benchmarking</h3>
-                <p className="text-base opacity-90 mt-2">(pricing, user experience, location, operational metrics)</p>
+            <div className="mt-16 max-w-5xl mx-auto flex justify-center">
+              <div className="space-y-8 w-full lg:w-1/2">
+                {researchCapabilities.map((capability) => (
+                  <div key={capability.id} className="group relative">
+                    <div className={`${capability.className} p-8 rounded-lg text-center shadow-lg`}>
+                      <h3 className="text-xl font-semibold">{capability.title}</h3>
+                      {capability.subtext && <p className="text-base opacity-90 mt-2">{capability.subtext}</p>}
+                    </div>
+                    
+                    <div className="absolute left-full top-1/2 -translate-y-1/2 ml-8 w-60 p-2 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-apple pointer-events-none z-10 transform group-hover:translate-x-0 translate-x-[-10px]">
+                      <div className="absolute right-full top-1/2 -translate-y-1/2 h-px w-8 bg-gray-400"></div>
+                      <p className="text-base text-left text-muted-foreground">
+                        {capability.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </AnimatedSection>
