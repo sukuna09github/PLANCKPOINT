@@ -9,7 +9,7 @@
 
 @layer base {
   :root {
-    --font-body: 'Selawik', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+    --font-body: 'Lora', 'Selawik', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
     --font-headline: 'Selawik', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
     --font-logo: 'Lovelo Black', sans-serif;
 
@@ -109,7 +109,8 @@
   }
 
   .mckinsey-article-body p:first-of-type::first-letter {
-    @apply text-6xl font-light float-left pr-2 -mt-1 text-gray-900 font-headline;
+    font-family: 'Lora', serif;
+    @apply text-8xl font-light float-left pr-2 -mt-3 text-primary;
     line-height: 0.8;
   }
   
@@ -118,7 +119,7 @@
   }
 
   .mckinsey-article-body h2 {
-    @apply text-3xl font-bold font-headline mt-16 mb-4 text-gray-900 clear-both;
+    @apply text-3xl font-bold font-headline mt-16 mb-4 text-primary clear-both;
   }
 
   .mckinsey-article-body blockquote {

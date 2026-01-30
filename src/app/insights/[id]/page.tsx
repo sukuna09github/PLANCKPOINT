@@ -34,11 +34,11 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
     };
 
     return (
-        <main className="bg-white text-black">
-            <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-20 pb-24">
-                <header className="text-left mb-12 max-w-4xl mx-auto">
+        <main className="bg-white text-black font-body">
+            <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-20 pb-24">
+                <header className="text-left mb-12">
                     <p className="text-sm font-semibold uppercase tracking-wider text-gray-600">{article.category}</p>
-                    <h1 className="text-4xl md:text-5xl font-bold mt-4 text-gray-900 !leading-tight">{article.title}</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold mt-4 text-primary !leading-tight">{article.title}</h1>
                     <div className="mt-6 text-base text-gray-700 flex items-center flex-wrap">
                         <span>By {article.author.name}</span>
                         <span className="mx-3">|</span>
@@ -48,7 +48,7 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
                 
                 <hr className="mb-12" />
 
-                <div className="grid grid-cols-12 gap-x-8 max-w-6xl mx-auto">
+                <div className="grid grid-cols-12 gap-x-8">
                     <div className="col-span-12 lg:col-span-8 mckinsey-article-body">
                         <div dangerouslySetInnerHTML={{ __html: article.content || ''}} />
                     </div>
@@ -62,7 +62,7 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
                                             <Image src={authorImage.imageUrl} alt={article.author.name} width={64} height={64} className="rounded-full h-16 w-16 object-cover" />
                                         )}
                                         <div>
-                                            <p className="font-bold text-gray-900">{article.author.name}</p>
+                                            <p className="font-bold text-primary">{article.author.name}</p>
                                             <p className="text-sm text-gray-600">{article.author.role}</p>
                                         </div>
                                     </div>
@@ -71,7 +71,7 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
                             <div>
                                 <h3 className="text-sm font-bold uppercase tracking-wider text-gray-700 border-b pb-3">Downloads</h3>
                                 {article.pdfUrl && (
-                                    <a href={article.pdfUrl} download className="mt-4 flex items-center text-sm text-blue-700 hover:underline">
+                                    <a href={article.pdfUrl} download className="mt-4 flex items-center text-sm text-accent hover:underline">
                                         <Download className="h-4 w-4 mr-2" />
                                         <span>Article</span>
                                     </a>
@@ -86,7 +86,7 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
             <section className="py-24 bg-gray-50">
                 <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <AnimatedSection>
-                        <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Featured Insights</h2>
+                        <h2 className="text-4xl font-bold text-center mb-12 text-primary">Featured Insights</h2>
                     </AnimatedSection>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {featuredInsights.map((insight, index) => {
@@ -102,13 +102,13 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
                                         }
                                         <CardHeader>
                                             <Badge variant="outline" className="mb-2 w-fit">{insight.category}</Badge>
-                                            <CardTitle className="!text-xl text-gray-900 group-hover:text-blue-700 transition-colors">{insight.title}</CardTitle>
+                                            <CardTitle className="!text-xl text-primary group-hover:text-accent transition-colors">{insight.title}</CardTitle>
                                         </CardHeader>
                                         <CardContent className="flex-grow">
                                             <p className="text-sm text-gray-600 mt-2 line-clamp-3">{insight.summary}</p>
                                         </CardContent>
                                         <CardFooter>
-                                            <span className="text-sm font-semibold text-blue-700 group-hover:underline flex items-center">Read More <ArrowRight className="ml-2 h-4 w-4" /></span>
+                                            <span className="text-sm font-semibold text-accent group-hover:underline flex items-center">Read More <ArrowRight className="ml-2 h-4 w-4" /></span>
                                         </CardFooter>
                                     </Link>
                                 </Card>
