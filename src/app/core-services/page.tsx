@@ -10,6 +10,7 @@ import { PRODUCTS } from "@/lib/constants";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Button } from '@/components/ui/button';
 import { AnimatedSection } from '@/components/animated-section';
+import { Card, CardContent } from '@/components/ui/card';
 
 type Product = typeof PRODUCTS[0];
 
@@ -104,7 +105,7 @@ const CoreServicesPage: React.FC = () => {
       </section>
 
       <section id="consulting-services" className="py-20 lg:py-24 bg-background text-primary">
-        <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <AnimatedSection>
                 <div className="text-center">
                     <h2 className="text-3xl md:text-4xl font-normal">Our Consulting Services</h2>
@@ -112,17 +113,19 @@ const CoreServicesPage: React.FC = () => {
                         We support clients through critical transformation decisions:
                     </p>
                 </div>
-                <div className="mt-12 max-w-2xl mx-auto">
-                    <ul className="space-y-4">
-                        {consultingServices.map((item, index) => (
-                            <li key={index} className="flex items-start">
-                                <div className="flex-shrink-0 h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center mr-4">
-                                    <ArrowRight className="h-5 w-5 text-primary" />
-                                </div>
-                                <span className="text-lg text-foreground/90 mt-1">{item}</span>
-                            </li>
-                        ))}
-                    </ul>
+                <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    {consultingServices.map((item, index) => (
+                        <AnimatedSection key={index} delay={index * 0.1}>
+                          <Card className="h-full bg-primary/5 border-primary/20 hover:border-primary hover:bg-primary/10 transition-colors duration-300">
+                              <CardContent className="p-8 text-center flex flex-col items-center justify-center min-h-[220px]">
+                                  <div className="flex-shrink-0 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
+                                      <ArrowRight className="h-6 w-6 text-primary" />
+                                  </div>
+                                  <p className="text-base font-medium text-foreground flex-grow">{item}</p>
+                              </CardContent>
+                          </Card>
+                        </AnimatedSection>
+                    ))}
                 </div>
             </AnimatedSection>
         </div>
@@ -225,5 +228,6 @@ export default CoreServicesPage;
     
 
     
+
 
 
