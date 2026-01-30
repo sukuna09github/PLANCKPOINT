@@ -205,8 +205,6 @@ const CoreServicesPage: React.FC = () => {
         </div>
       </section>
 
-      <hr className="subtle-divider" />
-
       <section id="resulting" className="py-20 lg:py-24 bg-white text-primary">
         <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
@@ -220,8 +218,6 @@ const CoreServicesPage: React.FC = () => {
         </div>
       </section>
       
-      <hr className="subtle-divider" />
-
       <section id="consulting-services" className="py-20 lg:py-24 bg-background text-primary">
         <div className="w-full px-4 sm:px-6 lg:px-8">
             <AnimatedSection>
@@ -272,8 +268,6 @@ const CoreServicesPage: React.FC = () => {
             </AnimatedSection>
         </div>
       </section>
-
-      <hr className="subtle-divider" />
 
       <section id="research-capabilities" className="py-20 lg:py-24 bg-white text-primary">
         <div className="w-full px-4 sm:px-6 lg:px-8">
@@ -333,8 +327,6 @@ const CoreServicesPage: React.FC = () => {
           </AnimatedSection>
         </div>
       </section>
-
-      <hr className="subtle-divider" />
       
       <section id="resulting-difference" className="py-20 lg:py-24 bg-background text-primary">
         <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
