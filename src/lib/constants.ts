@@ -214,7 +214,7 @@ export const LEADERSHIP_TEAM = [
 export const BOARD_OF_ADVISORS = [
     { name: "Peter Dean", role: " ", imageId: "board2", bio: "A seasoned expert in enterprise software and digital transformation, Peter helps shape our product strategy and long-term vision." },
     { name: "Ulrich Meister", role: " ", imageId: "board3", bio: "Ulrich brings a deep understanding of corporate governance and risk management, ensuring our strategies are both ambitious and sound." },
-    { name: "Sriharsha", role: " ", imageId: "board4", bio: "As a leader in data science and AI, Sriharsha advises on cutting-edge technological advancements and their practical applications." },
+    { name: "Shrihar Narsimhan", role: " ", imageId: "board4", bio: "Shrihar Narsimhan is a seasoned technology strategist and board-level advisor with over three decades of experience spanning research and development, cybersecurity, digital transformation, and governance. He is known for translating complex technological landscapes into clear, actionable direction for leadership teams. His expertise includes building resilient technology frameworks, aligning innovation with regulatory and compliance requirements, strengthening cyber risk preparedness, and guiding organisations through AI adoption and emerging technology shifts. With a foundation in deep engineering, and a strong grasp of stakeholder governance, Shrihar brings a structured, systems-thinking approach that connects technology decisions to long-term business value, risk awareness, and sustainable growth." },
 ];
 
 export const FOOTER_LINKS = [
