@@ -93,7 +93,7 @@ const CoreServicesPage: React.FC = () => {
       "id": 'benchmarking',
       "title": "Benchmarking",
       "description": "Comparative analysis against industry standards to identify opportunities for improvement and competitive advantage. (pricing, user experience, location, operational metrics)",
-      imageId: "hero-abstract-3"
+      imageId: "dark-teal-abstract"
     }
   ];
 
@@ -447,6 +447,7 @@ export default CoreServicesPage;
     
 
     
+
 
 
 
