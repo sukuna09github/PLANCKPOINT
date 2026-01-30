@@ -228,16 +228,16 @@ const InsightsPage: React.FC = () => {
                   viewport={{ once: true }}
                   className="group"
                 >
-                  <motion.div
-                    className="relative overflow-hidden h-56 flex flex-col justify-end p-8 shadow-xl transition-all duration-300"
-                    style={{
-                      backgroundImage: `url(${category.image})`,
-                      backgroundSize: 'cover',
-                      backgroundPosition: 'center',
-                      backgroundRepeat: 'no-repeat',
-                    }}
+                  <div
+                    className="relative overflow-hidden h-56 flex flex-col justify-end p-8 shadow-xl transition-all duration-300 rounded-lg"
                   >
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent pointer-events-none" />
+                    <Image
+                      src={category.image}
+                      alt={category.title}
+                      fill
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent backdrop-blur-sm" />
                     <div className="relative z-10">
                         <h3 className="text-lg font-headline font-semibold text-white mb-2 transition-colors duration-300">
                           {category.title}
@@ -249,7 +249,7 @@ const InsightsPage: React.FC = () => {
                           {category.count}
                         </span>
                     </div>
-                  </motion.div>
+                  </div>
                 </motion.div>
               );
             })}
