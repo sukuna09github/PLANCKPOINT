@@ -49,6 +49,14 @@ const CoreServicesPage: React.FC = () => {
     );
   }
 
+  const consultingServices = [
+    "Go-to-Market and Market Entry Strategies",
+    "Competitive Positioning and Differentiation",
+    "Win Strategy Development",
+    "Technology and Software Selection",
+    "AI-Enabled Organizational Transformation"
+  ];
+
   return (
     <div className="min-h-screen bg-background">
       <section
@@ -95,9 +103,34 @@ const CoreServicesPage: React.FC = () => {
         </div>
       </section>
 
+      <section id="consulting-services" className="py-20 lg:py-24 bg-background text-primary">
+        <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <AnimatedSection>
+                <div className="text-center">
+                    <h2 className="text-3xl md:text-4xl font-normal">Our Consulting Services</h2>
+                    <p className="mt-6 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
+                        We support clients through critical transformation decisions:
+                    </p>
+                </div>
+                <div className="mt-12 max-w-2xl mx-auto">
+                    <ul className="space-y-4">
+                        {consultingServices.map((item, index) => (
+                            <li key={index} className="flex items-start">
+                                <div className="flex-shrink-0 h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center mr-4">
+                                    <ArrowRight className="h-5 w-5 text-primary" />
+                                </div>
+                                <span className="text-lg text-foreground/90 mt-1">{item}</span>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </AnimatedSection>
+        </div>
+      </section>
+
       {atomicAiProduct && (
         <section id="atomicai" className="grid grid-cols-1 md:grid-cols-2 w-full">
-            <div className="bg-background flex items-center justify-center p-12 md:p-16 lg:p-24">
+            <div className="bg-primary/5 flex items-center justify-center p-12 md:p-16 lg:p-24">
                 <AnimatedSection className="max-w-lg">
                     <div>
                         <h2 className="text-3xl font-bold text-primary">{atomicAiProduct.name}</h2>
@@ -119,7 +152,7 @@ const CoreServicesPage: React.FC = () => {
 
       {beyondQuadrantsProduct && (
         <section id="beyondquadrants" className="grid grid-cols-1 md:grid-cols-2 w-full">
-            <div className="bg-primary/5 flex items-center justify-center p-12 md:p-16 lg:p-24">
+            <div className="bg-background flex items-center justify-center p-12 md:p-16 lg:p-24">
                 <AnimatedSection className="max-w-lg">
                     <div>
                         <h2 className="text-3xl font-bold text-primary">{beyondQuadrantsProduct.name}</h2>
@@ -141,7 +174,7 @@ const CoreServicesPage: React.FC = () => {
       
       {thinkQuarkProduct && (
         <section id="thinkquark" className="grid grid-cols-1 md:grid-cols-2 w-full">
-            <div className="bg-background flex items-center justify-center p-12 md:p-16 lg:p-24">
+            <div className="bg-primary/5 flex items-center justify-center p-12 md:p-16 lg:p-24">
                 <AnimatedSection className="max-w-lg">
                     <div>
                         <h2 className="text-3xl font-bold text-primary">{thinkQuarkProduct.name}</h2>
@@ -163,7 +196,7 @@ const CoreServicesPage: React.FC = () => {
 
       {signaloneProduct && (
         <section id="signalone" className="grid grid-cols-1 md:grid-cols-2 w-full">
-            <div className="bg-primary/5 flex items-center justify-center p-12 md:p-16 lg:p-24">
+            <div className="bg-background flex items-center justify-center p-12 md:p-16 lg:p-24">
                 <AnimatedSection className="max-w-lg">
                     <div>
                         <h2 className="text-3xl font-bold text-primary">{signaloneProduct.name}</h2>
@@ -192,4 +225,5 @@ export default CoreServicesPage;
     
 
     
+
 
