@@ -1,3 +1,4 @@
+
 "use client";
 
 import React from "react";
@@ -108,12 +109,22 @@ export function Header() {
                     <NavigationMenuContent className="nav-glass-panel">
                       <motion.div {...motionVariants}>
                         <div className="p-6 w-[500px] lg:w-[600px]">
-                            <h3 className="text-lg font-medium text-primary mb-4">
-                              <Link href="/core-services" className="flex items-center hover:underline">
-                                Core Services
-                                <ArrowRight className="ml-2 h-4 w-4" />
-                              </Link>
-                            </h3>
+                            <div className="mb-4">
+                              <NavigationMenuLink asChild>
+                                <Link
+                                  href="/core-services"
+                                  className="block select-none space-y-1 p-3 leading-none no-underline outline-none transition-colors nav-list-item"
+                                >
+                                  <div className="text-base font-semibold leading-none text-primary flex items-center group">
+                                    Core Services
+                                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                                  </div>
+                                  <p className="line-clamp-2 text-sm leading-snug text-foreground/80">
+                                    Explore our full suite of strategic intelligence systems.
+                                  </p>
+                                </Link>
+                              </NavigationMenuLink>
+                            </div>
                             <ul className="grid grid-cols-2 gap-3">
                               {PRODUCTS.map((product) => (
                                 <ListItem
@@ -248,3 +259,5 @@ export function Header() {
     </header>
   );
 }
+
+    
