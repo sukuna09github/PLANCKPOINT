@@ -220,27 +220,44 @@ const CoreServicesPage: React.FC = () => {
           <AnimatedSection delay={0.2}>
             <div className="mt-16 max-w-5xl mx-auto flex justify-center">
               <div className="space-y-8 w-full lg:w-1/2">
-                {researchCapabilities.map((capability) => (
+                {researchCapabilities.map((capability, index) => (
                   <div key={capability.id} className="group relative">
                     <div className={`${capability.className} p-8 rounded-lg text-center shadow-lg`}>
                       <h3 className="text-xl font-semibold">{capability.title}</h3>
                       {capability.subtext && <p className="text-base opacity-90 mt-2">{capability.subtext}</p>}
                     </div>
                     
-                    <div className="absolute left-full top-1/2 -translate-y-1/2 ml-32 w-52 p-2 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-apple pointer-events-none z-10 transform group-hover:translate-x-0 translate-x-[-10px]">
-                      <svg
-                        className="absolute right-full top-1/2 -translate-y-1/2 h-8 w-32 text-gray-400"
-                        fill="none"
-                        viewBox="0 0 128 32"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                      >
-                        <path d="M128 16L20 16L0 0" />
-                      </svg>
-                      <p className="text-base text-left text-muted-foreground">
-                        {capability.description}
-                      </p>
-                    </div>
+                    {index === 1 ? (
+                        <div className="absolute right-full top-1/2 -translate-y-1/2 mr-32 w-52 p-2 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-apple pointer-events-none z-10 transform group-hover:translate-x-0 translate-x-[10px]">
+                          <svg
+                            className="absolute left-full top-1/2 -translate-y-1/2 h-8 w-32 text-gray-400"
+                            fill="none"
+                            viewBox="0 0 128 32"
+                            stroke="currentColor"
+                            strokeWidth="1.5"
+                          >
+                            <path d="M0 16L108 16L128 0" />
+                          </svg>
+                          <p className="text-base text-right text-muted-foreground">
+                            {capability.description}
+                          </p>
+                        </div>
+                    ) : (
+                        <div className="absolute left-full top-1/2 -translate-y-1/2 ml-32 w-52 p-2 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-apple pointer-events-none z-10 transform group-hover:translate-x-0 translate-x-[-10px]">
+                          <svg
+                            className="absolute right-full top-1/2 -translate-y-1/2 h-8 w-32 text-gray-400"
+                            fill="none"
+                            viewBox="0 0 128 32"
+                            stroke="currentColor"
+                            strokeWidth="1.5"
+                          >
+                            <path d="M128 16L20 16L0 0" />
+                          </svg>
+                          <p className="text-base text-left text-muted-foreground">
+                            {capability.description}
+                          </p>
+                        </div>
+                    )}
                   </div>
                 ))}
               </div>
@@ -369,6 +386,8 @@ export default CoreServicesPage;
 
     
 
+
+    
 
     
 
