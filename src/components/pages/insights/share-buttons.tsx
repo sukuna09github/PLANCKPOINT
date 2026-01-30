@@ -41,17 +41,17 @@ export const ShareButtons = ({ title }: { title: string }) => {
         <div>
             <h3 className="text-sm font-bold uppercase tracking-wider text-gray-700 border-b pb-3">Share</h3>
             <div className="mt-4 flex items-center gap-2">
-                <Button asChild variant="outline" size="icon" title="Share on X">
+                <Button asChild variant="ghost" size="icon" title="Share on X">
                     <a href={twitterUrl} target="_blank" rel="noopener noreferrer">
                         <XLogo />
                     </a>
                 </Button>
-                <Button asChild variant="outline" size="icon" title="Share on LinkedIn">
+                <Button asChild variant="ghost" size="icon" title="Share on LinkedIn">
                     <a href={linkedinUrl} target="_blank" rel="noopener noreferrer">
                         <Linkedin className="h-5 w-5" />
                     </a>
                 </Button>
-                <Button variant="outline" size="icon" onClick={copyLink} title="Copy link">
+                <Button variant="ghost" size="icon" onClick={copyLink} title="Copy link">
                     <LinkIcon className="h-5 w-5" />
                 </Button>
             </div>
