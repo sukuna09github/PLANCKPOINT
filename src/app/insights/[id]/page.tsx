@@ -81,14 +81,13 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
                     </AnimatedSection>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {featuredInsights.map((insight, index) => {
-                            const image = PlaceHolderImages.find(img => img.id === insight.imageId);
                             return (
                              <AnimatedSection key={insight._id} delay={index * 0.1}>
                                 <Card className="h-full hover:shadow-xl transition-shadow duration-300 group bg-white border">
                                     <Link href={`/insights/${insight._id}`} className="block h-full flex flex-col">
-                                        {image && 
+                                        {insight.mainImage && 
                                             <div className="relative aspect-video overflow-hidden">
-                                                <Image src={image.imageUrl} alt={insight.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" data-ai-hint={image.imageHint} />
+                                                <Image src={insight.mainImage} alt={insight.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
                                             </div>
                                         }
                                         <CardHeader>
