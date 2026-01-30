@@ -141,7 +141,7 @@ const CoreServicesPage: React.FC = () => {
                                                     data-ai-hint={image.imageHint}
                                                 />
                                             )}
-                                            <div className="absolute inset-0 bg-primary/70 group-hover:bg-primary/80 transition-colors duration-300" />
+                                            <div className="absolute inset-0 bg-black/30 backdrop-blur-md group-hover:bg-black/40 transition-colors duration-300" />
                                             <CardContent className="relative z-10 p-8 text-center flex flex-col items-center justify-center min-h-[220px] h-full text-white">
                                                 <Icon className="h-10 w-10 text-white mb-6" />
                                                 <p className="text-base font-medium flex-grow">{item.text}</p>
@@ -255,4 +255,5 @@ export default CoreServicesPage;
     
 
     
+
 
