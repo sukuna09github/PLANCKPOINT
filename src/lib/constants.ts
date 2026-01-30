@@ -261,7 +261,7 @@ export const mockResearchData = [
     },
     tags: ['AI', 'Prompt Engineering', 'ROI', 'Productivity'],
     content: `
-        <p>In just two years, organisations have gone from testing AI at the margins to relying on it in the middle of everyday work. AI now drafts what we send, analyses what we decide, and shapes how customers experience us. Usage is exploding. Productivity looks up. But something far more important is unfolding beneath the surface.</p>
+        <p><b>In just two years,</b> organisations have gone from testing AI at the margins to relying on it in the middle of everyday work. AI now drafts what we send, analyses what we decide, and shapes how customers experience us. Usage is exploding. Productivity looks up. But something far more important is unfolding beneath the surface.</p>
         <p>A gap is emerging between AI activity and AI impact.</p>
         <p>Many organisations report heavy usage but modest improvements in margins, decision speed, or automation at scale. Benefits that appeared compelling in pilots flatten as AI spreads across teams. Senior leaders find themselves more involved in review and validation, not less. Automation timelines slip, even as investment continues.</p>
         <blockquote>Prompt Debt accumulates when prompts are created quickly, shared informally, and embedded into workflows without ownership, standards, or economic accountability. What begins as flexibility gradually becomes fragility. Small inefficiencies compound, confidence in outputs declines, and manual safeguards quietly expand.</blockquote>
@@ -605,6 +605,7 @@ export const PRODUCTS = [
 
 
     
+
 
 
 

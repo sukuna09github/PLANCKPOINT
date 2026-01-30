@@ -108,7 +108,7 @@
   }
 
   .mckinsey-article-body p:first-of-type::first-letter {
-    @apply text-8xl font-light float-left pr-3 -mt-2 text-gray-900 font-headline;
+    @apply text-6xl font-light float-left pr-2 -mt-1 text-gray-900 font-headline;
   }
   
   .mckinsey-article-body p {
@@ -269,4 +269,3 @@
     perspective: 1000px;
   }
 }
-    
