@@ -33,25 +33,25 @@ const CoreServicesPage: React.FC = () => {
     {
       id: 'resulting',
       title: 'Resulting: Where Research Meets Results',
-      description: 'Discover how we merge rigorous research with strategic advisory to deliver concrete, measurable outcomes for your business.',
+      "description": 'Discover how we merge rigorous research with strategic advisory to deliver concrete, measurable outcomes for your business.',
       href: '#resulting'
     },
     {
       id: 'consulting-services',
       title: 'Our Consulting Services',
-      description: 'Navigate critical transformation decisions with our expert guidance, ensuring your strategy is both ambitious and achievable.',
+      "description": 'Navigate critical transformation decisions with our expert guidance, ensuring your strategy is both ambitious and achievable.',
       href: '#consulting-services'
     },
     {
-      id: 'research-capabilities',
-      title: 'Our Research Capabilities',
-      description: 'Ground your strategy in data-driven analysis. We provide the evidence you need to make confident, informed decisions.',
+      "id": 'research-capabilities',
+      "title": 'Our Research Capabilities',
+      "description": 'Ground your strategy in data-driven analysis. We provide the evidence you need to make confident, informed decisions.',
       href: '#research-capabilities'
     },
     {
-      id: 'resulting-difference',
-      title: 'The Resulting Difference',
-      description: 'Experience a partnership focused on your outcomes, not just our hours. We bring clarity to complexity and drive your business forward.',
+      "id": 'resulting-difference',
+      "title": 'The Resulting Difference',
+      "description": 'Experience a partnership focused on your outcomes, not just our hours. We bring clarity to complexity and drive your business forward.',
       href: '#resulting-difference'
     }
   ];
@@ -61,7 +61,7 @@ const CoreServicesPage: React.FC = () => {
   const atomicAiImage = findProductImage('product-atomicai');
   const beyondQuadrantsImage = findProductImage('product-beyondquadrants');
   const thinkQuarkImage = findProductImage('product-thinkquark');
-  const signaloneImage = findProductImage('product-signalone');
+  const signaloneImage = findProductImage('signalone');
 
   useEffect(() => {
     setLoading(false);
@@ -78,21 +78,21 @@ const CoreServicesPage: React.FC = () => {
 
   const researchCapabilities = [
     {
-      id: 'vendor',
-      title: "Vendor Evaluation & Comparison",
-      description: "Rigorous, evidence-based evaluations of technology vendors beyond narrative claims and simplified visual models.",
+      "id": 'vendor',
+      "title": "Vendor Evaluation & Comparison",
+      "description": "Rigorous, evidence-based evaluations of technology vendors beyond narrative claims and simplified visual models.",
       imageId: "hero-abstract-1"
     },
     {
-      id: 'landscape',
-      title: "Technology Landscape & Usage Analysis",
-      description: "Data-driven analysis of technology adoption, usage patterns, and emerging market trends to inform strategy.",
-      imageId: "hero-abstract-2"
+      "id": 'landscape',
+      "title": "Technology Landscape & Usage Analysis",
+      "description": "Data-driven analysis of technology adoption, usage patterns, and emerging market trends to inform strategy.",
+      imageId: "dark-teal-abstract"
     },
     {
-      id: 'benchmarking',
-      title: "Benchmarking",
-      description: "Comparative analysis against industry standards to identify opportunities for improvement and competitive advantage. (pricing, user experience, location, operational metrics)",
+      "id": 'benchmarking',
+      "title": "Benchmarking",
+      "description": "Comparative analysis against industry standards to identify opportunities for improvement and competitive advantage. (pricing, user experience, location, operational metrics)",
       imageId: "hero-abstract-3"
     }
   ];
@@ -112,27 +112,27 @@ const CoreServicesPage: React.FC = () => {
     { 
       text: "Go-to-Market and Market Entry Strategies", 
       imageId: "hero-abstract-1",
-      description: "Structured plans that define how a company introduces its offerings to the right customers, channels, and geographies to achieve rapid and sustainable growth."
+      "description": "Structured plans that define how a company introduces its offerings to the right customers, channels, and geographies to achieve rapid and sustainable growth."
     },
     { 
       text: "Competitive Positioning and Differentiation", 
       imageId: "hero-abstract-2",
-      description: "The process of defining a clear market identity by highlighting unique strengths that set a company apart from competitors."
+      "description": "The process of defining a clear market identity by highlighting unique strengths that set a company apart from competitors."
     },
     { 
       text: "Win Strategy Development", 
       imageId: "hero-abstract-3",
-      description: "A focused approach to identifying, pursuing, and securing high-value opportunities through tailored value propositions and competitive tactics."
+      "description": "A focused approach to identifying, pursuing, and securing high-value opportunities through tailored value propositions and competitive tactics."
     },
     { 
       text: "Technology and Software Selection", 
       imageId: "what-we-do-2",
-      description: "A systematic evaluation process to choose the right digital tools and platforms that align with business goals, scalability, and operational needs."
+      "description": "A systematic evaluation process to choose the right digital tools and platforms that align with business goals, scalability, and operational needs."
     },
     { 
       text: "AI-Enabled Organizational Transformation", 
       imageId: "category-ai",
-      description: "The integration of artificial intelligence into business processes, decision-making, and culture to drive efficiency, innovation, and long-term competitive advantage."
+      "description": "The integration of artificial intelligence into business processes, decision-making, and culture to drive efficiency, innovation, and long-term competitive advantage."
     }
   ];
 
@@ -447,6 +447,7 @@ export default CoreServicesPage;
     
 
     
+
 
 
 
