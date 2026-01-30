@@ -375,7 +375,7 @@ const InsightsPage: React.FC = () => {
               >
                 <Link href="/contact">
                   Request Custom Insights
-                  
+                  <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button
@@ -386,7 +386,7 @@ const InsightsPage: React.FC = () => {
               >
                 <Link href="/about">
                   Meet Our Team
-                  
+                  <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
             </div>
