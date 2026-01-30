@@ -194,30 +194,61 @@ const CoreServicesPage: React.FC = () => {
             </div>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
-            <div className="mt-16 flex justify-center" style={{filter: 'drop-shadow(rgba(0, 0, 0, 0.1) 0px 25px 20px)'}}>
-                <div className="w-full max-w-5xl flex flex-col items-center space-y-4">
-                    {/* Layer 3: Top */}
-                    <div style={{width: '450px', height: '120px', backgroundColor: 'hsl(var(--accent))', clipPath: 'polygon(50% 0%, 100% 100%, 0% 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', textAlign: 'center'}}>
-                        <div className="px-8">
-                            <h3 className="text-xl font-medium leading-tight">Vendor evaluation and comparison</h3>
-                        </div>
-                    </div>
+            <div className="mt-16 flex justify-center" style={{filter: 'drop-shadow(rgba(0, 0, 0, 0.04) 0px 10px 8px) drop-shadow(rgba(0, 0, 0, 0.1) 0px 4px 3px)'}}>
+              <div className="w-full max-w-2xl flex flex-col items-center space-y-2">
+                  {/* Layer 3: Top */}
+                  <div style={{
+                      width: '300px',
+                      height: '100px',
+                      backgroundColor: 'hsl(var(--accent))',
+                      clipPath: 'polygon(50% 0%, 100% 100%, 0% 100%)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      color: 'white',
+                      textAlign: 'center',
+                      padding: '0 2rem',
+                      fontWeight: 500,
+                  }}>
+                      <h3 className="leading-tight">Vendor Evaluation & Comparison</h3>
+                  </div>
 
-                    {/* Layer 2: Middle */}
-                    <div style={{width: '750px', height: '95px', backgroundColor: 'hsl(var(--secondary))', clipPath: 'polygon(20% 0, 80% 0, 100% 100%, 0% 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', textAlign: 'center'}}>
-                        <div className="px-8">
-                            <h3 className="text-xl font-medium leading-tight">Technology landscape and usage analysis</h3>
-                        </div>
-                    </div>
+                  {/* Layer 2: Middle */}
+                  <div style={{
+                      width: '550px',
+                      height: '100px',
+                      backgroundColor: 'hsl(var(--secondary))',
+                      clipPath: 'polygon(22.7% 0, 77.3% 0, 100% 100%, 0% 100%)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      color: 'white',
+                      textAlign: 'center',
+                      padding: '0 2rem',
+                      fontWeight: 500,
+                  }}>
+                      <h3 className="leading-tight">Technology Landscape & Usage Analysis</h3>
+                  </div>
 
-                    {/* Layer 1: Bottom */}
-                    <div style={{width: '1000px', height: '110px', backgroundColor: 'hsl(var(--primary))', clipPath: 'polygon(12.5% 0, 87.5% 0, 100% 100%, 0% 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', textAlign: 'center'}}>
-                        <div className="px-8">
-                            <h3 className="text-xl font-medium leading-tight">Benchmarking</h3>
-                            <p className="text-sm opacity-80 mt-1">(pricing, user experience, location, operational metrics)</p>
-                        </div>
-                    </div>
-                </div>
+                  {/* Layer 1: Bottom */}
+                  <div style={{
+                      width: '800px',
+                      height: '100px',
+                      backgroundColor: 'hsl(var(--primary))',
+                      clipPath: 'polygon(15.625% 0, 84.375% 0, 100% 100%, 0% 100%)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      color: 'white',
+                      textAlign: 'center',
+                      padding: '0 2rem',
+                  }}>
+                      <div>
+                          <h3 className="font-medium">Benchmarking</h3>
+                          <p className="text-sm opacity-80 mt-1">(pricing, user experience, location, operational metrics)</p>
+                      </div>
+                  </div>
+              </div>
             </div>
           </AnimatedSection>
         </div>
