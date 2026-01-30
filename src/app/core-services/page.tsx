@@ -185,20 +185,18 @@ const CoreServicesPage: React.FC = () => {
               <p className="mt-6 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
                 We ground every engagement in data-driven analysis:
               </p>
-              <ul className="mt-8 text-lg md:text-xl max-w-2xl mx-auto text-muted-foreground text-left space-y-2">
-                <li className="flex items-start">
-                  <span className="text-accent mr-3 mt-1">&#8226;</span>
-                  <span>Benchmarking (pricing, user experience, location, operational metrics)</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-accent mr-3 mt-1">&#8226;</span>
-                  <span>Technology landscape and usage analysis</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-accent mr-3 mt-1">&#8226;</span>
-                  <span>Vendor evaluation and comparison</span>
-                </li>
-              </ul>
+              <div className="mt-12 flex flex-col items-center gap-1 max-w-3xl mx-auto">
+                <div className="bg-primary/90 text-primary-foreground p-6 w-full md:w-1/2 text-center shadow-md">
+                  <h3 className="text-xl font-bold">Benchmarking</h3>
+                  <p className="text-sm text-primary-foreground/80 mt-1">(pricing, user experience, location, operational metrics)</p>
+                </div>
+                <div className="bg-primary/70 text-primary-foreground p-6 w-full md:w-3/4 text-center shadow-md">
+                  <h3 className="text-xl font-bold">Technology landscape and usage analysis</h3>
+                </div>
+                <div className="bg-primary/50 text-primary-foreground p-6 w-full text-center shadow-md">
+                  <h3 className="text-xl font-bold">Vendor evaluation and comparison</h3>
+                </div>
+              </div>
             </div>
           </AnimatedSection>
         </div>
