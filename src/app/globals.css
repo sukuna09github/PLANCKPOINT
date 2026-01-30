@@ -1,6 +1,7 @@
 
 @import url('https://fonts.cdnfonts.com/css/selawik');
 @import url('https://fonts.cdnfonts.com/css/lovelo');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -99,6 +100,47 @@
   }
   .prose ul > li::marker {
     @apply text-primary;
+  }
+  
+  .mckinsey-article-body {
+    @apply text-gray-800;
+    font-family: 'Lora', serif;
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75;
+  }
+
+  .mckinsey-article-body p:first-of-type::first-letter {
+    @apply text-8xl font-bold float-left pr-3 -mt-2 text-gray-900 font-serif;
+  }
+  
+  .mckinsey-article-body p {
+      @apply mb-6;
+  }
+
+  .mckinsey-article-body h2 {
+    @apply text-3xl font-bold font-sans mt-16 mb-4 text-gray-900 clear-both;
+  }
+
+  .mckinsey-article-body blockquote {
+    @apply border-l-4 border-gray-300 pl-6 my-8 italic text-gray-600 clear-both;
+  }
+  
+  .mckinsey-article-body ul {
+    @apply list-disc list-outside pl-6 space-y-2 my-6;
+  }
+
+  .mckinsey-article-body table {
+    @apply w-full text-sm my-8 border-collapse;
+  }
+  .mckinsey-article-body th, .mckinsey-article-body td {
+    @apply border-t border-b p-3 text-left;
+  }
+  .mckinsey-article-body th {
+    @apply font-bold bg-gray-50;
+  }
+  
+  .byline-box {
+      @apply lg:float-left lg:w-56 lg:mr-10 mb-6 p-4 border rounded-sm bg-gray-50 font-sans;
   }
 }
  
