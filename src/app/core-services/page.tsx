@@ -191,52 +191,17 @@ const CoreServicesPage: React.FC = () => {
               <p className="mt-6 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
                 We ground every engagement in data-driven analysis:
               </p>
-              <div className="mt-16 flex justify-center" style={{ filter: 'drop-shadow(rgba(0, 0, 0, 0.1) 0px 25px 20px)' }}>
-                <div className="w-full max-w-3xl flex flex-col items-center -space-y-1">
-                  <div
-                      className="relative flex items-center justify-center text-center text-white p-6"
-                      style={{
-                          width: '40%',
-                          height: '120px',
-                          backgroundColor: 'hsl(190, 100%, 38%)',
-                          clipPath: 'polygon(50% 0%, 0% 100%, 100% 100%)',
-                          zIndex: 3,
-                      }}
-                  >
-                      <div className="flex flex-col items-center">
-                          <h3 className="text-base font-medium leading-tight">Vendor evaluation and comparison</h3>
+              <div className="mt-16 flex justify-center">
+                  <div className="flex flex-col items-center">
+                      <div className="z-30" style={{ width: '300px', height: '100px', backgroundColor: 'hsl(190, 80%, 60%)', clipPath: 'polygon(50% 0, 100% 100%, 0 100%)', display:'flex', alignItems:'center', justifyContent:'center', color:'white', textAlign:'center', padding:'0 2rem', fontWeight: 500}}>Vendor Evaluation & Comparison</div>
+                      <div className="z-20 -mt-px" style={{ width: '450px', height: '100px', backgroundColor: 'hsl(188, 80%, 40%)', clipPath: 'polygon(16.66% 0, 83.33% 0, 100% 100%, 0 100%)', borderTop: '2px solid white', display:'flex', alignItems:'center', justifyContent:'center', color:'white', textAlign:'center', padding:'0 4rem', fontWeight: 500}}>Technology Landscape & Usage Analysis</div>
+                      <div className="z-10 -mt-px" style={{ width: '600px', height: '100px', backgroundColor: 'hsl(187, 100%, 14%)', clipPath: 'polygon(12.5% 0, 87.5% 0, 100% 100%, 0 100%)', borderTop: '2px solid white', display:'flex', alignItems:'center', justifyContent:'center', color:'white', textAlign:'center', padding:'0 6rem'}}>
+                          <div>
+                              <p style={{fontWeight: 500}}>Benchmarking</p>
+                              <p style={{fontSize: '0.875rem', opacity: 0.8}}>(pricing, user experience, location, operational metrics)</p>
+                          </div>
                       </div>
                   </div>
-                  <div
-                      className="relative flex items-center justify-center text-center text-white p-6"
-                      style={{
-                          width: '70%',
-                          height: '95px',
-                          backgroundColor: 'hsl(187, 100%, 26%)',
-                          clipPath: 'polygon(21.5% 0, 78.5% 0, 100% 100%, 0% 100%)',
-                          zIndex: 2,
-                      }}
-                  >
-                      <div className="flex flex-col items-center">
-                          <h3 className="text-base font-medium leading-tight">Technology landscape and usage analysis</h3>
-                      </div>
-                  </div>
-                  <div
-                      className="relative flex items-center justify-center text-center text-white p-6"
-                      style={{
-                          width: '100%',
-                          height: '110px',
-                          backgroundColor: 'hsl(187, 100%, 14%)',
-                          clipPath: 'polygon(15% 0, 85% 0, 100% 100%, 0% 100%)',
-                          zIndex: 1,
-                      }}
-                  >
-                      <div className="flex flex-col items-center justify-center h-full">
-                          <h3 className="text-base font-medium leading-tight">Benchmarking</h3>
-                          <p className="text-sm text-white/80 mt-1">(pricing, user experience, location, operational metrics)</p>
-                      </div>
-                  </div>
-                </div>
               </div>
             </div>
           </AnimatedSection>
