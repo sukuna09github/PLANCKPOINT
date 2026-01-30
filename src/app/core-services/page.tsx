@@ -302,7 +302,7 @@ const CoreServicesPage: React.FC = () => {
                                                 data-ai-hint={image.imageHint}
                                             />
                                         )}
-                                        <div className="absolute inset-0 bg-black/30 backdrop-blur-sm group-hover:bg-black/40 transition-colors duration-300" />
+                                        <div className="absolute inset-0 bg-black/30 backdrop-blur-md group-hover:bg-black/40 transition-colors duration-300" />
                                         <CardContent className="relative z-10 p-8 text-center flex flex-col items-center justify-center min-h-[350px] h-full text-white">
                                             <h3 className="text-lg font-semibold mb-4">{item.title}</h3>
                                             <p className="text-sm text-white/80">{item.description}</p>
@@ -447,5 +447,6 @@ export default CoreServicesPage;
     
 
     
+
 
 
