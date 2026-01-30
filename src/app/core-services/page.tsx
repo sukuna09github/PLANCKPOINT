@@ -19,7 +19,6 @@ type Product = typeof PRODUCTS[0];
 const CoreServicesPage: React.FC = () => {
   const products = PRODUCTS.slice(0, 6);
   const [loading, setLoading] = useState(true);
-  const [currentSlide, setCurrentSlide] = useState(0);
   const [isClient, setIsClient] = useState(false);
 
   const findProductImage = (imageId: string) => {
@@ -31,6 +30,10 @@ const CoreServicesPage: React.FC = () => {
   const thinkQuarkProduct = PRODUCTS.find(p => p.id === 'thinkquark');
   const signaloneProduct = PRODUCTS.find(p => p.id === 'signalone');
 
+  const carouselProducts = [atomicAiProduct, beyondQuadrantsProduct, thinkQuarkProduct, signaloneProduct].filter(p => p !== undefined) as Product[];
+
+  const [currentProductSlide, setCurrentProductSlide] = useState(0);
+
   const atomicAiImage = findProductImage('product-atomicai');
   const beyondQuadrantsImage = findProductImage('product-beyondquadrants');
   const thinkQuarkImage = findProductImage('product-thinkquark');
@@ -40,6 +43,14 @@ const CoreServicesPage: React.FC = () => {
     setLoading(false);
     setIsClient(true);
   }, []);
+
+  useEffect(() => {
+    if (!isClient || carouselProducts.length === 0) return;
+    const timer = setInterval(() => {
+      setCurrentProductSlide(prev => (prev + 1) % carouselProducts.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, [isClient, carouselProducts.length]);
 
   const researchCapabilities = [
     {
@@ -104,6 +115,8 @@ const CoreServicesPage: React.FC = () => {
     }
   ];
 
+  const currentProduct = carouselProducts[currentProductSlide];
+
   return (
     <div className="min-h-screen bg-background">
       <section
@@ -119,20 +132,33 @@ const CoreServicesPage: React.FC = () => {
             <source src="/videos/core services.mp4" type="video/mp4" />
         </video>
         <div className="relative z-10 w-full px-6 sm:px-8 lg:px-16 2xl:px-32">
-          <div className="text-left">
-            <motion.div
-              initial={{ opacity: 0, x: -40 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, ease: 'easeOut' }}
-              className="z-10"
-            >
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-headline text-primary mb-6 leading-tight max-w-3xl">
-                Strategic Intelligence Systems
-              </h1>
-              <p className="text-lg md:text-xl font-body text-foreground leading-relaxed max-w-3xl">
-                Our capabilities are designed to provide clarity and drive growth. Explore the systems we've engineered to address the distinct challenges of modern enterprises.
-              </p>
-            </motion.div>
+          <div className="text-left max-w-3xl">
+            {carouselProducts.length > 0 && currentProduct && (
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={currentProductSlide}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
+                  className="z-10"
+                >
+                  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-headline text-primary mb-6 leading-tight">
+                    {currentProduct.name}
+                  </h1>
+                  <p className="text-lg md:text-xl font-body text-foreground leading-relaxed">
+                    {currentProduct.tagline}
+                  </p>
+                  <div className="mt-8">
+                    <Button asChild>
+                        <Link href={`/core-services#${currentProduct.id}`}>
+                            Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                        </Link>
+                    </Button>
+                  </div>
+                </motion.div>
+              </AnimatePresence>
+            )}
           </div>
         </div>
       </section>
@@ -236,7 +262,7 @@ const CoreServicesPage: React.FC = () => {
                             stroke="currentColor"
                             strokeWidth="1.5"
                           >
-                            <path d="M0 16L108 16L128 0" />
+                            <path d="M0 16 C 40 16, 60 0, 128 0" />
                           </svg>
                           <p className="text-base text-right text-muted-foreground">
                             {capability.description}
@@ -251,7 +277,7 @@ const CoreServicesPage: React.FC = () => {
                             stroke="currentColor"
                             strokeWidth="1.5"
                           >
-                            <path d="M128 16L20 16L0 32" />
+                            <path d="M128 16 C 88 16, 68 32, 0 32" />
                           </svg>
                           <p className="text-base text-left text-muted-foreground">
                             {capability.description}
