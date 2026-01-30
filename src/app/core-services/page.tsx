@@ -178,7 +178,7 @@ const CoreServicesPage: React.FC = () => {
       </section>
 
       <section id="research-capabilities" className="py-20 lg:py-24 bg-white text-primary">
-        <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <div className="text-center">
               <h2 className="text-3xl md:text-4xl font-normal">Our Research Capabilities</h2>
