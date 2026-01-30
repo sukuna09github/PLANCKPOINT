@@ -38,7 +38,7 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
             <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-20 pb-24">
                 <header className="text-left mb-12 max-w-4xl mx-auto">
                     <p className="text-sm font-semibold uppercase tracking-wider text-gray-600">{article.category}</p>
-                    <h1 className="text-4xl md:text-5xl font-bold mt-4 font-serif text-gray-900 !leading-tight">{article.title}</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold mt-4 text-gray-900 !leading-tight">{article.title}</h1>
                     <div className="mt-6 text-base text-gray-700 flex items-center flex-wrap">
                         <span>By {article.author.name}</span>
                         <span className="mx-3">|</span>

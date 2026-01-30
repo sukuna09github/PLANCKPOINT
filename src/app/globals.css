@@ -103,14 +103,13 @@
   }
   
   .mckinsey-article-body {
-    @apply text-gray-800;
-    font-family: 'Lora', serif;
+    @apply text-gray-800 font-body;
     font-size: 1.125rem; /* 18px */
     line-height: 1.75;
   }
 
   .mckinsey-article-body p:first-of-type::first-letter {
-    @apply text-8xl font-normal float-left pr-3 -mt-2 text-gray-900 font-serif;
+    @apply text-8xl font-normal float-left pr-3 -mt-2 text-gray-900 font-headline;
   }
   
   .mckinsey-article-body p {
@@ -118,7 +117,7 @@
   }
 
   .mckinsey-article-body h2 {
-    @apply text-3xl font-bold font-sans mt-16 mb-4 text-gray-900 clear-both;
+    @apply text-3xl font-bold font-headline mt-16 mb-4 text-gray-900 clear-both;
   }
 
   .mckinsey-article-body blockquote {
