@@ -53,11 +53,11 @@ const CoreServicesPage: React.FC = () => {
   }
 
   const consultingServices = [
-    { text: "Go-to-Market and Market Entry Strategies", icon: Rocket },
-    { text: "Competitive Positioning and Differentiation", icon: Palette },
-    { text: "Win Strategy Development", icon: Star },
-    { text: "Technology and Software Selection", icon: Cpu },
-    { text: "AI-Enabled Organizational Transformation", icon: BrainCircuit }
+    { text: "Go-to-Market and Market Entry Strategies", icon: Rocket, imageId: "hero-abstract-1" },
+    { text: "Competitive Positioning and Differentiation", icon: Palette, imageId: "hero-abstract-2" },
+    { text: "Win Strategy Development", icon: Star, imageId: "hero-abstract-3" },
+    { text: "Technology and Software Selection", icon: Cpu, imageId: "what-we-do-1" },
+    { text: "AI-Enabled Organizational Transformation", icon: BrainCircuit, imageId: "category-ai" }
   ];
 
   return (
@@ -127,13 +127,24 @@ const CoreServicesPage: React.FC = () => {
                         <CarouselContent className="-ml-6">
                             {consultingServices.map((item, index) => {
                                 const Icon = item.icon;
+                                const image = findProductImage(item.imageId);
                                 return (
                                 <CarouselItem key={index} className="pl-6 md:basis-1/2 lg:basis-1/3">
                                     <div className="h-full">
-                                        <Card className="h-full bg-primary/5 border-primary/20 hover:border-primary hover:bg-primary/10 transition-colors duration-300">
-                                            <CardContent className="p-8 text-center flex flex-col items-center justify-center min-h-[220px]">
-                                                <Icon className="h-10 w-10 text-primary mb-6" />
-                                                <p className="text-base font-medium text-foreground flex-grow">{item.text}</p>
+                                        <Card className="h-full overflow-hidden relative group border-0 rounded-lg">
+                                            {image && (
+                                                <Image
+                                                    src={image.imageUrl}
+                                                    alt={item.text}
+                                                    fill
+                                                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                                                    data-ai-hint={image.imageHint}
+                                                />
+                                            )}
+                                            <div className="absolute inset-0 bg-primary/70 group-hover:bg-primary/80 transition-colors duration-300" />
+                                            <CardContent className="relative z-10 p-8 text-center flex flex-col items-center justify-center min-h-[220px] h-full text-white">
+                                                <Icon className="h-10 w-10 text-white mb-6" />
+                                                <p className="text-base font-medium flex-grow">{item.text}</p>
                                             </CardContent>
                                         </Card>
                                     </div>
@@ -244,11 +255,3 @@ export default CoreServicesPage;
     
 
     
-
-
-
-
-
-
-
-
