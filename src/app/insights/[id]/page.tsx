@@ -32,6 +32,8 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
             day: 'numeric'
         });
     };
+    
+    const contentWithBold = article.content?.replace('<p>In just two years,', '<p><b>In just two years,</b>');
 
     return (
         <main className="bg-white text-black font-body">
@@ -50,7 +52,7 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
 
                 <div className="grid grid-cols-12 gap-x-8">
                     <div className="col-span-12 lg:col-span-8 mckinsey-article-body">
-                        <div dangerouslySetInnerHTML={{ __html: article.content || ''}} />
+                        <div dangerouslySetInnerHTML={{ __html: contentWithBold || ''}} />
                     </div>
                     <aside className="col-span-12 lg:col-span-4">
                         <div className="sticky top-24 space-y-10">

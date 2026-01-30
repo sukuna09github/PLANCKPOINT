@@ -1,7 +1,6 @@
 
 @import url('https://fonts.cdnfonts.com/css/selawik');
 @import url('https://fonts.cdnfonts.com/css/lovelo');
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -9,7 +8,7 @@
 
 @layer base {
   :root {
-    --font-body: 'Lora', 'Selawik', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+    --font-body: 'Selawik', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
     --font-headline: 'Selawik', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
     --font-logo: 'Lovelo Black', sans-serif;
 
@@ -109,11 +108,15 @@
   }
 
   .mckinsey-article-body p:first-of-type::first-letter {
-    font-family: 'Lora', serif;
-    @apply text-8xl font-light float-left pr-2 -mt-3 text-primary;
+    font-family: 'Selawik', sans-serif;
+    @apply text-7xl font-light float-left pr-2 -mt-2 text-primary;
     line-height: 0.8;
   }
   
+  .mckinsey-article-body p:first-of-type b {
+    font-weight: 600;
+  }
+
   .mckinsey-article-body p {
       @apply mb-6;
   }
