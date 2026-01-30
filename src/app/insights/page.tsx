@@ -197,25 +197,21 @@ const InsightsPage: React.FC = () => {
               {
                 title: 'Digital Transformation',
                 description: 'Studies on organizational change and technology adoption',
-                count: '25+ Studies',
                 image: 'https://static.wixstatic.com/media/61c56d_f6cd93b30bf640b3a4325a8b6b06308f~mv2.jpg'
               },
               {
                 title: 'Human-AI Collaboration',
                 description: 'Research on effective human-AI interaction patterns',
-                count: '18+ Studies',
                 image: 'https://static.wixstatic.com/media/61c56d_8801d0855b1f4ab981404fef841c824e~mv2.jpg'
               },
               {
                 title: 'Workplace Analytics',
                 description: 'Data-driven insights on productivity and engagement',
-                count: '32+ Studies',
                 image: 'https://static.wixstatic.com/media/61c56d_f6cd93b30bf640b3a4325a8b6b06308f~mv2.jpg'
               },
               {
                 title: 'Future of Work',
                 description: 'Emerging trends in remote and hybrid work environments',
-                count: '15+ Studies',
                 image: 'https://static.wixstatic.com/media/61c56d_4361fe968edb461487cc7515b778b550~mv2.jpg'
               }
             ].map((category, index) => {
@@ -245,9 +241,6 @@ const InsightsPage: React.FC = () => {
                         <p className="text-sm text-white/80 leading-relaxed mb-3">
                           {category.description}
                         </p>
-                        <span className="text-xs font-body text-accent font-medium">
-                          {category.count}
-                        </span>
                     </div>
                   </div>
                 </motion.div>
