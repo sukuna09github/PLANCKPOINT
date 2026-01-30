@@ -56,6 +56,7 @@ export function InsightDetailHeader({ article }: InsightDetailHeaderProps) {
                         <span className="mx-3">|</span>
                         <span>{formatDate(article.publicationDate)}</span>
                     </div>
+                    <p className="mt-6 text-lg text-white/90 max-w-3xl">{article.summary}</p>
                 </header>
             </div>
         </div>
