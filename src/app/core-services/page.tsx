@@ -11,6 +11,8 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Button } from '@/components/ui/button';
 import { AnimatedSection } from '@/components/animated-section';
 import { Card, CardContent } from '@/components/ui/card';
+import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
+import Autoplay from "embla-carousel-autoplay";
 
 type Product = typeof PRODUCTS[0];
 
@@ -113,19 +115,32 @@ const CoreServicesPage: React.FC = () => {
                         We support clients through critical transformation decisions:
                     </p>
                 </div>
-                <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                    {consultingServices.map((item, index) => (
-                        <AnimatedSection key={index} delay={index * 0.1}>
-                          <Card className="h-full bg-primary/5 border-primary/20 hover:border-primary hover:bg-primary/10 transition-colors duration-300">
-                              <CardContent className="p-8 text-center flex flex-col items-center justify-center min-h-[220px]">
-                                  <div className="flex-shrink-0 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
-                                      <ArrowRight className="h-6 w-6 text-primary" />
-                                  </div>
-                                  <p className="text-base font-medium text-foreground flex-grow">{item}</p>
-                              </CardContent>
-                          </Card>
-                        </AnimatedSection>
-                    ))}
+                <div className="mt-12">
+                    <Carousel
+                        opts={{
+                            align: "start",
+                            loop: true,
+                        }}
+                        plugins={[Autoplay({ delay: 4000, stopOnInteraction: true })]}
+                        className="w-full"
+                    >
+                        <CarouselContent className="-ml-6">
+                            {consultingServices.map((item, index) => (
+                                <CarouselItem key={index} className="pl-6 md:basis-1/2 lg:basis-1/3">
+                                    <div className="h-full">
+                                        <Card className="h-full bg-primary/5 border-primary/20 hover:border-primary hover:bg-primary/10 transition-colors duration-300">
+                                            <CardContent className="p-8 text-center flex flex-col items-center justify-center min-h-[220px]">
+                                                <div className="flex-shrink-0 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
+                                                    <ArrowRight className="h-6 w-6 text-primary" />
+                                                </div>
+                                                <p className="text-base font-medium text-foreground flex-grow">{item}</p>
+                                            </CardContent>
+                                        </Card>
+                                    </div>
+                                </CarouselItem>
+                            ))}
+                        </CarouselContent>
+                    </Carousel>
                 </div>
             </AnimatedSection>
         </div>
@@ -228,6 +243,7 @@ export default CoreServicesPage;
     
 
     
+
 
 
 
