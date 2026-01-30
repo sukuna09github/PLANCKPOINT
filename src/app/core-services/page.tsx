@@ -17,7 +17,6 @@ import Autoplay from "embla-carousel-autoplay";
 type Product = typeof PRODUCTS[0];
 
 const CoreServicesPage: React.FC = () => {
-  const products = PRODUCTS.slice(0, 6);
   const [loading, setLoading] = useState(true);
   const [isClient, setIsClient] = useState(false);
 
@@ -30,9 +29,34 @@ const CoreServicesPage: React.FC = () => {
   const thinkQuarkProduct = PRODUCTS.find(p => p.id === 'thinkquark');
   const signaloneProduct = PRODUCTS.find(p => p.id === 'signalone');
 
-  const carouselProducts = [atomicAiProduct, beyondQuadrantsProduct, thinkQuarkProduct, signaloneProduct].filter(p => p !== undefined) as Product[];
+  const heroSlides = [
+    {
+      id: 'resulting',
+      title: 'Resulting: Where Research Meets Results',
+      description: 'Discover how we merge rigorous research with strategic advisory to deliver concrete, measurable outcomes for your business.',
+      href: '/core-services#resulting'
+    },
+    {
+      id: 'consulting-services',
+      title: 'Our Consulting Services',
+      description: 'Navigate critical transformation decisions with our expert guidance, ensuring your strategy is both ambitious and achievable.',
+      href: '/core-services#consulting-services'
+    },
+    {
+      id: 'research-capabilities',
+      title: 'Our Research Capabilities',
+      description: 'Ground your strategy in data-driven analysis. We provide the evidence you need to make confident, informed decisions.',
+      href: '/core-services#research-capabilities'
+    },
+    {
+      id: 'resulting-difference',
+      title: 'The Resulting Difference',
+      description: 'Experience a partnership focused on your outcomes, not just our hours. We bring clarity to complexity and drive your business forward.',
+      href: '/core-services#resulting-difference'
+    }
+  ];
 
-  const [currentProductSlide, setCurrentProductSlide] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   const atomicAiImage = findProductImage('product-atomicai');
   const beyondQuadrantsImage = findProductImage('product-beyondquadrants');
@@ -45,12 +69,12 @@ const CoreServicesPage: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    if (!isClient || carouselProducts.length === 0) return;
+    if (!isClient || heroSlides.length === 0) return;
     const timer = setInterval(() => {
-      setCurrentProductSlide(prev => (prev + 1) % carouselProducts.length);
+      setCurrentSlide(prev => (prev + 1) % heroSlides.length);
     }, 5000);
     return () => clearInterval(timer);
-  }, [isClient, carouselProducts.length]);
+  }, [isClient, heroSlides.length]);
 
   const researchCapabilities = [
     {
@@ -115,7 +139,7 @@ const CoreServicesPage: React.FC = () => {
     }
   ];
 
-  const currentProduct = carouselProducts[currentProductSlide];
+  const currentHeroSlide = heroSlides[currentSlide];
 
   return (
     <div className="min-h-screen bg-background">
@@ -133,10 +157,10 @@ const CoreServicesPage: React.FC = () => {
         </video>
         <div className="relative z-10 w-full px-6 sm:px-8 lg:px-16 2xl:px-32">
           <div className="text-left max-w-3xl">
-            {carouselProducts.length > 0 && currentProduct && (
+            {heroSlides.length > 0 && currentHeroSlide && (
               <AnimatePresence mode="wait">
                 <motion.div
-                  key={currentProductSlide}
+                  key={currentSlide}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
@@ -144,14 +168,14 @@ const CoreServicesPage: React.FC = () => {
                   className="z-10"
                 >
                   <h1 className="text-4xl sm:text-5xl lg:text-6xl font-headline text-primary mb-6 leading-tight">
-                    {currentProduct.name}
+                    {currentHeroSlide.title}
                   </h1>
                   <p className="text-lg md:text-xl font-body text-foreground leading-relaxed">
-                    {currentProduct.tagline}
+                    {currentHeroSlide.description}
                   </p>
                   <div className="mt-8">
                     <Button asChild>
-                        <Link href={`/core-services#${currentProduct.id}`}>
+                        <Link href={currentHeroSlide.href}>
                             Learn More <ArrowRight className="ml-2 h-4 w-4" />
                         </Link>
                     </Button>
@@ -262,7 +286,7 @@ const CoreServicesPage: React.FC = () => {
                             stroke="currentColor"
                             strokeWidth="1.5"
                           >
-                            <path d="M0 16 C 40 16, 60 0, 128 0" />
+                            <path d="M0 16 C 40 16, 60 32, 128 32" />
                           </svg>
                           <p className="text-base text-right text-muted-foreground">
                             {capability.description}
@@ -277,7 +301,7 @@ const CoreServicesPage: React.FC = () => {
                             stroke="currentColor"
                             strokeWidth="1.5"
                           >
-                            <path d="M128 16 C 88 16, 68 32, 0 32" />
+                            <path d="M128 16 C 88 16, 68 0, 0 0" />
                           </svg>
                           <p className="text-base text-left text-muted-foreground">
                             {capability.description}
