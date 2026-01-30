@@ -34,25 +34,25 @@ const CoreServicesPage: React.FC = () => {
       id: 'resulting',
       title: 'Resulting: Where Research Meets Results',
       description: 'Discover how we merge rigorous research with strategic advisory to deliver concrete, measurable outcomes for your business.',
-      href: '/core-services#resulting'
+      href: '#resulting'
     },
     {
       id: 'consulting-services',
       title: 'Our Consulting Services',
       description: 'Navigate critical transformation decisions with our expert guidance, ensuring your strategy is both ambitious and achievable.',
-      href: '/core-services#consulting-services'
+      href: '#consulting-services'
     },
     {
       id: 'research-capabilities',
       title: 'Our Research Capabilities',
       description: 'Ground your strategy in data-driven analysis. We provide the evidence you need to make confident, informed decisions.',
-      href: '/core-services#research-capabilities'
+      href: '#research-capabilities'
     },
     {
       id: 'resulting-difference',
       title: 'The Resulting Difference',
       description: 'Experience a partnership focused on your outcomes, not just our hours. We bring clarity to complexity and drive your business forward.',
-      href: '/core-services#resulting-difference'
+      href: '#resulting-difference'
     }
   ];
 
@@ -141,6 +141,24 @@ const CoreServicesPage: React.FC = () => {
 
   const currentHeroSlide = heroSlides[currentSlide];
 
+  const handleSmoothScroll = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    const href = event.currentTarget.getAttribute('href');
+    if (!href) return;
+    const elementId = href.substring(1);
+
+    if (elementId) {
+      const element = document.getElementById(elementId);
+      if (element) {
+        element.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+        window.history.pushState(null, '', `#${elementId}`);
+      }
+    }
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <section
@@ -175,7 +193,7 @@ const CoreServicesPage: React.FC = () => {
                   </p>
                   <div className="mt-8">
                     <Button asChild>
-                        <Link href={currentHeroSlide.href}>
+                        <Link href={currentHeroSlide.href} onClick={handleSmoothScroll}>
                             Learn More <ArrowRight className="ml-2 h-4 w-4" />
                         </Link>
                     </Button>
