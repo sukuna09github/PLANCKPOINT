@@ -193,9 +193,9 @@ const CoreServicesPage: React.FC = () => {
               </p>
               <div className="mt-16 flex justify-center">
                   <div className="flex flex-col items-center">
-                      <div className="z-30" style={{ width: '300px', height: '100px', backgroundColor: 'hsl(190, 80%, 60%)', clipPath: 'polygon(50% 0, 100% 100%, 0 100%)', display:'flex', alignItems:'center', justifyContent:'center', color:'white', textAlign:'center', padding:'0 2rem', fontWeight: 500}}>Vendor Evaluation & Comparison</div>
-                      <div className="z-20 -mt-px" style={{ width: '450px', height: '100px', backgroundColor: 'hsl(188, 80%, 40%)', clipPath: 'polygon(16.66% 0, 83.33% 0, 100% 100%, 0 100%)', borderTop: '2px solid white', display:'flex', alignItems:'center', justifyContent:'center', color:'white', textAlign:'center', padding:'0 4rem', fontWeight: 500}}>Technology Landscape & Usage Analysis</div>
-                      <div className="z-10 -mt-px" style={{ width: '600px', height: '100px', backgroundColor: 'hsl(187, 100%, 14%)', clipPath: 'polygon(12.5% 0, 87.5% 0, 100% 100%, 0 100%)', borderTop: '2px solid white', display:'flex', alignItems:'center', justifyContent:'center', color:'white', textAlign:'center', padding:'0 6rem'}}>
+                      <div className="z-30" style={{ width: '300px', height: '120px', backgroundColor: 'hsl(190, 80%, 60%)', clipPath: 'polygon(50% 0, 100% 100%, 0 100%)', display:'flex', alignItems:'center', justifyContent:'center', color:'white', textAlign:'center', padding:'0 2rem', fontWeight: 500}}>Vendor Evaluation & Comparison</div>
+                      <div className="z-20 -mt-2" style={{ width: '450px', height: '120px', backgroundColor: 'hsl(188, 80%, 40%)', clipPath: 'polygon(16.66% 0, 83.33% 0, 100% 100%, 0 100%)', display:'flex', alignItems:'center', justifyContent:'center', color:'white', textAlign:'center', padding:'0 4rem', fontWeight: 500}}>Technology Landscape & Usage Analysis</div>
+                      <div className="z-10 -mt-2" style={{ width: '600px', height: '120px', backgroundColor: 'hsl(187, 100%, 14%)', clipPath: 'polygon(12.5% 0, 87.5% 0, 100% 100%, 0 100%)', display:'flex', alignItems:'center', justifyContent:'center', color:'white', textAlign:'center', padding:'0 6rem'}}>
                           <div>
                               <p style={{fontWeight: 500}}>Benchmarking</p>
                               <p style={{fontSize: '0.875rem', opacity: 0.8}}>(pricing, user experience, location, operational metrics)</p>
