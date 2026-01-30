@@ -3,7 +3,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, ChevronLeft, ChevronRight, Rocket, Palette, Star, Cpu, BrainCircuit } from 'lucide-react';
+import { ArrowRight, Rocket, Palette, Star, Cpu, BrainCircuit } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { PRODUCTS } from "@/lib/constants";
@@ -55,31 +55,26 @@ const CoreServicesPage: React.FC = () => {
   const consultingServices = [
     { 
       text: "Go-to-Market and Market Entry Strategies", 
-      icon: Rocket, 
       imageId: "hero-abstract-1",
       description: "Structured plans that define how a company introduces its offerings to the right customers, channels, and geographies to achieve rapid and sustainable growth."
     },
     { 
       text: "Competitive Positioning and Differentiation", 
-      icon: Palette, 
       imageId: "hero-abstract-2",
       description: "The process of defining a clear market identity by highlighting unique strengths that set a company apart from competitors."
     },
     { 
       text: "Win Strategy Development", 
-      icon: Star, 
       imageId: "hero-abstract-3",
       description: "A focused approach to identifying, pursuing, and securing high-value opportunities through tailored value propositions and competitive tactics."
     },
     { 
       text: "Technology and Software Selection", 
-      icon: Cpu, 
       imageId: "what-we-do-2",
       description: "A systematic evaluation process to choose the right digital tools and platforms that align with business goals, scalability, and operational needs."
     },
     { 
       text: "AI-Enabled Organizational Transformation", 
-      icon: BrainCircuit, 
       imageId: "category-ai",
       description: "The integration of artificial intelligence into business processes, decision-making, and culture to drive efficiency, innovation, and long-term competitive advantage."
     }
@@ -151,7 +146,6 @@ const CoreServicesPage: React.FC = () => {
                     >
                         <CarouselContent className="-ml-6">
                             {consultingServices.map((item, index) => {
-                                const Icon = item.icon;
                                 const image = findProductImage(item.imageId);
                                 return (
                                 <CarouselItem key={index} className="pl-6 md:basis-1/2 lg:basis-1/3">
@@ -168,7 +162,6 @@ const CoreServicesPage: React.FC = () => {
                                             )}
                                             <div className="absolute inset-0 bg-black/30 backdrop-blur-md group-hover:bg-black/40 transition-colors duration-300" />
                                             <CardContent className="relative z-10 p-8 text-center flex flex-col items-center justify-center min-h-[350px] h-full text-white">
-                                                <Icon className="h-10 w-10 text-white mb-6" />
                                                 <h3 className="text-lg font-semibold mb-4">{item.text}</h3>
                                                 <p className="text-sm text-white/80">{item.description}</p>
                                             </CardContent>
@@ -281,6 +274,7 @@ export default CoreServicesPage;
     
 
     
+
 
 
 
