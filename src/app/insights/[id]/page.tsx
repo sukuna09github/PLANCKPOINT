@@ -35,6 +35,14 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
     
     const contentWithBold = article.content?.replace('<p>In just two years,', '<p><b>In just two years,</b>');
 
+    const sections = contentWithBold?.split(/(?=<h2>)/g) || [];
+    let processedContent = sections?.[0] ?? '';
+    if (sections && sections.length > 1) {
+        processedContent += sections.slice(1).join('<hr class="subtle-divider" />');
+    } else {
+        processedContent = contentWithBold || '';
+    }
+
     return (
         <main className="bg-white text-black font-body">
             <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-20 pb-24">
@@ -52,7 +60,7 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
                     <div className="lg:col-span-8 mckinsey-article-body">
-                        <div dangerouslySetInnerHTML={{ __html: contentWithBold || ''}} />
+                        <div dangerouslySetInnerHTML={{ __html: processedContent }} />
                     </div>
                     <aside className="lg:col-span-4">
                         <div className="sticky top-24 space-y-8">

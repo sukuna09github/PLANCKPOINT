@@ -264,6 +264,10 @@
   .nav-list-item:hover {
     background-color: hsl(var(--primary) / 0.1);
   }
+
+  .subtle-divider {
+    @apply h-px bg-gray-300 border-0;
+  }
 }
 
 @layer utilities {
