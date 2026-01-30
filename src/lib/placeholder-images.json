@@ -15,7 +15,7 @@
     {
       "id": "hero3",
       "description": "A person interacting with a futuristic transparent user interface.",
-      "imageUrl": "https://images.unsplash.com/photo-1639322648003-00f7f37ae133?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmdXR1cmlzdGljJTIwaW50ZXJmYWNlfGVufDB8fHx8MTc2NDc4NjI5Nnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1639322648003-00f7f37ae133?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmdXR1cmlzdGljJTIwaW50ZXJmYWNlfGVufDB8fHx8MTc2NDc4NjI5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "futuristic interface"
     },
     {
@@ -45,7 +45,7 @@
     {
       "id": "insight2",
       "description": "Image for a blog about hybrid work.",
-      "imageUrl": "https://images.unsplash.com/photo-1631891425069-a0e16ba9c24e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aHlicmlkJTIwd29ya3xlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1631891425069-a0e16ba9c24e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aHlicmlkJTIwd29ya3xlbnwwfHx8fDE3NjQ4NjE1MDh8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "hybrid work"
     },
     {
@@ -141,7 +141,7 @@
     {
       "id": "leader3",
       "description": "Portrait of Kiran Kommineni.",
-      "imageUrl": "/images/kiran sketch.png",
+      "imageUrl": "/images/kiran.jpg",
       "imageHint": "man portrait sketch"
     },
     {
@@ -441,7 +441,7 @@
     {
       "id": "prod-cat-strategy",
       "description": "Abstract image representing business strategy and growth",
-      "imageUrl": "https://images.unsplash.com/photo-1708778002586-37c4f23b7f3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXJrJTIwdGVhbCUyMGFic3RyYWN0fGVufDB8fHx8MTc2NjAwNDk1MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1708778002586-37c4f23b7f3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXJrJTIwdGVhbCUyMGFic3RyYWN0fGVufDB8fHx8MTc2NjAwNDk1MHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "business strategy"
     },
     {
@@ -501,7 +501,7 @@
     {
       "id": "board4",
       "description": "Portrait of Sriharsha.",
-      "imageUrl": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYW4lMjBwb3J0cmFpdCUyMHNrZXRjaHxlbnwwfHx8fDE3NjkyMTA0MDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYW4lMjBwb3J0cmFpdCUyMHNrZXRjaHxlbnwwfHx8fDE3NjkyMTA0MDB8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "man portrait"
     }
   ]
