@@ -192,7 +192,7 @@ const CoreServicesPage: React.FC = () => {
                     {currentHeroSlide.description}
                   </p>
                   <div className="mt-8">
-                    <Button asChild>
+                    <Button asChild variant="link" className="p-0 h-auto text-lg font-semibold">
                         <Link href={currentHeroSlide.href} onClick={handleSmoothScroll}>
                             Learn More <ArrowRight className="ml-2 h-4 w-4" />
                         </Link>
