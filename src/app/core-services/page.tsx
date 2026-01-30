@@ -227,8 +227,16 @@ const CoreServicesPage: React.FC = () => {
                       {capability.subtext && <p className="text-base opacity-90 mt-2">{capability.subtext}</p>}
                     </div>
                     
-                    <div className="absolute left-full top-1/2 -translate-y-1/2 ml-24 w-52 p-2 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-apple pointer-events-none z-10 transform group-hover:translate-x-0 translate-x-[-10px]">
-                      <div className="absolute right-full top-1/2 -translate-y-1/2 h-px w-24 bg-gray-400"></div>
+                    <div className="absolute left-full top-1/2 -translate-y-1/2 ml-32 w-52 p-2 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-apple pointer-events-none z-10 transform group-hover:translate-x-0 translate-x-[-10px]">
+                      <svg
+                        className="absolute right-full top-1/2 -translate-y-1/2 h-8 w-32 text-gray-400"
+                        fill="none"
+                        viewBox="0 0 128 32"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                      >
+                        <path d="M128 16L20 16L0 0" />
+                      </svg>
                       <p className="text-base text-left text-muted-foreground">
                         {capability.description}
                       </p>
