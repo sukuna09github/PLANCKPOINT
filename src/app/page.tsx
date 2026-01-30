@@ -28,12 +28,20 @@ const HomePage: React.FC = () => {
   const [latestResearch, setLatestResearch] = useState<Research[]>([]);
   const [products, setProducts] = useState<Product[]>([]);
 
-  const heroSlides = mockResearchData.slice(0, 3).map(insight => ({
-    video: "/videos/hero.mp4",
-    headline: insight.title,
-    id: insight._id,
-    href: `/insights/${insight._id}`
-  }));
+  const heroSlides = mockResearchData.slice(0, 3).map((insight, index) => {
+    const subheadlines = [
+        "The hidden cost of innovation that's silently eroding your margins.",
+        "From cost center to value driver: rethinking your IT budget for the new economy.",
+        "In the age of AI, strategic clarity is the new execution. Are you ready?"
+    ];
+    return {
+        video: "/videos/hero.mp4",
+        headline: insight.title,
+        subheadline: subheadlines[index],
+        id: insight._id,
+        href: `/insights/${insight._id}`
+    }
+  });
 
   useEffect(() => {
     setIsClient(true);
@@ -85,6 +93,9 @@ const HomePage: React.FC = () => {
                     <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-headline text-white mb-6 leading-tight max-w-3xl">
                         {heroSlides[currentSlide].headline}
                     </h1>
+                    <p className="text-xl text-white/80 max-w-3xl mb-8">
+                        {heroSlides[currentSlide].subheadline}
+                    </p>
                     <Link href={heroSlides[currentSlide].href} className="text-white font-semibold hover:underline flex items-center w-fit">
                         Read the Insight
                         <ArrowRight className="w-4 h-4 ml-2" />
