@@ -31,19 +31,18 @@ export function InsightDetailHeader({ article }: InsightDetailHeaderProps) {
     });
 
     const y = useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
-    const backgroundImage = PlaceHolderImages.find(img => img.id === 'hero-abstract-1');
 
     return (
         <div ref={ref} className="relative overflow-hidden mb-12">
-            {backgroundImage && (
+            {article.mainImage && (
                 <motion.div className="absolute inset-0 z-0" style={{ y }}>
                     <Image
-                        src={backgroundImage.imageUrl}
-                        alt="Abstract background"
+                        src={article.mainImage}
+                        alt={article.title}
                         fill
                         className="object-cover"
                         priority
-                        data-ai-hint={backgroundImage.imageHint}
+                        data-ai-hint="article background"
                     />
                     <div className="absolute inset-0 bg-primary/70" />
                 </motion.div>
