@@ -12,6 +12,46 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from "framer-motion";
+
+const TeamMemberCard = ({ member, image, delay }: { member: any, image: any, delay: number }) => {
+    const [isOpen, setIsOpen] = useState(false);
+    return (
+        <AnimatedSection delay={delay} className="h-full">
+            <div className="flex flex-col items-center h-full text-center">
+                {image && <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden shrink-0"><Image src={image.imageUrl} alt={member.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
+                <div className="w-full max-w-sm flex flex-col flex-grow">
+                    <div className="h-24">
+                      <h3 className="mt-4 text-xl font-bold text-primary">{member.name}</h3>
+                      <p className="text-secondary font-medium">{member.role}</p>
+                    </div>
+                    <Collapsible open={isOpen} onOpenChange={setIsOpen} className="w-full">
+                        <CollapsibleTrigger asChild>
+                            <Button variant="link" className="mt-2 p-0">Learn More</Button>
+                        </CollapsibleTrigger>
+                        <AnimatePresence>
+                        {isOpen && (
+                            <motion.div
+                                initial={{ opacity: 0, height: 0 }}
+                                animate={{ opacity: 1, height: 'auto' }}
+                                exit={{ opacity: 0, height: 0 }}
+                                transition={{ duration: 0.4, ease: "easeInOut" }}
+                                style={{ overflow: 'hidden' }}
+                                className="text-left"
+                            >
+                                <p className="pt-2 text-muted-foreground text-sm">
+                                    {member.bio}
+                                </p>
+                            </motion.div>
+                        )}
+                        </AnimatePresence>
+                    </Collapsible>
+                </div>
+            </div>
+        </AnimatedSection>
+    );
+}
 
 export default function AboutPage() {
   const peopleImages = PlaceHolderImages.filter(img => 
@@ -93,27 +133,7 @@ export default function AboutPage() {
             {leadershipFirstRow.map((member, index) => {
               const image = findImage(member.imageId);
               return (
-                <AnimatedSection key={member.name} delay={index * 0.1} className="h-full">
-                  <div className="flex flex-col items-center h-full text-center">
-                      {image && <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden shrink-0"><Image src={image.imageUrl} alt={member.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
-                      <div className="w-full max-w-sm flex flex-col flex-grow">
-                          <div className="h-24">
-                            <h3 className="mt-4 text-xl font-bold text-primary">{member.name}</h3>
-                            <p className="text-secondary font-medium">{member.role}</p>
-                          </div>
-                          <Collapsible className="w-full">
-                              <CollapsibleTrigger asChild>
-                                  <Button variant="link" className="mt-2 p-0">Learn More</Button>
-                              </CollapsibleTrigger>
-                              <CollapsibleContent>
-                                  <p className="pt-2 text-muted-foreground text-sm text-left">
-                                      {member.bio}
-                                  </p>
-                              </CollapsibleContent>
-                          </Collapsible>
-                      </div>
-                  </div>
-                </AnimatedSection>
+                <TeamMemberCard key={member.name} member={member} image={image} delay={index * 0.1} />
               );
             })}
           </div>
@@ -122,27 +142,7 @@ export default function AboutPage() {
               {leadershipSecondRow.map((member, index) => {
                 const image = findImage(member.imageId);
                 return (
-                  <AnimatedSection key={member.name} delay={(index + leadershipFirstRow.length) * 0.1} className="h-full">
-                     <div className="flex flex-col items-center h-full text-center">
-                        {image && <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden shrink-0"><Image src={image.imageUrl} alt={member.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
-                        <div className="w-full max-w-sm flex flex-col flex-grow">
-                            <div className="h-24">
-                              <h3 className="mt-4 text-xl font-bold text-primary">{member.name}</h3>
-                              <p className="text-secondary font-medium">{member.role}</p>
-                            </div>
-                            <Collapsible className="w-full">
-                                <CollapsibleTrigger asChild>
-                                    <Button variant="link" className="mt-2 p-0">Learn More</Button>
-                                </CollapsibleTrigger>
-                                <CollapsibleContent>
-                                    <p className="pt-2 text-muted-foreground text-sm text-left">
-                                        {member.bio}
-                                    </p>
-                                </CollapsibleContent>
-                            </Collapsible>
-                        </div>
-                    </div>
-                  </AnimatedSection>
+                  <TeamMemberCard key={member.name} member={member} image={image} delay={(index + leadershipFirstRow.length) * 0.1} />
                 );
               })}
             </div>
@@ -161,27 +161,7 @@ export default function AboutPage() {
               {BOARD_OF_ADVISORS.map((mentor, index) => {
                 const image = findImage(mentor.imageId);
                 return (
-                  <AnimatedSection key={mentor.name} delay={index * 0.1} className="h-full">
-                    <div className="flex flex-col items-center h-full text-center">
-                        {image && <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden shrink-0"><Image src={image.imageUrl} alt={mentor.name} fill className="object-cover" data-ai-hint={image.imageHint} /></div>}
-                        <div className="w-full max-w-sm flex flex-col flex-grow">
-                            <div className="h-24">
-                              <h3 className="mt-4 text-xl font-bold text-primary">{mentor.name}</h3>
-                              <p className="text-secondary font-medium">{mentor.role}</p>
-                            </div>
-                            <Collapsible className="w-full">
-                                <CollapsibleTrigger asChild>
-                                    <Button variant="link" className="mt-2 p-0">Learn More</Button>
-                                </CollapsibleTrigger>
-                                <CollapsibleContent>
-                                    <p className="pt-2 text-muted-foreground text-sm text-left">
-                                        {mentor.bio}
-                                    </p>
-                                </CollapsibleContent>
-                            </Collapsible>
-                        </div>
-                    </div>
-                  </AnimatedSection>
+                  <TeamMemberCard key={mentor.name} member={mentor} image={image} delay={index * 0.1} />
                 );
               })}
             </div>
