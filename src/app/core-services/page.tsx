@@ -81,22 +81,19 @@ const CoreServicesPage: React.FC = () => {
       id: 'vendor',
       title: "Vendor Evaluation & Comparison",
       description: "Rigorous, evidence-based evaluations of technology vendors beyond narrative claims and simplified visual models.",
-      className: "bg-accent text-accent-foreground",
-      subtext: null
+      imageId: "category-data"
     },
     {
       id: 'landscape',
       title: "Technology Landscape & Usage Analysis",
       description: "Data-driven analysis of technology adoption, usage patterns, and emerging market trends to inform strategy.",
-      className: "bg-secondary text-secondary-foreground",
-      subtext: null
+      imageId: "category-tech"
     },
     {
       id: 'benchmarking',
       title: "Benchmarking",
-      description: "Comparative analysis against industry standards to identify opportunities for improvement and competitive advantage.",
-      className: "bg-primary text-primary-foreground",
-      subtext: "(pricing, user experience, location, operational metrics)"
+      description: "Comparative analysis against industry standards to identify opportunities for improvement and competitive advantage. (pricing, user experience, location, operational metrics)",
+      imageId: "category-econ"
     }
   ];
 
@@ -280,49 +277,43 @@ const CoreServicesPage: React.FC = () => {
             </div>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
-            <div className="mt-16 max-w-5xl mx-auto flex justify-center">
-              <div className="space-y-8 w-full lg:w-1/2">
-                {researchCapabilities.map((capability, index) => (
-                  <div key={capability.id} className="group relative">
-                    <div className={`${capability.className} p-8 rounded-lg text-center shadow-lg`}>
-                      <h3 className="text-xl font-semibold">{capability.title}</h3>
-                      {capability.subtext && <p className="text-base opacity-90 mt-2">{capability.subtext}</p>}
-                    </div>
-                    
-                    {index === 1 ? (
-                        <div className="absolute right-full top-1/2 -translate-y-1/2 mr-32 w-52 p-2 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-apple pointer-events-none z-10 transform group-hover:translate-x-0 translate-x-[10px]">
-                          <svg
-                            className="absolute left-full top-1/2 -translate-y-1/2 h-8 w-32 text-gray-400"
-                            fill="none"
-                            viewBox="0 0 128 32"
-                            stroke="currentColor"
-                            strokeWidth="1.5"
-                          >
-                            <path d="M0 16 C 40 16, 60 32, 128 32" />
-                          </svg>
-                          <p className="text-base text-right text-muted-foreground">
-                            {capability.description}
-                          </p>
-                        </div>
-                    ) : (
-                        <div className="absolute left-full top-1/2 -translate-y-1/2 ml-32 w-52 p-2 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-apple pointer-events-none z-10 transform group-hover:translate-x-0 translate-x-[-10px]">
-                          <svg
-                            className="absolute right-full top-1/2 -translate-y-1/2 h-8 w-32 text-gray-400"
-                            fill="none"
-                            viewBox="0 0 128 32"
-                            stroke="currentColor"
-                            strokeWidth="1.5"
-                          >
-                            <path d="M128 16 C 88 16, 68 0, 0 0" />
-                          </svg>
-                          <p className="text-base text-left text-muted-foreground">
-                            {capability.description}
-                          </p>
-                        </div>
-                    )}
-                  </div>
-                ))}
-              </div>
+            <div className="mt-12">
+                <Carousel
+                    opts={{
+                        align: "start",
+                        loop: true,
+                    }}
+                    plugins={[Autoplay({ delay: 4500, stopOnInteraction: true })]}
+                    className="w-full"
+                >
+                    <CarouselContent className="-ml-6">
+                        {researchCapabilities.map((item, index) => {
+                            const image = findProductImage(item.imageId);
+                            return (
+                            <CarouselItem key={index} className="pl-6 md:basis-1/2 lg:basis-1/3">
+                                <div className="h-full">
+                                    <Card className="h-full overflow-hidden relative group border-0 rounded-lg">
+                                        {image && (
+                                            <Image
+                                                src={image.imageUrl}
+                                                alt={item.title}
+                                                fill
+                                                className="object-cover transition-transform duration-300 group-hover:scale-105"
+                                                data-ai-hint={image.imageHint}
+                                            />
+                                        )}
+                                        <div className="absolute inset-0 bg-black/30 backdrop-blur-sm group-hover:bg-black/40 transition-colors duration-300" />
+                                        <CardContent className="relative z-10 p-8 text-center flex flex-col items-center justify-center min-h-[350px] h-full text-white">
+                                            <h3 className="text-lg font-semibold mb-4">{item.title}</h3>
+                                            <p className="text-sm text-white/80">{item.description}</p>
+                                        </CardContent>
+                                    </Card>
+                                </div>
+                            </CarouselItem>
+                            );
+                        })}
+                    </CarouselContent>
+                </Carousel>
             </div>
           </AnimatedSection>
         </div>
@@ -456,3 +447,4 @@ export default CoreServicesPage;
     
 
     
+
