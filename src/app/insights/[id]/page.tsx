@@ -15,6 +15,8 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
     if (!article) {
         notFound();
     }
+    
+    const authorImage = PlaceHolderImages.find(img => img.id === article.author.avatarImageId);
 
     const featuredInsights = mockResearchData
         .filter(p => p._id !== article._id)
@@ -52,6 +54,20 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
                     </div>
                     <aside className="col-span-12 lg:col-span-4">
                         <div className="sticky top-24 space-y-10">
+                            {article.author && (
+                                <div>
+                                    <h3 className="text-sm font-bold uppercase tracking-wider text-gray-700 border-b pb-3">Author</h3>
+                                    <div className="mt-4 flex items-center gap-4">
+                                        {authorImage && (
+                                            <Image src={authorImage.imageUrl} alt={article.author.name} width={64} height={64} className="rounded-full h-16 w-16 object-cover" />
+                                        )}
+                                        <div>
+                                            <p className="font-bold text-gray-900">{article.author.name}</p>
+                                            <p className="text-sm text-gray-600">{article.author.role}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            )}
                             <div>
                                 <h3 className="text-sm font-bold uppercase tracking-wider text-gray-700 border-b pb-3">Downloads</h3>
                                 {article.pdfUrl && (

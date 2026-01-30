@@ -261,11 +261,6 @@ export const mockResearchData = [
     },
     tags: ['AI', 'Prompt Engineering', 'ROI', 'Productivity'],
     content: `
-        <div class="byline-box">
-            <h3 class="text-xs uppercase font-bold text-gray-500">Byline</h3>
-            <p class="font-bold mt-2 text-base">Amit Dengle</p>
-            <p class="text-sm text-gray-600">Founder</p>
-        </div>
         <p>In just two years, organisations have gone from testing AI at the margins to relying on it in the middle of everyday work. AI now drafts what we send, analyses what we decide, and shapes how customers experience us. Usage is exploding. Productivity looks up. But something far more important is unfolding beneath the surface.</p>
         <p>A gap is emerging between AI activity and AI impact.</p>
         <p>Many organisations report heavy usage but modest improvements in margins, decision speed, or automation at scale. Benefits that appeared compelling in pilots flatten as AI spreads across teams. Senior leaders find themselves more involved in review and validation, not less. Automation timelines slip, even as investment continues.</p>
@@ -610,6 +605,7 @@ export const PRODUCTS = [
 
 
     
+
 
 
 
