@@ -3,7 +3,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowRight, ChevronLeft, ChevronRight, Rocket, Palette, Star, Cpu, BrainCircuit } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { PRODUCTS } from "@/lib/constants";
@@ -53,11 +53,11 @@ const CoreServicesPage: React.FC = () => {
   }
 
   const consultingServices = [
-    "Go-to-Market and Market Entry Strategies",
-    "Competitive Positioning and Differentiation",
-    "Win Strategy Development",
-    "Technology and Software Selection",
-    "AI-Enabled Organizational Transformation"
+    { text: "Go-to-Market and Market Entry Strategies", icon: Rocket },
+    { text: "Competitive Positioning and Differentiation", icon: Palette },
+    { text: "Win Strategy Development", icon: Star },
+    { text: "Technology and Software Selection", icon: Cpu },
+    { text: "AI-Enabled Organizational Transformation", icon: BrainCircuit }
   ];
 
   return (
@@ -125,17 +125,21 @@ const CoreServicesPage: React.FC = () => {
                         className="w-full"
                     >
                         <CarouselContent className="-ml-6">
-                            {consultingServices.map((item, index) => (
+                            {consultingServices.map((item, index) => {
+                                const Icon = item.icon;
+                                return (
                                 <CarouselItem key={index} className="pl-6 md:basis-1/2 lg:basis-1/3">
                                     <div className="h-full">
                                         <Card className="h-full bg-primary/5 border-primary/20 hover:border-primary hover:bg-primary/10 transition-colors duration-300">
                                             <CardContent className="p-8 text-center flex flex-col items-center justify-center min-h-[220px]">
-                                                <p className="text-base font-medium text-foreground flex-grow">{item}</p>
+                                                <Icon className="h-10 w-10 text-primary mb-6" />
+                                                <p className="text-base font-medium text-foreground flex-grow">{item.text}</p>
                                             </CardContent>
                                         </Card>
                                     </div>
                                 </CarouselItem>
-                            ))}
+                                );
+                            })}
                         </CarouselContent>
                     </Carousel>
                 </div>
@@ -240,6 +244,7 @@ export default CoreServicesPage;
     
 
     
+
 
 
 
