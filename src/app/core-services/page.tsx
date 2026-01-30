@@ -186,13 +186,13 @@ const CoreServicesPage: React.FC = () => {
                 We ground every engagement in data-driven analysis:
               </p>
               <div className="mt-12 flex flex-col items-center gap-1 max-w-3xl mx-auto">
-                <div className="bg-primary/90 text-primary-foreground p-6 w-full md:w-1/2 text-center shadow-md">
+                <div className="bg-primary/50 text-primary-foreground p-6 w-full md:w-1/2 text-center shadow-md">
                   <h3 className="text-xl font-bold">Vendor evaluation and comparison</h3>
                 </div>
                 <div className="bg-primary/70 text-primary-foreground p-6 w-full md:w-3/4 text-center shadow-md">
                   <h3 className="text-xl font-bold">Technology landscape and usage analysis</h3>
                 </div>
-                <div className="bg-primary/50 text-primary-foreground p-6 w-full text-center shadow-md">
+                <div className="bg-primary/90 text-primary-foreground p-6 w-full text-center shadow-md">
                   <h3 className="text-xl font-bold">Benchmarking</h3>
                   <p className="text-sm text-primary-foreground/80 mt-1">(pricing, user experience, location, operational metrics)</p>
                 </div>
