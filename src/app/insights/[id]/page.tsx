@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { ShareButtons } from '@/components/pages/insights/share-buttons';
 import { ArrowRight, Download } from 'lucide-react';
+import { InsightDetailHeader } from '@/components/pages/insights/insight-detail-header';
 
 export default function InsightDetailPage({ params }: { params: { id: string } }) {
     const article = mockResearchData.find((p) => p._id === params.id);
@@ -22,16 +23,6 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
         .filter(p => p._id !== article._id)
         .sort((a, b) => new Date(b.publicationDate).getTime() - new Date(a.publicationDate).getTime())
         .slice(0, 3);
-
-    const formatDate = (dateString: string | Date | undefined) => {
-        if (!dateString) return '';
-        const date = new Date(dateString);
-        return date.toLocaleDateString('en-US', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
-        });
-    };
     
     const contentWithBold = article.content?.replace('<p>In just two years,', '<p><b>In just two years,</b>');
 
@@ -45,20 +36,10 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
 
     return (
         <main className="bg-white text-black font-body">
-            <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-20 pb-24">
-                <header className="text-left mb-12">
-                    <p className="text-sm font-semibold uppercase tracking-wider text-gray-600">{article.category}</p>
-                    <h1 className="text-4xl md:text-5xl font-bold mt-4 text-primary !leading-tight">{article.title}</h1>
-                    <div className="mt-6 text-base text-gray-700 flex items-center flex-wrap">
-                        <span>By {article.author.name}</span>
-                        <span className="mx-3">|</span>
-                        <span>{formatDate(article.publicationDate)}</span>
-                    </div>
-                </header>
-                
-                <hr className="mb-12" />
+            <InsightDetailHeader article={article} />
 
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pb-24">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-12">
                     <div className="lg:col-span-8 mckinsey-article-body">
                         <div dangerouslySetInnerHTML={{ __html: processedContent }} />
                     </div>
