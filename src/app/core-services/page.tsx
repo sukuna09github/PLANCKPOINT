@@ -185,16 +185,51 @@ const CoreServicesPage: React.FC = () => {
               <p className="mt-6 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
                 We ground every engagement in data-driven analysis:
               </p>
-              <div className="mt-12 flex flex-col items-center gap-1 max-w-3xl mx-auto">
-                <div className="bg-primary/50 text-primary-foreground p-6 w-full md:w-1/2 text-center shadow-md">
-                  <h3 className="text-xl font-bold">Vendor evaluation and comparison</h3>
-                </div>
-                <div className="bg-primary/70 text-primary-foreground p-6 w-full md:w-3/4 text-center shadow-md">
-                  <h3 className="text-xl font-bold">Technology landscape and usage analysis</h3>
-                </div>
-                <div className="bg-primary/90 text-primary-foreground p-6 w-full text-center shadow-md">
-                  <h3 className="text-xl font-bold">Benchmarking</h3>
-                  <p className="text-sm text-primary-foreground/80 mt-1">(pricing, user experience, location, operational metrics)</p>
+              <div className="mt-16 flex justify-center" style={{ filter: 'drop-shadow(rgba(0, 0, 0, 0.1) 0px 25px 20px)' }}>
+                <div className="w-full max-w-2xl flex flex-col items-center -space-y-1">
+                  <div
+                      className="relative flex items-center justify-center text-center text-white p-4"
+                      style={{
+                          width: '40%',
+                          height: '120px',
+                          backgroundColor: 'hsl(190, 100%, 38%)',
+                          clipPath: 'polygon(50% 0%, 0% 100%, 100% 100%)',
+                          zIndex: 3,
+                      }}
+                  >
+                      <div className="flex flex-col items-center">
+                          <h3 className="text-lg font-medium leading-tight">Vendor evaluation and comparison</h3>
+                      </div>
+                  </div>
+                  <div
+                      className="relative flex items-center justify-center text-center text-white p-4"
+                      style={{
+                          width: '70%',
+                          height: '95px',
+                          backgroundColor: 'hsl(187, 100%, 26%)',
+                          clipPath: 'polygon(21.5% 0, 78.5% 0, 100% 100%, 0% 100%)',
+                          zIndex: 2,
+                      }}
+                  >
+                      <div className="flex flex-col items-center">
+                          <h3 className="text-lg font-medium leading-tight">Technology landscape and usage analysis</h3>
+                      </div>
+                  </div>
+                  <div
+                      className="relative flex items-center justify-center text-center text-white p-4"
+                      style={{
+                          width: '100%',
+                          height: '110px',
+                          backgroundColor: 'hsl(187, 100%, 14%)',
+                          clipPath: 'polygon(15% 0, 85% 0, 100% 100%, 0% 100%)',
+                          zIndex: 1,
+                      }}
+                  >
+                      <div className="flex flex-col items-center justify-center h-full">
+                          <h3 className="text-lg font-medium leading-tight">Benchmarking</h3>
+                          <p className="text-sm text-white/80 mt-1">(pricing, user experience, location, operational metrics)</p>
+                      </div>
+                  </div>
                 </div>
               </div>
             </div>
