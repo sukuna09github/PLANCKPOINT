@@ -177,6 +177,33 @@ const CoreServicesPage: React.FC = () => {
         </div>
       </section>
 
+      <section id="research-capabilities" className="py-20 lg:py-24 bg-white text-primary">
+        <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <AnimatedSection>
+            <div className="text-center">
+              <h2 className="text-3xl md:text-4xl font-normal">Our Research Capabilities</h2>
+              <p className="mt-6 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
+                We ground every engagement in data-driven analysis:
+              </p>
+              <ul className="mt-8 text-lg md:text-xl max-w-2xl mx-auto text-muted-foreground text-left space-y-2">
+                <li className="flex items-start">
+                  <span className="text-accent mr-3 mt-1">&#8226;</span>
+                  <span>Benchmarking (pricing, user experience, location, operational metrics)</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-accent mr-3 mt-1">&#8226;</span>
+                  <span>Technology landscape and usage analysis</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-accent mr-3 mt-1">&#8226;</span>
+                  <span>Vendor evaluation and comparison</span>
+                </li>
+              </ul>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {atomicAiProduct && (
         <section id="atomicai" className="grid grid-cols-1 md:grid-cols-2 w-full">
             <div className="bg-primary/5 flex items-center justify-center p-12 md:p-16 lg:p-24">
@@ -278,3 +305,6 @@ export default CoreServicesPage;
 
 
 
+
+
+    
