@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useRef } from 'react';
@@ -51,12 +52,12 @@ export function InsightDetailHeader({ article }: InsightDetailHeaderProps) {
                 <header className="text-left">
                     <p className="text-sm font-semibold uppercase tracking-wider text-white/80">{article.category}</p>
                     <h1 className="text-4xl md:text-5xl font-bold mt-4 text-white !leading-tight">{article.title}</h1>
-                    <div className="mt-6 text-base text-white/90 flex items-center flex-wrap">
+                    <p className="mt-4 text-lg italic text-white/90 max-w-3xl">{article.summary}</p>
+                    <div className="mt-4 text-base text-white/90 flex items-center flex-wrap">
                         <span>By {article.author.name}</span>
                         <span className="mx-3">|</span>
                         <span>{formatDate(article.publicationDate)}</span>
                     </div>
-                    <p className="mt-6 text-lg text-white/90 max-w-3xl">{article.summary}</p>
                 </header>
             </div>
         </div>
