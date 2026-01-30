@@ -82,6 +82,19 @@ const CoreServicesPage: React.FC = () => {
         </div>
       </section>
 
+      <section id="resulting" className="py-20 lg:py-24 bg-white text-primary">
+        <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <AnimatedSection>
+            <div className="text-center">
+              <h2 className="text-3xl md:text-4xl font-normal">Resulting: Where Research Meets Results</h2>
+              <p className="mt-6 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
+                At Planckpoint, we practice what we call "Resulting" — a consulting approach that combines rigorous research with strategic advisory to deliver tangible outcomes for our clients. We help enterprises navigate disruption and achieve pragmatic transition.
+              </p>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {atomicAiProduct && (
         <section id="atomicai" className="grid grid-cols-1 md:grid-cols-2 w-full">
             <div className="bg-background flex items-center justify-center p-12 md:p-16 lg:p-24">
@@ -179,3 +192,4 @@ export default CoreServicesPage;
     
 
     
+
